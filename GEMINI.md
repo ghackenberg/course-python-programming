@@ -134,10 +134,12 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 - The file `./Sessions/Session_XX/Slides.md` contains the Markdown source code for the slides of session `XX`
 - The folder `./Sessions/Session_XX/Images` contains images
 - The folder `./Sessions/Session_XX/Diagrams` contains Tikz and Mermaid.js diagrams
-- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.tex` contains the source code of a Tikz diagram
-- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.svg` contains the compiled SVG code of a Tikz diagram
-- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
-- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
+- The folder `./Sessions/Session_XX/Diagrams/Tikz` contains Tikz diagrams
+- The file `./Sessions/Session_XX/Diagrams/Tikz/Diagram_Name.tikz.tex` contains the source code of a Tikz diagram
+- The file `./Sessions/Session_XX/Diagrams/Tikz/Diagram_Name.tikz.svg` contains the compiled SVG code of a Tikz diagram
+- The folder `./Sessions/Session_XX/Diagrams/Mermaid` contains Mermaid diagrams
+- The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
+- The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
 - The folder `./Sessions/Session_XX/Homeworks` contains the homework sheets for session `XX`
 - The file `./Sessions/Session_XX/Homeworks/Homework_YY.tex` contains homework sheet `YY` for session `XX`
 - The folder `./Sessions/Session_XX/Exams` contains the exam sheets for session `XX`
