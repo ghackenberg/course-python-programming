@@ -7,7 +7,7 @@ paginate: true
 math: mathjax
 ---
 
-<!-- Placeholder for chapter image description -->
+<!-- Abstract illustration of interconnected nodes and lines representing programming concepts, with a glowing Python logo subtly integrated, all set against a dark, swirling galaxy background. The overall aesthetic is futuristic and conceptual. -->
 
 ![bg right](./ChapterImagePath)
 
@@ -23,7 +23,7 @@ This chapter includes the following sections:
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- Abstract illustration of a human hand interacting with lines of code and binary data, symbolizing the act of programming, set against a dark galaxy background with subtle light trails. -->
 
 ![bg right](./SectionImagePath)
 
@@ -226,7 +226,7 @@ print(sum_result) # Output: 30
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- Abstract illustration highlighting Python's versatility with various icons (web, data science, AI, automation) emerging from a central, glowing Python logo, all against a dark galaxy backdrop. -->
 
 ![bg right](./SectionImagePath)
 
@@ -419,7 +419,7 @@ print("Hello, World!")
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- Abstract illustration of a developer's workstation with glowing screens displaying code and terminal windows, surrounded by floating virtual environment symbols, set against a dark galaxy background. -->
 
 ![bg right](./SectionImagePath)
 
@@ -634,7 +634,7 @@ python hello.py
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- Abstract illustration of glowing data structures (integers, floats, strings, booleans) flowing and connecting, representing variables and data types, against a dark galaxy background. -->
 
 ![bg right](./SectionImagePath)
 
@@ -647,9 +647,7 @@ This section includes the following content:
 - Basic Data Types: Integers, Floats, Strings, Booleans
 - Type Checking (`type()`)
 - Type Conversion (`int()`, `str()`, `float()`)
-- Operators: Arithmetic
-- Operators: Assignment
-- Operator Precedence
+- Operators: Arithmetic, Assignment, Precedence
 
 ---
 
@@ -875,7 +873,7 @@ print(result2) # 30
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- Abstract illustration of data flowing into and out of a central processing unit, depicted as glowing streams of information, symbolizing input and output operations, against a dark galaxy background. -->
 
 ![bg right](./SectionImagePath)
 

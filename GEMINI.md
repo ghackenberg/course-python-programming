@@ -130,9 +130,10 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 ## Folder Structure
 
 - The folder `./Sessions` contains the materials for the individual sessions
-- The folder `./Sessions/Session_XX` contains the slide set for session `XX`
-- The file `./Sessions/Session_XX/Slides.md` contains the Latex source code for the slide set of session `XX`
-- The folder `./Sessions/Session_XX/Diagrams` contains the Tikz- and Mermaid.js diagrams.
+- The folder `./Sessions/Session_XX` contains the slides for session `XX`
+- The file `./Sessions/Session_XX/Slides.md` contains the Markdown source code for the slides of session `XX`
+- The folder `./Sessions/Session_XX/Images` contains images
+- The folder `./Sessions/Session_XX/Diagrams` contains Tikz and Mermaid.js diagrams
 - The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.tex` contains the source code of a Tikz diagram
 - The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.svg` contains the compiled SVG code of a Tikz diagram
 - The file `./Sessions/Session_XX/Diagrams/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
