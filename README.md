@@ -19,4 +19,3 @@ Here you will find an overview of all sessions and links to their respective pre
 - [Session 07: Object-Oriented Programming (OOP) II](./Sessions/Session_07/Slides.md)
 - [Session 08: Advanced Data Structures & Algorithms](./Sessions/Session_08/Slides.md)
 - [Session 09: Working with External Libraries](./Sessions/Session_09/Slides.md)
-- [Session 10: Project Session & Best Practices](./Sessions/Session_10/Slides.md)

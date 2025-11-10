@@ -15,7 +15,7 @@
 
 ## Course Organization
 
-- 10 in-person sessions
+- 9 in-person sessions
 - Duration of in-person sessions is 2.5 hours
 - Own set of slides for each in-person session
 - About 40 slides for each session
