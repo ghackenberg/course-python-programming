@@ -62,12 +62,12 @@ This section includes the following content:
 
 ### What Programmers Do
 
-- **Analyze:** Understand the problem.
-- **Design:** Plan the solution (algorithm).
-- **Code:** Write instructions in a programming language.
-- **Test:** Check if the solution works correctly.
-- **Debug:** Fix errors.
-- **Deploy:** Make the solution available.
+- **Analyze:** Programmers first thoroughly understand the problem they need to solve.
+- **Design:** They then plan a step-by-step solution, often referred to as an algorithm.
+- **Code:** This involves writing the actual instructions using a specific programming language.
+- **Test:** After coding, they rigorously check if the solution functions as intended and meets all requirements.
+- **Debug:** If errors or unexpected behavior occur, programmers identify and correct these issues.
+- **Deploy:** Finally, they make the developed software or solution accessible and operational for users.
 
 **Illustration:**
 
@@ -80,9 +80,9 @@ This section includes the following content:
 
 ### Algorithms and Logic
 
-- **Algorithm:** A step-by-step procedure for solving a problem.
-- **Logic:** The reasoning behind the steps.
-- **Example:** Recipe for baking a cake is an algorithm.
+- **Algorithm:** A precise, step-by-step procedure or formula for solving a problem or accomplishing a task.
+- **Logic:** The underlying principles and reasoning that dictate how the steps of an algorithm are structured and executed.
+- **Example:** A common real-world analogy is a recipe for baking a cake, which serves as a clear algorithm.
 
 </div>
 <div class="two">
@@ -106,11 +106,11 @@ Algorithm: Make Coffee
 
 ### Machine Code vs. High-Level Languages
 
-- **Machine Code:** Binary instructions (0s and 1s) directly understood by the CPU.
-- **High-Level Languages:** Human-readable languages (Python, Java, C++).
-- **Translators:**
-    - **Compilers:** Translate entire program before execution.
-    - **Interpreters:** Translate and execute line by line.
+- **Machine Code:** These are low-level binary instructions (sequences of 0s and 1s) that are directly executed by the computer's Central Processing Unit (CPU).
+- **High-Level Languages:** These are human-readable programming languages (such as Python, Java, or C++) that abstract away the complexities of machine code.
+- **Translators:** Software tools are required to convert high-level code into machine code:
+    - **Compilers:** Translate the entire source code into machine code before the program is executed.
+    - **Interpreters:** Translate and execute the source code line by line during runtime.
 
 </div>
 <div>
@@ -123,23 +123,25 @@ Algorithm: Make Coffee
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Interpreted vs. Compiled Languages
 
+TODO shorten
+
 - **Interpreted (e.g., Python):**
-    - Code executed line by line.
-    - Easier debugging.
-    - Slower execution.
-    - More flexible.
+    - **Execution:** Code is executed line by line by an interpreter, without prior compilation.
+    - **Debugging:** Generally offers easier debugging due to immediate feedback on errors.
+    - **Performance:** Typically results in slower execution speeds compared to compiled languages.
+    - **Flexibility:** Provides greater flexibility, allowing for dynamic typing and easier code modification.
 - **Compiled (e.g., C++):**
-    - Code translated entirely to machine code first.
-    - Faster execution.
-    - Harder debugging.
-    - Less flexible.
+    - **Execution:** The entire source code is translated into machine code by a compiler before any execution occurs.
+    - **Performance:** Achieves faster execution speeds because the code is pre-translated.
+    - **Debugging:** Debugging can be more challenging as errors might only appear after the full compilation process.
+    - **Flexibility:** Tends to be less flexible, often requiring strict type definitions and full recompilation for changes.
 
 </div>
-<div class="three">
+<div>
 
 ![Comparison diagram illustrating how an interpreter executes code line by line versus how a compiler translates the entire code before execution. (Mermaid.js)](./Diagrams/Mermaid/interpreter.svg)
 
@@ -155,14 +157,16 @@ Algorithm: Make Coffee
 
 ### Why Learn Programming?
 
-- **Problem Solving:** Develop logical thinking.
-- **Automation:** Make computers do repetitive tasks.
-- **Creativity:** Build new tools and applications.
-- **Career Opportunities:** High demand in many fields.
-- **Understanding Technology:** Demystify how software works.
+TODO shorten
+
+- **Problem Solving:** Programming inherently fosters and develops strong logical thinking and analytical skills.
+- **Automation:** It empowers you to automate tedious and repetitive tasks, saving time and increasing efficiency.
+- **Creativity:** Programming is a creative outlet, allowing you to build innovative tools, applications, and digital experiences from scratch.
+- **Career Opportunities:** The demand for programming skills is consistently high across various industries, opening up numerous career paths.
+- **Understanding Technology:** Learning to code provides a deeper insight into how software and technology function, demystifying the digital world around us.
 
 </div>
-<div class="two">
+<div>
 
 ![Icon-based diagram showing the benefits of learning programming: Problem Solving, Automation, Creativity, Career Opportunities, Understanding Technology. (Tikz) width:1000px](./Diagrams/Tikz/benefits_programming.tikz.svg)
 
@@ -176,11 +180,11 @@ Algorithm: Make Coffee
 
 ### Problem-Solving Approach
 
-1.  **Understand the Problem:** What needs to be solved?
-2.  **Break Down:** Divide into smaller, manageable parts.
-3.  **Plan:** Devise a step-by-step solution (algorithm).
-4.  **Implement:** Write the code.
-5.  **Test & Refine:** Verify and improve.
+1.  **Understand the Problem:** Clearly define what the problem is and what the desired outcome should be.
+2.  **Break Down:** Decompose the complex problem into smaller, more manageable, and solvable sub-problems.
+3.  **Plan:** Develop a detailed, step-by-step solution or algorithm for each sub-problem and the overall task.
+4.  **Implement:** Translate the planned solution into actual code using a chosen programming language.
+5.  **Test & Refine:** Rigorously test the implemented code to ensure it works correctly, then debug and optimize it for efficiency and accuracy.
 
 </div>
 <div>
@@ -197,12 +201,12 @@ Algorithm: Make Coffee
 
 ### Example: Simple Instructions
 
-- **Task:** Calculate the sum of two numbers.
+- **Task:** Demonstrate a basic programming task by calculating the sum of two given numbers.
 - **Algorithm:**
-    1.  Get the first number.
-    2.  Get the second number.
-    3.  Add them together.
-    4.  Display the result.
+    1.  **Input First Number:** Obtain the initial numerical value.
+    2.  **Input Second Number:** Obtain the second numerical value.
+    3.  **Perform Addition:** Add the two obtained numbers together.
+    4.  **Output Result:** Present the calculated sum to the user.
 
 </div>
 <div class="two">
@@ -248,9 +252,9 @@ This section includes the following content:
 
 ### Readability and Simplicity
 
-- **English-like Syntax:** Easy to read and understand.
-- **Less Boilerplate:** Write more with fewer lines of code.
-- **Indentation:** Enforces clean and consistent code structure.
+- **English-like Syntax:** Python's syntax is designed to be very close to natural English, making it easy for beginners to read and understand.
+- **Less Boilerplate:** It allows developers to achieve significant functionality with fewer lines of code compared to many other languages, reducing boilerplate.
+- **Indentation:** Python uses indentation to define code blocks, which naturally enforces a clean, consistent, and highly readable code structure.
 
 </div>
 <div class="two">
@@ -286,14 +290,16 @@ if (x > 0) {
 
 ### Versatility
 
-- **Web Development:** Django, Flask
-- **Data Science & AI:** NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch
-- **Automation & Scripting:** System administration, task automation
-- **Desktop Applications:** PyQt, Kivy
-- **Game Development:** Pygame
+TODO shorten
+
+- **Web Development:** Python is widely used for building robust web applications and APIs with frameworks like Django and Flask.
+- **Data Science & AI:** It is a leading language in data science, machine learning, and artificial intelligence, supported by libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch.
+- **Automation & Scripting:** Python excels in automating various tasks, from system administration scripts to general task automation.
+- **Desktop Applications:** It can be used to create cross-platform desktop applications using toolkits like PyQt and Kivy.
+- **Game Development:** While not its primary domain, Python can also be used for game development, particularly with libraries like Pygame.
 
 </div>
-<div class="two">
+<div>
 
 ![Icon-based diagram showing various applications of Python: Web Development, Data Science & AI, Automation & Scripting, Desktop Applications, Game Development. (Tikz) width:1000px](./Diagrams/Tikz/python_applications.tikz.svg)
 
@@ -307,9 +313,9 @@ if (x > 0) {
 
 ### Large Community and Libraries
 
-- **Vibrant Community:** Extensive support, tutorials, forums.
-- **Rich Ecosystem:** Thousands of third-party libraries (PyPI).
-- **"Batteries Included":** Standard library covers many common tasks.
+- **Vibrant Community:** Python boasts a massive and active global community, providing extensive support through documentation, tutorials, online forums, and conferences.
+- **Rich Ecosystem:** There are thousands of third-party libraries and packages available on PyPI (Python Package Index), catering to almost any programming need.
+- **"Batteries Included":** Python's comprehensive standard library comes with a wide array of modules and functions, covering many common programming tasks right out of the box.
 
 </div>
 <div class="two">
@@ -326,12 +332,12 @@ if (x > 0) {
 
 ### Cross-Platform Compatibility
 
-- **Write Once, Run Anywhere:** Python code runs on:
+- **Write Once, Run Anywhere:** Python code is highly portable and can run seamlessly across various operating systems, including:
     - Windows
     - macOS
     - Linux
-    - And many other platforms
-- No need to recompile for different operating systems.
+    - And many other specialized platforms
+- This eliminates the need to recompile the code specifically for each different operating system.
 
 </div>
 <div class="two">
@@ -348,9 +354,9 @@ if (x > 0) {
 
 ### High Demand in Industry
 
-- **Top Programming Language:** Consistently ranks among the most popular.
-- **Job Market:** High demand for Python developers in various sectors.
-- **Companies Using Python:** Google, Instagram, Spotify, Netflix, NASA.
+- **Top Programming Language:** Python consistently ranks as one of the most popular and in-demand programming languages globally.
+- **Job Market:** There is a significant and growing demand for skilled Python developers across a multitude of industries and sectors.
+- **Companies Using Python:** Leading technology companies and organizations such as Google, Instagram, Spotify, Netflix, and NASA extensively utilize Python in their operations.
 
 </div>
 <div class="two">
@@ -378,8 +384,8 @@ if (x > 0) {
 
 ### Python's Philosophy (Zen of Python)
 
-- **`import this`:** Reveals 19 guiding principles.
-- **Key Principles:**
+- **`import this`:** Executing `import this` in a Python interpreter reveals 19 guiding principles for writing good Python code.
+- **Key Principles:** These principles emphasize clarity, simplicity, and elegance in code design, including:
     - Beautiful is better than ugly.
     - Explicit is better than implicit.
     - Simple is better than complex.
@@ -403,9 +409,9 @@ import this
 
 ### Example: "Hello, World!" in Python
 
-- The classic first program.
-- Demonstrates basic output.
-- Simple and straightforward.
+- This is the classic first program that almost every programmer writes when learning a new language.
+- It serves to demonstrate the most basic form of output in Python.
+- The program is simple, straightforward, and effectively illustrates how to print text to the console.
 
 </div>
 <div class="two">
@@ -445,10 +451,10 @@ This section includes the following content:
 
 ### Python Installation
 
-- **Official Website:** `python.org/downloads`
-- **Choose Version:** Latest stable version (e.g., Python 3.x).
-- **Important:** Check "Add Python to PATH" during installation on Windows.
-- **Verify:** Open terminal/command prompt and type `python --version`.
+- **Official Website:** Always download Python from its official website: `python.org/downloads`.
+- **Choose Version:** Select the latest stable version of Python (e.g., Python 3.x) for new projects.
+- **Important:** During the installation process on Windows, ensure you check the box "Add Python to PATH" to make it accessible from the command line.
+- **Verify:** After installation, open your terminal or command prompt and type `python --version` to confirm a successful installation.
 
 </div>
 <div class="two">
@@ -465,11 +471,13 @@ This section includes the following content:
 
 ### IDE/Editor Choices
 
-- **Integrated Development Environment (IDE):**
-    - **PyCharm:** Full-featured, powerful (Community Edition is free).
-    - **VS Code:** Lightweight, highly customizable with extensions.
-- **Text Editors:**
-    - Sublime Text, Atom (less features, more basic).
+TODO shorten
+
+- **Integrated Development Environment (IDE):** These are comprehensive software suites that consolidate common developer tools into a single graphical user interface.
+    - **PyCharm:** A powerful, full-featured IDE specifically designed for Python development, with a free Community Edition available.
+    - **VS Code:** A lightweight yet highly customizable code editor from Microsoft, offering extensive functionality through a rich ecosystem of extensions.
+- **Text Editors:** Simpler tools primarily focused on text editing, often used for quick edits or by developers who prefer a minimalist environment.
+    - Examples include Sublime Text and Atom, which offer fewer integrated features but are highly configurable.
 
 </div>
 <div class="two">
@@ -492,12 +500,14 @@ Visual Studio Code
 
 ### Virtual Environments (venv)
 
-- **Purpose:** Isolate project dependencies.
-- **Avoids Conflicts:** Different projects can use different library versions.
-- **Creation:** `python -m venv myenv`
-- **Activation:**
-    - Windows: `.\myenv\Scripts\activate`
-    - macOS/Linux: `source myenv/bin/activate`
+TODO shorten
+
+- **Purpose:** Virtual environments are crucial for isolating the dependencies of different Python projects.
+- **Avoids Conflicts:** They prevent conflicts by allowing each project to maintain its own set of libraries and specific versions, independent of other projects or the global Python installation.
+- **Creation:** A new virtual environment can be created using the command: `python -m venv myenv`.
+- **Activation:** To start using the environment, it must be activated:
+    - **Windows:** Execute `.\myenv\Scripts\activate` in your terminal.
+    - **macOS/Linux:** Use `source myenv/bin/activate` in your terminal.
 
 </div>
 <div class="two">
@@ -523,9 +533,9 @@ source myproject_env/bin/activate
 
 ### Running Python Scripts from Terminal
 
-- **Save File:** Create a file named `my_script.py`.
-- **Navigate:** Open terminal in the directory where `my_script.py` is saved.
-- **Execute:** `python my_script.py`
+- **Save File:** First, create your Python code and save it in a file with a `.py` extension, for example, `my_script.py`.
+- **Navigate:** Open your terminal or command prompt and navigate to the directory where you saved `my_script.py`.
+- **Execute:** To run the script, type `python` followed by the script's filename: `python my_script.py`.
 
 </div>
 <div class="two">
@@ -554,10 +564,10 @@ python my_script.py
 
 ### Interactive Mode (REPL)
 
-- **REPL:** Read-Eval-Print Loop.
-- **Purpose:** Experiment with code snippets, test ideas quickly.
-- **Launch:** Type `python` in your terminal.
-- **Exit:** `exit()` or `Ctrl+Z` (Windows) / `Ctrl+D` (macOS/Linux).
+- **REPL:** This stands for Read-Eval-Print Loop, an interactive programming environment.
+- **Purpose:** It allows you to experiment with Python code snippets, test ideas, and get immediate feedback without saving a file.
+- **Launch:** To enter the interactive mode, simply type `python` in your terminal or command prompt and press Enter.
+- **Exit:** You can exit the REPL by typing `exit()` and pressing Enter, or by using `Ctrl+Z` followed by Enter on Windows, or `Ctrl+D` on macOS/Linux.
 
 </div>
 <div class="two">
@@ -595,10 +605,12 @@ python my_script.py
 
 ### Basic VS Code Setup for Python
 
-- **Install Python Extension:** From VS Code Marketplace.
-- **Select Interpreter:** `Ctrl+Shift+P` -> "Python: Select Interpreter".
-- **Run & Debug:** Use the "Run" button or `F5`.
-- **Integrated Terminal:** `Ctrl+` ` (backtick).
+TODO shorten
+
+- **Install Python Extension:** Begin by installing the official Python extension from the Visual Studio Code Marketplace to enable rich language support.
+- **Select Interpreter:** Use the Command Palette (`Ctrl+Shift+P`) and search for "Python: Select Interpreter" to choose your desired Python environment (e.g., a virtual environment).
+- **Run & Debug:** Utilize the dedicated "Run" button in the top right corner or press `F5` to execute your Python scripts or start the debugger.
+- **Integrated Terminal:** Access the integrated terminal directly within VS Code using the shortcut `Ctrl+` ` (backtick) for running commands and scripts.
 
 </div>
 <div class="two">
@@ -615,14 +627,14 @@ python my_script.py
 
 ### First Script Execution
 
-- **Create `hello.py`:**
+- **Create `hello.py`:** Start by creating a new file named `hello.py` and add the following Python code:
     ```python
     # Prints a welcoming message.
     # Verifies Python installation and script execution.
     print("Hello, Python Course!")
-    ```- **Open Terminal:** Navigate to the folder.
-- **Run:** `python hello.py`
-- **Expected Output:** `Hello, Python Course!`
+    ```- **Open Terminal:** Open your terminal or command prompt and navigate to the directory where you saved `hello.py`.
+- **Run:** Execute the script using the command: `python hello.py`.
+- **Expected Output:** Upon successful execution, the terminal should display the message: `Hello, Python Course!`.
 
 </div>
 <div class="two">
@@ -645,10 +657,10 @@ python hello.py
 
 ### Troubleshooting Common Setup Issues
 
-- **`'python' is not recognized`:** Python not added to PATH.
-- **Module Not Found Error:** Not in correct virtual environment or module not installed.
-- **Syntax Errors:** Typos, incorrect indentation.
-- **Solution:** Double-check installation, activate venv, read error messages carefully.
+- **`'python' is not recognized`:** This error typically indicates that the Python executable was not added to your system's PATH environment variable during installation.
+- **Module Not Found Error:** This occurs when a required module or library is not found, often because you are not in the correct virtual environment or the module has not been installed (`pip install module_name`).
+- **Syntax Errors:** These are mistakes in the structure or grammar of your code, such as typos, missing colons, or incorrect indentation, which prevent Python from understanding it.
+- **Solution:** To resolve these issues, always double-check your Python installation, ensure your virtual environment is activated, and carefully read the error messages for clues.
 
 </div>
 <div>
@@ -682,10 +694,10 @@ This section includes the following content:
 
 ### Comments
 
-- **Purpose:** Explain code, make it readable for humans.
-- **Ignored by Interpreter:** Not executed as part of the program.
-- **Single-line:** Start with `#`.
-- **Multi-line (Docstrings):** Enclosed in triple quotes (`"""Docstring"""`).
+- **Purpose:** Comments are essential for explaining your code, making it more understandable and maintainable for both yourself and other developers.
+- **Ignored by Interpreter:** The Python interpreter completely ignores comments; they are not executed as part of the program's logic.
+- **Single-line:** For single-line comments, begin the line with a hash symbol (`#`).
+- **Multi-line (Docstrings):** Multi-line comments, often used as docstrings for functions or classes, are enclosed within triple quotes (`"""Your multi-line comment here"""`).
 
 </div>
 <div class="two">
@@ -711,13 +723,15 @@ x = 10
 
 ### Variables: Naming Rules, Assignment
 
-- **Variables:** Named storage locations for data.
-- **Naming Rules:**
-    - Start with letter or underscore (`_`).
-    - Can contain letters, numbers, underscores.
-    - Case-sensitive (`age` is different from `Age`).
-    - Cannot be Python keywords (e.g., `if`, `for`).
-- **Assignment:** Use `=` operator.
+TODO shorten
+
+- **Variables:** In programming, variables are symbolic names that act as named storage locations to hold data values.
+- **Naming Rules:** When naming variables in Python, follow these conventions:
+    - They must start with a letter (a-z, A-Z) or an underscore (`_`).
+    - They can contain letters, numbers (0-9), and underscores.
+    - Python variable names are case-sensitive, meaning `age` and `Age` are treated as different variables.
+    - You cannot use Python's reserved keywords (e.g., `if`, `for`, `while`) as variable names.
+- **Assignment:** The `=` operator is used to assign a value to a variable.
 
 </div>
 <div class="two">
@@ -743,10 +757,12 @@ my_variable_1 = 100
 
 ### Basic Data Types: Integers, Floats, Strings, Booleans
 
-- **Integers (`int`):** Whole numbers (e.g., `5`, `-100`).
-- **Floats (`float`):** Decimal numbers (e.g., `3.14`, `-0.5`).
-- **Strings (`str`):** Text, enclosed in quotes (e.g., `"hello"`, `'Python'`).
-- **Booleans (`bool`):** `True` or `False`.
+TODO shorten
+
+- **Integers (`int`):** Represent whole numbers, both positive and negative, without any decimal point (e.g., `5`, `-100`, `1000`).
+- **Floats (`float`):** Represent real numbers, which include a decimal point or are expressed in exponential form (e.g., `3.14`, `-0.5`, `2.718e-5`).
+- **Strings (`str`):** Used for sequences of characters, essentially text. They are always enclosed within single quotes (`'text'`) or double quotes (`"text"`).
+- **Booleans (`bool`):** Represent one of two values: `True` or `False`. They are primarily used for logical operations and conditional statements.
 
 </div>
 <div class="two">
@@ -754,10 +770,13 @@ my_variable_1 = 100
 ```python
 # Integer (whole number).
 my_int = 10
+
 # Float (decimal number).
 my_float = 3.14
+
 # String (text).
 my_string = "Hello"
+
 # Boolean (True/False).
 my_bool = True
 ```
@@ -772,9 +791,9 @@ my_bool = True
 
 ### Type Checking (type())
 
-- **Function:** `type()`
-- **Purpose:** Determine the data type of a variable or value.
-- **Useful for:** Debugging, understanding variable behavior.
+- **Function:** Python provides a built-in function called `type()`.
+- **Purpose:** This function is used to dynamically determine the data type of any variable or value at runtime.
+- **Useful for:** It is particularly useful during debugging to inspect variable types and to understand how different data types behave in your code.
 
 </div>
 <div class="two">
@@ -805,12 +824,14 @@ print(type(is_active))
 
 ### Type Conversion (int(), str(), float())
 
-- **Purpose:** Convert a value from one data type to another.
-- **Functions:**
-    - `int()`: Converts to integer.
-    - `float()`: Converts to float.
-    - `str()`: Converts to string.
-- **Caution:** Not all conversions are possible (e.g., `"hello"` to `int`).
+TODO shorten
+
+- **Purpose:** Type conversion, also known as type casting, allows you to explicitly change a value from one data type to another.
+- **Functions:** Python provides several built-in functions for this purpose:
+    - `int()`: Converts a value to an integer, truncating any decimal part.
+    - `float()`: Converts a value to a floating-point number.
+    - `str()`: Converts a value to its string representation.
+- **Caution:** It's important to note that not all type conversions are logically possible or will succeed (e.g., attempting to convert the string `"hello"` to an integer will result in an error).
 
 </div>
 <div class="two">
@@ -842,13 +863,15 @@ int_float = float(int_val)
 
 ### Operators: Arithmetic
 
-- **Addition:** `+`
-- **Subtraction:** `-`
-- **Multiplication:** `*`
-- **Division:** `/` (float result)
-- **Floor Division:** `//` (integer result)
-- **Modulo:** `%` (remainder)
-- **Exponentiation:** `**`
+TODO shorten
+
+- **Addition:** The `+` operator performs addition between two operands.
+- **Subtraction:** The `-` operator performs subtraction between two operands.
+- **Multiplication:** The `*` operator performs multiplication between two operands.
+- **Division:** The `/` operator performs standard division, always returning a float result.
+- **Floor Division:** The `//` operator performs division and returns the integer part of the quotient (discards the fractional part).
+- **Modulo:** The `%` operator returns the remainder of the division.
+- **Exponentiation:** The `**` operator raises the first operand to the power of the second.
 
 </div>
 <div class="two">
@@ -880,12 +903,14 @@ print(2 ** 3)
 
 ### Operators: Assignment
 
-- **Assignment:** `=`
-- **Add and Assign:** `+=` (e.g., `x += 1` is `x = x + 1`)
-- **Subtract and Assign:** `-=`
-- **Multiply and Assign:** `*=`
-- **Divide and Assign:** `/=`
-- **Other:** `//=`, `%=`, `**=`
+TODO shorten
+
+- **Assignment:** The `=` operator is used to assign a value to a variable.
+- **Add and Assign:** The `+=` operator adds the right operand to the left operand and assigns the result to the left operand (e.g., `x += 1` is equivalent to `x = x + 1`).
+- **Subtract and Assign:** The `-=` operator subtracts the right operand from the left operand and assigns the result to the left operand.
+- **Multiply and Assign:** The `*=` operator multiplies the left operand by the right operand and assigns the result to the left operand.
+- **Divide and Assign:** The `/=` operator divides the left operand by the right operand and assigns the float result to the left operand.
+- **Other:** Similar compound assignment operators exist for floor division (`//=`), modulo (`%=`), and exponentiation (`**=`).
 
 </div>
 <div class="two">
@@ -911,10 +936,12 @@ y *= 3
 
 ### Operator Precedence
 
-- **Order of Operations:** Which operations are performed first.
-- **PEMDAS/BODMAS:** Parentheses/Brackets, Exponents/Orders, Multiplication/Division, Addition/Subtraction.
-- **Python follows standard mathematical precedence.**
-- Use parentheses `()` to explicitly control order.
+TODO shorten
+
+- **Order of Operations:** Operator precedence defines the order in which operations are evaluated in an expression.
+- **PEMDAS/BODMAS:** Python adheres to the standard mathematical rules of precedence, often remembered by acronyms like PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction) or BODMAS (Brackets, Orders, Division and Multiplication, Addition and Subtraction).
+- **Python follows standard mathematical precedence:** This means operations like multiplication and division are performed before addition and subtraction.
+- **Use parentheses `()` to explicitly control order:** When in doubt or to ensure a specific order of evaluation, always use parentheses to group operations.
 
 </div>
 <div class="two">
@@ -959,9 +986,9 @@ This section includes the following content:
 
 ### `print()` function: Basics
 
-- **Purpose:** Display output to the console.
-- **Syntax:** `print(value1, value2, ...)`
-- **Default Behavior:** Prints values separated by a space, ends with a newline.
+- **Purpose:** The `print()` function is a fundamental built-in function in Python used to display output to the standard console.
+- **Syntax:** You can pass one or more values to `print()`, separated by commas: `print(value1, value2, ...)`.
+- **Default Behavior:** By default, `print()` will output each value, separate them with a single space, and conclude with a newline character, moving the cursor to the next line.
 
 </div>
 <div class="two">
@@ -986,8 +1013,8 @@ print("Hello", "World")
 
 ### `print()` with multiple arguments, `sep`, `end`
 
-- **`sep` (separator):** Specifies how to separate arguments (default is space).
-- **`end` (end character):** Specifies what to print at the end (default is newline `\n`).
+- **`sep` (separator):** The `sep` parameter allows you to specify a custom string that will be inserted between multiple arguments passed to the `print()` function. By default, it's a single space.
+- **`end` (end character):** The `end` parameter determines what character(s) will be printed at the very end of the output. The default value is a newline character (`\n`), which causes subsequent `print()` calls to start on a new line.
 
 </div>
 <div class="two">
@@ -1012,10 +1039,10 @@ print("Done!")
 
 ### Formatted Output (f-strings, `.format()`)
 
-- **f-strings (Formatted String Literals):** (Python 3.6+)
-    - Prefix string with `f`.
-    - Embed expressions inside `{}`.
-- **`.format()` method:** Older but still common.
+- **f-strings (Formatted String Literals):** Introduced in Python 3.6, f-strings provide a concise and readable way to embed expressions inside string literals.
+    - To create an f-string, simply prefix the string literal with `f` or `F`.
+    - You can then embed Python expressions directly within curly braces `{}` inside the string.
+- **`.format()` method:** This is an older but still widely used method for string formatting, offering flexibility in how values are inserted into a string template.
 
 </div>
 <div class="two">
@@ -1044,9 +1071,9 @@ print("My name is {} and I am {} years old.".format(name, age))
 
 ### `input()` function: Getting User Input
 
-- **Purpose:** Get input from the user via the console.
-- **Syntax:** `variable = input("Prompt message: ")`
-- **Return Type:** Always returns a string.
+- **Purpose:** The `input()` function is a built-in Python function used to obtain textual input directly from the user through the console.
+- **Syntax:** It typically takes an optional string argument, which serves as a prompt message displayed to the user: `variable = input("Prompt message: ")`.
+- **Return Type:** Crucially, the `input()` function always reads the user's input as a string, regardless of what the user types.
 
 </div>
 <div class="two">
@@ -1069,9 +1096,11 @@ print(f"Hello, {user_name}!")
 
 ### Input Type Conversion
 
-- Since `input()` returns a string, you often need to convert it.
-- Use `int()`, `float()`, etc., for numerical input.
-- **Error Handling:** Be aware of `ValueError` if conversion fails.
+TODO shorten
+
+- **Necessity:** Since the `input()` function always returns a string, you will frequently need to convert this string to a different data type (e.g., integer or float) if you intend to perform numerical operations.
+- **Conversion Functions:** Use built-in functions like `int()` to convert to an integer, `float()` to convert to a floating-point number, and others as needed for specific data types.
+- **Error Handling:** It is crucial to be aware that if the user's input cannot be successfully converted to the target type (e.g., trying to convert "hello" to an integer), a `ValueError` will be raised, which needs to be handled in your code.
 
 </div>
 <div class="two">
@@ -1097,10 +1126,10 @@ print(f"You will be {age_int + 1} next year.")
 
 ### Combining Input and Output
 
-- Most interactive programs involve both.
-- Prompt the user for information.
-- Process the information.
-- Display the result.
+- **Interactive Programs:** The majority of interactive programs involve a continuous flow of both taking input from the user and providing output back to them.
+- **Prompt for Information:** The program typically starts by prompting the user to enter necessary information or data.
+- **Process Information:** Once the input is received, the program then processes this information according to its logic.
+- **Display Result:** Finally, the program displays the results of its processing or any relevant feedback to the user.
 
 </div>
 <div class="two">
@@ -1129,11 +1158,11 @@ print(f"The sum is: {sum_result}")
 
 ### Example: Simple Interactive Program
 
-- **Task:** Ask for user's name and favorite color, then greet them.
+- **Task:** This example demonstrates how to create a basic interactive program that prompts the user for their name and favorite color, and then uses this information to generate a personalized greeting.
 - **Steps:**
-    1.  Get name.
-    2.  Get color.
-    3.  Print personalized greeting.
+    1.  **Obtain Name:** Use the `input()` function to ask the user for their name.
+    2.  **Obtain Color:** Prompt the user to enter their favorite color.
+    3.  **Display Greeting:** Construct and print a personalized greeting message using the collected name and color.
 
 </div>
 <div class="two">
@@ -1159,12 +1188,12 @@ print(f"Hello, {name}! Your favorite color is {color}.")
 <div class="columns">
 <div class="two">
 
-- **Task:** Create a program that calculates the area of a rectangle.
+- **Task:** Develop a Python program that computes the area of a rectangle based on user-provided dimensions.
 - **Requirements:**
-    - Ask the user for the length.
-    - Ask the user for the width.
-    - Calculate the area.
-    - Print the result in a user-friendly format.
+    - The program should first prompt the user to input the length of the rectangle.
+    - Next, it should ask the user to provide the width of the rectangle.
+    - After receiving both inputs, calculate the area using the formula: `Area = Length * Width`.
+    - Finally, display the calculated area to the user in a clear and user-friendly format.
 
 </div>
 <div class="two">
