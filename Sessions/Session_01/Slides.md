@@ -42,9 +42,10 @@ This section includes the following content:
 
 ---
 
-### What is Programming?
+<div class="columns">
+<div class="two">
 
-**Description:**
+### What is Programming?
 
 - **Definition:** Giving instructions to a computer to perform a task.
 - **Goal:** Automate tasks, solve problems, create applications.
@@ -56,9 +57,10 @@ This section includes the following content:
 
 ---
 
-### What Programmers Do
+<div class="columns">
+<div class="two">
 
-**Description:**
+### What Programmers Do
 
 - **Analyze:** Understand the problem.
 - **Design:** Plan the solution (algorithm).
@@ -73,10 +75,10 @@ This section includes the following content:
 
 ---
 
-### Algorithms and Logic
-
 <div class="columns">
 <div class="two">
+
+### Algorithms and Logic
 
 - **Algorithm:** A step-by-step procedure for solving a problem.
 - **Logic:** The reasoning behind the steps.
@@ -99,10 +101,10 @@ Algorithm: Make Coffee
 
 ---
 
-### Machine Code vs. High-Level Languages
-
 <div class="columns">
 <div class="three">
+
+### Machine Code vs. High-Level Languages
 
 - **Machine Code:** Binary instructions (0s and 1s) directly understood by the CPU.
 - **High-Level Languages:** Human-readable languages (Python, Java, C++).
@@ -120,10 +122,10 @@ Algorithm: Make Coffee
 
 ---
 
-### Interpreted vs. Compiled Languages
-
 <div class="columns">
 <div class="two">
+
+### Interpreted vs. Compiled Languages
 
 - **Interpreted (e.g., Python):**
     - Code executed line by line.
@@ -148,10 +150,10 @@ Algorithm: Make Coffee
 
 ---
 
-### Why Learn Programming?
-
 <div class="columns">
 <div>
+
+### Why Learn Programming?
 
 - **Problem Solving:** Develop logical thinking.
 - **Automation:** Make computers do repetitive tasks.
@@ -169,10 +171,10 @@ Algorithm: Make Coffee
 
 ---
 
-### Problem-Solving Approach
-
 <div class="columns">
 <div class="three">
+
+### Problem-Solving Approach
 
 1.  **Understand the Problem:** What needs to be solved?
 2.  **Break Down:** Divide into smaller, manageable parts.
@@ -190,10 +192,10 @@ Algorithm: Make Coffee
 
 ---
 
-### Example: Simple Instructions
-
 <div class="columns">
 <div class="two">
+
+### Example: Simple Instructions
 
 - **Task:** Calculate the sum of two numbers.
 - **Algorithm:**
@@ -237,10 +239,10 @@ This section includes the following content:
 
 ---
 
-### Readability and Simplicity
-
 <div class="columns">
 <div class="two">
+
+### Readability and Simplicity
 
 - **English-like Syntax:** Easy to read and understand.
 - **Less Boilerplate:** Write more with fewer lines of code.
@@ -265,10 +267,10 @@ if (x > 0) {
 
 ---
 
-### Versatility
-
 <div class="columns">
 <div>
+
+### Versatility
 
 - **Web Development:** Django, Flask
 - **Data Science & AI:** NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch
@@ -421,10 +423,10 @@ This section includes the following content:
 
 ---
 
-### Python Installation
-
 <div class="columns">
 <div class="two">
+
+### Python Installation
 
 - **Official Website:** `python.org/downloads`
 - **Choose Version:** Latest stable version (e.g., Python 3.x).
@@ -441,10 +443,10 @@ This section includes the following content:
 
 ---
 
-### IDE/Editor Choices
-
 <div class="columns">
 <div class="two">
+
+### IDE/Editor Choices
 
 - **Integrated Development Environment (IDE):**
     - **PyCharm:** Full-featured, powerful (Community Edition is free).
@@ -455,18 +457,23 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![The official logo of Visual Studio Code. (Existing SVG)](./Images/vscode_logo.svg)
-![The official logo of PyCharm. (Existing SVG)](./Images/pycharm_logo.svg)
+Visual Studio Code
+
+![The official logo of Visual Studio Code. (Existing SVG) width:130px](https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg)
+
+*PyCharm*
+
+![The official logo of PyCharm. (Existing SVG) width:1000px](https://upload.wikimedia.org/wikipedia/commons/5/5d/JetBrains_PyCharm_Product_Logo.svg)
 
 </div>
 </div>
 
 ---
 
-### Virtual Environments (venv)
-
 <div class="columns">
 <div class="two">
+
+### Virtual Environments (venv)
 
 - **Purpose:** Isolate project dependencies.
 - **Avoids Conflicts:** Different projects can use different library versions.
@@ -494,10 +501,10 @@ source myproject_env/bin/activate
 
 ---
 
-### Running Python Scripts from Terminal
-
 <div class="columns">
 <div class="two">
+
+### Running Python Scripts from Terminal
 
 - **Save File:** Create a file named `my_script.py`.
 - **Navigate:** Open terminal in the directory where `my_script.py` is saved.
@@ -522,10 +529,10 @@ python my_script.py
 
 ---
 
-### Interactive Mode (REPL)
-
 <div class="columns">
 <div class="two">
+
+### Interactive Mode (REPL)
 
 - **REPL:** Read-Eval-Print Loop.
 - **Purpose:** Experiment with code snippets, test ideas quickly.
@@ -550,10 +557,10 @@ python my_script.py
 
 ---
 
-### Basic VS Code Setup for Python
-
 <div class="columns">
 <div class="two">
+
+### Basic VS Code Setup for Python
 
 - **Install Python Extension:** From VS Code Marketplace.
 - **Select Interpreter:** `Ctrl+Shift+P` -> "Python: Select Interpreter".
@@ -634,10 +641,10 @@ This section includes the following content:
 
 ---
 
-### Comments
-
 <div class="columns">
 <div class="two">
+
+### Comments
 
 - **Purpose:** Explain code, make it readable for humans.
 - **Ignored by Interpreter:** Not executed as part of the program.
@@ -662,10 +669,10 @@ x = 10 # Inline comment
 
 ---
 
-### Variables: Naming Rules, Assignment
-
 <div class="columns">
 <div class="two">
+
+### Variables: Naming Rules, Assignment
 
 - **Variables:** Named storage locations for data.
 - **Naming Rules:**
@@ -690,10 +697,10 @@ my_variable_1 = 100
 
 ---
 
-### Basic Data Types: Integers, Floats, Strings, Booleans
-
 <div class="columns">
 <div class="two">
+
+### Basic Data Types: Integers, Floats, Strings, Booleans
 
 - **Integers (`int`):** Whole numbers (e.g., `5`, `-100`).
 - **Floats (`float`):** Decimal numbers (e.g., `3.14`, `-0.5`).
@@ -715,10 +722,10 @@ my_bool = True
 
 ---
 
-### Type Checking (type())
-
 <div class="columns">
 <div class="two">
+
+### Type Checking (type())
 
 - **Function:** `type()`
 - **Purpose:** Determine the data type of a variable or value.
@@ -742,10 +749,10 @@ print(type(is_active))# <class 'bool'>
 
 ---
 
-### Type Conversion (int(), str(), float())
-
 <div class="columns">
 <div class="two">
+
+### Type Conversion (int(), str(), float())
 
 - **Purpose:** Convert a value from one data type to another.
 - **Functions:**
@@ -773,10 +780,10 @@ int_float = float(int_val) # 5.0 (float)
 
 ---
 
-### Operators: Arithmetic
-
 <div class="columns">
 <div class="two">
+
+### Operators: Arithmetic
 
 - **Addition:** `+`
 - **Subtraction:** `-`
@@ -804,10 +811,10 @@ print(2 ** 3)  # 8
 
 ---
 
-### Operators: Assignment
-
 <div class="columns">
 <div class="two">
+
+### Operators: Assignment
 
 - **Assignment:** `=`
 - **Add and Assign:** `+=` (e.g., `x += 1` is `x = x + 1`)
@@ -831,10 +838,10 @@ y *= 3 # y is now 30
 
 ---
 
-### Operator Precedence
-
 <div class="columns">
 <div class="two">
+
+### Operator Precedence
 
 - **Order of Operations:** Which operations are performed first.
 - **PEMDAS/BODMAS:** Parentheses/Brackets, Exponents/Orders, Multiplication/Division, Addition/Subtraction.
@@ -875,10 +882,10 @@ This section includes the following content:
 
 ---
 
-### `print()` function: Basics
-
 <div class="columns">
 <div class="two">
+
+### `print()` function: Basics
 
 - **Purpose:** Display output to the console.
 - **Syntax:** `print(value1, value2, ...)`
@@ -903,10 +910,10 @@ print("Hello", "World")
 
 ---
 
-### `print()` with multiple arguments, `sep`, `end`
-
 <div class="columns">
 <div class="two">
+
+### `print()` with multiple arguments, `sep`, `end`
 
 - **`sep` (separator):** Specifies how to separate arguments (default is space).
 - **`end` (end character):** Specifies what to print at the end (default is newline `\n`).
