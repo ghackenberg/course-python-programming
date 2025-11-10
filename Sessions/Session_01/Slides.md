@@ -151,7 +151,7 @@ Algorithm: Make Coffee
 ### Why Learn Programming?
 
 <div class="columns">
-<div class="two">
+<div>
 
 - **Problem Solving:** Develop logical thinking.
 - **Automation:** Make computers do repetitive tasks.
@@ -162,7 +162,7 @@ Algorithm: Make Coffee
 </div>
 <div class="two">
 
-![Icon-based diagram showing the benefits of learning programming: Problem Solving, Automation, Creativity, Career Opportunities, Understanding Technology. (Tikz)](./Diagrams/Tikz/benefits_programming.tikz.svg)
+![Icon-based diagram showing the benefits of learning programming: Problem Solving, Automation, Creativity, Career Opportunities, Understanding Technology. (Tikz) width:1000px](./Diagrams/Tikz/benefits_programming.tikz.svg)
 
 </div>
 </div>
@@ -268,7 +268,7 @@ if (x > 0) {
 ### Versatility
 
 <div class="columns">
-<div class="two">
+<div>
 
 - **Web Development:** Django, Flask
 - **Data Science & AI:** NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch
@@ -279,17 +279,17 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Icon-based diagram showing various applications of Python: Web Development, Data Science & AI, Automation & Scripting, Desktop Applications, Game Development. (Tikz)](./Diagrams/Tikz/python_applications.tikz.svg)
+![Icon-based diagram showing various applications of Python: Web Development, Data Science & AI, Automation & Scripting, Desktop Applications, Game Development. (Tikz) width:1000px](./Diagrams/Tikz/python_applications.tikz.svg)
 
 </div>
 </div>
 
 ---
 
-### Large Community and Libraries
-
 <div class="columns">
 <div class="two">
+
+### Large Community and Libraries
 
 - **Vibrant Community:** Extensive support, tutorials, forums.
 - **Rich Ecosystem:** Thousands of third-party libraries (PyPI).
@@ -305,10 +305,10 @@ if (x > 0) {
 
 ---
 
-### Cross-Platform Compatibility
-
 <div class="columns">
 <div class="two">
+
+### Cross-Platform Compatibility
 
 - **Write Once, Run Anywhere:** Python code runs on:
     - Windows
@@ -327,10 +327,10 @@ if (x > 0) {
 
 ---
 
-### High Demand in Industry
-
 <div class="columns">
 <div class="two">
+
+### High Demand in Industry
 
 - **Top Programming Language:** Consistently ranks among the most popular.
 - **Job Market:** High demand for Python developers in various sectors.
@@ -339,7 +339,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Chart or infographic indicating the high demand for Python developers, possibly with growth trends or company logos. (Tikz)](./Diagrams/Tikz/python_job_market.tikz.svg)
+![Chart or infographic indicating the high demand for Python developers, possibly with growth trends or company logos. (Tikz) width:1000px](./Diagrams/Tikz/python_job_market.tikz.svg)
 
 </div>
 </div>
@@ -357,10 +357,10 @@ if (x > 0) {
 
 ---
 
-### Python's Philosophy (Zen of Python)
-
 <div class="columns">
 <div class="two">
+
+### Python's Philosophy (Zen of Python)
 
 - **`import this`:** Reveals 19 guiding principles.
 - **Key Principles:**
@@ -381,10 +381,10 @@ import this
 
 ---
 
-### Example: "Hello, World!" in Python
-
 <div class="columns">
 <div class="two">
+
+### Example: "Hello, World!" in Python
 
 - The classic first program.
 - Demonstrates basic output.
@@ -570,10 +570,10 @@ python my_script.py
 
 ---
 
-### First Script Execution
-
 <div class="columns">
 <div class="two">
+
+### First Script Execution
 
 - **Create `hello.py`:**
     ```python
@@ -597,10 +597,10 @@ python hello.py
 
 ---
 
-### Troubleshooting Common Setup Issues
-
 <div class="columns">
 <div class="two">
+
+### Troubleshooting Common Setup Issues
 
 - **`'python' is not recognized`:** Python not added to PATH.
 - **Module Not Found Error:** Not in correct virtual environment or module not installed.
@@ -608,9 +608,9 @@ python hello.py
 - **Solution:** Double-check installation, activate venv, read error messages carefully.
 
 </div>
-<div class="two">
+<div>
 
-![Icon or diagram representing troubleshooting, possibly a wrench, a magnifying glass, or a person looking at an error message. (Tikz)](./Diagrams/Tikz/troubleshooting.tikz.svg)
+![Icon or diagram representing troubleshooting, possibly a wrench, a magnifying glass, or a person looking at an error message. (Tikz) width:1000px](./Diagrams/Tikz/troubleshooting.tikz.svg)
 
 </div>
 </div>

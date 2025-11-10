@@ -1,0 +1,25 @@
+\documentclass[tikz, border=5mm]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=1cm,
+    enlarge x limits=0.2,
+    legend style={at={(0.5,-0.2)},
+      anchor=north,legend columns=-1},
+    ylabel={Demand (Arbitrary Units)},
+    symbolic x coords={Python, Java, JavaScript, C++},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    ymin=0,
+    title={Programming Language Demand}
+]
+\addplot coordinates {(Python,90) (Java,70) (JavaScript,80) (C++,60)};
+\end{axis}
+\end{tikzpicture}
+\end{document}
