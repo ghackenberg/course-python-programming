@@ -928,10 +928,10 @@ print("Done!")
 
 ---
 
-### Formatted Output (f-strings, `.format()`)
-
 <div class="columns">
 <div class="two">
+
+### Formatted Output (f-strings, `.format()`)
 
 - **f-strings (Formatted String Literals):** (Python 3.6+)
     - Prefix string with `f`.
@@ -942,13 +942,20 @@ print("Done!")
 <div class="two">
 
 ```python
+# 1. Define name variable
+
 name = "Alice"
+
+# 2. Define age variable
+
 age = 30
 
-# f-string
+# 3. f-string
+
 print(f"My name is {name} and I am {age} years old.")
 
-# .format()
+# 4. format()
+
 print("My name is {} and I am {} years old.".format(name, age))
 ```
 
@@ -957,10 +964,10 @@ print("My name is {} and I am {} years old.".format(name, age))
 
 ---
 
-### `input()` function: Getting User Input
-
 <div class="columns">
 <div class="two">
+
+### `input()` function: Getting User Input
 
 - **Purpose:** Get input from the user via the console.
 - **Syntax:** `variable = input("Prompt message: ")`
@@ -970,7 +977,12 @@ print("My name is {} and I am {} years old.".format(name, age))
 <div class="two">
 
 ```python
+# 1. Ask use for name
+
 user_name = input("Enter your name: ")
+
+# 2. Print personalized greeting
+
 print(f"Hello, {user_name}!")
 ```
 
@@ -979,10 +991,10 @@ print(f"Hello, {user_name}!")
 
 ---
 
-### Input Type Conversion
-
 <div class="columns">
 <div class="two">
+
+### Input Type Conversion
 
 - Since `input()` returns a string, you often need to convert it.
 - Use `int()`, `float()`, etc., for numerical input.
@@ -992,8 +1004,16 @@ print(f"Hello, {user_name}!")
 <div class="two">
 
 ```python
+# 1. Ask use for age
+
 age_str = input("Enter your age: ")
+
+# 2. Convert string to integer
+
 age_int = int(age_str)
+
+# 3. Add 1 to age and print result
+
 print(f"You will be {age_int + 1} next year.")
 ```
 
@@ -1002,10 +1022,10 @@ print(f"You will be {age_int + 1} next year.")
 
 ---
 
-### Combining Input and Output
-
 <div class="columns">
 <div class="two">
+
+### Combining Input and Output
 
 - Most interactive programs involve both.
 - Prompt the user for information.
@@ -1016,9 +1036,20 @@ print(f"You will be {age_int + 1} next year.")
 <div class="two">
 
 ```python
+# 1. Ask user for first number
+
 num1 = float(input("Enter first number: "))
+
+# 2. Ask user for second number
+
 num2 = float(input("Enter second number: "))
+
+# 3. Calculate sum
+
 sum_result = num1 + num2
+
+# 4. Print result
+
 print(f"The sum is: {sum_result}")
 ```
 
@@ -1027,10 +1058,10 @@ print(f"The sum is: {sum_result}")
 
 ---
 
-### Example: Simple Interactive Program
-
 <div class="columns">
 <div class="two">
+
+### Example: Simple Interactive Program
 
 - **Task:** Ask for user's name and favorite color, then greet them.
 - **Steps:**
@@ -1042,8 +1073,16 @@ print(f"The sum is: {sum_result}")
 <div class="two">
 
 ```python
+# 1. Ask user for name
+
 name = input("What is your name? ")
+
+# 2. Ask user for color
+
 color = input("What is your favorite color? ")
+
+# 3. Print name and color
+
 print(f"Hello, {name}! Your favorite color is {color}.")
 ```
 
