@@ -208,11 +208,15 @@ Algorithm: Make Coffee
 <div class="two">
 
 ```python
-# Python example
+# Python example: Basic arithmetic
+# Assign first number
 num1 = 10
+# Assign second number
 num2 = 20
+# Add numbers
 sum_result = num1 + num2
-print(sum_result) # Output: 30
+# Display sum
+print(sum_result)
 ```
 
 </div>
@@ -254,16 +258,20 @@ This section includes the following content:
 *Python*
 
 ```python
-# Python
+# Python: Simple conditional statement
+# Check if x is positive
 if x > 0:
+    # Print "Positive" if true
     print("Positive")
 ```
 
 *Java*
 
 ```java
-// Java
+// Java: Simple conditional statement
+// Check if x is positive
 if (x > 0) {
+    # Print "Positive" if true
     System.out.println("Positive");
 }
 ```
@@ -381,6 +389,7 @@ if (x > 0) {
 <div class="two">
 
 ```python
+# Import 'this' to display the Zen of Python.
 import this
 ```
 
@@ -402,6 +411,8 @@ import this
 <div class="two">
 
 ```python
+# Classic "Hello, World!" program.
+# Prints a simple message.
 print("Hello, World!")
 ```
 
@@ -492,13 +503,13 @@ Visual Studio Code
 <div class="two">
 
 ```bash
-# Create
+# Create a new virtual environment.
 python -m venv myproject_env
 
-# Activate (Windows)
+# Activate virtual environment (Windows).
 .\myproject_env\Scripts\activate
 
-# Activate (macOS/Linux)
+# Activate virtual environment (macOS/Linux).
 source myproject_env/bin/activate
 ```
 
@@ -520,14 +531,17 @@ source myproject_env/bin/activate
 <div class="two">
 
 ```python
-# my_script.py
+# my_script.py: Simple script.
+# Prints a greeting.
 print("This is my first script!")
 ```
 
 ```bash
-# Terminal
+# Terminal commands to execute script.
+# Change directory.
+cd my_project_folder
+# Execute Python script.
 python my_script.py
-# Output: This is my first script!
 ```
 
 </div>
@@ -549,12 +563,25 @@ python my_script.py
 <div class="two">
 
 ```python
+# Python interactive mode (REPL).
+# '>>>' is the prompt.
+
+# Simple addition.
 >>> 2 + 2
+# Result displayed.
 4
+
+# String concatenation.
 >>> "hello" + " world"
+# Result displayed.
 'hello world'
+
+# Assign value to x.
 >>> x = 10
+
+# Multiply x by 5.
 >>> x * 5
+# Result displayed.
 50
 ```
 
@@ -590,9 +617,10 @@ python my_script.py
 
 - **Create `hello.py`:**
     ```python
+    # Prints a welcoming message.
+    # Verifies Python installation and script execution.
     print("Hello, Python Course!")
-    ```
-- **Open Terminal:** Navigate to the folder.
+    ```- **Open Terminal:** Navigate to the folder.
 - **Run:** `python hello.py`
 - **Expected Output:** `Hello, Python Course!`
 
@@ -600,8 +628,10 @@ python my_script.py
 <div class="two">
 
 ```bash
-# Terminal
+# Execute 'hello.py' script.
+# Change directory.
 cd my_project_folder
+# Run Python script.
 python hello.py
 ```
 
@@ -661,13 +691,14 @@ This section includes the following content:
 <div class="two">
 
 ```python
-# This is a single-line comment
+# Single-line comment.
 
 """
-This is a multi-line comment
-or a docstring.
+Multi-line comment (docstring).
+Explains code block.
 """
-x = 10 # Inline comment
+# Assign integer to x.
+x = 10
 ```
 
 </div>
@@ -692,9 +723,13 @@ x = 10 # Inline comment
 <div class="two">
 
 ```python
+# Assign string to 'name'.
 name = "Alice"
+# Assign integer to 'age'.
 age = 30
+# Assign string to '_private_var' (internal use).
 _private_var = "secret"
+# Assign integer to 'my_variable_1'.
 my_variable_1 = 100
 ```
 
@@ -717,9 +752,13 @@ my_variable_1 = 100
 <div class="two">
 
 ```python
+# Integer (whole number).
 my_int = 10
+# Float (decimal number).
 my_float = 3.14
+# String (text).
 my_string = "Hello"
+# Boolean (True/False).
 my_bool = True
 ```
 
@@ -741,13 +780,19 @@ my_bool = True
 <div class="two">
 
 ```python
+# Assign integer.
 num = 10
+# Assign string.
 text = "Python"
+# Assign boolean.
 is_active = True
 
-print(type(num))      # <class 'int'>
-print(type(text))     # <class 'str'>
-print(type(is_active))# <class 'bool'>
+# Print type of num.
+print(type(num))
+# Print type of text.
+print(type(text))
+# Print type of is_active.
+print(type(is_active))
 ```
 
 </div>
@@ -771,14 +816,20 @@ print(type(is_active))# <class 'bool'>
 <div class="two">
 
 ```python
+# String to number.
 num_str = "123"
-num_int = int(num_str) # 123 (int)
+# Convert string to integer.
+num_int = int(num_str)
 
+# Float to string.
 float_num = 3.14
-float_str = str(float_num) # "3.14" (str)
+# Convert float to string.
+float_str = str(float_num)
 
+# Integer to float.
 int_val = 5
-int_float = float(int_val) # 5.0 (float)
+# Convert integer to float.
+int_float = float(int_val)
 ```
 
 </div>
@@ -803,13 +854,20 @@ int_float = float(int_val) # 5.0 (float)
 <div class="two">
 
 ```python
-print(10 + 3)  # 13
-print(10 - 3)  # 7
-print(10 * 3)  # 30
-print(10 / 3)  # 3.333...
-print(10 // 3) # 3
-print(10 % 3)  # 1
-print(2 ** 3)  # 8
+# Addition.
+print(10 + 3)
+# Subtraction.
+print(10 - 3)
+# Multiplication.
+print(10 * 3)
+# Float division.
+print(10 / 3)
+# Floor division.
+print(10 // 3)
+# Modulo (remainder).
+print(10 % 3)
+# Exponentiation.
+print(2 ** 3)
 ```
 
 </div>
@@ -833,10 +891,14 @@ print(2 ** 3)  # 8
 <div class="two">
 
 ```python
+# Initialize x.
 x = 5
-x += 2 # x is now 7
+# Add 2 to x.
+x += 2
+# Initialize y.
 y = 10
-y *= 3 # y is now 30
+# Multiply y by 3.
+y *= 3
 ```
 
 </div>
@@ -858,10 +920,14 @@ y *= 3 # y is now 30
 <div class="two">
 
 ```python
-result1 = 10 + 5 * 2   # 10 + 10 = 20
-result2 = (10 + 5) * 2 # 15 * 2 = 30
-print(result1) # 20
-print(result2) # 30
+# Default precedence (multiplication first).
+result1 = 10 + 5 * 2
+# Parentheses override precedence.
+result2 = (10 + 5) * 2
+# Print result1.
+print(result1)
+# Print result2.
+print(result2)
 ```
 
 </div>
@@ -901,14 +967,13 @@ This section includes the following content:
 <div class="two">
 
 ```python
+# Print with newline.
 print("Hello")
+# Print with newline.
 print("World")
-# Output:
-# Hello
-# World
 
+# Print with space separator.
 print("Hello", "World")
-# Output: Hello World
 ```
 
 </div>
@@ -928,12 +993,13 @@ print("Hello", "World")
 <div class="two">
 
 ```python
+# Use 'sep' to define separator.
 print("apple", "banana", "cherry", sep=", ")
-# Output: apple, banana, cherry
 
+# Use 'end' to change line ending.
 print("Loading", end="...")
+# Continues on same line.
 print("Done!")
-# Output: Loading...Done!
 ```
 
 </div>
@@ -955,20 +1021,16 @@ print("Done!")
 <div class="two">
 
 ```python
-# 1. Define name variable
-
+# Define name.
 name = "Alice"
 
-# 2. Define age variable
-
+# Define age.
 age = 30
 
-# 3. f-string
-
+# Use f-string for formatting.
 print(f"My name is {name} and I am {age} years old.")
 
-# 4. format()
-
+# Use .format() method for formatting.
 print("My name is {} and I am {} years old.".format(name, age))
 ```
 
@@ -990,12 +1052,10 @@ print("My name is {} and I am {} years old.".format(name, age))
 <div class="two">
 
 ```python
-# 1. Ask use for name
-
+# Get user's name.
 user_name = input("Enter your name: ")
 
-# 2. Print personalized greeting
-
+# Print personalized greeting.
 print(f"Hello, {user_name}!")
 ```
 
@@ -1017,16 +1077,13 @@ print(f"Hello, {user_name}!")
 <div class="two">
 
 ```python
-# 1. Ask use for age
-
+# Get user's age (as string).
 age_str = input("Enter your age: ")
 
-# 2. Convert string to integer
-
+# Convert age string to integer.
 age_int = int(age_str)
 
-# 3. Add 1 to age and print result
-
+# Calculate and print age next year.
 print(f"You will be {age_int + 1} next year.")
 ```
 
@@ -1049,20 +1106,16 @@ print(f"You will be {age_int + 1} next year.")
 <div class="two">
 
 ```python
-# 1. Ask user for first number
-
+# Get first number (as float).
 num1 = float(input("Enter first number: "))
 
-# 2. Ask user for second number
-
+# Get second number (as float).
 num2 = float(input("Enter second number: "))
 
-# 3. Calculate sum
-
+# Calculate sum.
 sum_result = num1 + num2
 
-# 4. Print result
-
+# Print the sum.
 print(f"The sum is: {sum_result}")
 ```
 
@@ -1086,16 +1139,13 @@ print(f"The sum is: {sum_result}")
 <div class="two">
 
 ```python
-# 1. Ask user for name
-
+# Get user's name.
 name = input("What is your name? ")
 
-# 2. Ask user for color
-
+# Get user's favorite color.
 color = input("What is your favorite color? ")
 
-# 3. Print name and color
-
+# Print personalized greeting.
 print(f"Hello, {name}! Your favorite color is {color}.")
 ```
 
@@ -1120,8 +1170,10 @@ print(f"Hello, {name}! Your favorite color is {color}.")
 <div class="two">
 
 ```python
-# Your code here!
-# Hint: Area = length * width
+# Write your code here to solve the practice exercise.
+# Get length and width from user.
+# Calculate area (length * width).
+# Print result.
 ```
 
 </div>
