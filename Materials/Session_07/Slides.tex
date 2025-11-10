@@ -4,7 +4,8 @@
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 7: Object-Oriented Programming (OOP) - Part 1}
@@ -18,14 +19,17 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Learning Objectives}
-    \begin{itemize}
-        \item Understand the principles of object-oriented programming.
-        \item Define classes and create objects.
-        \item Implement methods and attributes in classes.
-        \item Use constructors to initialize objects.
-    \end{itemize}
-\end{frame}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Know the basic concepts of OOP.
+                \item Know how to define and use classes and objects.
+                \item Know how to use inheritance and polymorphism.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Introduction to OOP}
 \subsection{Classes and Objects}

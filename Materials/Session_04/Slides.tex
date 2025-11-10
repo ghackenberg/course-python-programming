@@ -4,7 +4,8 @@
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 4: Functions and Modules}
@@ -18,14 +19,17 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Learning Objectives}
-    \begin{itemize}
-        \item Define and call functions.
-        \item Pass arguments to functions and return values.
-        \item Understand the concept of variable scope.
-        \item Use modules to structure code.
-    \end{itemize}
-\end{frame}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Know how to define and call functions.
+                \item Know how to pass arguments to functions.
+                \item Know how to use modules to organize code.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Functions}
 \subsection{Defining Functions}

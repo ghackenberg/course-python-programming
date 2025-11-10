@@ -36,7 +36,8 @@ The slides for the individual sessions are made with Latex Beamer. Here is the g
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session X: ...}
@@ -105,6 +106,8 @@ Here are some examples of how to use the custom environments:
     \end{columns}
 \end{cframe}
 ```
+
+Visualizations are scripted with `tikz` and code listings are made with `minted`.
 
 ## Folder Structure
 

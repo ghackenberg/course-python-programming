@@ -4,7 +4,8 @@
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 8: Object-Oriented Programming (OOP) - Part 2}
@@ -18,14 +19,17 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Learning Objectives}
-    \begin{itemize}
-        \item Implement inheritance to create specialized classes.
-        \item Understand the concept of polymorphism.
-        \item Use encapsulation to hide data.
-        \item Design simple class hierarchies.
-    \end{itemize}
-\end{frame}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Know how to use a debugger to find and fix errors.
+                \item Know how to use try-except blocks to handle exceptions.
+                \item Know how to write unit tests to prevent errors.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Inheritance}
 \subsection{Base Classes}

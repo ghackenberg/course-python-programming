@@ -4,7 +4,8 @@
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 2: Variables, Data Types, and Operators}
@@ -18,14 +19,17 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Learning Objectives}
-    \begin{itemize}
-        \item Understand and use variables to store data.
-        \item Know the different data types in Python.
-        \item Use operators for calculations and comparisons.
-        \item Write programs that process user input.
-    \end{itemize}
-\end{frame}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Know the basic data types in Python.
+                \item Know how to use variables to store data.
+                \item Know how to use operators to perform operations on data.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Variables}
 \subsection{Declaration}

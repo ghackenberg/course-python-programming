@@ -4,7 +4,8 @@
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 5: Data Structures: Lists, Tuples, and Dictionaries}
@@ -18,14 +19,17 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Learning Objectives}
-    \begin{itemize}
-        \item Store collections of data in lists.
-        \item Understand the immutability of tuples.
-        \item Use dictionaries to store key-value pairs.
-        \item Choose the right data structure for a given problem.
-    \end{itemize}
-\end{frame}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Know how to use lists to store collections of data.
+                \item Know how to use tuples to store immutable collections of data.
+                \item Know how to use dictionaries to store key-value pairs.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Lists}
 \subsection{Creating Lists}

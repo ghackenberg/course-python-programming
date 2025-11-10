@@ -1,10 +1,11 @@
-\documentclass[aspectratio=169,8pt]{beamer}
+\documentclass[aspectratio=169,9pt]{beamer}
 
 % Loading the custom Beamer theme
 \newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
 \usepackage{\basepath/beamerthemefhooe}
 
-\renewcommand{\sectiontocframesubtitle}{Table of contents}
+\renewcommand{\sectiontocframesubtitle}{Table of Contents}
+\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
 
 \title{Programming with Python}
 \subtitle{Session 1: Introduction to Python}
@@ -18,14 +19,18 @@
     \titlepage
 \end{frame}
 
-\frameOneColumn{}{Learning Objectives}{c}{
-    \begin{itemize}
-        \item Understand the basic concepts of programming.
-        \item Know the advantages of Python.
-        \item Set up the development environment.
-        \item Write and run a simple Python program.
-    \end{itemize}
-}
+\begin{cframe}{}{Learning Objectives}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            \begin{itemize}
+                \item Understand the basic concepts of programming.
+                \item Know the advantages of Python.
+                \item Set up the development environment.
+                \item Write and run a simple Python program.
+            \end{itemize}
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 \section{Introduction}
 \subsection{About this course}
