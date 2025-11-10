@@ -251,11 +251,17 @@ This section includes the following content:
 </div>
 <div class="two">
 
+*Python*
+
 ```python
 # Python
 if x > 0:
     print("Positive")
+```
 
+*Java*
+
+```java
 // Java
 if (x > 0) {
     System.out.println("Positive");
@@ -436,7 +442,7 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![Screenshot or stylized representation of the official Python download page on python.org. (Diffusion Model)](./Images/python_download.png)
+![Screenshot or stylized representation of the official Python download page on python.org. (Diffusion Model)](./Images/Python_Download.jpg)
 
 </div>
 </div>
@@ -570,7 +576,7 @@ python my_script.py
 </div>
 <div class="two">
 
-![Screenshot or stylized representation of the Python extension page in VS Code Marketplace. (Diffusion Model)](./Images/vscode_python_extension.png)
+![Screenshot or stylized representation of the Python extension page in VS Code Marketplace. (Diffusion Model)](./Images/VS_Code_Python_Extension.jpg)
 
 </div>
 </div>
