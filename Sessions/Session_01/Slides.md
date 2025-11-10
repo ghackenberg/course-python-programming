@@ -54,7 +54,7 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![Placeholder for programming concept](./programming_concept.svg)
+![Diagram illustrating the concept of programming, showing a human giving instructions to a computer, which then executes tasks. (Tikz/Mermaid.js)](./programming_concept.svg)
 
 </div>
 </div>
@@ -76,7 +76,7 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![Placeholder for programmer workflow](./programmer_workflow.svg)
+![Flowchart depicting the typical workflow of a programmer: Analyze -> Design -> Code -> Test -> Debug -> Deploy. (Mermaid.js/Tikz)](./programmer_workflow.svg)
 
 </div>
 </div>
@@ -123,7 +123,7 @@ Algorithm: Make Coffee
 </div>
 <div class="two">
 
-![Placeholder for language levels](./language_levels.svg)
+![Diagram showing the hierarchy from high-level languages to machine code, with an interpreter/compiler in between. (Tikz/Mermaid.js)](./language_levels.svg)
 
 </div>
 </div>
@@ -149,7 +149,7 @@ Algorithm: Make Coffee
 </div>
 <div class="two">
 
-![Placeholder for interpreter vs compiler](./interpreter_compiler.svg)
+![Comparison diagram illustrating how an interpreter executes code line by line versus how a compiler translates the entire code before execution. (Tikz/Mermaid.js)](./interpreter_compiler.svg)
 
 </div>
 </div>
@@ -170,7 +170,7 @@ Algorithm: Make Coffee
 </div>
 <div class="two">
 
-![Placeholder for benefits of programming](./benefits_programming.svg)
+![Icon-based diagram showing the benefits of learning programming: Problem Solving, Automation, Creativity, Career Opportunities, Understanding Technology. (Tikz/Mermaid.js)](./benefits_programming.svg)
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Algorithm: Make Coffee
 </div>
 <div class="two">
 
-![Placeholder for problem-solving steps](./problem_solving_steps.svg)
+![Numbered list or flowchart illustrating the problem-solving approach: Understand -> Break Down -> Plan -> Implement -> Test & Refine. (Tikz/Mermaid.js)](./problem_solving_steps.svg)
 
 </div>
 </div>
@@ -287,7 +287,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Placeholder for Python applications](./python_applications.svg)
+![Icon-based diagram showing various applications of Python: Web Development, Data Science & AI, Automation & Scripting, Desktop Applications, Game Development. (Tikz/Mermaid.js)](./python_applications.svg)
 
 </div>
 </div>
@@ -306,7 +306,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Placeholder for Python community](./python_community.svg)
+![Diagram representing a large, active community, possibly with interconnected nodes or a crowd of people, symbolizing support, libraries, and ecosystem. (Tikz/Mermaid.js)](./python_community.svg)
 
 </div>
 </div>
@@ -328,7 +328,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Placeholder for cross-platform](./cross_platform.svg)
+![Diagram showing Python code running on different operating systems (Windows, macOS, Linux) with a single codebase. (Tikz/Mermaid.js)](./cross_platform.svg)
 
 </div>
 </div>
@@ -347,7 +347,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Placeholder for Python job market](./python_job_market.svg)
+![Chart or infographic indicating the high demand for Python developers, possibly with growth trends or company logos. (Tikz/Mermaid.js)](./python_job_market.svg)
 
 </div>
 </div>
@@ -367,7 +367,7 @@ if (x > 0) {
 </div>
 <div class="two">
 
-![Placeholder for language comparison](./language_comparison.svg)
+![Comparison table or diagram highlighting key differences between Python, Java, JavaScript, and C++. (Tikz/Mermaid.js)](./language_comparison.svg)
 
 </div>
 </div>
@@ -451,7 +451,7 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![Placeholder for Python download page](./python_download.png)
+![Screenshot or stylized representation of the official Python download page on python.org. (Diffusion Model)](./python_download.png)
 
 </div>
 </div>
@@ -472,8 +472,8 @@ This section includes the following content:
 </div>
 <div class="two">
 
-![Placeholder for VS Code logo](./vscode_logo.svg)
-![Placeholder for PyCharm logo](./pycharm_logo.svg)
+![The official logo of Visual Studio Code. (Existing SVG)](./vscode_logo.svg)
+![The official logo of PyCharm. (Existing SVG)](./pycharm_logo.svg)
 
 </div>
 </div>
@@ -580,7 +580,7 @@ python my_script.py
 </div>
 <div class="two">
 
-![Placeholder for VS Code Python extension](./vscode_python_extension.png)
+![Screenshot or stylized representation of the Python extension page in VS Code Marketplace. (Diffusion Model)](./vscode_python_extension.png)
 
 </div>
 </div>
@@ -627,7 +627,7 @@ python hello.py
 </div>
 <div class="two">
 
-![Placeholder for troubleshooting](./troubleshooting.svg)
+![Icon or diagram representing troubleshooting, possibly a wrench, a magnifying glass, or a person looking at an error message. (Tikz/Mermaid.js)](./troubleshooting.svg)
 
 </div>
 </div>
