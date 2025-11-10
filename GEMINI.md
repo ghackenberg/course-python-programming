@@ -18,6 +18,7 @@
 - 10 in-person sessions
 - Duration of in-person sessions is 2.5 hours
 - Own set of slides for each in-person session
+- About 40 slides for each session
 - Homework after each in-person session
 - Exam at the beginning of each subsequent in-person session
 - The type of exam is a multiple-choice test
@@ -26,7 +27,7 @@
 
 ## Presentation Technology
 
-The slides for the individual sessions are made with Latex Beamer. Here is the template for the Latex source files:
+The slides for the individual sessions are made with Latex Beamer. Here is the general template for the Latex source files:
 
 ```latex
 \documentclass[aspectratio=169,8pt]{beamer}
@@ -58,29 +59,51 @@ The slides for the individual sessions are made with Latex Beamer. Here is the t
 \end{document}
 ```
 
-The actual content slides are made using custom commands for one-, two- and three-column slide layouts:
+The actual content slides are made using the custom frame environment `cframe` and the custom column environment `ccolumn`. The custom frame environment `cframe` takes four arguments:
+
+1. the **slide title** (if left blank, the default slide title is used, which includes the document title and subtitle as well as the section/subsection names),
+2. the **slide subtitle** (if left blank, the default slide subtitle is used, which shows a placeholder in the output),
+3. the **number of columns** (used for calculating the column widths),
+4. and the **vertical column aligment** (`c` for center):
+
+Here are some examples of how to use the custom environments:
 
 ```latex
 % Template for a one-column slide
-\frameOneColumn{}{Slide Title}{c}{
-    Slide Content
-}
+\begin{cframe}{}{Slide Title}{1}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            Slide Content
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 % Template for a two-column slide
-\frameTwoColumn{}{Slide Title}{c}{
-    First Column Content
-}{
-    Second Column Content
-}
+\begin{cframe}{}{Slide Title}{2}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            First Column Content
+        \end{ccolumn}
+        \begin{ccolumn}
+            Second Column Content
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 
 % Template for a three-column slide
-\frameOneColumn{}{Slide Title}{c}{
-    First Column Content
-}{
-    Second Column Content
-}{
-    Third Column Content
-}
+\begin{cframe}{}{Slide Title}{3}{c}
+    \begin{columns}
+        \begin{ccolumn}
+            First Column Content
+        \end{ccolumn}
+        \begin{ccolumn}
+            Second Column Content
+        \end{ccolumn}
+        \begin{ccolumn}
+            Third Column Content
+        \end{ccolumn}
+    \end{columns}
+\end{cframe}
 ```
 
 ## Folder Structure
