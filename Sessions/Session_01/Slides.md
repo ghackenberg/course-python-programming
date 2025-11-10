@@ -80,12 +80,14 @@ This section includes the following content:
 
 ### Algorithms and Logic
 
+TODO extend text
+
 - **Algorithm:** A precise, step-by-step procedure or formula for solving a problem or accomplishing a task.
 - **Logic:** The underlying principles and reasoning that dictate how the steps of an algorithm are structured and executed.
 - **Example:** A common real-world analogy is a recipe for baking a cake, which serves as a clear algorithm.
 
 </div>
-<div class="two">
+<div>
 
 ```
 Algorithm: Make Coffee
@@ -127,18 +129,18 @@ Algorithm: Make Coffee
 
 ### Interpreted vs. Compiled Languages
 
-TODO shorten
+TODO shorten text a bit
 
 - **Interpreted (e.g., Python):**
-    - **Execution:** Code is executed line by line by an interpreter, without prior compilation.
-    - **Debugging:** Generally offers easier debugging due to immediate feedback on errors.
-    - **Performance:** Typically results in slower execution speeds compared to compiled languages.
-    - **Flexibility:** Provides greater flexibility, allowing for dynamic typing and easier code modification.
+    - **Execution:** Code is executed line by line by an interpreter.
+    - **Debugging:** Easier due to immediate feedback on errors.
+    - **Performance:** Typically slower execution speeds.
+    - **Flexibility:** Greater flexibility, dynamic typing, easier code modification.
 - **Compiled (e.g., C++):**
-    - **Execution:** The entire source code is translated into machine code by a compiler before any execution occurs.
-    - **Performance:** Achieves faster execution speeds because the code is pre-translated.
-    - **Debugging:** Debugging can be more challenging as errors might only appear after the full compilation process.
-    - **Flexibility:** Tends to be less flexible, often requiring strict type definitions and full recompilation for changes.
+    - **Execution:** Entire source code translated into machine code before execution.
+    - **Performance:** Achieves faster execution speeds.
+    - **Debugging:** More challenging as errors might appear after full compilation.
+    - **Flexibility:** Less flexible, often requiring strict type definitions and full recompilation.
 
 </div>
 <div>
@@ -157,13 +159,11 @@ TODO shorten
 
 ### Why Learn Programming?
 
-TODO shorten
-
-- **Problem Solving:** Programming inherently fosters and develops strong logical thinking and analytical skills.
-- **Automation:** It empowers you to automate tedious and repetitive tasks, saving time and increasing efficiency.
-- **Creativity:** Programming is a creative outlet, allowing you to build innovative tools, applications, and digital experiences from scratch.
-- **Career Opportunities:** The demand for programming skills is consistently high across various industries, opening up numerous career paths.
-- **Understanding Technology:** Learning to code provides a deeper insight into how software and technology function, demystifying the digital world around us.
+- **Problem Solving:** Fosters strong logical thinking and analytical skills.
+- **Automation:** Automate tedious and repetitive tasks, saving time and increasing efficiency.
+- **Creativity:** Build innovative tools, applications, and digital experiences from scratch.
+- **Career Opportunities:** High demand for programming skills across various industries.
+- **Understanding Technology:** Gain deeper insight into how software and technology function.
 
 </div>
 <div>
@@ -290,13 +290,11 @@ if (x > 0) {
 
 ### Versatility
 
-TODO shorten
-
-- **Web Development:** Python is widely used for building robust web applications and APIs with frameworks like Django and Flask.
-- **Data Science & AI:** It is a leading language in data science, machine learning, and artificial intelligence, supported by libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch.
-- **Automation & Scripting:** Python excels in automating various tasks, from system administration scripts to general task automation.
-- **Desktop Applications:** It can be used to create cross-platform desktop applications using toolkits like PyQt and Kivy.
-- **Game Development:** While not its primary domain, Python can also be used for game development, particularly with libraries like Pygame.
+- **Web Development:** Used for robust web applications and APIs (Django, Flask).
+- **Data Science & AI:** Leading language in data science, machine learning, and AI (NumPy, Pandas, TensorFlow).
+- **Automation & Scripting:** Excels in automating various tasks, from system administration to general automation.
+- **Desktop Applications:** Create cross-platform desktop applications (PyQt, Kivy).
+- **Game Development:** Can be used for game development (Pygame).
 
 </div>
 <div>
@@ -331,6 +329,8 @@ TODO shorten
 <div class="two">
 
 ### Cross-Platform Compatibility
+
+TODO extend text a tiny bit
 
 - **Write Once, Run Anywhere:** Python code is highly portable and can run seamlessly across various operating systems, including:
     - Windows
@@ -370,6 +370,8 @@ TODO shorten
 
 ### Comparison with Other Languages (Briefly)
 
+TODO Add brief intro to table
+
 | Language   | Key Characteristics                     | Primary Use Cases                               |
 | :--------- | :-------------------------------------- | :---------------------------------------------- |
 | **Python** | General-purpose, easy to read           | Web, Data Science, AI, Automation               |
@@ -383,6 +385,8 @@ TODO shorten
 <div class="two">
 
 ### Python's Philosophy (Zen of Python)
+
+TODO extend text a tiny bit
 
 - **`import this`:** Executing `import this` in a Python interpreter reveals 19 guiding principles for writing good Python code.
 - **Key Principles:** These principles emphasize clarity, simplicity, and elegance in code design, including:
@@ -408,6 +412,8 @@ import this
 <div class="two">
 
 ### Example: "Hello, World!" in Python
+
+TODO extend text a bit
 
 - This is the classic first program that almost every programmer writes when learning a new language.
 - It serves to demonstrate the most basic form of output in Python.
@@ -471,13 +477,11 @@ This section includes the following content:
 
 ### IDE/Editor Choices
 
-TODO shorten
-
-- **Integrated Development Environment (IDE):** These are comprehensive software suites that consolidate common developer tools into a single graphical user interface.
-    - **PyCharm:** A powerful, full-featured IDE specifically designed for Python development, with a free Community Edition available.
-    - **VS Code:** A lightweight yet highly customizable code editor from Microsoft, offering extensive functionality through a rich ecosystem of extensions.
-- **Text Editors:** Simpler tools primarily focused on text editing, often used for quick edits or by developers who prefer a minimalist environment.
-    - Examples include Sublime Text and Atom, which offer fewer integrated features but are highly configurable.
+- **Integrated Development Environment (IDE):** Comprehensive software suites consolidating developer tools.
+    - **PyCharm:** Powerful, full-featured IDE for Python development (free Community Edition available).
+    - **VS Code:** Lightweight, highly customizable code editor with extensive extensions.
+- **Text Editors:** Simpler tools for quick edits or minimalist environments.
+    - Examples: Sublime Text, Atom (fewer integrated features, highly configurable).
 
 </div>
 <div class="two">
@@ -500,14 +504,12 @@ Visual Studio Code
 
 ### Virtual Environments (venv)
 
-TODO shorten
-
-- **Purpose:** Virtual environments are crucial for isolating the dependencies of different Python projects.
-- **Avoids Conflicts:** They prevent conflicts by allowing each project to maintain its own set of libraries and specific versions, independent of other projects or the global Python installation.
-- **Creation:** A new virtual environment can be created using the command: `python -m venv myenv`.
-- **Activation:** To start using the environment, it must be activated:
-    - **Windows:** Execute `.\myenv\Scripts\activate` in your terminal.
-    - **macOS/Linux:** Use `source myenv/bin/activate` in your terminal.
+- **Purpose:** Isolate dependencies for different Python projects.
+- **Avoids Conflicts:** Each project maintains its own libraries and versions, preventing conflicts with other projects or global Python installations.
+- **Creation:** `python -m venv myenv`
+- **Activation:**
+    - **Windows:** `.\myenv\Scripts\activate`
+    - **macOS/Linux:** `source myenv/bin/activate`
 
 </div>
 <div class="two">
@@ -533,6 +535,8 @@ source myproject_env/bin/activate
 
 ### Running Python Scripts from Terminal
 
+TODO extend text a bit
+
 - **Save File:** First, create your Python code and save it in a file with a `.py` extension, for example, `my_script.py`.
 - **Navigate:** Open your terminal or command prompt and navigate to the directory where you saved `my_script.py`.
 - **Execute:** To run the script, type `python` followed by the script's filename: `python my_script.py`.
@@ -540,11 +544,15 @@ source myproject_env/bin/activate
 </div>
 <div class="two">
 
+*Python*
+
 ```python
 # my_script.py: Simple script.
 # Prints a greeting.
 print("This is my first script!")
 ```
+
+*Terminal*
 
 ```bash
 # Terminal commands to execute script.
@@ -605,12 +613,12 @@ python my_script.py
 
 ### Basic VS Code Setup for Python
 
-TODO shorten
+TODO extend text a tiny bit
 
-- **Install Python Extension:** Begin by installing the official Python extension from the Visual Studio Code Marketplace to enable rich language support.
-- **Select Interpreter:** Use the Command Palette (`Ctrl+Shift+P`) and search for "Python: Select Interpreter" to choose your desired Python environment (e.g., a virtual environment).
-- **Run & Debug:** Utilize the dedicated "Run" button in the top right corner or press `F5` to execute your Python scripts or start the debugger.
-- **Integrated Terminal:** Access the integrated terminal directly within VS Code using the shortcut `Ctrl+` ` (backtick) for running commands and scripts.
+- **Install Python Extension:** Install the official Python extension for rich language support.
+- **Select Interpreter:** Use Command Palette (`Ctrl+Shift+P`) to select your Python environment.
+- **Run & Debug:** Use the "Run" button or `F5` to execute scripts or start the debugger.
+- **Integrated Terminal:** Access with `Ctrl+` ` (backtick) for commands and scripts.
 
 </div>
 <div class="two">
@@ -627,17 +635,23 @@ TODO shorten
 
 ### First Script Execution
 
-- **Create `hello.py`:** Start by creating a new file named `hello.py` and add the following Python code:
-    ```python
-    # Prints a welcoming message.
-    # Verifies Python installation and script execution.
-    print("Hello, Python Course!")
-    ```- **Open Terminal:** Open your terminal or command prompt and navigate to the directory where you saved `hello.py`.
+- **Create `hello.py`:** Start by creating a new file named `hello.py` and add the Python code on the right side
+- **Open Terminal:** Open your terminal or command prompt and navigate to the directory where you saved `hello.py`.
 - **Run:** Execute the script using the command: `python hello.py`.
 - **Expected Output:** Upon successful execution, the terminal should display the message: `Hello, Python Course!`.
 
 </div>
 <div class="two">
+
+*Python*
+
+```python
+# Prints a welcoming message.
+# Verifies Python installation and script execution.
+print("Hello, Python Course!")
+```
+
+*Terminal*
 
 ```bash
 # Execute 'hello.py' script.
@@ -723,15 +737,13 @@ x = 10
 
 ### Variables: Naming Rules, Assignment
 
-TODO shorten
-
-- **Variables:** In programming, variables are symbolic names that act as named storage locations to hold data values.
-- **Naming Rules:** When naming variables in Python, follow these conventions:
-    - They must start with a letter (a-z, A-Z) or an underscore (`_`).
-    - They can contain letters, numbers (0-9), and underscores.
-    - Python variable names are case-sensitive, meaning `age` and `Age` are treated as different variables.
-    - You cannot use Python's reserved keywords (e.g., `if`, `for`, `while`) as variable names.
-- **Assignment:** The `=` operator is used to assign a value to a variable.
+- **Variables:** Symbolic names for data storage locations.
+- **Naming Rules:**
+    - Start with a letter or underscore.
+    - Can contain letters, numbers, and underscores.
+    - Case-sensitive (`age` is different from `Age`).
+    - Cannot use Python's reserved keywords.
+- **Assignment:** Use the `=` operator to assign a value.
 
 </div>
 <div class="two">
@@ -757,12 +769,10 @@ my_variable_1 = 100
 
 ### Basic Data Types: Integers, Floats, Strings, Booleans
 
-TODO shorten
-
-- **Integers (`int`):** Represent whole numbers, both positive and negative, without any decimal point (e.g., `5`, `-100`, `1000`).
-- **Floats (`float`):** Represent real numbers, which include a decimal point or are expressed in exponential form (e.g., `3.14`, `-0.5`, `2.718e-5`).
-- **Strings (`str`):** Used for sequences of characters, essentially text. They are always enclosed within single quotes (`'text'`) or double quotes (`"text"`).
-- **Booleans (`bool`):** Represent one of two values: `True` or `False`. They are primarily used for logical operations and conditional statements.
+- **Integers (`int`):** Whole numbers (positive, negative, zero) without decimal points (e.g., `5`, `-100`).
+- **Floats (`float`):** Real numbers with a decimal point or in exponential form (e.g., `3.14`, `-0.5`).
+- **Strings (`str`):** Sequences of characters (text), enclosed in single or double quotes (e.g., `'hello'`, `"world"`).
+- **Booleans (`bool`):** Represent `True` or `False`, used for logical operations and conditionals.
 
 </div>
 <div class="two">
@@ -790,6 +800,8 @@ my_bool = True
 <div class="two">
 
 ### Type Checking (type())
+
+TODO extend text a bit
 
 - **Function:** Python provides a built-in function called `type()`.
 - **Purpose:** This function is used to dynamically determine the data type of any variable or value at runtime.
@@ -824,7 +836,7 @@ print(type(is_active))
 
 ### Type Conversion (int(), str(), float())
 
-TODO shorten
+TODO shorten text a bit
 
 - **Purpose:** Type conversion, also known as type casting, allows you to explicitly change a value from one data type to another.
 - **Functions:** Python provides several built-in functions for this purpose:
@@ -863,15 +875,13 @@ int_float = float(int_val)
 
 ### Operators: Arithmetic
 
-TODO shorten
-
-- **Addition:** The `+` operator performs addition between two operands.
-- **Subtraction:** The `-` operator performs subtraction between two operands.
-- **Multiplication:** The `*` operator performs multiplication between two operands.
-- **Division:** The `/` operator performs standard division, always returning a float result.
-- **Floor Division:** The `//` operator performs division and returns the integer part of the quotient (discards the fractional part).
-- **Modulo:** The `%` operator returns the remainder of the division.
-- **Exponentiation:** The `**` operator raises the first operand to the power of the second.
+- **Addition:** `+` performs addition.
+- **Subtraction:** `-` performs subtraction.
+- **Multiplication:** `*` performs multiplication.
+- **Division:** `/` performs standard division (float result).
+- **Floor Division:** `//` performs division, returns integer part.
+- **Modulo:** `%` returns the remainder of division.
+- **Exponentiation:** `**` raises first operand to the power of the second.
 
 </div>
 <div class="two">
@@ -903,14 +913,12 @@ print(2 ** 3)
 
 ### Operators: Assignment
 
-TODO shorten
-
-- **Assignment:** The `=` operator is used to assign a value to a variable.
-- **Add and Assign:** The `+=` operator adds the right operand to the left operand and assigns the result to the left operand (e.g., `x += 1` is equivalent to `x = x + 1`).
-- **Subtract and Assign:** The `-=` operator subtracts the right operand from the left operand and assigns the result to the left operand.
-- **Multiply and Assign:** The `*=` operator multiplies the left operand by the right operand and assigns the result to the left operand.
-- **Divide and Assign:** The `/=` operator divides the left operand by the right operand and assigns the float result to the left operand.
-- **Other:** Similar compound assignment operators exist for floor division (`//=`), modulo (`%=`), and exponentiation (`**=`).
+- **Assignment:** `=` assigns a value to a variable.
+- **Add and Assign:** `+=` adds right operand to left, assigns result (e.g., `x += 1` is `x = x + 1`).
+- **Subtract and Assign:** `-=` subtracts right operand from left, assigns result.
+- **Multiply and Assign:** `*=` multiplies left operand by right, assigns result.
+- **Divide and Assign:** `/=` divides left operand by right, assigns float result.
+- **Other:** `//=`, `%=`, `**=` for floor division, modulo, and exponentiation.
 
 </div>
 <div class="two">
@@ -936,12 +944,11 @@ y *= 3
 
 ### Operator Precedence
 
-TODO shorten
+TODO extend text a bit
 
-- **Order of Operations:** Operator precedence defines the order in which operations are evaluated in an expression.
-- **PEMDAS/BODMAS:** Python adheres to the standard mathematical rules of precedence, often remembered by acronyms like PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction) or BODMAS (Brackets, Orders, Division and Multiplication, Addition and Subtraction).
-- **Python follows standard mathematical precedence:** This means operations like multiplication and division are performed before addition and subtraction.
-- **Use parentheses `()` to explicitly control order:** When in doubt or to ensure a specific order of evaluation, always use parentheses to group operations.
+- **Order of Operations:** Defines the evaluation order of operations in an expression.
+- **PEMDAS/BODMAS:** Python follows standard mathematical precedence (e.g., multiplication before addition).
+- **Use parentheses `()`:** Explicitly control order of evaluation when needed.
 
 </div>
 <div class="two">
@@ -949,10 +956,13 @@ TODO shorten
 ```python
 # Default precedence (multiplication first).
 result1 = 10 + 5 * 2
+
 # Parentheses override precedence.
 result2 = (10 + 5) * 2
+
 # Print result1.
 print(result1)
+
 # Print result2.
 print(result2)
 ```
@@ -1096,11 +1106,11 @@ print(f"Hello, {user_name}!")
 
 ### Input Type Conversion
 
-TODO shorten
+TODO extend text a bit
 
-- **Necessity:** Since the `input()` function always returns a string, you will frequently need to convert this string to a different data type (e.g., integer or float) if you intend to perform numerical operations.
-- **Conversion Functions:** Use built-in functions like `int()` to convert to an integer, `float()` to convert to a floating-point number, and others as needed for specific data types.
-- **Error Handling:** It is crucial to be aware that if the user's input cannot be successfully converted to the target type (e.g., trying to convert "hello" to an integer), a `ValueError` will be raised, which needs to be handled in your code.
+- **Necessity:** `input()` returns strings; conversion is needed for numerical operations.
+- **Conversion Functions:** Use `int()` for integers, `float()` for floats, and other functions for specific data types.
+- **Error Handling:** Incompatible conversions (e.g., "hello" to int) will raise a `ValueError`.
 
 </div>
 <div class="two">
