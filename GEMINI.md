@@ -27,94 +27,117 @@
 
 ## Presentation Technology
 
-The slides for the individual sessions are made with Latex Beamer. Here is the general template for the Latex source files:
+For the presentation slides (or the lecture script), I use the Markdown Presentation Ecosystem (MARP) with a custom theme for the University of Applied Sciences Upper Austria.
 
-```latex
-\documentclass[aspectratio=169,8pt]{beamer}
+The basic structure of the MARP files for the presentation slides includes chapter and section headings as well as content slides as shown in the following example.
 
-% Loading the custom Beamer theme
-\newcommand{\basepath}{../../../latex-beamer-theme-fhooe/sources}
-\usepackage{\basepath/beamerthemefhooe}
+```md
+---
+marp: true
+theme: fhooe
+header: Chapter Title
+footer: Dr. Georg Hackenberg, Professor for Computer Science and Industrial Systems
+paginate: true
+math: mathjax
+---
 
-\renewcommand{\sectiontocframesubtitle}{Table of Contents}
-\renewcommand{\subsectiontocframesubtitle}{Table of Contents}
+<!-- Placeholder for chapter image description -->
 
-\title{Programming with Python}
-\subtitle{Session X: ...}
-\author[Dr. Georg Hackenberg, Professor for Industrial Informatics (\href{mailto:georg.hackenberg@fh-wels.at}{georg.hackenberg@fh-wels.at})]{Dr. Georg Hackenberg BSc MSc\\Professor for Industrial Informatics\\(\href{mailto:georg.hackenberg@fh-wels.at}{georg.hackenberg@fh-wels.at})}
-\institute[Subject Area Information Technology, School of Engineering, University of Applied Sciences Upper Austria]{Subject Area Information Technology\\School of Engineering\\University of Applied Sciences Upper Austria}
-\date{\today}
+![bg right](./ChapterImagePath)
 
-\begin{document}
+# Chapter N: Chapter Title
 
-\begin{frame}
-    \titlepage
-\end{frame}
+This chapter includes the following sections:
 
-\section{Section Title}
+- N.1: Section Title 1
+- N.2: Section Title 2
+- ...
 
-\subsection{Subsection Title}
+---
 
+<!-- Placeholder for section image description -->
+
+![bg right](./SectionImagePath)
+
+## N.M: Section Title
+
+This section includes the following content:
+
+- Content 1
+- Content 2
+- ...
+
+---
+
+### Content Slide Title
+
+Content slide text
 ...
-
-\end{document}
 ```
 
-The actual content slides are made using the custom frame environment `cframe` and the custom column environment `ccolumn`. The custom frame environment `cframe` takes four arguments:
+The custom theme supports the creation of multi-column slide layouts using a parent `<div class="columns">` and two or more nested `<div class="relative weight">`.
 
-1. the **slide title** (if left blank, the default slide title is used, which includes the document title and subtitle as well as the section/subsection names),
-2. the **slide subtitle** (if left blank, the default slide subtitle is used, which shows a placeholder in the output),
-3. the **number of columns** (used for calculating the column widths),
-4. and the **vertical column aligment** (`c` for center):
+```md
+<div class="columns">
+<div class="one|two|three|four|five|six">
 
-Here are some examples of how to use the custom environments:
+Content of the first column
 
-```latex
-% Template for a one-column slide
-\begin{cframe}{}{Slide Title}{1}{c}
-    \begin{columns}
-        \begin{ccolumn}
-            Slide Content
-        \end{ccolumn}
-    \end{columns}
-\end{cframe}
+</div>
+<div class="one|two|three|four|five|six">
 
-% Template for a two-column slide
-\begin{cframe}{}{Slide Title}{2}{c}
-    \begin{columns}
-        \begin{ccolumn}
-            First Column Content
-        \end{ccolumn}
-        \begin{ccolumn}
-            Second Column Content
-        \end{ccolumn}
-    \end{columns}
-\end{cframe}
+Content of the second column
 
-% Template for a three-column slide
-\begin{cframe}{}{Slide Title}{3}{c}
-    \begin{columns}
-        \begin{ccolumn}
-            First Column Content
-        \end{ccolumn}
-        \begin{ccolumn}
-            Second Column Content
-        \end{ccolumn}
-        \begin{ccolumn}
-            Third Column Content
-        \end{ccolumn}
-    \end{columns}
-\end{cframe}
+</div>
+...
+</div>
 ```
 
-Visualizations are scripted with `tikz` and code listings are made with `minted`.
+The content of a slide or slide column can be text (including lists and formulas), a table, program code, or a reference to an image file with a description of the image content.
+
+````md
+<div class="columns">
+<div class="one|two|three|four|five|six">
+
+Slide text (including lists and formulas)
+
+</div>
+<div class="one|two|three|four|five|six">
+
+| Column A | Column B | ... |
+|-|-|-|
+| Content 1 | Content 2 | ... |
+| ... | ... | ... |
+
+</div>
+<div class="one|two|three|four|five|six">
+
+```ProgrammingLanguage
+Source code
+```
+
+</div>
+<div class="one|two|three|four|five|six">
+
+![Placeholder for image description](./ImagePath)
+
+</div>
+</div>
+````
+
+The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js source files are automatically compiled into SVG files in Visual Studio Code using the *RunOnSave* extension.
 
 ## Folder Structure
 
-- The folder `./Materials` contains the materials for the individual sessions
-- The folder `./Materials/Session_XX` contains the slide set for session `XX`
-- The file `./Materials/Session_XX/Slides.tex` contains the Latex source code for the slide set of session `XX`
-- The folder `./Materials/Session_XX/Homework_Sheets` contains the homework sheets for session `XX`
-- The file `./Materials/Session_XX/Homework_Sheets/Homework_Sheet__YY.tex` contains homework sheet `YY` for session `XX`
-- The folder `./Materials/Session_XX/Exam_Sheets` contains the exam sheets for session `XX`
-- The file `./Materials/Session_XX/Exam_Sheets/Exam_Sheets_YY.tex` contains exam sheet `YY` for session `XX`
+- The folder `./Sessions` contains the materials for the individual sessions
+- The folder `./Sessions/Session_XX` contains the slide set for session `XX`
+- The file `./Sessions/Session_XX/Slides.md` contains the Latex source code for the slide set of session `XX`
+- The folder `./Sessions/Session_XX/Diagrams` contains the Tikz- and Mermaid.js diagrams.
+- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.tex` contains the source code of a Tikz diagram
+- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.tikz.svg` contains the compiled SVG code of a Tikz diagram
+- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
+- The file `./Sessions/Session_XX/Diagrams/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
+- The folder `./Sessions/Session_XX/Homeworks` contains the homework sheets for session `XX`
+- The file `./Sessions/Session_XX/Homeworks/Homework_YY.tex` contains homework sheet `YY` for session `XX`
+- The folder `./Sessions/Session_XX/Exams` contains the exam sheets for session `XX`
+- The file `./Sessions/Session_XX/Exams/Exam_YY.tex` contains exam sheet `YY` for session `XX`
