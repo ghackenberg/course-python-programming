@@ -2,7 +2,7 @@
 marp: true
 theme: fhooe
 header: Introduction to Python & Programming Basics
-footer: Dr. Georg Hackenberg, Professor for Computer Science and Industrial Systems
+footer: Dr. Georg Hackenberg, Professor for Industrial Informatics
 paginate: true
 math: mathjax
 ---
