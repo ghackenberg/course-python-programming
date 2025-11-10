@@ -9,7 +9,7 @@ math: mathjax
 
 <!-- Abstract illustration of interconnected nodes and lines representing programming concepts, with a glowing Python logo subtly integrated, all set against a dark, swirling galaxy background. The overall aesthetic is futuristic and conceptual. -->
 
-![bg right](./ChapterImagePath)
+![bg right](./Images/Chapter.jpg)
 
 # Chapter 1: Introduction to Python & Programming Basics
 
@@ -25,7 +25,7 @@ This chapter includes the following sections:
 
 <!-- Abstract illustration of a human hand interacting with lines of code and binary data, symbolizing the act of programming, set against a dark galaxy background with subtle light trails. -->
 
-![bg right](./SectionImagePath)
+![bg right](./Images/Section_1.jpg)
 
 ## 1.1: What is Programming?
 
@@ -228,7 +228,7 @@ print(sum_result) # Output: 30
 
 <!-- Abstract illustration highlighting Python's versatility with various icons (web, data science, AI, automation) emerging from a central, glowing Python logo, all against a dark galaxy backdrop. -->
 
-![bg right](./SectionImagePath)
+![bg right](./Images/Section_2.jpg)
 
 ## 1.2: Why Python?
 
@@ -421,7 +421,7 @@ print("Hello, World!")
 
 <!-- Abstract illustration of a developer's workstation with glowing screens displaying code and terminal windows, surrounded by floating virtual environment symbols, set against a dark galaxy background. -->
 
-![bg right](./SectionImagePath)
+![bg right](./Images/Section_3.jpg)
 
 ## 1.3: Setting up Your Environment
 
@@ -636,7 +636,7 @@ python hello.py
 
 <!-- Abstract illustration of glowing data structures (integers, floats, strings, booleans) flowing and connecting, representing variables and data types, against a dark galaxy background. -->
 
-![bg right](./SectionImagePath)
+![bg right](./Images/Section_4.jpg)
 
 ## 1.4: Basic Syntax: Variables and Data Types
 
@@ -875,7 +875,7 @@ print(result2) # 30
 
 <!-- Abstract illustration of data flowing into and out of a central processing unit, depicted as glowing streams of information, symbolizing input and output operations, against a dark galaxy background. -->
 
-![bg right](./SectionImagePath)
+![bg right](./Images/Section_5.jpg)
 
 ## 1.5: Input and Output
 
