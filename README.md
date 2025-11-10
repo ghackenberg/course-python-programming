@@ -1,5 +1,7 @@
 # Programming with Python
 
+![](./Images/Social_Preview_169.jpg)
+
 Welcome to the "Programming with Python" course materials repository!
 
 This repository contains all the necessary materials for the course, including slides, homework assignments, and exams for each session.
