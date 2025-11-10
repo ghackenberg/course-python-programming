@@ -140,7 +140,7 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 - The folder `./Sessions/Session_XX/Diagrams/Mermaid` contains Mermaid diagrams
 - The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
 - The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
-- The folder `./Sessions/Session_XX/Homeworks` contains the homework sheets for session `XX`
-- The file `./Sessions/Session_XX/Homeworks/Homework_YY.tex` contains homework sheet `YY` for session `XX`
-- The folder `./Sessions/Session_XX/Exams` contains the exam sheets for session `XX`
-- The file `./Sessions/Session_XX/Exams/Exam_YY.tex` contains exam sheet `YY` for session `XX`
+- The folder `./Sessions/Session_XX/Homeworks` contains the homework sheets for session `XX` in Markdown format
+- The file `./Sessions/Session_XX/Homeworks/Homework_YY.md` contains homework sheet `YY` for session `XX` in Markdown format
+- The folder `./Sessions/Session_XX/Exams` contains the exam sheets for session `XX` in Markdown format
+- The file `./Sessions/Session_XX/Exams/Exam_YY.md` contains exam sheet `YY` for session `XX` in Markdown format
