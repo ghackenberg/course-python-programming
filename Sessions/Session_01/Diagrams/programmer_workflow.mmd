@@ -1,0 +1,7 @@
+graph LR
+    A[Analyze Problem] --> B[Design Solution];
+    B --> C[Write Code];
+    C --> D[Test Solution];
+    D --> E{Errors?};
+    E -- Yes --> C;
+    E -- No --> F[Deploy Solution];

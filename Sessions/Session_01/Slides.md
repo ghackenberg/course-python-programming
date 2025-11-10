@@ -44,27 +44,21 @@ This section includes the following content:
 
 ### What is Programming?
 
-<div class="columns">
-<div class="two">
+**Description:**
 
 - **Definition:** Giving instructions to a computer to perform a task.
 - **Goal:** Automate tasks, solve problems, create applications.
 - **Language:** Computers understand machine code (binary). We use high-level languages (like Python) that are translated.
 
-</div>
-<div class="two">
+**Illustration:**
 
 ![Diagram illustrating the concept of programming, showing a human giving instructions to a computer, which then executes tasks. (Mermaid.js)](./Diagrams/programming_concept.svg)
-
-</div>
-</div>
 
 ---
 
 ### What Programmers Do
 
-<div class="columns">
-<div class="two">
+**Description:**
 
 - **Analyze:** Understand the problem.
 - **Design:** Plan the solution (algorithm).
@@ -73,13 +67,9 @@ This section includes the following content:
 - **Debug:** Fix errors.
 - **Deploy:** Make the solution available.
 
-</div>
-<div class="two">
+**Illustration:**
 
 ![Flowchart depicting the typical workflow of a programmer: Analyze -> Design -> Code -> Test -> Debug -> Deploy. (Mermaid.js)](./Diagrams/programmer_workflow.svg)
-
-</div>
-</div>
 
 ---
 
@@ -112,7 +102,7 @@ Algorithm: Make Coffee
 ### Machine Code vs. High-Level Languages
 
 <div class="columns">
-<div class="two">
+<div class="three">
 
 - **Machine Code:** Binary instructions (0s and 1s) directly understood by the CPU.
 - **High-Level Languages:** Human-readable languages (Python, Java, C++).
@@ -121,7 +111,7 @@ Algorithm: Make Coffee
     - **Interpreters:** Translate and execute line by line.
 
 </div>
-<div class="two">
+<div>
 
 ![Diagram showing the hierarchy from high-level languages to machine code, with an interpreter/compiler in between. (Mermaid.js)](./Diagrams/language_levels.svg)
 
@@ -147,9 +137,11 @@ Algorithm: Make Coffee
     - Less flexible.
 
 </div>
-<div class="two">
+<div class="three">
 
-![Comparison diagram illustrating how an interpreter executes code line by line versus how a compiler translates the entire code before execution. (Mermaid.js)](./Diagrams/interpreter_compiler.svg)
+![Comparison diagram illustrating how an interpreter executes code line by line versus how a compiler translates the entire code before execution. (Mermaid.js)](./Diagrams/interpreter.svg)
+
+![Comparison diagram illustrating how an interpreter executes code line by line versus how a compiler translates the entire code before execution. (Mermaid.js)](./Diagrams/compiler.svg)
 
 </div>
 </div>
@@ -180,7 +172,7 @@ Algorithm: Make Coffee
 ### Problem-Solving Approach
 
 <div class="columns">
-<div class="two">
+<div class="three">
 
 1.  **Understand the Problem:** What needs to be solved?
 2.  **Break Down:** Divide into smaller, manageable parts.
@@ -189,7 +181,7 @@ Algorithm: Make Coffee
 5.  **Test & Refine:** Verify and improve.
 
 </div>
-<div class="two">
+<div>
 
 ![Numbered list or flowchart illustrating the problem-solving approach: Understand -> Break Down -> Plan -> Implement -> Test & Refine. (Mermaid.js)](./Diagrams/problem_solving_steps.svg)
 
@@ -356,21 +348,12 @@ if (x > 0) {
 
 ### Comparison with Other Languages (Briefly)
 
-<div class="columns">
-<div class="two">
-
-- **Java:** Statically typed, faster for large enterprise apps.
-- **JavaScript:** Primarily for web frontend, asynchronous.
-- **C++:** High performance, system-level programming.
-- **Python:** General-purpose, rapid development, data-focused.
-
-</div>
-<div class="two">
-
-![Comparison table or diagram highlighting key differences between Python, Java, JavaScript, and C++. (Mermaid.js)](./Diagrams/language_comparison.svg)
-
-</div>
-</div>
+| Language   | Key Characteristics                     | Primary Use Cases                               |
+| :--------- | :-------------------------------------- | :---------------------------------------------- |
+| **Python** | General-purpose, easy to read           | Web, Data Science, AI, Automation               |
+| **Java**   | Statically typed, fast                  | Enterprise Apps, Android                        |
+| **JavaScript** | Primarily for web frontend, asynchronous | Web Frontend, Backend (Node.js)                 |
+| **C++**    | High performance, system-level          | Game Dev, OS, Embedded Systems                  |
 
 ---
 

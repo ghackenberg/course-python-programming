@@ -1,0 +1,6 @@
+graph TB
+    subgraph Interpreter
+        I1[Source Code] --> I2{Read Line};
+        I2 --> I3[Execute Line];
+        I3 --> I2;
+    end
