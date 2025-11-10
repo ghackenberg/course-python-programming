@@ -80,11 +80,9 @@ This section includes the following content:
 
 ### Algorithms and Logic
 
-TODO extend text
-
-- **Algorithm:** A precise, step-by-step procedure or formula for solving a problem or accomplishing a task.
-- **Logic:** The underlying principles and reasoning that dictate how the steps of an algorithm are structured and executed.
-- **Example:** A common real-world analogy is a recipe for baking a cake, which serves as a clear algorithm.
+- **Algorithm:** A precise, step-by-step procedure or formula for solving a problem or accomplishing a task. Algorithms are fundamental to programming, providing the blueprint for any computational process.
+- **Logic:** The underlying principles and reasoning that dictate how the steps of an algorithm are structured and executed. This involves using conditional statements and loops to control the flow of execution.
+- **Example:** A common real-world analogy is a recipe for baking a cake, which serves as a clear algorithm, detailing each step from ingredients to final product.
 
 </div>
 <div>
@@ -129,18 +127,8 @@ Algorithm: Make Coffee
 
 ### Interpreted vs. Compiled Languages
 
-TODO shorten text a bit
-
-- **Interpreted (e.g., Python):**
-    - **Execution:** Code is executed line by line by an interpreter.
-    - **Debugging:** Easier due to immediate feedback on errors.
-    - **Performance:** Typically slower execution speeds.
-    - **Flexibility:** Greater flexibility, dynamic typing, easier code modification.
-- **Compiled (e.g., C++):**
-    - **Execution:** Entire source code translated into machine code before execution.
-    - **Performance:** Achieves faster execution speeds.
-    - **Debugging:** More challenging as errors might appear after full compilation.
-    - **Flexibility:** Less flexible, often requiring strict type definitions and full recompilation.
+- **Interpreted (e.g., Python):** Code is executed line by line by an interpreter at runtime. This offers easier debugging and greater flexibility, but generally results in slower execution speeds.
+- **Compiled (e.g., C++):** The entire source code is translated into machine code before execution. This achieves faster performance, but debugging can be more challenging as errors might only appear after full compilation, and flexibility is often reduced.
 
 </div>
 <div>
@@ -330,14 +318,8 @@ if (x > 0) {
 
 ### Cross-Platform Compatibility
 
-TODO extend text a tiny bit
-
-- **Write Once, Run Anywhere:** Python code is highly portable and can run seamlessly across various operating systems, including:
-    - Windows
-    - macOS
-    - Linux
-    - And many other specialized platforms
-- This eliminates the need to recompile the code specifically for each different operating system.
+- **Write Once, Run Anywhere:** Python code is highly portable, allowing it to run seamlessly across various operating systems such as Windows, macOS, Linux, and numerous other specialized platforms without modification.
+- This inherent cross-platform capability eliminates the need to recompile the code specifically for each different operating system, significantly saving development time and effort.
 
 </div>
 <div class="two">
@@ -370,7 +352,7 @@ TODO extend text a tiny bit
 
 ### Comparison with Other Languages (Briefly)
 
-TODO Add brief intro to table
+To provide context, below is a brief comparison of Python with other popular programming languages. This table highlights their key characteristics and primary use cases, helping to understand Python's position in the broader programming landscape.
 
 | Language   | Key Characteristics                     | Primary Use Cases                               |
 | :--------- | :-------------------------------------- | :---------------------------------------------- |
@@ -386,10 +368,8 @@ TODO Add brief intro to table
 
 ### Python's Philosophy (Zen of Python)
 
-TODO extend text a tiny bit
-
-- **`import this`:** Executing `import this` in a Python interpreter reveals 19 guiding principles for writing good Python code.
-- **Key Principles:** These principles emphasize clarity, simplicity, and elegance in code design, including:
+- **`import this`:** Executing `import this` in a Python interpreter reveals 19 guiding principles, known as "The Zen of Python," for writing good Python code.
+- **Key Principles:** These principles emphasize clarity, simplicity, and elegance in code design, promoting a consistent and readable style. They include:
     - Beautiful is better than ugly.
     - Explicit is better than implicit.
     - Simple is better than complex.
@@ -413,11 +393,9 @@ import this
 
 ### Example: "Hello, World!" in Python
 
-TODO extend text a bit
-
-- This is the classic first program that almost every programmer writes when learning a new language.
-- It serves to demonstrate the most basic form of output in Python.
-- The program is simple, straightforward, and effectively illustrates how to print text to the console.
+- This is the classic first program that almost every programmer writes when learning a new language, serving as a traditional and fundamental initiation into coding.
+- It demonstrates the most basic form of output in Python, specifically how to print a simple textual message to the console using the `print()` function.
+- The program is simple, straightforward, and effectively illustrates the core concept of displaying information to the user.
 
 </div>
 <div class="two">
@@ -535,11 +513,9 @@ source myproject_env/bin/activate
 
 ### Running Python Scripts from Terminal
 
-TODO extend text a bit
-
-- **Save File:** First, create your Python code and save it in a file with a `.py` extension, for example, `my_script.py`.
-- **Navigate:** Open your terminal or command prompt and navigate to the directory where you saved `my_script.py`.
-- **Execute:** To run the script, type `python` followed by the script's filename: `python my_script.py`.
+- **Save File:** Create your Python code and save it with a `.py` extension (e.g., `my_script.py`). This file contains the instructions for your program.
+- **Navigate:** Open your terminal or command prompt and navigate to the directory where you saved your `.py` file using the `cd` command.
+- **Execute:** Run the script by typing `python` followed by the script's filename (e.g., `python my_script.py`). The Python interpreter will then execute the code.
 
 </div>
 <div class="two">
@@ -613,12 +589,10 @@ python my_script.py
 
 ### Basic VS Code Setup for Python
 
-TODO extend text a tiny bit
-
-- **Install Python Extension:** Install the official Python extension for rich language support.
-- **Select Interpreter:** Use Command Palette (`Ctrl+Shift+P`) to select your Python environment.
-- **Run & Debug:** Use the "Run" button or `F5` to execute scripts or start the debugger.
-- **Integrated Terminal:** Access with `Ctrl+` ` (backtick) for commands and scripts.
+- **Install Python Extension:** Install the official Python extension from the VS Code Marketplace for rich language support.
+- **Select Interpreter:** Use Command Palette (`Ctrl+Shift+P`) to select your Python environment (e.g., a virtual environment).
+- **Run & Debug:** Use the "Run" button or `F5` to execute Python scripts or start the debugger.
+- **Integrated Terminal:** Access the integrated terminal with `Ctrl+` ` (backtick) for running commands and scripts.
 
 </div>
 <div class="two">
@@ -626,9 +600,7 @@ TODO extend text a tiny bit
 ![Screenshot or stylized representation of the Python extension page in VS Code Marketplace. (Diffusion Model)](./Images/VS_Code_Python_Extension.jpg)
 
 </div>
-</div>
-
----
+</div>---
 
 <div class="columns">
 <div class="two">
@@ -801,11 +773,9 @@ my_bool = True
 
 ### Type Checking (type())
 
-TODO extend text a bit
-
-- **Function:** Python provides a built-in function called `type()`.
-- **Purpose:** This function is used to dynamically determine the data type of any variable or value at runtime.
-- **Useful for:** It is particularly useful during debugging to inspect variable types and to understand how different data types behave in your code.
+- **Function:** Python provides a built-in function called `type()`, which is essential for understanding data structures.
+- **Purpose:** This function is used to dynamically determine the data type of any variable or value at runtime, returning the type object.
+- **Useful for:** It is particularly useful during debugging to inspect variable types, validate inputs, and understand how different data types behave and interact within your code.
 
 </div>
 <div class="two">
@@ -836,14 +806,9 @@ print(type(is_active))
 
 ### Type Conversion (int(), str(), float())
 
-TODO shorten text a bit
-
-- **Purpose:** Type conversion, also known as type casting, allows you to explicitly change a value from one data type to another.
-- **Functions:** Python provides several built-in functions for this purpose:
-    - `int()`: Converts a value to an integer, truncating any decimal part.
-    - `float()`: Converts a value to a floating-point number.
-    - `str()`: Converts a value to its string representation.
-- **Caution:** It's important to note that not all type conversions are logically possible or will succeed (e.g., attempting to convert the string `"hello"` to an integer will result in an error).
+- **Purpose:** Explicitly change a value's data type (type casting).
+- **Functions:** Built-in functions like `int()` (to integer), `float()` (to floating-point), and `str()` (to string).
+- **Caution:** Not all conversions are logically possible; incompatible conversions (e.g., "hello" to int) will raise a `ValueError`.
 
 </div>
 <div class="two">
@@ -944,11 +909,9 @@ y *= 3
 
 ### Operator Precedence
 
-TODO extend text a bit
-
-- **Order of Operations:** Defines the evaluation order of operations in an expression.
-- **PEMDAS/BODMAS:** Python follows standard mathematical precedence (e.g., multiplication before addition).
-- **Use parentheses `()`:** Explicitly control order of evaluation when needed.
+- **Order of Operations:** Operator precedence defines the order in which operations are evaluated in an expression, ensuring consistent results.
+- **PEMDAS/BODMAS:** Python adheres to standard mathematical rules of precedence, often remembered by acronyms like PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction).
+- **Use parentheses `()`:** When in doubt or to ensure a specific order of evaluation, always use parentheses to explicitly group operations and control their execution order.
 
 </div>
 <div class="two">
@@ -996,12 +959,12 @@ This section includes the following content:
 
 ### `print()` function: Basics
 
-- **Purpose:** The `print()` function is a fundamental built-in function in Python used to display output to the standard console.
-- **Syntax:** You can pass one or more values to `print()`, separated by commas: `print(value1, value2, ...)`.
-- **Default Behavior:** By default, `print()` will output each value, separate them with a single space, and conclude with a newline character, moving the cursor to the next line.
+- **Purpose:** The `print()` function is a fundamental built-in function in Python, primarily used to display output to the standard console, making information visible to the user.
+- **Syntax:** You can pass one or more values to `print()`, separating them with commas: `print(value1, value2, ...)`. These values can be variables, literals, or expressions.
+- **Default Behavior:** By default, `print()` will output each provided value, separate them with a single space, and conclude with a newline character, which moves the cursor to the beginning of the next line for subsequent output.
 
 </div>
-<div class="two">
+<div>
 
 ```python
 # Print with newline.
@@ -1081,9 +1044,9 @@ print("My name is {} and I am {} years old.".format(name, age))
 
 ### `input()` function: Getting User Input
 
-- **Purpose:** The `input()` function is a built-in Python function used to obtain textual input directly from the user through the console.
-- **Syntax:** It typically takes an optional string argument, which serves as a prompt message displayed to the user: `variable = input("Prompt message: ")`.
-- **Return Type:** Crucially, the `input()` function always reads the user's input as a string, regardless of what the user types.
+- **Purpose:** The `input()` function is a fundamental built-in Python function used to obtain textual input directly from the user through the console, allowing for interactive programs.
+- **Syntax:** It typically takes an optional string argument, which serves as a prompt message displayed to the user before they enter input: `variable = input("Prompt message: ")`.
+- **Return Type:** Crucially, the `input()` function always reads the user's input as a string data type, regardless of whether the user types numbers, text, or symbols.
 
 </div>
 <div class="two">
@@ -1106,11 +1069,9 @@ print(f"Hello, {user_name}!")
 
 ### Input Type Conversion
 
-TODO extend text a bit
-
-- **Necessity:** `input()` returns strings; conversion is needed for numerical operations.
-- **Conversion Functions:** Use `int()` for integers, `float()` for floats, and other functions for specific data types.
-- **Error Handling:** Incompatible conversions (e.g., "hello" to int) will raise a `ValueError`.
+- **Necessity:** `input()` always returns a string; conversion is often needed for numerical operations or comparisons.
+- **Conversion Functions:** Use built-in functions like `int()` (to integer), `float()` (to floating-point), and `str()` (to string).
+- **Error Handling:** Incompatible conversions (e.g., "hello" to int) raise a `ValueError`; proper error handling is essential.
 
 </div>
 <div class="two">
