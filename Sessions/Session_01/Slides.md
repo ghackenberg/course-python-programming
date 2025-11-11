@@ -201,12 +201,16 @@ Algorithm: Make Coffee
 
 ```python
 # Python example: Basic arithmetic
+
 # Assign first number
 num1 = 10
+
 # Assign second number
 num2 = 20
+
 # Add numbers
 sum_result = num1 + num2
+
 # Display sum
 print(sum_result)
 ```
@@ -534,6 +538,7 @@ print("This is my first script!")
 # Terminal commands to execute script.
 # Change directory.
 cd my_project_folder
+
 # Execute Python script.
 python my_script.py
 ```
@@ -723,10 +728,13 @@ x = 10
 ```python
 # Assign string to 'name'.
 name = "Alice"
+
 # Assign integer to 'age'.
 age = 30
+
 # Assign string to '_private_var' (internal use).
 _private_var = "secret"
+
 # Assign integer to 'my_variable_1'.
 my_variable_1 = 100
 ```
@@ -854,16 +862,22 @@ int_float = float(int_val)
 ```python
 # Addition.
 print(10 + 3)
+
 # Subtraction.
 print(10 - 3)
+
 # Multiplication.
 print(10 * 3)
+
 # Float division.
 print(10 / 3)
+
 # Floor division.
 print(10 // 3)
+
 # Modulo (remainder).
 print(10 % 3)
+
 # Exponentiation.
 print(2 ** 3)
 ```
@@ -891,10 +905,13 @@ print(2 ** 3)
 ```python
 # Initialize x.
 x = 5
+
 # Add 2 to x.
 x += 2
+
 # Initialize y.
 y = 10
+
 # Multiply y by 3.
 y *= 3
 ```
@@ -984,7 +1001,7 @@ print("Hello", "World")
 <div class="columns">
 <div class="two">
 
-### `print()` with multiple arguments, `sep`, `end`
+### `print()` with multiple arguments as well as `sep` and `end`
 
 - **`sep` (separator):** The `sep` parameter allows you to specify a custom string that will be inserted between multiple arguments passed to the `print()` function. By default, it's a single space.
 - **`end` (end character):** The `end` parameter determines what character(s) will be printed at the very end of the output. The default value is a newline character (`\n`), which causes subsequent `print()` calls to start on a new line.
@@ -1154,10 +1171,10 @@ print(f"Hello, {name}! Your favorite color is {color}.")
 
 ---
 
-### Practice Exercise
-
 <div class="columns">
 <div class="two">
+
+### Practice Exercise
 
 - **Task:** Develop a Python program that computes the area of a rectangle based on user-provided dimensions.
 - **Requirements:**
