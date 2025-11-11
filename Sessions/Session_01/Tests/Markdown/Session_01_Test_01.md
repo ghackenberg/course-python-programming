@@ -1,4 +1,4 @@
-# Exam 01: Introduction to Python & Programming Basics
+# Test 01: Introduction to Python & Programming Basics
 
 ## Instructions
 

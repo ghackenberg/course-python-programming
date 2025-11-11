@@ -131,7 +131,7 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 
 - The folder `./Sessions` contains the materials for the individual sessions
 - The folder `./Sessions/Session_XX` contains the slides for session `XX`
-- The file `./Sessions/Session_XX/Slides.md` contains the Markdown source code for the slides of session `XX`
+- The file `./Sessions/Session_XX/Session_XX_Slides.md` contains the Markdown source code for the slides of session `XX`
 - The folder `./Sessions/Session_XX/Images` contains images
 - The folder `./Sessions/Session_XX/Diagrams` contains Tikz and Mermaid.js diagrams
 - The folder `./Sessions/Session_XX/Diagrams/Tikz` contains Tikz diagrams
@@ -140,7 +140,12 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 - The folder `./Sessions/Session_XX/Diagrams/Mermaid` contains Mermaid diagrams
 - The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.mmd` contains the source code of a Mermaid.js diagram
 - The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
-- The folder `./Sessions/Session_XX/Homeworks` contains the homework sheets for session `XX` in Markdown format
-- The file `./Sessions/Session_XX/Homeworks/Homework_YY.md` contains homework sheet `YY` for session `XX` in Markdown format
-- The folder `./Sessions/Session_XX/Exams` contains the exam sheets for session `XX` in Markdown format
-- The file `./Sessions/Session_XX/Exams/Exam_YY.md` contains exam sheet `YY` for session `XX` in Markdown format
+- The folder `./Sessions/Session_XX/Exercises` contains the exercise sheets for session `XX` in Markdown format
+- The file `./Sessions/Session_XX/Exercises/Session_XX_Exercises_YY.md` contains exercise sheet `YY` for session `XX` in Markdown format
+- The folder `./Sessions/Session_XX/Tests` contains the multiple-choice tests for session `XX` in Markdown, Aiken and Moodle XML format
+- The folder `./Sessions/Session_XX/Tests/Markdown` contains the multiple-choice tests for session `XX` in Markdown format
+- The file `./Sessions/Session_XX/Tests/Markdown/Session_XX_Test_YY.md` contains the multiple-choice test `YY` for session `XX` in Markdown format
+- The folder `./Sessions/Session_XX/Tests/Aiken` contains the multiple-choice tests for session `XX` in Aiken format
+- The file `./Sessions/Session_XX/Tests/Aiken/Session_XX_Test_YY.txt` contains the multiple-choice test `YY` for session `XX` in Aiken format
+- The folder `./Sessions/Session_XX/Tests/Moodle` contains the multiple-choice tests for session `XX` in Moodle XML format
+- The file `./Sessions/Session_XX/Tests/Moodle/Session_XX_Test_YY.xml` contains the multiple-choice test `YY` for session `XX` in Moodle XML format

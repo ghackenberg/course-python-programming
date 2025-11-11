@@ -1,10 +1,10 @@
-# Homework 01: Introduction to Python & Programming Basics
+# Exercises 01: Introduction to Python & Programming Basics
 
-## Instructions
+<!--## Instructions
 
 - Please answer the theoretical questions concisely.
 - For programming tasks, write clear, well-commented Python code.
-- Submit your answers and code files as instructed by your professor.
+- Submit your answers and code files as instructed by your professor.-->
 
 ## Section 1: Programming Fundamentals
 
