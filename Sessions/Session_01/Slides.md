@@ -484,7 +484,7 @@ Visual Studio Code
 <div class="columns">
 <div class="two">
 
-### Virtual Environments (venv)
+### Virtual Environments (`venv`)
 
 - **Purpose:** Isolate dependencies for different Python projects.
 - **Avoids Conflicts:** Each project maintains its own libraries and versions, preventing conflicts with other projects or global Python installations.
@@ -779,7 +779,7 @@ my_bool = True
 <div class="columns">
 <div class="two">
 
-### Type Checking (type())
+### Type Checking (`type()`)
 
 - **Function:** Python provides a built-in function called `type()`, which is essential for understanding data structures.
 - **Purpose:** This function is used to dynamically determine the data type of any variable or value at runtime, returning the type object.
@@ -812,7 +812,7 @@ print(type(is_active))
 <div class="columns">
 <div class="two">
 
-### Type Conversion (int(), str(), float())
+### Type Conversion (`int()`, `str()`, `float()`)
 
 - **Purpose:** Explicitly change a value's data type (type casting).
 - **Functions:** Built-in functions like `int()` (to integer), `float()` (to floating-point), and `str()` (to string).
