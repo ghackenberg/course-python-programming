@@ -1,0 +1,2 @@
+- Add example of ugly versus beautiful code
+- Add example for venv usage or remove venv content
