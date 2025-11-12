@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 01</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q01: What is Programming?</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>According to the slides, what is the definition of programming?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Giving instructions to a computer to perform a task.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Designing the physical components of a computer.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Browsing the internet for information.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Creating graphical illustrations for software.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q02: High-Level vs. Machine Code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the key difference between a high-level language and machine code?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>High-level languages are executed faster than machine code.</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>High-level languages are human-readable, while machine code is in binary.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Machine code is portable across different platforms, unlike high-level languages.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Only machine code can be used to create complex applications.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q03: Interpreted Languages</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which statement best describes an interpreted language like Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Code is executed line by line at runtime.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The entire source code is translated to machine code before execution.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It offers the fastest performance compared to compiled languages.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Debugging is more challenging than in compiled languages.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q04: Zen of Python</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What command would you run in a Python interpreter to see the "Zen of Python"?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>show zen</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>print(zen)</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>import this</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>help(zen)</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q05: Virtual Environment Activation (Windows)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to activate a virtual environment named 'myenv' on Windows?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>source myenv/bin/activate</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>.\myenv\Scripts\activate</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python -m venv myenv</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>run myenv</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q06: REPL Purpose</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does REPL (Read-Eval-Print Loop) allow you to do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Experiment with code snippets and get immediate feedback.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Run a full Python application with a graphical interface.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Automatically debug and fix errors in a script.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Package a Python project for distribution.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q07: Python Comments</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How are multi-line comments (docstrings) enclosed in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>// This is a multi-line comment //</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>/* This is a multi-line comment */</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code># This is a multi-line comment #</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>"""This is a multi-line comment"""</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q08: Valid Variable Name</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following is a valid variable name in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my-variable</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>_my_variable</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>2nd_variable</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>global</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q09: Data Type of "False"</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the data type of the value <code>False</code> in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>&lt;class 'str'&gt;</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>&lt;class 'int'&gt;</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>&lt;class 'bool'&gt;</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>&lt;class 'float'&gt;</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q10: Type Conversion Error</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens if you try to execute <code>int("hello")</code> in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It raises a ValueError.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It returns the integer 0.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It returns the string "hello".</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It raises a TypeError.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q11: Modulo Operator</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the result of the expression <code>10 % 3</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>3</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>3.33</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q12: Operator Precedence</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the value of the expression <code>(10 + 5) * 2</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>20</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>25</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>30</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>17</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q13: print() 'end' parameter</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>end</code> parameter in the <code>print()</code> function do?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Specifies the character(s) to print at the end of the output.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Specifies the separator between multiple arguments.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ends the program execution after printing.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Specifies the encoding of the output string.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q14: Input Type Conversion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>If you get a user's age using <code>age_str = input("Enter your age: ")</code>, how would you convert it to an integer for calculation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>age_int = str(age_str)</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>age_int = float(age_str)</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>age_int = int(age_str)</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>age_int = bool(age_str)</code></p>]]></text>
+    </answer>
+  </question>
+
+</quiz>

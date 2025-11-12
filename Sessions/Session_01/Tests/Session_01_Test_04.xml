@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 01</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q01: Problem-Solving Approach</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the first step in the problem-solving approach described in the slides?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Understand the Problem</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Implement</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Test & Refine</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Plan</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q02: Python's "Batteries Included" Philosophy</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does Python's "Batteries Included" philosophy refer to?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Python is only useful for developing battery-powered devices.</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Python's comprehensive standard library covers many common programming tasks.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Python requires external libraries for all basic operations.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The Python installer includes a free text editor.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q03: Cross-Platform Compatibility</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does it mean for Python to be "cross-platform"?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Code can run on different operating systems without modification.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It can only be used for web development.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It requires a different version for each operating system.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It automatically translates code to other programming languages.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q04: Verifying Python Installation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What command do you use in the terminal to verify a successful Python installation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python --check</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python --status</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>python --version</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python --info</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q05: Creating a Virtual Environment</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to create a virtual environment named 'myenv'?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python new venv myenv</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>python -m venv myenv</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>venv create myenv</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>virtualenv myenv</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q06: Exiting Python REPL</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following commands can be used to exit the Python interactive mode (REPL)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>exit()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>quit</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>stop()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>break</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q07: 'python' is not recognized error</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the most likely cause of the error message <code>'python' is not recognized</code> in the terminal?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A syntax error in your Python script.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A required module is not installed.</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Python was not added to the system's PATH environment variable.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The wrong version of Python is installed.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q08: Case Sensitivity of Variables</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Are Python variable names case-sensitive?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Yes, <code>age</code> and <code>Age</code> are different variables.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, <code>age</code> and <code>Age</code> are the same variable.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Only if they start with an underscore.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It depends on the operating system.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q09: Integer Data Type</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following is an example of an integer (`int`) in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>3.14</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"100"</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>-50</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>True</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q10: Type Checking Function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which built-in function is used to check the data type of a variable in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>type()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>check_type()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>is_type()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>datatype()</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q11: Exponentiation Operator</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which operator is used for exponentiation in Python?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>^</code></p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>**</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>exp()</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>pow</code></p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q12: Assignment Operator</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the purpose of the <code>+=</code> operator?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It adds the right operand to the left operand and assigns the result to the left operand.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It checks if two variables are equal.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It assigns the value of the right operand to the left operand.</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It increments the variable by one.</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q13: print() 'sep' parameter</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be the output of <code>print("apple", "banana", "cherry", sep="-")</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>apple banana cherry</p>]]></text>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>apple-banana-cherry</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>apple,banana,cherry</p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>["apple", "banana", "cherry"]</p>]]></text>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name>
+      <text>Q14: f-string formatting</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given <code>name = "Bob"</code>, which of the following is a valid f-string usage?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>print(f"Hello, {name}!")</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>print("Hello, {name}!")</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>print(f"Hello, name!")</code></p>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>print("Hello, " + {name})</code></p>]]></text>
+    </answer>
+  </question>
+
+</quiz>
