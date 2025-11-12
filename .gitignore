@@ -10,3 +10,7 @@
 *.toc
 *.vrb
 _*
+
+**/Include
+**/Scripts
+**/Lib
