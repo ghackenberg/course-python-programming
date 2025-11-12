@@ -142,10 +142,5 @@ The images themselves are made with Tikz and Mermaid.js. The Tikz and Mermaid.js
 - The file `./Sessions/Session_XX/Diagrams/Mermaid/Diagram_Name.svg` contains the compiled SVG code of a Mermaid.js diagram
 - The folder `./Sessions/Session_XX/Exercises` contains the exercise sheets for session `XX` in Markdown format
 - The file `./Sessions/Session_XX/Exercises/Session_XX_Exercises_YY.md` contains exercise sheet `YY` for session `XX` in Markdown format
-- The folder `./Sessions/Session_XX/Tests` contains the multiple-choice tests for session `XX` in Markdown, Aiken and Moodle XML format
-- The folder `./Sessions/Session_XX/Tests/Markdown` contains the multiple-choice tests for session `XX` in Markdown format
-- The file `./Sessions/Session_XX/Tests/Markdown/Session_XX_Test_YY.md` contains the multiple-choice test `YY` for session `XX` in Markdown format
-- The folder `./Sessions/Session_XX/Tests/Aiken` contains the multiple-choice tests for session `XX` in Aiken format
-- The file `./Sessions/Session_XX/Tests/Aiken/Session_XX_Test_YY.txt` contains the multiple-choice test `YY` for session `XX` in Aiken format
-- The folder `./Sessions/Session_XX/Tests/Moodle` contains the multiple-choice tests for session `XX` in Moodle XML format
-- The file `./Sessions/Session_XX/Tests/Moodle/Session_XX_Test_YY.xml` contains the multiple-choice test `YY` for session `XX` in Moodle XML format
+- The folder `./Sessions/Session_XX/Tests` contains the multiple-choice tests for session `XX` in Moodle XML format
+- The file `./Sessions/Session_XX/Tests/Session_XX_Test_YY.xml` contains the multiple-choice test `YY` for session `XX` in Moodle XML format

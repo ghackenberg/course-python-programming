@@ -1,2 +1,4 @@
 - Add example of ugly versus beautiful code
 - Add example for venv usage or remove venv content
+- Pre-install Python and VS Code on Lab computers
+- Coding test at the end of the semester
