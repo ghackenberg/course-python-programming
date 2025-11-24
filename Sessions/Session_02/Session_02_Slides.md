@@ -7,7 +7,7 @@ paginate: true
 math: mathjax
 ---
 
-<!-- Placeholder for detailed chapter image description -->
+<!-- Abstract illustration of intertwined logic gates and data streams over a dark galaxy background, symbolizing control flow and data structures, in square format. -->
 
 ![bg right](./Images/Chapter.jpg)
 
@@ -22,7 +22,7 @@ This chapter includes the following sections:
 
 ---
 
-<!-- Placeholder for detailed section image description -->
+<!-- Abstract illustration of a branching path or a decision tree, with symbols representing True/False conditions, set against a dark galaxy background, in square format. -->
 
 ![bg right](./Images/Section_1.jpg)
 
@@ -250,7 +250,9 @@ if motor_status != "nominal" or not battery_ok:
 
 ---
 
-<!-- Placeholder for detailed section image description -->
+<!-- Abstract illustration of an endlessly repeating cycle or a spiral, depicting the concept of iteration and loops, over a dark galaxy background, in square format. -->
+
+![bg right](./Images/Section_2.jpg)
 
 ## 2.2: Loops (for/while)
 
@@ -444,7 +446,9 @@ for reading in readings:
 
 ---
 
-<!-- Placeholder for detailed section image description -->
+<!-- Abstract illustration of a dynamic, interconnected chain of varied elements, representing a list's mutable and ordered nature, against a dark galaxy background, in square format. -->
+
+![bg right](./Images/Section_3.jpg)
 
 ## 2.3: Lists
 
@@ -662,7 +666,9 @@ This is an advanced but very common "Pythonic" pattern.
 
 ---
 
-<!-- Placeholder for detailed section image description -->
+<!-- Abstract illustration of a rigid, unchangeable cluster of distinct elements, symbolizing an immutable tuple, over a dark galaxy background, in square format. -->
+
+![bg right](./Images/Section_4.jpg)
 
 ## 2.4: Tuples
 
