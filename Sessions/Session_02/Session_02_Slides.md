@@ -332,6 +332,9 @@ Loop finished.
 
 ---
 
+<div class="columns">
+<div class="three">
+
 ### The Infinite Loop
 
 If the condition never becomes `False`, the loop runs forever!
@@ -341,6 +344,14 @@ If the condition never becomes `False`, the loop runs forever!
 while True:
     print("Help, I'm stuck!")
 ```
+
+</div>
+<div>
+
+![](./Diagrams/Mermaid/infinite_loop.svg)
+
+</div>
+</div>
 
 ---
 
