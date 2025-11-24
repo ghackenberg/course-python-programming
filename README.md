@@ -10,12 +10,12 @@ This repository contains all the necessary materials for the course, including s
 
 Here you will find an overview of all sessions and links to their respective presentation slides:
 
-- [Session 01: Introduction to Python & Programming Basics](./Sessions/Session_01/Slides.md)
-- [Session 02: Control Flow & Data Structures I](./Sessions/Session_02/Slides.md)
-- [Session 03: Data Structures II & Functions](./Sessions/Session_03/Slides.md)
-- [Session 04: Modules, Packages & File I/O](./Sessions/Session_04/Slides.md)
-- [Session 05: Error Handling & Debugging](./Sessions/Session_05/Slides.md)
-- [Session 06: Object-Oriented Programming (OOP) I](./Sessions/Session_06/Slides.md)
-- [Session 07: Object-Oriented Programming (OOP) II](./Sessions/Session_07/Slides.md)
-- [Session 08: Advanced Data Structures & Algorithms](./Sessions/Session_08/Slides.md)
-- [Session 09: Working with External Libraries](./Sessions/Session_09/Slides.md)
+- [Session 01: Introduction to Python & Programming Basics](./Sessions/Session_01/Session_01_Slides.md)
+- [Session 02: Control Flow & Data Structures I](./Sessions/Session_02/Session_02_Slides.md)
+- [Session 03: Data Structures II & Functions](./Sessions/Session_03/Session_03_Slides.md)
+- [Session 04: Modules, Packages & File I/O](./Sessions/Session_04/Session_04_Slides.md)
+- [Session 05: Error Handling & Debugging](./Sessions/Session_05/Session_05_Slides.md)
+- [Session 06: Object-Oriented Programming (OOP) I](./Sessions/Session_06/Session_06_Slides.md)
+- [Session 07: Object-Oriented Programming (OOP) II](./Sessions/Session_07/Session_07_Slides.md)
+- [Session 08: Advanced Data Structures & Algorithms](./Sessions/Session_08/Session_08_Slides.md)
+- [Session 09: Working with External Libraries](./Sessions/Session_09/Session_09_Slides.md)
