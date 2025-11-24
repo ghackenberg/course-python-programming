@@ -2,7 +2,7 @@
 marp: true
 theme: fhooe
 header: Control Flow & Data Structures I
-footer: Dr. Georg Hackenberg, Professor for Computer Science and Industrial Systems
+footer: Dr. Georg Hackenberg, Professor for Industrial Informatics
 paginate: true
 math: mathjax
 ---
@@ -25,6 +25,12 @@ This chapter includes the following sections:
 ## 2.1: Conditional Statements (if/else)
 
 Making decisions is fundamental in programming and engineering.
+
+- What conditional statements are and why they are important
+- The `if`, `elif`, and `else` keywords
+- Comparison operators for creating conditions
+- Logical operators (`and`, `or`, `not`) for combining conditions
+- Engineering examples: safety interlocks, quality control
 
 ---
 
@@ -252,6 +258,13 @@ if motor_status != "nominal" or not battery_ok:
 
 Automating repetitive tasks is a core strength of programming.
 
+- The purpose of loops for automation
+- The `while` loop for repeating tasks based on a condition
+- The `for` loop for iterating over sequences
+- Using `range()` to generate number sequences
+- Loop control with `break` and `continue`
+- Engineering examples: batch processing, data filtering
+
 ---
 
 ### What are Loops?
@@ -445,6 +458,13 @@ for reading in readings:
 ## 2.3: Lists
 
 The most fundamental and versatile data structure in Python.
+
+- What lists are: ordered and mutable collections
+- Creating, accessing, and slicing lists
+- Modifying lists with methods like `append()`, `remove()`, and `sort()`
+- Representing 2D data with nested lists (matrices)
+- Looping through lists to process data
+- Engineering examples: managing maintenance tasks, signal processing
 
 ---
 
@@ -673,6 +693,13 @@ This is an advanced but very common "Pythonic" pattern.
 ## 2.4: Tuples
 
 Ordered, but unchangeable. The reliable sibling of lists.
+
+- What tuples are: ordered and immutable collections
+- Key differences between lists and tuples
+- Creating, accessing, and unpacking tuples
+- Use cases for tuples: data integrity, multiple return values
+- Combining lists and tuples for complex data structures
+- Engineering examples: storing fixed configurations, robot path coordinates
 
 ---
 
