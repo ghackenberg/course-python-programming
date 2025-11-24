@@ -7,8 +7,6 @@ paginate: true
 math: mathjax
 ---
 
-<!-- Abstract illustration of intertwined logic gates and data streams over a dark galaxy background, symbolizing control flow and data structures, in square format. -->
-
 ![bg right](./Images/Chapter.jpg)
 
 # Chapter 2: Control Flow & Data Structures I
@@ -21,8 +19,6 @@ This chapter includes the following sections:
 - 2.4: Tuples
 
 ---
-
-<!-- Abstract illustration of a branching path or a decision tree, with symbols representing True/False conditions, set against a dark galaxy background, in square format. -->
 
 ![bg right](./Images/Section_1.jpg)
 
@@ -250,8 +246,6 @@ if motor_status != "nominal" or not battery_ok:
 
 ---
 
-<!-- Abstract illustration of an endlessly repeating cycle or a spiral, depicting the concept of iteration and loops, over a dark galaxy background, in square format. -->
-
 ![bg right](./Images/Section_2.jpg)
 
 ## 2.2: Loops (for/while)
@@ -446,8 +440,6 @@ for reading in readings:
 
 ---
 
-<!-- Abstract illustration of a dynamic, interconnected chain of varied elements, representing a list's mutable and ordered nature, against a dark galaxy background, in square format. -->
-
 ![bg right](./Images/Section_3.jpg)
 
 ## 2.3: Lists
@@ -507,10 +499,16 @@ print(f"First sensor is {first_sensor}")
 
 Extract a portion (a sub-list) from a list using a "slice".
 
+<div class="columns">
+<div>
+
 **Syntax:** `my_list[start:stop:step]`
 - `start`: The index to begin the slice (inclusive).
 - `stop`: The index to end the slice (exclusive).
 - `step`: The increment (optional, defaults to 1).
+
+</div>
+<div class="two">
 
 ```python
 measurements = [0.5, 1.2, 1.9, 2.5, 3.1, 3.8, 4.4]
@@ -528,6 +526,10 @@ every_other = measurements[0:7:2] # [0.5, 1.9, 3.1, 4.4]
 first_three_again = measurements[:3] # Omitting 0 is allowed
 from_index_4_on = measurements[4:]   # Omitting end is allowed
 ```
+
+</div>
+</div>
+
 ---
 
 ### Modifying Lists
@@ -665,8 +667,6 @@ This is an advanced but very common "Pythonic" pattern.
     `matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]` -> Trace is 1 + 5 + 9 = 15.
 
 ---
-
-<!-- Abstract illustration of a rigid, unchangeable cluster of distinct elements, symbolizing an immutable tuple, over a dark galaxy background, in square format. -->
 
 ![bg right](./Images/Section_4.jpg)
 
