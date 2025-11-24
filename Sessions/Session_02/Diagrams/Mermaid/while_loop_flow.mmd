@@ -1,0 +1,5 @@
+graph TD
+    A["Initialize <code>count = 0</code>"] --> B{"Is <code>count < 3</code>?"};
+    B -- Yes --> C["Print & Increment <code>count</code>"];
+    C --> B;
+    B -- No --> D[End Loop];

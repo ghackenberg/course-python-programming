@@ -1,0 +1,13 @@
+graph LR
+    subgraph "Indices"
+        direction LR
+        I0["0"] --- I1["1"] --- I2["2"] --- I3["3"]
+    end
+    subgraph "sensor_ids"
+        direction LR
+        A["TEMP-01"] --- B["PRES-01"] --- C["VIB-01"] --- D["HUM-01"]
+    end
+    subgraph "Negative Indices"
+        direction LR
+        NI0["-4"] --- NI1["-3"] --- NI2["-2"] --- NI3["-1"]
+    end

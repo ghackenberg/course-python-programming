@@ -1,0 +1,6 @@
+graph TD
+    A[Start] --> B{Is temperature > 100°C?};
+    B -- Yes --> C[Activate Cooling System];
+    B -- No --> D[Continue Monitoring];
+    C --> D;
+    D --> E[End];

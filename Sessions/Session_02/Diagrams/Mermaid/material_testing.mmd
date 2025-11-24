@@ -1,0 +1,9 @@
+graph TD
+    A[Start] --> B{Strength > 500?};
+    B -- Yes --> C[High-Strength];
+    B -- No --> D{Strength > 300?};
+    D -- Yes --> E[Structural-Grade];
+    D -- No --> F[Low-Carbon];
+    C --> G[End];
+    E --> G;
+    F --> G;
