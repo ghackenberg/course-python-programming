@@ -267,6 +267,8 @@ Automating repetitive tasks is a core strength of programming.
 
 ---
 
+![bg right](./Images/Loop.jpg)
+
 ### What are Loops?
 
 Loops allow you to execute a block of code multiple times. This is known as **iteration**.
@@ -389,6 +391,8 @@ for item in sequence:
 It's often simpler and safer than a `while` loop because you don't need to manage the loop variable manually.
 
 ---
+
+![bg right](./Images/Range.jpg)
 
 ### The `range()` function
 
