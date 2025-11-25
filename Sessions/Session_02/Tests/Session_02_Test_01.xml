@@ -27,16 +27,16 @@ else:
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>OK</text>
+      <text><![CDATA[OK]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>Warning!</text>
+      <text><![CDATA[Warning!]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>No output</text>
+      <text><![CDATA[No output]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>A syntax error</text>
+      <text><![CDATA[A syntax error]]></text>
     </answer>
   </question>
 
@@ -53,16 +53,16 @@ else:
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>==</text>
+      <text><![CDATA[==]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>=</text>
+      <text><![CDATA[=]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>!=</text>
+      <text><![CDATA[!=]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>&gt;=</text>
+      <text><![CDATA[>=]]></text>
     </answer>
   </question>
 
@@ -82,16 +82,16 @@ while count > 0:
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>3<br>2<br>1</text>
+      <text><![CDATA[3<br>2<br>1]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>3<br>2<br>1<br>0</text>
+      <text><![CDATA[3<br>2<br>1<br>0]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>2<br>1<br>0</text>
+      <text><![CDATA[2<br>1<br>0]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>An infinite loop</text>
+      <text><![CDATA[An infinite loop]]></text>
     </answer>
   </question>
 
@@ -109,16 +109,16 @@ while count > 0:
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>5 times</text>
+      <text><![CDATA[5 times]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>4 times</text>
+      <text><![CDATA[4 times]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>6 times</text>
+      <text><![CDATA[6 times]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>0 times</text>
+      <text><![CDATA[0 times]]></text>
     </answer>
   </question>
 
@@ -128,23 +128,23 @@ while count > 0:
       <text>S02.3.1: List Indexing</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>Given the list `sensor_ids = ["TEMP-01", "PRES-01", "VIB-01"]`, what does `sensor_ids[1]` return?</p>]]></text>
+      <text><![CDATA[<p>Given the list <code>sensor_ids = ["TEMP-01", "PRES-01", "VIB-01"]</code>, what does <code>sensor_ids[1]</code> return?</p>]]></text>
     </questiontext>
     <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>"PRES-01"</text>
+      <text><![CDATA["PRES-01"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>"TEMP-01"</text>
+      <text><![CDATA["TEMP-01"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>"VIB-01"</text>
+      <text><![CDATA["VIB-01"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>An IndexError</text>
+      <text><![CDATA[An IndexError]]></text>
     </answer>
   </question>
 
@@ -161,16 +161,16 @@ while count > 0:
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>Lists are mutable (changeable), while tuples are immutable (unchangeable).</text>
+      <text><![CDATA[Lists are mutable (changeable), while tuples are immutable (unchangeable).]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>Tuples are mutable (changeable), while lists are immutable (unchangeable).</text>
+      <text><![CDATA[Tuples are mutable (changeable), while lists are immutable (unchangeable).]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>Lists can only store items of the same data type, while tuples can store different types.</text>
+      <text><![CDATA[Lists can only store items of the same data type, while tuples can store different types.]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>Lists use parentheses `()` while tuples use square brackets `[]`.</text>
+      <text><![CDATA[Lists use parentheses <code>()</code> while tuples use square brackets <code>[]</code>.]]></text>
     </answer>
   </question>
   
@@ -196,16 +196,16 @@ print(f"Material Grade: {grade}")</code></pre>]]></text>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>Structural-Grade</text>
+      <text><![CDATA[Structural-Grade]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>High-Strength</text>
+      <text><![CDATA[High-Strength]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>Low-Carbon</text>
+      <text><![CDATA[Low-Carbon]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>No grade is assigned.</text>
+      <text><![CDATA[No grade is assigned.]]></text>
     </answer>
   </question>
 
@@ -225,16 +225,16 @@ print(f"Material Grade: {grade}")</code></pre>]]></text>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>4</text>
+      <text><![CDATA[4]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>5</text>
+      <text><![CDATA[5]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>9</text>
+      <text><![CDATA[9]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>10</text>
+      <text><![CDATA[10]]></text>
     </answer>
   </question>
 
@@ -244,7 +244,7 @@ print(f"Material Grade: {grade}")</code></pre>]]></text>
       <text>S02.3.2: List append method</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>What is the content of `tasks` after this code runs?</p><pre><code>tasks = ["Check Oil", "Replace Filter"]
+      <text><![CDATA[<p>What is the content of <code>tasks</code> after this code runs?</p><pre><code>tasks = ["Check Oil", "Replace Filter"]
 tasks.append("Calibrate Sensor")</code></pre>]]></text>
     </questiontext>
     <defaultgrade>1</defaultgrade>
@@ -252,16 +252,16 @@ tasks.append("Calibrate Sensor")</code></pre>]]></text>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>["Check Oil", "Replace Filter", "Calibrate Sensor"]</text>
+      <text><![CDATA[["Check Oil", "Replace Filter", "Calibrate Sensor"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>["Calibrate Sensor", "Check Oil", "Replace Filter"]</text>
+      <text><![CDATA[["Calibrate Sensor", "Check Oil", "Replace Filter"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>["Check Oil", "Calibrate Sensor", "Replace Filter"]</text>
+      <text><![CDATA[["Check Oil", "Calibrate Sensor", "Replace Filter"]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>The code causes an error.</text>
+      <text><![CDATA[The code causes an error.]]></text>
     </answer>
   </question>
 
@@ -271,23 +271,23 @@ tasks.append("Calibrate Sensor")</code></pre>]]></text>
       <text>S02.4.2: Tuple Unpacking</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>A function `get_sensor_reading()` returns the tuple `(25.5, 60.1)`. Which line of code correctly unpacks this into `temp` and `humidity` variables?</p>]]></text>
+      <text><![CDATA[<p>A function <code>get_sensor_reading()</code> returns the tuple <code>(25.5, 60.1)</code>. Which line of code correctly unpacks this into <code>temp</code> and <code>humidity</code> variables?</p>]]></text>
     </questiontext>
     <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text>`temp, humidity = get_sensor_reading()`</text>
+      <text><![CDATA[<code>temp, humidity = get_sensor_reading()</code>]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>`(temp, humidity) = get_sensor_reading()`</text>
+      <text><![CDATA[<code>(temp, humidity) = get_sensor_reading()</code>]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>`temp = get_sensor_reading()[0]` and `humidity = get_sensor_reading()[1]` are the only ways.</text>
+      <text><![CDATA[<code>temp = get_sensor_reading()[0]</code> and <code>humidity = get_sensor_reading()[1]</code> are the only ways.]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text>`get_sensor_reading(temp, humidity)`</text>
+      <text><![CDATA[<code>get_sensor_reading(temp, humidity)</code>]]></text>
     </answer>
   </question>
 
