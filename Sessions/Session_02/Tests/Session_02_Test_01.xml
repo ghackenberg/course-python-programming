@@ -252,13 +252,13 @@ tasks.append("Calibrate Sensor")</code></pre>]]></text>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
     <answer fraction="100" format="html">
-      <text><![CDATA[["Check Oil", "Replace Filter", "Calibrate Sensor"]]></text>
+      <text><![CDATA[<code>["Check Oil", "Replace Filter", "Calibrate Sensor"]</code>]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[["Calibrate Sensor", "Check Oil", "Replace Filter"]]></text>
+      <text><![CDATA[<code>["Calibrate Sensor", "Check Oil", "Replace Filter"]</code>]]></text>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[["Check Oil", "Calibrate Sensor", "Replace Filter"]]></text>
+      <text><![CDATA[<code>["Check Oil", "Calibrate Sensor", "Replace Filter"]</code>]]></text>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The code causes an error.]]></text>
