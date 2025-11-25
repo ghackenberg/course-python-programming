@@ -613,6 +613,7 @@ Analogy: A well-organized toolbox. You can add new tools, remove old ones, and r
 
 ```python
 # A list of part specifications
+
 part_specs = ["X-45", 3.14, 10, True]
 ```
 
@@ -728,14 +729,18 @@ Let's process a list of recorded voltages.
 voltages = [5.1, 4.9, 5.0, 0.0, 5.2, 4.8, 0.0]
 
 # Remove the errorneous '0.0' readings
+
 while 0.0 in voltages:
+
     voltages.remove(0.0)
 
 # Sort the valid readings
+
 voltages.sort()
 
 print(f"Number of valid readings: {len(voltages)}")
 print(f"Cleaned and sorted data: {voltages}")
+
 # Expected output: [4.8, 4.9, 5.0, 5.1, 5.2]
 ```
 
@@ -799,11 +804,13 @@ A powerful, concise way to create lists.
 squares = []
 for i in range(5):
     squares.append(i * i)
+
 # squares is [0, 1, 4, 9, 16]
 ```
 **With List Comprehension:**
 ```python
 squares = [i * i for i in range(5)]
+
 # squares is [0, 1, 4, 9, 16]
 ```
 Read as: "Create a new list with `i*i` for each `i` in the range 0 to 4".
