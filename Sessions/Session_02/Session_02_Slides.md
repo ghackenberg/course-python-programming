@@ -69,6 +69,8 @@ Indentation (usually 4 spaces) is crucial in Python. It defines the code block.
 
 ---
 
+![bg right:35%](./Images/Hydraulic_Line.png)
+
 ### Engineering Example: Pressure Check
 
 Imagine a system monitoring the pressure in a hydraulic line.
