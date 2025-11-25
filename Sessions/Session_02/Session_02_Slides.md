@@ -297,6 +297,9 @@ Analogy: A robotic arm on an assembly line performing the same weld over and ove
 
 ---
 
+<div class="columns">
+<div class="three">
+
 ### The `while` Loop
 
 The `while` loop repeats a block of code **as long as** a condition remains `True`.
@@ -310,12 +313,20 @@ while condition:
     ...
 ```
 
+</div>
+<div>
+
+![](./Diagrams/Mermaid/while_loop.svg)
+
+</div>
+</div>
+
 ---
 
 ### Anatomy of a `while` Loop
 
 <div class="columns">
-<div class="three">
+<div class="five">
 
 ```python
 # 1. Initialization
@@ -340,7 +351,7 @@ Loop finished.
 ```
 
 </div>
-<div class="two">
+<div class="four">
 
 ![](./Diagrams/Mermaid/while_loop_flow.svg)
 
