@@ -60,10 +60,15 @@ The simplest form of a conditional statement. It executes a block of code **only
 **Syntax:**
 ```python
 if condition:
-    # This code runs if 'condition' is True
+
+    # This code runs if 'condition' is True.
+
     # Note the indentation!
+
     statement_1
     statement_2
+    ...
+
 ```
 Indentation (usually 4 spaces) is crucial in Python. It defines the code block.
 
@@ -80,10 +85,14 @@ pressure_psi = 1200
 pressure_limit_psi = 1000
 
 # Check if the pressure exceeds the limit
+
 if pressure_psi > pressure_limit_psi:
+
     print("WARNING: Pressure is critical!")
+
     # In a real system, you might trigger an alarm here.
     # trigger_alarm_system()
+
 ```
 **Question:** What happens if `pressure_psi` is 900?
 **Answer:** Nothing is printed. The `if` block is skipped.
@@ -103,10 +112,13 @@ is_safe = True
 system_active = False
 
 if is_safe:
+
     print("System status: SAFE") # This will be printed
 
 if system_active:
+
     print("System is ACTIVE") # This will NOT be printed
+
 ```
 
 ---
@@ -133,11 +145,15 @@ What if you want to do something when the condition is **false**? Use `else`.
 **Syntax:**
 ```python
 if condition:
+
     # This block runs if 'condition' is True
     ...
+
 else:
+
     # This block runs if 'condition' is False
     ...
+
 ```
 An `else` block provides an alternative path.
 
@@ -154,11 +170,15 @@ current_temp_C = 85
 target_temp_C = 90
 
 if current_temp_C < target_temp_C:
+
     print("Activating heater...")
     # activate_heater()
+
 else:
+
     print("Temperature is stable. Heater is off.")
     # deactivate_heater()
+
 ```
 This ensures one of the two actions is always taken.
 
@@ -171,14 +191,20 @@ For handling more than two possibilities, use `elif` (short for "else if").
 **Syntax:**
 ```python
 if condition_1:
+
     # Runs if condition_1 is True
     ...
+
 elif condition_2:
+
     # Runs if condition_1 is False and condition_2 is True
     ...
+
 else:
+
     # Runs if all preceding conditions are False
     ...
+
 ```
 
 ---
@@ -239,10 +265,12 @@ gps_lock = True
 motor_status = "nominal"
 
 # System is ready if battery is ok AND gps has a lock.
+
 if battery_ok and gps_lock:
     print("System ready for takeoff.")
 
 # Abort if motor status is NOT nominal OR battery is NOT ok.
+
 if motor_status != "nominal" or not battery_ok:
     print("ABORT: System check failed.")
 ```
@@ -307,9 +335,11 @@ The `while` loop repeats a block of code **as long as** a condition remains `Tru
 **Syntax:**
 ```python
 while condition:
-    # This code runs repeatedly
-    # as long as 'condition' is True.
+    
+    # This code runs repeatedly as long as 'condition' is True.
+
     # Be sure to update the condition variable!
+
     ...
 ```
 
@@ -334,7 +364,9 @@ count = 0
 
 # 2. Condition
 while count < 3:
+
     print(f"Processing item {count}")
+
     # 3. Update
     count = count + 1 
 
@@ -369,7 +401,9 @@ If the condition never becomes `False`, the loop runs forever!
 
 ```python
 # DANGER: Infinite Loop
+
 while True:
+
     print("Help, I'm stuck!")
 ```
 
@@ -402,7 +436,6 @@ while battery_level > min_level:
 
     battery_level -= power_draw_per_hour
     # same as battery_level = battery_level - ...
-
     hours_of_operation += 1
     # same as hours_of_operation = hours_of_operation + 1
 
@@ -427,8 +460,9 @@ The `for` loop iterates over a **sequence** of items (like a list, a tuple, or a
 **Syntax:**
 ```python
 for item in sequence:
-    # This code runs once for each 'item'
-    # in the 'sequence'.
+
+    # This code runs once for each 'item' in the 'sequence'.
+
     ...
 ```
 It's often simpler and safer than a `while` loop because you don't need to manage the loop variable manually.
@@ -450,6 +484,9 @@ A common partner for `for` loops. `range()` generates a sequence of numbers.
 
 ---
 
+<div class="columns">
+<div class="two">
+
 ### Engineering Example: Batch Processing
 
 Run a calibration test 5 times.
@@ -458,12 +495,23 @@ Run a calibration test 5 times.
 num_tests = 5
 
 for test_number in range(num_tests):
+
     print(f"Starting calibration test #{test_number + 1}...")
+
     # run_calibration_procedure()
+
     print("Test complete.")
     
 print("\nAll calibration tests finished.")
 ```
+
+</div>
+<div>
+
+![](./Images/Batch_Processing.png)
+
+</div>
+</div>
 
 ---
 
@@ -473,9 +521,13 @@ The `break` statement **exits a loop immediately**, regardless of the loop's con
 
 ```python
 # Find the first multiple of 7
+
 for number in range(1, 100):
+
     if number % 7 == 0:
+
         print(f"Found it! {number} is the first multiple of 7.")
+
         break # Exit the loop now
 ```
 **Use Case:** Stop a process when a critical error is found or a target value is reached.
@@ -491,8 +543,11 @@ The `continue` statement **skips the rest of the current iteration** and moves t
 readings = [2.1, 2.3, -99.0, 2.4, 2.2, -98.0]
 
 for reading in readings:
+
     if reading < 0:
+
         print("Invalid reading found. Skipping.")
+
         continue # Go to the next reading
     
     print(f"Processing reading: {reading}")
@@ -672,7 +727,9 @@ You can have lists inside other lists to represent grids, tables, or matrices.
 
 ```python
 # A 3x3 matrix representing a simple kinematic transformation
+
 # (a simplified rotation matrix)
+
 rotation_matrix = [
     [1, 0, 0],  # Row 0
     [0, 0.707, -0.707], # Row 1
@@ -680,7 +737,9 @@ rotation_matrix = [
 ]
 
 # Access element in row 1, column 2
+
 element_1_2 = rotation_matrix[1][2] # -0.707
+
 print(f"Element at (1, 2) is: {element_1_2}")
 ```
 
@@ -812,13 +871,16 @@ port = device_config[2]        # 3
 1.  **Data Integrity:** Protects your data from accidental modification. If your function receives a tuple, you can be sure it won't be changed.
     ```python
     # These RGB values for "safety green" should never change.
+
     SAFETY_GREEN = (0, 255, 0)
     ```
 
 2.  **Function Return Values:** A clean way to return multiple values from a function.
     ```python
     def get_sensor_reading():
+
         # ... logic to read temp and humidity
+
         return (25.5, 60.1) # Returns a tuple (temperature, humidity)
     ```
 3.  **Dictionary Keys:** Lists cannot be used as keys in a dictionary (more on this later), but tuples can.
