@@ -383,6 +383,9 @@ while True:
 
 ---
 
+<div class="columns">
+<div class="two">
+
 ### Engineering Example: Battery Discharge
 
 Simulate a device operating until its battery is low.
@@ -394,12 +397,26 @@ power_draw_per_hour = 5.5
 
 hours_of_operation = 0
 while battery_level > min_level:
-    print(f"Hour {hours_of_operation}: Battery at {battery_level:.1f}%")
-    battery_level -= power_draw_per_hour # same as battery_level = battery_level - ...
-    hours_of_operation += 1 # same as hours_of_operation = hours_of_operation + 1
+    print(f"Hour {hours_of_operation}:")
+    print(f"Battery at {battery_level:.1f}%")
 
-print(f"\nShutdown after {hours_of_operation} hours. Final battery: {battery_level:.1f}%")
+    battery_level -= power_draw_per_hour
+    # same as battery_level = battery_level - ...
+
+    hours_of_operation += 1
+    # same as hours_of_operation = hours_of_operation + 1
+
+print(f"\nShutdown after {hours_of_operation} hours.")
+print(f"\nFinal battery: {battery_level:.1f}%")
 ```
+
+</div>
+<div>
+
+![](./Images/Battery_Discharge.png)
+
+</div>
+</div>
 
 ---
 
