@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- Test 3: Session 02 - Engineering Examples and Application -->
+
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 02 Test 3</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Simple - 'elif' purpose -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.6: 'elif' purpose</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In what scenario is the `elif` keyword most useful?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>When you need to check multiple, mutually exclusive conditions in a sequence.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>When you have a single condition that can be either true or false.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>When you want to run a block of code repeatedly.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>When you want to create an alternative to a `for` loop.</text>
+    </answer>
+  </question>
+
+  <!-- Question 2: Simple - Loop purpose -->
+  <question type="multichoice">
+    <name>
+      <text>S02.2.7: Purpose of loops</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the primary benefit of using loops in programming?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>To automate repetitive tasks efficiently.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To make decisions based on conditions.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To store collections of data.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To stop the program when an error occurs.</text>
+    </answer>
+  </question>
+
+  <!-- Question 3: Simple - List mutability -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.6: List property</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The ability to add, remove, or change items in a list after its creation is known as...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Mutability</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Immutability</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Indexing</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Slicing</text>
+    </answer>
+  </question>
+
+  <!-- Question 4: Simple - Tuple access -->
+  <question type="multichoice">
+    <name>
+      <text>S02.4.5: Accessing a tuple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given `point = (10, 20, 5)`, what is the result of `point[0]`?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>10</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>20</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>(10)</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An error</text>
+    </answer>
+  </question>
+  
+  <!-- Question 5: Medium - Application of if/else -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.7: Application of if/else</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the temperature control example, if `current_temp_C` is 95 and `target_temp_C` is 90, what message is printed?</p><pre><code>if current_temp_C < target_temp_C:
+    print("Activating heater...")
+else:
+    print("Temperature is stable. Heater is off.")</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Temperature is stable. Heater is off.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Activating heater...</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Both messages are printed.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No message is printed.</text>
+    </answer>
+  </question>
+
+  <!-- Question 6: Medium - Battery discharge example -->
+  <question type="multichoice">
+    <name>
+      <text>S02.2.8: While loop prediction</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the battery discharge simulation, what is the primary purpose of the line `battery_level -= power_draw_per_hour`?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>To update the loop's condition, ensuring it eventually terminates.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To calculate the total hours of operation.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To set the initial battery level.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>To print the final battery level.</text>
+    </answer>
+  </question>
+  
+  <!-- Question 7: Medium - List 'remove' method -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.7: List remove method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the final state of the `voltages` list after this code runs?</p><pre><code>voltages = [5.1, 0.0, 5.0, 0.0]
+while 0.0 in voltages:
+    voltages.remove(0.0)</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>[5.1, 5.0]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[5.1, 0.0, 5.0]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[5.1, 5.0, 0.0]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The code enters an infinite loop.</text>
+    </answer>
+  </question>
+
+  <!-- Question 8: Hard - Material Grade Logic -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.8: 'elif' edge case</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the material testing example, what grade would be assigned if `tensile_strength_MPa` was exactly 300?</p><pre><code>if tensile_strength_MPa > 500:
+    grade = "High-Strength"
+elif tensile_strength_MPa > 300:
+    grade = "Structural-Grade"
+else:
+    grade = "Low-Carbon"</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Low-Carbon</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Structural-Grade</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>High-Strength</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>It would result in an error.</text>
+    </answer>
+  </question>
+
+  <!-- Question 9: Hard - List Comprehension -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.8: List Comprehension</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the value of `squares` after this list comprehension is executed?</p><pre><code>squares = [i * i for i in range(4)]</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>[0, 1, 4, 9]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[1, 4, 9, 16]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[0, 1, 2, 3]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[0, 1, 4, 9, 16]</text>
+    </answer>
+  </question>
+
+  <!-- Question 10: Hard - Robot Path Data Structure -->
+  <question type="multichoice">
+    <name>
+      <text>S02.4.6: Robot Path Data Structure</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the robot path example, `robot_path` is a list of tuples. Why is this data structure a good choice?</p><pre><code>robot_path = [(0, 0), (0, 1), (1, 1)]</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>It allows the path to be extended (mutable list), while ensuring each (x, y) coordinate point is fixed and cannot be accidentally changed (immutable tuples).</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>It is the only way to store 2D data in Python.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The list is immutable, protecting the overall path, and the tuples are mutable, allowing coordinates to be updated.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>It is more memory efficient than using a list of lists for this task.</text>
+    </answer>
+  </question>
+
+</quiz>

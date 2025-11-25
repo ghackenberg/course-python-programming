@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- Test 5: Session 02 - Mixed Concepts and Problem Solving -->
+
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 02 Test 5</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Simple - Python Indentation -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.11: Python Indentation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How does Python define a block of code (e.g., the body of an `if` statement or a `for` loop)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Through indentation (e.g., 4 spaces).</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using curly braces `{}`.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using keywords like `begin` and `end`.</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using parentheses `()`.</text>
+    </answer>
+  </question>
+  
+  <!-- Question 2: Simple - range() behavior -->
+  <question type="multichoice">
+    <name>
+      <text>S02.2.12: range() behavior</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The `range(stop)` function generates numbers up to but NOT including `stop`. True or False?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>True</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>False</text>
+    </answer>
+  </question>
+  
+  <!-- Question 3: Simple - List insert() method -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.12: List insert method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the state of `data` after the following code is executed?</p><pre><code>data = [10, 20, 30]
+data.insert(1, 15)</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>[10, 15, 20, 30]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[15, 10, 20, 30]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[10, 20, 15, 30]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[10, 20, 30, 15]</text>
+    </answer>
+  </question>
+  
+  <!-- Question 4: Simple - Function returning a tuple -->
+  <question type="multichoice">
+    <name>
+      <text>S02.4.9: Function returning a tuple</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>A function can return multiple values by returning them as a single...</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Tuple</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>List</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Variable</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Boolean</text>
+    </answer>
+  </question>
+
+  <!-- Question 5: Medium - Quality Control Logic -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.12: Quality Control Logic</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>A component's length must be between 24.9mm and 25.1mm. Which condition correctly checks if a `measured_length` is within this valid range?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>`measured_length >= 24.9 and measured_length <= 25.1`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`measured_length > 24.9 or measured_length < 25.1`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`measured_length > 24.9 and measured_length < 25.1`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`measured_length == 24.9 and measured_length == 25.1`</text>
+    </answer>
+  </question>
+  
+  <!-- Question 6: Medium - Find correct loop control -->
+  <question type="multichoice">
+    <name>
+      <text>S02.2.13: Loop Control Use Case</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You are processing a list of sensor readings. If you find a reading that indicates a critical failure (e.g., -999), you must stop all further processing immediately. Which statement should you use?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>`break`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`continue`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`else`</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>`stop`</text>
+    </answer>
+  </question>
+
+  <!-- Question 7: Medium - List Slicing Shortcut -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.13: List slicing shortcut</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given `measurements = [0.5, 1.2, 1.9, 2.5, 3.1]`, what does the slice `measurements[:3]` produce?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>[0.5, 1.2, 1.9]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[0.5, 1.2]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>[1.2, 1.9, 2.5]</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The code produces an error.</text>
+    </answer>
+  </question>
+
+  <!-- Question 8: Hard - Looping over tuple list -->
+  <question type="multichoice">
+    <name>
+      <text>S02.4.10: Looping over a list of tuples</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given `robot_path = [(0, 0), (0, 1), (1, 1)]`, what will be printed by the following code?</p><pre><code>for point in robot_path:
+    x, y = point
+    print(f"Y: {y}")</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Y: 0<br>Y: 1<br>Y: 1</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>X: 0<br>X: 0<br>X: 1</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Y: 0</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The code will raise an error.</text>
+    </answer>
+  </question>
+  
+  <!-- Question 9: Hard - Matrix Trace Exercise -->
+  <question type="multichoice">
+    <name>
+      <text>S02.3.14: Matrix Trace</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The trace of a square matrix is the sum of the elements on the main diagonal (from top-left to bottom-right). What is the trace of the given matrix?</p><pre><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>15</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>12</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>45</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>9</text>
+    </answer>
+  </question>
+  
+  <!-- Question 10: Hard - Complex Conditional Logic -->
+  <question type="multichoice">
+    <name>
+      <text>S02.1.13: Complex Conditionals</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is printed by this diagnostic program?</p><pre><code>engine_temp = 95
+oil_pressure = 10
+
+if engine_temp > 110 or oil_pressure < 5:
+    print("Shutdown!")
+elif engine_temp > 90:
+    print("Warning")
+else:
+    print("Normal")</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Warning</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Shutdown!</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Normal</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Warning<br>Normal</text>
+    </answer>
+  </question>
+  
+</quiz>
