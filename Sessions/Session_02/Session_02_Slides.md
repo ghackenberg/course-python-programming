@@ -143,6 +143,8 @@ An `else` block provides an alternative path.
 
 ---
 
+![bg contain right:40%](./Images/Chemical_Reactor.png)
+
 ### Engineering Example: Temperature Control
 
 A simple thermostat logic for a chemical reactor.
@@ -224,6 +226,9 @@ Combine multiple conditions for more complex logic.
 
 ---
 
+<div class="columns">
+<div class="two">
+
 ### Engineering Example: System Check
 
 A pre-flight check for a drone.
@@ -241,6 +246,14 @@ if battery_ok and gps_lock:
 if motor_status != "nominal" or not battery_ok:
     print("ABORT: System check failed.")
 ```
+
+</div>
+<div>
+
+![A futuristic drone dashboard showing pre-flight checks are all green and nominal.](./Images/System_Check.png)
+
+</div>
+</div>
 
 ---
 
