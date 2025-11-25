@@ -74,7 +74,8 @@ Indentation (usually 4 spaces) is crucial in Python. It defines the code block.
 
 ---
 
-![bg right:35%](./Images/Hydraulic_Line.png)
+<div class="columns">
+<div class="two">
 
 ### Engineering Example: Pressure Check
 
@@ -94,8 +95,17 @@ if pressure_psi > pressure_limit_psi:
     # trigger_alarm_system()
 
 ```
+
 **Question:** What happens if `pressure_psi` is 900?
 **Answer:** Nothing is printed. The `if` block is skipped.
+
+</div>
+<div>
+
+![](./Images/Hydraulic_Line.png)
+
+</div>
+</div>
 
 ---
 
@@ -159,7 +169,8 @@ An `else` block provides an alternative path.
 
 ---
 
-![bg contain right:40%](./Images/Chemical_Reactor.png)
+<div class="columns">
+<div class="three">
 
 ### Engineering Example: Temperature Control
 
@@ -180,7 +191,16 @@ else:
     # deactivate_heater()
 
 ```
+
 This ensures one of the two actions is always taken.
+
+</div>
+<div class="two">
+
+![](./Images/Chemical_Reactor.png)
+
+</div>
+</div>
 
 ---
 
