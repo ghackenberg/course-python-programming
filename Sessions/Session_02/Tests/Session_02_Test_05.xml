@@ -11,7 +11,7 @@
   <!-- Question 1: Simple - Python Indentation -->
   <question type="multichoice">
     <name>
-      <text>S02.1.11: Python Indentation</text>
+      <text>Q01: Python Indentation</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>How does Python define a block of code (e.g., the body of an <code>if</code> statement or a <code>for</code> loop)?</p>]]></text>
@@ -37,7 +37,7 @@
   <!-- Question 2: Simple - range() behavior -->
   <question type="multichoice">
     <name>
-      <text>S02.2.12: range() behavior</text>
+      <text>Q02: range() behavior</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The <code>range(stop)</code> function generates numbers up to but NOT including <code>stop</code>. True or False?</p>]]></text>
@@ -57,7 +57,7 @@
   <!-- Question 3: Simple - List insert() method -->
   <question type="multichoice">
     <name>
-      <text>S02.3.12: List insert method</text>
+      <text>Q03: List insert method</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the state of <code>data</code> after the following code is executed?</p><pre><code>data = [10, 20, 30]
@@ -84,7 +84,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 4: Simple - Function returning a tuple -->
   <question type="multichoice">
     <name>
-      <text>S02.4.9: Function returning a tuple</text>
+      <text>Q04: Function returning a tuple</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>A function can return multiple values by returning them as a single...</p>]]></text>
@@ -110,7 +110,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 5: Medium - Quality Control Logic -->
   <question type="multichoice">
     <name>
-      <text>S02.1.12: Quality Control Logic</text>
+      <text>Q05: Quality Control Logic</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>A component's length must be between 24.9mm and 25.1mm. Which condition correctly checks if a <code>measured_length</code> is within this valid range?</p>]]></text>
@@ -136,7 +136,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 6: Medium - Find correct loop control -->
   <question type="multichoice">
     <name>
-      <text>S02.2.13: Loop Control Use Case</text>
+      <text>Q06: Loop Control Use Case</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You are processing a list of sensor readings. If you find a reading that indicates a critical failure (e.g., -999), you must stop all further processing immediately. Which statement should you use?</p>]]></text>
@@ -162,7 +162,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 7: Medium - List Slicing Shortcut -->
   <question type="multichoice">
     <name>
-      <text>S02.3.13: List slicing shortcut</text>
+      <text>Q07: List slicing shortcut</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>measurements = [0.5, 1.2, 1.9, 2.5, 3.1]</code>, what does the slice <code>measurements[:3]</code> produce?</p>]]></text>
@@ -188,7 +188,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 8: Hard - Looping over tuple list -->
   <question type="multichoice">
     <name>
-      <text>S02.4.10: Looping over a list of tuples</text>
+      <text>Q08: Looping over a list of tuples</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>robot_path = [(0, 0), (0, 1), (1, 1)]</code>, what will be printed by the following code?</p><pre><code>for point in robot_path:
@@ -216,7 +216,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 9: Hard - Matrix Trace Exercise -->
   <question type="multichoice">
     <name>
-      <text>S02.3.14: Matrix Trace</text>
+      <text>Q09: Matrix Trace</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The trace of a square matrix is the sum of the elements on the main diagonal (from top-left to bottom-right). What is the trace of the given matrix?</p><pre><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</code></pre>]]></text>
@@ -242,7 +242,7 @@ data.insert(1, 15)</code></pre>]]></text>
   <!-- Question 10: Hard - Complex Conditional Logic -->
   <question type="multichoice">
     <name>
-      <text>S02.1.13: Complex Conditionals</text>
+      <text>Q10: Complex Conditionals</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is printed by this diagnostic program?</p><pre><code>engine_temp = 95

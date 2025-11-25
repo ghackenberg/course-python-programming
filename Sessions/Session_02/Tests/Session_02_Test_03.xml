@@ -11,7 +11,7 @@
   <!-- Question 1: Simple - 'elif' purpose -->
   <question type="multichoice">
     <name>
-      <text>S02.1.6: 'elif' purpose</text>
+      <text>Q01: 'elif' purpose</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In what scenario is the <code>elif</code> keyword most useful?</p>]]></text>
@@ -37,7 +37,7 @@
   <!-- Question 2: Simple - Loop purpose -->
   <question type="multichoice">
     <name>
-      <text>S02.2.7: Purpose of loops</text>
+      <text>Q02: Purpose of loops</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary benefit of using loops in programming?</p>]]></text>
@@ -63,7 +63,7 @@
   <!-- Question 3: Simple - List mutability -->
   <question type="multichoice">
     <name>
-      <text>S02.3.6: List property</text>
+      <text>Q03: List property</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The ability to add, remove, or change items in a list after its creation is known as...</p>]]></text>
@@ -89,7 +89,7 @@
   <!-- Question 4: Simple - Tuple access -->
   <question type="multichoice">
     <name>
-      <text>S02.4.5: Accessing a tuple</text>
+      <text>Q04: Accessing a tuple</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>point = (10, 20, 5)</code>, what is the result of <code>point[0]</code>?</p>]]></text>
@@ -115,7 +115,7 @@
   <!-- Question 5: Medium - Application of if/else -->
   <question type="multichoice">
     <name>
-      <text>S02.1.7: Application of if/else</text>
+      <text>Q05: Application of if/else</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the temperature control example, if <code>current_temp_C</code> is 95 and <code>target_temp_C</code> is 90, what message is printed?</p><pre><code>if current_temp_C < target_temp_C:
@@ -144,7 +144,7 @@ else:
   <!-- Question 6: Medium - Battery discharge example -->
   <question type="multichoice">
     <name>
-      <text>S02.2.8: While loop prediction</text>
+      <text>Q06: While loop prediction</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the battery discharge simulation, what is the primary purpose of the line <code>battery_level -= power_draw_per_hour</code>?</p>]]></text>
@@ -170,7 +170,7 @@ else:
   <!-- Question 7: Medium - List 'remove' method -->
   <question type="multichoice">
     <name>
-      <text>S02.3.7: List remove method</text>
+      <text>Q07: List remove method</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the final state of the <code>voltages</code> list after this code runs?</p><pre><code>voltages = [5.1, 0.0, 5.0, 0.0]
@@ -198,7 +198,7 @@ while 0.0 in voltages:
   <!-- Question 8: Hard - Material Grade Logic -->
   <question type="multichoice">
     <name>
-      <text>S02.1.8: 'elif' edge case</text>
+      <text>Q08: 'elif' edge case</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the material testing example, what grade would be assigned if <code>tensile_strength_MPa</code> was exactly 300?</p><pre><code>if tensile_strength_MPa > 500:
@@ -229,7 +229,7 @@ else:
   <!-- Question 9: Hard - List Comprehension -->
   <question type="multichoice">
     <name>
-      <text>S02.3.8: List Comprehension</text>
+      <text>Q09: List Comprehension</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the value of <code>squares</code> after this list comprehension is executed?</p><pre><code>squares = [i * i for i in range(4)]</code></pre>]]></text>
@@ -255,7 +255,7 @@ else:
   <!-- Question 10: Hard - Robot Path Data Structure -->
   <question type="multichoice">
     <name>
-      <text>S02.4.6: Robot Path Data Structure</text>
+      <text>Q10: Robot Path Data Structure</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the robot path example, <code>robot_path</code> is a list of tuples. Why is this data structure a good choice?</p><pre><code>robot_path = [(0, 0), (0, 1), (1, 1)]</code></pre>]]></text>

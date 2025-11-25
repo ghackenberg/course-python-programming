@@ -11,7 +11,7 @@
   <!-- Question 1: Simple - Not Equal Operator -->
   <question type="multichoice">
     <name>
-      <text>S02.1.9: Not Equal Operator</text>
+      <text>Q01: Not Equal Operator</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which comparison operator checks if two values are NOT equal?</p>]]></text>
@@ -37,7 +37,7 @@
   <!-- Question 2: Simple - 'continue' statement -->
   <question type="multichoice">
     <name>
-      <text>S02.2.9: 'continue' statement</text>
+      <text>Q02: 'continue' statement</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <code>continue</code> statement do inside a loop?</p>]]></text>
@@ -63,7 +63,7 @@
   <!-- Question 3: Simple - Negative Indexing -->
   <question type="multichoice">
     <name>
-      <text>S02.3.9: Negative Indexing</text>
+      <text>Q03: Negative Indexing</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>For a list <code>my_list</code>, what does the index <code>-1</code> refer to?</p>]]></text>
@@ -89,7 +89,7 @@
   <!-- Question 4: Simple - Tuple immutability use case -->
   <question type="multichoice">
     <name>
-      <text>S02.4.7: Tuple immutability use case</text>
+      <text>Q04: Tuple immutability use case</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why are tuples a good choice for storing data like fixed configuration settings or GPS coordinates?</p>]]></text>
@@ -115,7 +115,7 @@
   <!-- Question 5: Medium - 'range' with step -->
   <question type="multichoice">
     <name>
-      <text>S02.2.10: range() with step</text>
+      <text>Q05: range() with step</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the sequence of numbers produced by <code>range(0, 10, 3)</code>?</p>]]></text>
@@ -141,7 +141,7 @@
   <!-- Question 6: Medium - List pop() method -->
   <question type="multichoice">
     <name>
-      <text>S02.3.10: List pop method</text>
+      <text>Q06: List pop method</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the main difference between <code>list.remove(value)</code> and <code>list.pop(index)</code>?</p>]]></text>
@@ -167,7 +167,7 @@
   <!-- Question 7: Hard - Logical Operator Precedence -->
   <question type="multichoice">
     <name>
-      <text>S02.1.10: Logical Operator Precedence</text>
+      <text>Q07: Logical Operator Precedence</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the result of the following boolean expression? <code>True or False and False</code></p>
@@ -194,7 +194,7 @@
   <!-- Question 8: Hard - Looping through a 2D list -->
   <question type="multichoice">
     <name>
-      <text>S02.3.11: 2D List Looping</text>
+      <text>Q08: 2D List Looping</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of this code that prints a matrix?</p><pre><code>matrix = [[1, 2], [3, 4]]
@@ -224,7 +224,7 @@ for row in matrix:
   <!-- Question 9: Hard - Tuple Unpacking Mismatch -->
   <question type="multichoice">
     <name>
-      <text>S02.4.8: Tuple Unpacking Mismatch</text>
+      <text>Q09: Tuple Unpacking Mismatch</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens when you execute this code?</p><pre><code>point_3d = (10, 20, 5)
@@ -251,7 +251,7 @@ x, y = point_3d</code></pre>]]></text>
   <!-- Question 10: Hard - Sum of squares exercise -->
   <question type="multichoice">
     <name>
-      <text>S02.2.11: Sum of Squares Exercise</text>
+      <text>Q10: Sum of Squares Exercise</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You need to calculate the sum of the squares of the first 10 integers (1² + 2² + ... + 10²). Which code snippet correctly implements this?</p>]]></text>
