@@ -1,0 +1,3 @@
+- explain floating point number representation and number formatting in more detail
+- include link to IEEE Standard for Floating-Point Arithmetic (IEEE 754)
+- remove concept of custom functions from the slides
