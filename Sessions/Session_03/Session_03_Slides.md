@@ -2,7 +2,7 @@
 marp: true
 theme: fhooe
 header: Data Structures II & Functions
-footer: Dr. Georg Hackenberg, Professor for Computer Science and Industrial Systems
+footer: Dr. Georg Hackenberg, Professor for Industrial Informatics
 paginate: true
 math: mathjax
 ---
@@ -24,7 +24,12 @@ This chapter includes the following sections:
 
 ## 3.1: Dictionaries
 
-TODO brief overview of key learnings from section 3.1
+This section includes the following contents:
+
+- Definition and characteristics of dictionaries (key-value pairs, mutable, unordered).
+- How to create, access, add, update, and delete elements in dictionaries.
+- Iterating through dictionary keys, values, and items.
+- Useful dictionary operations and practical examples.
 
 ---
 
@@ -290,7 +295,12 @@ Dictionaries map unique keys to values.
 
 ## 3.2: Sets
 
-TODO brief overview of key learnings from section 3.2
+This section includes the following contents:
+
+- Definition and characteristics of sets (unordered, unique elements, mutable).
+- Creating, adding, and removing elements from sets.
+- Performing set operations like union, intersection, difference, and symmetric difference.
+- Practical use cases for sets, including removing duplicates and efficient membership testing.
 
 ---
 
@@ -523,7 +533,12 @@ Understanding how sets combine and differentiate.
 
 ## 3.3: Defining Functions
 
-TODO brief overview of key learnings from section 3.3
+This section includes the following contents:
+
+- Introduction to functions: what they are and why they are essential (modularity, reusability, readability).
+- Basic syntax for defining and calling functions.
+- Understanding function scope, including local and global variables.
+- Practical examples of defining simple functions.
 
 ---
 
@@ -738,7 +753,12 @@ Functions help organize code execution.
 
 ## 3.4: Function Arguments and Return Values
 
-TODO brief overview of key learnings from section 3.4
+This section includes the following contents:
+
+- How functions communicate using arguments (inputs) and return values (outputs).
+- Different types of arguments: positional, keyword, and default arguments.
+- Handling an arbitrary number of arguments using `*args` and `**kwargs`.
+- Returning single or multiple values from functions.
 
 ---
 
