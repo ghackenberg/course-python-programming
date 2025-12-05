@@ -259,33 +259,24 @@ print(my_dict) # Output: {}
 
 ---
 
-<!-- This Mermaid diagram illustrates a dictionary structure.
-The diagram should show "Dictionary" as the main node.
-Connected to "Dictionary" are several "Key" nodes.
-Each "Key" node is connected to a "Value" node.
-Example key-value pairs:
-Key: "name", Value: "Alice"
-Key: "age", Value: 30
-Key: "city", Value: "New York"
-The connections should be labeled with "maps to".
--->
-```mermaid
-graph TD
-    A[Dictionary] --> B(Key: "name")
-    B --> C(Value: "Alice")
-    A --> D(Key: "age")
-    D --> E(Value: 30)
-    A --> F(Key: "city")
-    F --> G(Value: "New York")
-```
+<div class="columns">
+<div>
 
 ### Visualizing Dictionaries
 
 Dictionaries map unique keys to values.
 
+</div>
+<div>
+
+![](./Diagrams/Mermaid/Dictionary.svg)
+
+</div>
+</div>
+
 ---
 
-### Exercise Ideas: Dictionaries
+### Exercise Ideas - **Dictionaries**
 
 1.  **Inventory Management:** Create a dictionary to store product inventory (e.g., product name as key, quantity as value). Add new products, update quantities, and remove products.
 2.  **Student Grades:** Create a dictionary where student names are keys and their grades (as a list of numbers) are values. Calculate the average grade for each student.
@@ -497,34 +488,7 @@ print(f"All parts: {all_parts}") # Output: {'P106', 'P103', 'P105', 'P102', 'P10
 
 ---
 
-<!-- This Mermaid diagram illustrates basic set operations using Venn diagrams.
-The diagram should show two main sets, Set A and Set B, as overlapping circles.
-The first part should highlight the "Union" (A U B), showing both circles completely filled.
-The second part should highlight the "Intersection" (A ∩ B), showing only the overlapping region filled.
-The third part should highlight the "Difference" (A - B), showing only the part of A not overlapping with B filled.
-The fourth part should highlight the "Symmetric Difference" (A Δ B), showing parts of A and B that do not overlap filled.
-This would require a series of diagrams or a more complex single one.
-Let's simplify:
-Show two circles, A and B, overlapping.
-Label the circles.
-Show the union with a descriptive text.
-Show the intersection with a descriptive text.
--->
-```mermaid
-graph TD
-    subgraph "Set Operations"
-        A[Set A]
-        B[Set B]
-        A --- "Union (A U B)" --> C{All elements in A or B}
-        A --- "Intersection (A ∩ B)" --> D{Elements common to A and B}
-        A --- "Difference (A - B)" --> E{Elements in A but not in B}
-        B --- "Difference (B - A)" --> F{Elements in B but not in A}
-        C -- "Union" --> G(Set A U Set B)
-        D -- "Intersection" --> H(Set A ∩ Set B)
-        E -- "Difference" --> I(Set A - Set B)
-        F -- "Difference" --> J(Set B - Set A)
-    end
-```
+![w:10000](./Images/Set_Operations.jpg)
 
 ### Visualizing Set Operations
 
@@ -532,7 +496,7 @@ Understanding how sets combine and differentiate.
 
 ---
 
-### Exercise Ideas: Sets
+### Exercise Ideas - **Sets** (1 / 2)
 
 1.  **Unique Visitors:** You have two lists of IP addresses representing visitors to two different pages on your website. Use sets to find:
     *   All unique visitors to either page.
@@ -542,6 +506,11 @@ Understanding how sets combine and differentiate.
     *   Which required skills the applicant is missing.
     *   Which skills the applicant has that are not required for the job.
 3.  **Blacklist/Whitelist:** Create a `blacklist` set of disallowed usernames and a `whitelist` set of approved administrators. Write code to check if a new user's name is valid (not on blacklist) and if an existing user is an admin (on whitelist).
+
+---
+
+### Exercise Ideas - **Sets** (2 / 2)
+
 4.  **Data Filtering:** Given a list of numbers, remove all duplicates and then identify how many unique even numbers and unique odd numbers are present.
 5.  **Course Enrollment:** You have sets of students enrolled in "Programming 101" and "Database Fundamentals". Find:
     *   Students enrolled in both courses.
@@ -723,24 +692,7 @@ perform_health_check()
 
 ---
 
-<!-- This Mermaid diagram illustrates the execution flow of a program with a function call.
-It should show:
-1. "Start Program" node.
-2. An arrow from "Start Program" to "Main Code Block".
-3. From "Main Code Block", an arrow to "Call Function A".
-4. From "Call Function A", an arrow to "Function A Code".
-5. From "Function A Code", an arrow back to "Main Code Block" (representing return).
-6. From "Main Code Block", an arrow to "End Program".
--->
-```mermaid
-graph TD
-    A[Start Program] --> B(Main Code Execution)
-    B --> C{Call my_function()}
-    C --> D[Execute my_function() Body]
-    D --> E{Return to Main Code}
-    E --> F(Continue Main Code Execution)
-    F --> G[End Program]
-```
+![](./Diagrams/Mermaid/Function.svg)
 
 ### Visualizing Function Call Flow
 
@@ -748,7 +700,7 @@ Functions help organize code execution.
 
 ---
 
-### Exercise Ideas: Defining Functions
+### Exercise Ideas - **Defining Functions** (1 / 2)
 
 1.  **Greeting Generator:**
     *   Write a function named `say_hello` that prints "Hello, world!".
@@ -764,6 +716,11 @@ Functions help organize code execution.
         ---------------------
         ```
     *   Call this function at the start of your program.
+
+---
+
+### Exercise Ideas - **Defining Functions** (2 / 2)
+
 3.  **Sensor Initialization:**
     *   Create a function `initialize_sensor()` that prints messages simulating sensor setup (e.g., "Connecting to sensor...", "Calibrating...", "Sensor ready!").
     *   Call this function when your "program" starts.
@@ -1043,27 +1000,7 @@ print(f"Valid: {is_valid}, Message: {msg}")
 
 ---
 
-<!-- This Mermaid diagram illustrates a function with arguments and a return value.
-It should show:
-1.  A box labeled "Function `process_data`".
-2.  Arrows pointing into the `process_data` box labeled "Argument 1", "Argument 2", etc.
-3.  An arrow pointing out of the `process_data` box labeled "Return Value".
-This diagram visually represents the input-process-output concept of a function.
--->
-```mermaid
-graph LR
-    A(Input Data) --> B{Function: process_data}
-    B --> C(Output Result)
-
-    subgraph "Arguments"
-        arg1[Parameter X] --> B
-        arg2[Parameter Y] --> B
-    end
-
-    subgraph "Return Value"
-        B --> ret[Result Z]
-    end
-```
+![](./Diagrams/Mermaid/FunctionIO.svg)
 
 ### Visualizing Function I/O
 
@@ -1071,7 +1008,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values (1 / 3)
+### Exercise Ideas - **Function Arguments and Return Values** (1 / 3)
 
 1.  **Temperature Converter:**
     *   Write a function `celsius_to_fahrenheit(celsius)` that takes a temperature in Celsius and returns its equivalent in Fahrenheit.
@@ -1084,7 +1021,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values (2 / 3)
+### Exercise Ideas - **Function Arguments and Return Values** (2 / 3)
 
 3.  **Sensor Reading Processor:**
     *   Write a function `process_sensor_data(sensor_id, readings, unit="mV")` that takes a sensor ID (string), a list of numerical readings, and an optional `unit` (default "mV").
@@ -1097,7 +1034,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values (3 / 3)
+### Exercise Ideas - **Function Arguments and Return Values** (3 / 3)
 
 5.  **Dynamic Report Generator (`*args`, `**kwargs`):**
     *   Write a function `generate_flexible_report(report_name, *sections, **details)`:

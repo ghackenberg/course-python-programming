@@ -1,0 +1,16 @@
+graph LR
+    B{Function <code>process_data</code>}
+
+    arg1[Parameter <code>X</code>] --> B
+    arg2[Parameter <code>Y</code>] --> B
+
+    B --> ret[Result <code>Z</code>]
+
+    subgraph "Arguments"
+        arg1
+        arg2
+    end
+
+    subgraph "Return Value"
+        ret
+    end
