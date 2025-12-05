@@ -7,9 +7,7 @@ paginate: true
 math: mathjax
 ---
 
-<!-- An abstract illustration depicting interconnected data structures (like a network of nodes and links) and abstract functional blocks (like stylized gears or circuits), all glowing subtly against a dark, swirling galaxy background with nebulae and stars. This visually represents the core concepts of data organization and reusable code modules. -->
-
-![bg right](./ChapterImagePath)
+![bg right](./Images/Chapter.jpg)
 
 # Chapter 3: Data Structures II & Functions
 
@@ -22,9 +20,11 @@ This chapter includes the following sections:
 
 ---
 
-<!-- An abstract illustration symbolizing key-value pairs as distinct, glowing nodes connected by lines, forming a dynamic, organized network within a dark galaxy backdrop. Each key node leads to its associated value node, highlighting the mapping concept of dictionaries. -->
+![bg right](./Images/Section_1.jpg)
 
 ## 3.1: Dictionaries
+
+TODO brief overview of key learnings from section 3.1
 
 ---
 
@@ -295,9 +295,11 @@ Dictionaries map unique keys to values.
 
 ---
 
-<!-- An abstract illustration portraying a collection of glowing, distinct elements floating in space, with no apparent order or duplicates, all set against a dark, cosmic background. This visually captures the essence of unique and unordered sets. -->
+![bg right](./Images/Section_2.jpg)
 
 ## 3.2: Sets
+
+TODO brief overview of key learnings from section 3.2
 
 ---
 
@@ -548,9 +550,11 @@ Understanding how sets combine and differentiate.
 
 ---
 
-<!-- An abstract illustration featuring glowing, interconnected modules or blocks, each representing a function. The modules are neatly arranged and some show subtle internal mechanisms, symbolizing their encapsulated logic and reusability within a larger, dark cosmic structure. -->
+![bg right](./Images/Section_3.jpg)
 
 ## 3.3: Defining Functions
+
+TODO brief overview of key learnings from section 3.3
 
 ---
 
@@ -773,9 +777,11 @@ Functions help organize code execution.
 
 ---
 
-<!-- An abstract illustration depicting glowing data streams flowing into an abstract function block (inputs/arguments) and then new glowing data streams emerging from it (outputs/return values), all within a deep space, dark galaxy setting. This visualizes the communication aspect of functions. -->
+![bg right](./Images/Section_4.jpg)
 
 ## 3.4: Function Arguments and Return Values
+
+TODO brief overview of key learnings from section 3.4
 
 ---
 
