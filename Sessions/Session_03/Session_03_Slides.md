@@ -1071,7 +1071,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values
+### Exercise Ideas: Function Arguments and Return Values (1 / 3)
 
 1.  **Temperature Converter:**
     *   Write a function `celsius_to_fahrenheit(celsius)` that takes a temperature in Celsius and returns its equivalent in Fahrenheit.
@@ -1084,7 +1084,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values
+### Exercise Ideas: Function Arguments and Return Values (2 / 3)
 
 3.  **Sensor Reading Processor:**
     *   Write a function `process_sensor_data(sensor_id, readings, unit="mV")` that takes a sensor ID (string), a list of numerical readings, and an optional `unit` (default "mV").
@@ -1097,7 +1097,7 @@ Functions take inputs and produce outputs.
 
 ---
 
-### Exercise Ideas: Function Arguments and Return Values
+### Exercise Ideas: Function Arguments and Return Values (3 / 3)
 
 5.  **Dynamic Report Generator (`*args`, `**kwargs`):**
     *   Write a function `generate_flexible_report(report_name, *sections, **details)`:
