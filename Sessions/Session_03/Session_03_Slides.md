@@ -98,32 +98,52 @@ student_info = {
 
 ---
 
-### Accessing Dictionary Values
+![bg contain right:25%](./Images/Sensor.jpg)
+
+### Accessing Dictionary Values (1 / 2)
 
 You can access values using their corresponding keys.
 
 **Using square brackets `[]`:**
 ```python
-sensor_readings = {"temperature": 23.5, "humidity": 60}
+sensor_readings = {
+    "temperature": 23.5,
+    "humidity": 60
+}
 
 current_temp = sensor_readings["temperature"]
-print(f"Current temperature: {current_temp}") # Output: Current temperature: 23.5
+print(f"Current temperature: {current_temp}")
+# Output: Current temperature: 23.5
 
 # What if the key doesn't exist? -> KeyError
-# current_light = sensor_readings["light"] # This would raise a KeyError
+# current_light = sensor_readings["light"]
+# This would raise a KeyError
 ```
+
+---
+
+![bg contain right:25%](./Images/Sensor.jpg)
+
+### Accessing Dictionary Values (2 / 2)
+
+You can access values using their corresponding keys.
 
 **Using the `get()` method:**
 ```python
-sensor_readings = {"temperature": 23.5, "humidity": 60}
+sensor_readings = {
+    "temperature": 23.5,
+    "humidity": 60
+}
 
 # Returns None if key not found (no error)
 current_light = sensor_readings.get("light")
-print(f"Current light: {current_light}") # Output: Current light: None
+print(f"Current light: {current_light}")
+# Output: Current light: None
 
 # You can provide a default value if the key is not found
 current_light_with_default = sensor_readings.get("light", 0)
-print(f"Current light (with default): {current_light_with_default}") # Output: Current light (with default): 0
+print(f"Current light (with default): {current_light_with_default}")
+# Output: Current light (with default): 0
 ```
 
 ---
@@ -180,7 +200,7 @@ print(sensor_readings)
 
 You can loop through dictionaries in several ways.
 
-**Looping through keys (default):**
+**Looping through *keys* (default):**
 ```python
 system_status = {
     "CPU": "80%",
@@ -205,7 +225,9 @@ for component in system_status:
 
 ### Iterating Through Dictionaries (2 / 3)
 
-**Looping through values:**
+You can loop through dictionaries in several ways.
+
+**Looping through *values* (`values()`):**
 ```python
 system_status = {
     "CPU": "80%",
@@ -229,7 +251,9 @@ for usage in system_status.values():
 
 ### Iterating Through Dictionaries (3 / 3)
 
-**Looping through key-value pairs (`items()`):**
+You can loop through dictionaries in several ways.
+
+**Looping through *key-value pairs* (`items()`):**
 ```python
 system_status = {
     "CPU": "80%",
@@ -343,6 +367,8 @@ This section includes the following contents:
 
 ---
 
+![bg contain right](./Images/Set.jpg)
+
 ### What are Sets?
 
 Imagine a collection of items where every item is distinct and the order doesn't matter.
@@ -355,7 +381,9 @@ In Python, a **set** is an **unordered collection of unique items**.
 
 ---
 
-### Creating Sets
+![bg contain right:25%](./Images/Set.jpg)
+
+### Creating Sets (1 / 2)
 
 Sets are created using curly braces `{}` or the `set()` constructor.
 
@@ -371,9 +399,18 @@ unique_data_points = set(data_points)
 print(unique_data_points) # Output: {3.3, 1.1, 2.2} (order may vary)
 ```
 
+---
+
+![bg contain right:25%](./Images/Set_Empty.jpg)
+
+### Creating Sets (2 / 2)
+
+Sets are created using curly braces `{}` or the `set()` constructor.
+
 **Creating an empty set:**
 ```python
-# IMPORTANT: Use set() for an empty set, not {} which creates an empty dictionary.
+# IMPORTANT: Use set() for an empty set,
+# not {} which creates an empty dictionary.
 empty_set = set()
 print(empty_set) # Output: set()
 
@@ -383,18 +420,35 @@ print(empty_set) # Output: set()
 
 ---
 
-### Adding and Removing Elements
+![bg contain right:25%](./Images/Set_Add.png)
+
+### Adding and Removing Elements (1 / 3)
 
 Sets allow you to add new unique elements and remove existing ones.
 
 **Adding elements (`add()`):**
 ```python
 sensor_names = {"TempSensor", "PressureSensor"}
+
 sensor_names.add("FlowSensor")
-print(sensor_names) # Output: {'TempSensor', 'FlowSensor', 'PressureSensor'}
-sensor_names.add("TempSensor") # Adding an existing element has no effect
-print(sensor_names) # Output: {'TempSensor', 'FlowSensor', 'PressureSensor'}
+
+print(sensor_names)
+# Output: {'TempSensor', 'FlowSensor', 'PressureSensor'}
+
+# Adding an existing element has no effect
+sensor_names.add("TempSensor")
+
+print(sensor_names)
+# Output: {'TempSensor', 'FlowSensor', 'PressureSensor'}
 ```
+
+---
+
+![bg contain right:25%](./Images/Set_Remove.png)
+
+### Adding and Removing Elements (2 / 3)
+
+Sets allow you to add new unique elements and remove existing ones.
 
 **Removing elements (`remove()` and `discard()`):**
 ```python
@@ -402,26 +456,42 @@ sensor_names = {"TempSensor", "PressureSensor", "FlowSensor"}
 
 # remove() raises KeyError if item not found
 sensor_names.remove("PressureSensor")
-print(sensor_names) # Output: {'TempSensor', 'FlowSensor'}
+
+print(sensor_names)
+# Output: {'TempSensor', 'FlowSensor'}
 
 # discard() does NOT raise an error if item not found
 sensor_names.discard("LightSensor")
-print(sensor_names) # Output: {'TempSensor', 'FlowSensor'}
+
+print(sensor_names)
+# Output: {'TempSensor', 'FlowSensor'}
 ```
+
+---
+
+![bg contain right:25%](./Images/Set_Pop.png)
+
+### Adding and Removing Elements (3 / 3)
+
+Sets allow you to add new unique elements and remove existing ones.
 
 **Removing a random element (`pop()`):**
 - Since sets are unordered, `pop()` removes and returns an arbitrary element.
 ```python
 my_set = {1, 2, 3}
+
 popped_element = my_set.pop()
-print(f"Popped: {popped_element}, Remaining set: {my_set}")
+
+print(f"Popped: {popped_element}")
+
+print(f"Remaining set: {my_set}")
 ```
 
 ---
 
-### Set Operations: Union and Intersection
+![bg contain right:25%](./Images/Set_Union.jpg)
 
-Sets are very useful for mathematical set operations.
+### Set Operations: Union
 
 **Union:** All unique elements from both sets.
 - Operator: `|`
@@ -431,11 +501,19 @@ set_a = {1, 2, 3}
 set_b = {3, 4, 5}
 
 union_set = set_a | set_b
-print(f"Union (operator): {union_set}") # Output: {1, 2, 3, 4, 5}
+print(f"Union (operator): {union_set}")
+# Output: {1, 2, 3, 4, 5}
 
 union_set_method = set_a.union(set_b)
-print(f"Union (method): {union_set_method}") # Output: {1, 2, 3, 4, 5}
+print(f"Union (method): {union_set_method}")
+# Output: {1, 2, 3, 4, 5}
 ```
+
+---
+
+![bg contain right:25%](./Images/Set_Intersection.jpg)
+
+### Set Operations: Intersection
 
 **Intersection:** Common elements in both sets.
 - Operator: `&`
@@ -445,15 +523,19 @@ set_a = {1, 2, 3}
 set_b = {3, 4, 5}
 
 intersection_set = set_a & set_b
-print(f"Intersection (operator): {intersection_set}") # Output: {3}
+print(f"Intersection (operator): {intersection_set}")
+# Output: {3}
 
 intersection_set_method = set_a.intersection(set_b)
-print(f"Intersection (method): {intersection_set_method}") # Output: {3}
+print(f"Intersection (method): {intersection_set_method}")
+# Output: {3}
 ```
 
 ---
 
-### Set Operations: Difference and Symmetric Difference
+![bg contain right:25%](./Images/Set_Difference.png)
+
+### Set Operations: Difference
 
 **Difference:** Elements in the first set but not in the second.
 - Operator: `-`
@@ -472,6 +554,12 @@ diff_set_ba = set_b - set_a
 print(f"B - A (operator): {diff_set_ba}") # Output: {4, 5}
 ```
 
+---
+
+![bg contain right:25%](./Images/Set_Symmetric_Difference.png)
+
+### Set Operations: Symmetric Difference
+
 **Symmetric Difference:** Elements in either set, but not in both.
 - Operator: `^`
 - Method: `.symmetric_difference()`
@@ -480,23 +568,32 @@ set_a = {1, 2, 3}
 set_b = {3, 4, 5}
 
 sym_diff_set = set_a ^ set_b
-print(f"Symmetric Difference (operator): {sym_diff_set}") # Output: {1, 2, 4, 5}
+print(f"Symmetric Difference (operator): {sym_diff_set}")
+# Output: {1, 2, 4, 5}
 
 sym_diff_set_method = set_a.symmetric_difference(set_b)
-print(f"Symmetric Difference (method): {sym_diff_set_method}") # Output: {1, 2, 4, 5}
+print(f"Symmetric Difference (method): {sym_diff_set_method}")
+# Output: {1, 2, 4, 5}
 ```
 
 ---
 
-### Practical Use Cases for Sets
+### Practical Use Cases for Sets (1 / 3)
 
 **1. Removing Duplicates from a List:**
 ```python
 data_log = ["start", "process", "error", "process", "start", "finish"]
+
 unique_events = list(set(data_log))
+
 print(f"Original log: {data_log}")
-print(f"Unique events: {unique_events}") # Output: ['error', 'start', 'finish', 'process'] (order may vary)
+print(f"Unique events: {unique_events}")
+# Output: ['error', 'start', 'finish', 'process'] (order may vary)
 ```
+
+---
+
+### Practical Use Cases for Sets (2 / 3)
 
 **2. Efficient Membership Testing:**
 - Checking if an item is in a set is generally faster than checking in a list for large collections.
@@ -514,10 +611,10 @@ if unauthorized_attempt not in approved_users:
 
 ---
 
-### Practical Use Cases for Sets (cont.)
+### Practical Use Cases for Sets (3 / 3)
 
 **3. Finding Unique Elements Across Multiple Collections:**
-Imagine two lists of part numbers for different production lines.
+- Imagine two lists of part numbers for different production lines.
 ```python
 line_a_parts = {"P101", "P102", "P103", "P104"}
 line_b_parts = {"P103", "P104", "P105", "P106"}
@@ -532,16 +629,9 @@ print(f"Unique to Line A: {unique_to_a}") # Output: {'P101', 'P102'}
 
 # All parts used across both lines
 all_parts = line_a_parts.union(line_b_parts)
-print(f"All parts: {all_parts}") # Output: {'P106', 'P103', 'P105', 'P102', 'P104', 'P101'} (order may vary)
+print(f"All parts: {all_parts}")
+# Output: {'P106', 'P103', 'P105', 'P102', 'P104', 'P101'} (order may vary)
 ```
-
----
-
-![w:10000](./Images/Set_Operations.jpg)
-
-### Visualizing Set Operations
-
-Understanding how sets combine and differentiate.
 
 ---
 
