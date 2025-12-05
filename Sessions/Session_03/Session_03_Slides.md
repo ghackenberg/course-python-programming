@@ -700,8 +700,6 @@ Functions are fundamental to writing good software for several reasons:
 
 ### Basic Function Syntax
 
-Defining a function in Python uses the `def` keyword, followed by the function name, parentheses `()`, and a colon `:`.
-
 ```python
 # 'def' keyword marks the start of a function definition
 def my_first_function():
@@ -746,9 +744,7 @@ def greet():
 
 ### Calling a Function
 
-Defining a function only creates it; to execute the code inside it, you must **call** or **invoke** the function.
-
-You call a function by typing its name followed by parentheses `()`.
+Defining a function only creates it; to execute the code inside it, you must **call** or **invoke** the function. You call a function by typing its name followed by parentheses `()`.
 
 ```python
 def greet():
@@ -772,6 +768,9 @@ greet()
 
 ---
 
+<div class="columns">
+<div>
+
 ### Function Scope: Local vs. Global Variables
 
 Understanding scope is crucial for avoiding unexpected behavior.
@@ -779,25 +778,37 @@ Understanding scope is crucial for avoiding unexpected behavior.
 - **Global Variable:** A variable defined outside any function. It can be accessed (read) from anywhere in the program, including inside functions.
 - **Local Variable:** A variable defined inside a function. It can only be accessed from within that function. It ceases to exist once the function finishes executing.
 
+Best practice: Limit the use of global variables inside functions to avoid complex dependencies.
+
+</div>
+<div>
+
 ```python
 # Global variable
 global_message = "I am a global message."
 
 def display_messages():
     # Local variable
-    local_message = "I am a local message inside the function."
-    print(global_message) # Can access global_message
-    print(local_message)  # Can access local_message
+    local_message = "I am a local message."
+    print(global_message)
+    # Can access global_message
+    print(local_message) 
+    # Can access local_message
 
 def another_function():
-    print(global_message) # Can access global_message
-    # print(local_message) # ERROR: NameError, local_message is not defined here
+    print(global_message)
+    # Can access global_message
+    # print(local_message)
+    # ERROR: NameError, local_message defined
 
 display_messages()
 another_function()
-# print(local_message) # ERROR: NameError, local_message is not defined here
+# print(local_message)
+# ERROR: NameError, local_message not defined
 ```
-Best practice: Limit the use of global variables inside functions to avoid complex dependencies.
+
+</div>
+</div>
 
 ---
 
@@ -805,14 +816,17 @@ Best practice: Limit the use of global variables inside functions to avoid compl
 
 Let's define a function that simulates checking the status of a system component.
 
+<div class="columns">
+<div class="three">
+
 ```python
 def perform_health_check():
     """
-    Simulates performing a health check on a system component
-    and prints its status.
+    Simulates performing a health check on a
+    system component and prints its status.
     """
     component_name = "Engine Controller"
-    status_code = 0 # 0 for OK, 1 for Warning, 2 for Error
+    status_code = 0 # 0 = OK, 1 = Warning, 2 = Error
     temperature = 85.3
     pressure = 120.5
 
@@ -824,8 +838,14 @@ def perform_health_check():
     print(f"Temperature: {temperature}°C")
     print(f"Pressure: {pressure} PSI")
     print("---------------------------------")
+```
 
-# We can call this function anytime we want to check the system
+</div>
+<div class="two">
+
+```python
+# We can call this function anytime we
+# want to check the system
 print("Initial system startup check:")
 perform_health_check()
 
@@ -833,6 +853,9 @@ perform_health_check()
 print("\nPost-operation system check:")
 perform_health_check()
 ```
+
+</div>
+</div>
 
 ---
 
@@ -949,7 +972,7 @@ generate_report(author="Jane Doe", date="2025-11-28", title="Quality Control Fin
 
 ---
 
-### Default Arguments
+### Default Arguments (1 / 2)
 
 You can provide default values for function parameters.
 - If an argument is not provided when calling the function, its default value is used.
@@ -969,8 +992,17 @@ log_message("System started successfully.") # level defaults to "INFO"
 
 # Overriding the default argument
 log_message("Disk usage is high!", level="WARNING")
+```
 
+---
+
+### Default Arguments (2 / 2)
+
+The following example will produce a `SyntaxError`, because arguments with default values must follow arguments *without* default arguments:
+
+```python
 # Example of incorrect order (will cause a SyntaxError)
+
 # def func(a="default", b): # SyntaxError: non-default argument follows default argument
 #     pass
 ```
@@ -1009,27 +1041,42 @@ Sometimes you don't know in advance how many positional arguments a function wil
 - The `*args` syntax allows a function to accept an arbitrary number of positional arguments.
 - These arguments are collected into a **tuple** inside the function.
 
+<div class="columns">
+<div>
+
 ```python
 def calculate_average(*numbers):
     """
-    Calculates the average of an arbitrary number of numbers.
+    Calculates the average of an arbitrary
+    number of numbers.
     """
     if not numbers:
         return 0 # Avoid division by zero
     total = sum(numbers)
     average = total / len(numbers)
     return average
+```
 
+</div>
+<div>
+
+```python
 # Call with different numbers of arguments
 avg1 = calculate_average(10, 20, 30)
-print(f"Average of 10, 20, 30: {avg1}") # Output: 20.0
+print(f"Average of 10, 20, 30: {avg1}")
+# Output: 20.0
 
 avg2 = calculate_average(5, 10, 15, 20, 25)
-print(f"Average of 5, 10, 15, 20, 25: {avg2}") # Output: 15.0
+print(f"Average of 5, 10, 15, 20, 25: {avg2}")
+# Output: 15.0
 
 avg3 = calculate_average()
-print(f"Average of no numbers: {avg3}") # Output: 0
+print(f"Average of no numbers: {avg3}")
+# Output: 0
 ```
+
+</div>
+</div>
 
 ---
 
@@ -1063,6 +1110,9 @@ Functions often need to send back a result to the caller.
 - When `return` is executed, the function immediately stops, and the returned value is sent back.
 - If a function doesn't have an explicit `return` statement, it implicitly returns `None`.
 
+<div class="columns">
+<div>
+
 ```python
 def add_numbers(a, b):
     """
@@ -1073,16 +1123,26 @@ def add_numbers(a, b):
 
 def say_nothing():
     """
-    This function doesn't explicitly return anything.
+    Doesn't explicitly return anything.
     """
     print("I'm not returning anything.")
+```
 
+</div>
+<div>
+
+```python
 sum_val = add_numbers(7, 3)
-print(f"The sum is: {sum_val}") # Output: The sum is: 10
+print(f"The sum is: {sum_val}")
+# Output: The sum is: 10
 
 none_val = say_nothing()
-print(f"The return value of say_nothing is: {none_val}") # Output: The return value of say_nothing is: None
+print(f"The return value is: {none_val}")
+# Output: The return value is: None
 ```
+
+</div>
+</div>
 
 ---
 
@@ -1091,31 +1151,49 @@ print(f"The return value of say_nothing is: {none_val}") # Output: The return va
 Python functions can "return multiple values" by returning them as a **tuple**.
 - The caller can then unpack this tuple into separate variables.
 
+<div class="columns">
+<div>
+
 ```python
 def get_sensor_status():
     """
-    Simulates getting sensor readings and status.
-    Returns temperature, pressure, and status message.
+    Simulates getting sensor readings
+    and status. Returns temperature,
+    pressure, and status message.
     """
+    
     temperature = 25.7
     pressure = 1015.2
     status = "Operational"
-    return temperature, pressure, status # Returns a tuple (25.7, 1015.2, 'Operational')
 
+    return temperature, pressure, status
+    
+    # Returns a tuple
+    # (25.7, 1015.2, 'Operational')
+```
+
+</div>
+<div>
+
+```python
 # Unpacking the returned tuple
 temp, pres, stat = get_sensor_status()
 print(f"Temperature: {temp}°C")
 print(f"Pressure: {pres} hPa")
 print(f"Status: {stat}")
 
-# You can also receive it as a single tuple variable
+# You can also receive it as a single
+# tuple variable
 all_data = get_sensor_status()
 print(f"All data as tuple: {all_data}")
 ```
 
+</div>
+</div>
+
 ---
 
-### Practical Example: Data Validation Function
+### Practical Example: Data Validation Function (1 / 2)
 
 Let's create a function to validate input parameters for a system.
 
@@ -1132,8 +1210,15 @@ def validate_sensor_reading(value, min_limit, max_limit, sensor_type="generic"):
     if value > max_limit:
         return False, f"Warning: {sensor_type} reading {value} is above max limit {max_limit}."
     return True, f"{sensor_type} reading {value} is within limits."
+```
 
-# Test cases
+---
+
+### Practical Example: Data Validation Function (2 / 2)
+
+And here are some test cases for checking the correctness of the implementation.
+
+```python
 is_valid, msg = validate_sensor_reading(23.5, 20, 30, "temperature")
 print(f"Valid: {is_valid}, Message: {msg}")
 
