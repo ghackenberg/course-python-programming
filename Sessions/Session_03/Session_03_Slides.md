@@ -7,7 +7,7 @@ paginate: true
 math: mathjax
 ---
 
-<!-- Placeholder for chapter image description -->
+<!-- An abstract illustration depicting interconnected data structures (like a network of nodes and links) and abstract functional blocks (like stylized gears or circuits), all glowing subtly against a dark, swirling galaxy background with nebulae and stars. This visually represents the core concepts of data organization and reusable code modules. -->
 
 ![bg right](./ChapterImagePath)
 
@@ -22,7 +22,7 @@ This chapter includes the following sections:
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- An abstract illustration symbolizing key-value pairs as distinct, glowing nodes connected by lines, forming a dynamic, organized network within a dark galaxy backdrop. Each key node leads to its associated value node, highlighting the mapping concept of dictionaries. -->
 
 ## 3.1: Dictionaries
 
@@ -295,7 +295,7 @@ Dictionaries map unique keys to values.
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- An abstract illustration portraying a collection of glowing, distinct elements floating in space, with no apparent order or duplicates, all set against a dark, cosmic background. This visually captures the essence of unique and unordered sets. -->
 
 ## 3.2: Sets
 
@@ -548,7 +548,7 @@ Understanding how sets combine and differentiate.
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- An abstract illustration featuring glowing, interconnected modules or blocks, each representing a function. The modules are neatly arranged and some show subtle internal mechanisms, symbolizing their encapsulated logic and reusability within a larger, dark cosmic structure. -->
 
 ## 3.3: Defining Functions
 
@@ -773,7 +773,7 @@ Functions help organize code execution.
 
 ---
 
-<!-- Placeholder for section image description -->
+<!-- An abstract illustration depicting glowing data streams flowing into an abstract function block (inputs/arguments) and then new glowing data streams emerging from it (outputs/return values), all within a deep space, dark galaxy setting. This visualizes the communication aspect of functions. -->
 
 ## 3.4: Function Arguments and Return Values
 
