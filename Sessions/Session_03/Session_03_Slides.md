@@ -33,6 +33,8 @@ This section includes the following contents:
 
 ---
 
+![bg contain right:40%](./Images/Dictionary.jpg)
+
 ### What are Dictionaries?
 
 Imagine a real-world dictionary or a phone book:
@@ -80,12 +82,17 @@ print(sensor_readings)
 ```python
 # Valid keys: strings, numbers, tuples
 student_info = {
+
     "name": "Alice",
+
     12345: "Student ID",
+
     (1, 2): "Coordinate"
+
 }
 
 # Invalid keys (mutable types like lists cannot be keys)
+
 # my_dict = { ["a", "b"]: "list as key" } # This would cause an error
 ```
 
@@ -167,26 +174,49 @@ print(sensor_readings)
 
 ---
 
-### Iterating Through Dictionaries
+![bg contain right:30%](./Images/Dictionary_Key.jpg)
+
+### Iterating Through Dictionaries (1 / 3)
 
 You can loop through dictionaries in several ways.
 
 **Looping through keys (default):**
 ```python
-system_status = {"CPU": "80%", "RAM": "65%", "Disk": "90%"}
+system_status = {
+    "CPU": "80%",
+    "RAM": "65%",
+    "Disk": "90%"
+}
+
 for component in system_status:
+
     print(f"{component}: {system_status[component]}")
+
 # Output:
 # CPU: 80%
 # RAM: 65%
 # Disk: 90%
 ```
 
+---
+
+
+![bg contain right:30%](./Images/Dictionary_Value.jpg)
+
+### Iterating Through Dictionaries (2 / 3)
+
 **Looping through values:**
 ```python
-system_status = {"CPU": "80%", "RAM": "65%", "Disk": "90%"}
+system_status = {
+    "CPU": "80%",
+    "RAM": "65%",
+    "Disk": "90%"
+}
+
 for usage in system_status.values():
+
     print(f"Usage: {usage}")
+
 # Output:
 # Usage: 80%
 # Usage: 65%
@@ -195,13 +225,22 @@ for usage in system_status.values():
 
 ---
 
-### Iterating Through Dictionaries (cont.)
+![bg contain right:30%](./Images/Dictionary_Item.jpg)
+
+### Iterating Through Dictionaries (3 / 3)
 
 **Looping through key-value pairs (`items()`):**
 ```python
-system_status = {"CPU": "80%", "RAM": "65%", "Disk": "90%"}
+system_status = {
+    "CPU": "80%",
+    "RAM": "65%",
+    "Disk": "90%"
+}
+
 for component, usage in system_status.items():
+    
     print(f"Component {component} has usage {usage}")
+
 # Output:
 # Component CPU has usage 80%
 # Component RAM has usage 65%
