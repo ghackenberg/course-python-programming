@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 03 Test 3</text>
+    </category>
+  </question>
+
   <!-- Test 3 for Session 3 -->
   <!-- Total Questions: 13 -->
 
   <!-- Question 1: Dictionaries (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Dict Syntax: Updating a value</text>
+      <text>Q01: Dict Syntax: Updating a value</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the dictionary <code>sensor_readings = {"temperature": 23.5}</code>, which line of code correctly updates the temperature to 24.1?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -37,7 +44,7 @@
   <!-- Question 2: Dictionaries (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Dict Operations: `in` keyword</text>
+      <text>Q02: Dict Operations: `in` keyword</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <code>in</code> keyword check for when used with a dictionary?</p><pre><code>config = {"theme": "dark", "language": "en"}
@@ -45,6 +52,7 @@ if "theme" in config:
     print("Found")
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -71,11 +79,12 @@ if "theme" in config:
   <!-- Question 3: Sets (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Set Properties</text>
+      <text>Q03: Set Properties</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a defining characteristic of a Python set?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -102,11 +111,12 @@ if "theme" in config:
   <!-- Question 4: Sets (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Set Operations: Difference</text>
+      <text>Q04: Set Operations: Difference</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>set_a = {1, 2, 3}</code> and <code>set_b = {3, 4, 5}</code>, what is the result of <code>set_b - set_a</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -133,7 +143,7 @@ if "theme" in config:
   <!-- Question 5: Sets (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Set Creation from a list</text>
+      <text>Q05: Set Creation from a list</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What will be the output of the following code snippet?</p><pre><code>data_points = [10, 20, 10, 30, 20, 10]
@@ -141,6 +151,7 @@ unique_points = set(data_points)
 print(len(unique_points))
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -167,11 +178,12 @@ print(len(unique_points))
   <!-- Question 6: Functions (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Syntax: Header</text>
+      <text>Q06: Function Syntax: Header</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What character must be at the end of a function's header line (the line with `def` and the function name)?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -198,11 +210,12 @@ print(len(unique_points))
   <!-- Question 7: Functions (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Principles: Modularity</text>
+      <text>Q07: Function Principles: Modularity</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which benefit of using functions relates to breaking down a complex problem into smaller, more manageable pieces?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -229,7 +242,7 @@ print(len(unique_points))
   <!-- Question 8: Functions (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Scope: NameError</text>
+      <text>Q08: Function Scope: NameError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the result of running the following code?</p>
@@ -241,6 +254,7 @@ print(len(unique_points))
 </code></pre>
 <p>Note: Assume the last line is uncommented and executed.</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -267,11 +281,12 @@ print(len(unique_points))
   <!-- Question 9: Arguments & Return (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Keyword Arguments</text>
+      <text>Q09: Function Arguments: Keyword Arguments</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a key benefit of using keyword arguments, such as <code>generate_report(author="Jane", title="Summary")</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -298,11 +313,12 @@ print(len(unique_points))
   <!-- Question 10: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Default Values</text>
+      <text>Q10: Function Arguments: Default Values</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the function <code>def log_message(message, level="INFO"):</code>, how would you call it to log the message "System Halt!" with the level "CRITICAL"?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -329,11 +345,12 @@ print(len(unique_points))
   <!-- Question 11: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Return: The `return` keyword</text>
+      <text>Q11: Function Return: The `return` keyword</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens as soon as a <code>return</code> statement is executed inside a function?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -360,11 +377,12 @@ print(len(unique_points))
   <!-- Question 12: Dictionaries (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Dict Keys: Immutability</text>
+      <text>Q12: Dict Keys: Immutability</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why does Python require dictionary keys to be immutable?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -391,7 +409,7 @@ print(len(unique_points))
   <!-- Question 13: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Unpacking *args</text>
+      <text>Q13: Function Arguments: Unpacking *args</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of this code?</p>
@@ -404,6 +422,7 @@ result = calculator(10, 20, 30)
 print(result)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 03 Test 1</text>
+    </category>
+  </question>
+
   <!-- Test 1 for Session 3 -->
   <!-- Total Questions: 12 -->
 
   <!-- Question 1: Dictionaries (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Dict Syntax: Creating an Empty Dictionary</text>
+      <text>Q01: Dict Syntax: Creating an Empty Dictionary</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following is the correct way to create an empty dictionary in Python?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -37,11 +44,12 @@
   <!-- Question 2: Dictionaries (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Dict Method: Safe Access with get()</text>
+      <text>Q02: Dict Method: Safe Access with get()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the dictionary <code>sensor_readings = {"temperature": 23.5}</code>, what is the result of the following code?</p><pre><code>print(sensor_readings.get("pressure", 0))</code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -68,7 +76,7 @@
   <!-- Question 3: Dictionaries (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Dict Iteration: Key-Value Pairs with items()</text>
+      <text>Q03: Dict Iteration: Key-Value Pairs with items()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of the following code snippet?</p><pre><code>system_status = {"CPU": "80%", "RAM": "65%"}
@@ -76,6 +84,7 @@ for component, usage in system_status.items():
     print(f"{component}: {usage}")
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -102,11 +111,12 @@ for component, usage in system_status.items():
   <!-- Question 4: Sets (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Set Syntax: Creating an Empty Set</text>
+      <text>Q04: Set Syntax: Creating an Empty Set</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the correct syntax for creating an empty set?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -133,11 +143,12 @@ for component, usage in system_status.items():
   <!-- Question 5: Sets (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Set Methods: remove() vs discard()</text>
+      <text>Q05: Set Methods: remove() vs discard()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the key difference between the <code>remove()</code> and <code>discard()</code> methods for a set?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -164,11 +175,12 @@ for component, usage in system_status.items():
   <!-- Question 6: Sets (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Set Operations: Symmetric Difference</text>
+      <text>Q06: Set Operations: Symmetric Difference</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the sets <code>set_a = {1, 2, 3, 4}</code> and <code>set_b = {3, 4, 5, 6}</code>, what is the result of <code>set_a ^ set_b</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -195,11 +207,12 @@ for component, usage in system_status.items():
   <!-- Question 7: Functions (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Definition: Keyword</text>
+      <text>Q07: Function Definition: Keyword</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which keyword is used to begin a function definition in Python?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -226,11 +239,12 @@ for component, usage in system_status.items():
   <!-- Question 8: Functions (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Documentation: Docstrings</text>
+      <text>Q08: Function Documentation: Docstrings</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary purpose of a docstring (a string literal enclosed in triple quotes <code>"""..."""</code>) placed at the beginning of a function body?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -257,7 +271,7 @@ for component, usage in system_status.items():
   <!-- Question 9: Functions (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Scope: Local vs. Global</text>
+      <text>Q09: Function Scope: Local vs. Global</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of the following code?</p>
@@ -271,6 +285,7 @@ my_function()
 print(x)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -297,11 +312,12 @@ print(x)
   <!-- Question 10: Arguments & Return (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Return: Default Value</text>
+      <text>Q10: Function Return: Default Value</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If a function does not have an explicit <code>return</code> statement, what value does it return by default?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -328,11 +344,12 @@ print(x)
   <!-- Question 11: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Default Value Syntax</text>
+      <text>Q11: Function Arguments: Default Value Syntax</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following function definitions is syntactically correct?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -359,11 +376,12 @@ print(x)
   <!-- Question 12: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: *args and **kwargs types</text>
+      <text>Q12: Function Arguments: *args and **kwargs types</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Inside a function defined as <code>def my_func(*args, **kwargs):</code>, what are the data types of the <code>args</code> and <code>kwargs</code> variables?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>

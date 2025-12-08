@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 03 Test 5</text>
+    </category>
+  </question>
+
   <!-- Test 5 for Session 3 -->
   <!-- Total Questions: 15 -->
 
   <!-- Question 1: Dictionaries (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Dict Method: clear()</text>
+      <text>Q01: Dict Method: clear()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the effect of the <code>clear()</code> method on a dictionary?</p><pre><code>my_dict = {"a": 1, "b": 2}
@@ -14,6 +20,7 @@ my_dict.clear()
 print(my_dict)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -40,11 +47,12 @@ print(my_dict)
   <!-- Question 2: Dictionaries (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Dict Value Types</text>
+      <text>Q02: Dict Value Types</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following statements about dictionary values is TRUE?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -71,11 +79,12 @@ print(my_dict)
   <!-- Question 3: Dictionaries (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Dict Construction from lists</text>
+      <text>Q03: Dict Construction from lists</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you have two lists, `keys = ['a', 'b', 'c']` and `values = [1, 2, 3]`, what is a Pythonic way to combine them into a dictionary `{'a': 1, 'b': 2, 'c': 3}`?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -102,11 +111,12 @@ print(my_dict)
   <!-- Question 4: Sets (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Set Syntax: Creation</text>
+      <text>Q04: Set Syntax: Creation</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of `print({10, 20, 10, 30})`?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -133,11 +143,12 @@ print(my_dict)
   <!-- Question 5: Sets (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Set Operations: `issubset` and `issuperset`</text>
+      <text>Q05: Set Operations: `issubset` and `issuperset`</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>required_skills = {"python", "git"}</code> and <code>applicant_skills = {"python", "git", "docker"}</code>, which of the following expressions evaluates to <code>True</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -164,11 +175,12 @@ print(my_dict)
   <!-- Question 6: Sets (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Combined Set Operations</text>
+      <text>Q06: Combined Set Operations</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the sets <code>a = {1, 2, 3}</code>, <code>b = {3, 4, 5}</code>, and <code>c = {1, 5}</code>, what is the result of <code>(a | b) - c</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -195,11 +207,12 @@ print(my_dict)
   <!-- Question 7: Functions (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Principles: Reusability</text>
+      <text>Q07: Function Principles: Reusability</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which term describes the benefit of writing a function once and using it in many different places?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -226,7 +239,7 @@ print(my_dict)
   <!-- Question 8: Functions (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Scope</text>
+      <text>Q08: Function Scope</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of the following code?</p>
@@ -239,6 +252,7 @@ change_message()
 print(message)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -265,7 +279,7 @@ print(message)
   <!-- Question 9: Functions (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Call Flow</text>
+      <text>Q09: Function Call Flow</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the exact sequence of output for the code below?</p>
@@ -279,6 +293,7 @@ print(result)
 print("D")
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -305,7 +320,7 @@ print("D")
   <!-- Question 10: Arguments & Return (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Parameters vs Arguments</text>
+      <text>Q10: Function Arguments: Parameters vs Arguments</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the code below, what is the correct term for <code>length</code> and <code>width</code> in the first line, and <code>10</code> and <code>5</code> in the last line?</p>
@@ -315,6 +330,7 @@ print("D")
 calculate_area(10, 5)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -341,11 +357,12 @@ calculate_area(10, 5)
   <!-- Question 11: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: *args</text>
+      <text>Q11: Function Arguments: *args</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <code>*args</code> syntax in a function definition allow?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -372,11 +389,12 @@ calculate_area(10, 5)
   <!-- Question 12: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Return: Unpacking a tuple</text>
+      <text>Q12: Function Return: Unpacking a tuple</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>A function is defined as <code>def get_status(): return 25.7, "Operational"</code>. Which line of code will correctly capture the temperature in a variable `temp` and the status in a variable `stat`?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -403,11 +421,12 @@ calculate_area(10, 5)
   <!-- Question 13: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Mixed Call</text>
+      <text>Q13: Function Arguments: Mixed Call</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the function `def configure(id, unit="C", max_val=100):`, which of the following calls is INVALID?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -434,7 +453,7 @@ calculate_area(10, 5)
   <!-- Question 14: Data Structures (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Combined Concepts: Function with Dict and Set</text>
+      <text>Q14: Combined Concepts: Function with Dict and Set</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the return value of the following function call?</p>
@@ -452,6 +471,7 @@ unique_courses = get_unique_values(student_courses)
 print(unique_courses)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -478,7 +498,7 @@ print(unique_courses)
   <!-- Question 15: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Combined Concepts: Unreachable code</text>
+      <text>Q15: Combined Concepts: Unreachable code</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the output of the following function call?</p>
@@ -493,6 +513,7 @@ status = check_status(1)
 print(status)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>

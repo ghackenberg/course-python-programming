@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 03 Test 4</text>
+    </category>
+  </question>
+
   <!-- Test 4 for Session 3 -->
   <!-- Total Questions: 14 -->
 
   <!-- Question 1: Dictionaries (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Dict Method: len()</text>
+      <text>Q01: Dict Method: len()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <code>len()</code> function return when used on a dictionary?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -37,7 +44,7 @@
   <!-- Question 2: Dictionaries (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Dict Iteration: Default behavior</text>
+      <text>Q02: Dict Iteration: Default behavior</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is printed when you iterate directly over a dictionary, as shown below?</p><pre><code>system_status = {"CPU": "80%", "RAM": "65%"}
@@ -45,6 +52,7 @@ for item in system_status:
     print(item)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -71,11 +79,12 @@ for item in system_status:
   <!-- Question 3: Dictionaries (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Dict Access: KeyError</text>
+      <text>Q03: Dict Access: KeyError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Under which circumstance will a <code>KeyError</code> be raised when working with a dictionary named <code>my_dict</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -102,11 +111,12 @@ for item in system_status:
   <!-- Question 4: Sets (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Set Method: add()</text>
+      <text>Q04: Set Method: add()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens if you try to <code>add()</code> an element to a set that already contains that element?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -133,11 +143,12 @@ for item in system_status:
   <!-- Question 5: Sets (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Set Operations: Union</text>
+      <text>Q05: Set Operations: Union</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following expressions will produce a set containing all unique elements from both <code>set_a</code> and <code>set_b</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -164,11 +175,12 @@ for item in system_status:
   <!-- Question 6: Sets (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Set Use Case: Membership testing speed</text>
+      <text>Q06: Set Use Case: Membership testing speed</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is checking for membership (e.g., <code>if item in collection:</code>) generally much faster for a large set than for a large list?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -195,11 +207,12 @@ for item in system_status:
   <!-- Question 7: Functions (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Body: Indentation</text>
+      <text>Q07: Function Body: Indentation</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>How does Python identify the block of code that forms the body of a function?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -226,11 +239,12 @@ for item in system_status:
   <!-- Question 8: Functions (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Scope: Global Variable</text>
+      <text>Q08: Function Scope: Global Variable</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following statements about a global variable is true?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -257,11 +271,12 @@ for item in system_status:
   <!-- Question 9: Arguments & Return (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Definition</text>
+      <text>Q09: Function Arguments: Definition</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the purpose of an argument in a function?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -288,11 +303,12 @@ for item in system_status:
   <!-- Question 10: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Syntax Error with Defaults</text>
+      <text>Q10: Function Arguments: Syntax Error with Defaults</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following function definitions will cause a <code>SyntaxError</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -319,7 +335,7 @@ for item in system_status:
   <!-- Question 11: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: **kwargs usage</text>
+      <text>Q11: Function Arguments: **kwargs usage</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What will be the output of the following code snippet?</p>
@@ -329,6 +345,7 @@ for item in system_status:
 process_settings(mode="production", debug=False, log_level="ERROR")
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -355,11 +372,12 @@ process_settings(mode="production", debug=False, log_level="ERROR")
   <!-- Question 12: Dictionaries vs Sets -->
   <question type="multichoice">
     <name>
-      <text>Data Structures: Dictionaries vs Sets</text>
+      <text>Q12: Data Structures: Dictionaries vs Sets</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the fundamental difference between a dictionary and a set?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -386,7 +404,7 @@ process_settings(mode="production", debug=False, log_level="ERROR")
   <!-- Question 13: Functions (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Side Effects vs Return Values</text>
+      <text>Q13: Function Side Effects vs Return Values</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider two functions:</p>
@@ -402,6 +420,7 @@ def calculate_area(length, width):
 </code></pre>
 <p>Why is <code>calculate_area</code> generally considered a more reusable and versatile function?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -428,7 +447,7 @@ def calculate_area(length, width):
   <!-- Question 14: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Unpacking with *</text>
+      <text>Q14: Function Arguments: Unpacking with *</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the purpose of the asterisk (`*`) in the following function call?</p>
@@ -439,6 +458,7 @@ my_list = [10, 20, 30]
 result = calculate_sum(*my_list)
 </code></pre>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>

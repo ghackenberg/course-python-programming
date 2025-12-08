@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 03 Test 2</text>
+    </category>
+  </question>
+
   <!-- Test 2 for Session 3 -->
   <!-- Total Questions: 12 -->
 
   <!-- Question 1: Dictionaries (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Dict Keys: Permissible Data Types</text>
+      <text>Q01: Dict Keys: Permissible Data Types</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following data types is NOT allowed as a dictionary key?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -37,11 +44,12 @@
   <!-- Question 2: Dictionaries (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Dict Iteration: Iterating through values()</text>
+      <text>Q02: Dict Iteration: Iterating through values()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which method would you use to iterate exclusively through the values of a dictionary called <code>system_status</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -68,7 +76,7 @@
   <!-- Question 3: Dictionaries (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Dict Method: pop()</text>
+      <text>Q03: Dict Method: pop()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider the following code:</p><pre><code>sensor_readings = {"temp": 25, "humidity": 70, "pressure": 1012}
@@ -77,6 +85,7 @@ print(removed_value)
 print(sensor_readings)
 </code></pre><p>What is the final output?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -103,11 +112,12 @@ print(sensor_readings)
   <!-- Question 4: Sets (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Set Operations: Intersection Operator</text>
+      <text>Q04: Set Operations: Intersection Operator</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which operator is used to find the intersection of two sets (i.e., elements common to both)?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -134,11 +144,12 @@ print(sensor_readings)
   <!-- Question 5: Sets (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Set Use Case: Removing Duplicates</text>
+      <text>Q05: Set Use Case: Removing Duplicates</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the most Pythonic way to remove duplicate elements from a list named <code>data_log</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -165,11 +176,12 @@ print(sensor_readings)
   <!-- Question 6: Sets (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Set Method: pop() behavior</text>
+      <text>Q06: Set Method: pop() behavior</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given that sets are unordered, what can be said about the result of <code>my_set.pop()</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -196,11 +208,12 @@ print(sensor_readings)
   <!-- Question 7: Functions (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Execution: Calling a Function</text>
+      <text>Q07: Function Execution: Calling a Function</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>After defining a function named <code>perform_health_check</code>, how do you execute the code inside it?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -227,11 +240,12 @@ print(sensor_readings)
   <!-- Question 8: Functions (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Scope: Variable Accessibility</text>
+      <text>Q08: Function Scope: Variable Accessibility</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you define a variable inside a function (a local variable), where can it be accessed?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -258,11 +272,12 @@ print(sensor_readings)
   <!-- Question 9: Functions (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Principles: Reusability</text>
+      <text>Q09: Function Principles: Reusability</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The "DRY" principle in software development stands for "Don't Repeat Yourself." How do functions help adhere to this principle?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -289,11 +304,12 @@ print(sensor_readings)
   <!-- Question 10: Arguments & Return (Easy) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Positional Arguments</text>
+      <text>Q10: Function Arguments: Positional Arguments</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the function call <code>calculate_area(10, 5)</code>, what type of arguments are <code>10</code> and <code>5</code>?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -320,11 +336,12 @@ print(sensor_readings)
   <!-- Question 11: Arguments & Return (Medium) -->
   <question type="multichoice">
     <name>
-      <text>Function Arguments: Positional/Keyword Order</text>
+      <text>Q11: Function Arguments: Positional/Keyword Order</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the rule for combining positional and keyword arguments in a single function call?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
@@ -351,11 +368,12 @@ print(sensor_readings)
   <!-- Question 12: Arguments & Return (Hard) -->
   <question type="multichoice">
     <name>
-      <text>Function Return: Multiple Values</text>
+      <text>Q12: Function Return: Multiple Values</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When a function uses a statement like <code>return temp, pressure, status</code>, what is actually being returned?</p>]]></text>
     </questiontext>
+    <defaultgrade>1</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
