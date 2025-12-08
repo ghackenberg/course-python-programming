@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Test 2 for Session 3 -->
+  <!-- Total Questions: 12 -->
+
+  <!-- Question 1: Dictionaries (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Keys: Permissible Data Types</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following data types is NOT allowed as a dictionary key?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>list</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Dictionary keys must be immutable. Lists are mutable, so they cannot be used as keys.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>string</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Strings are immutable and are commonly used as dictionary keys.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>integer</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Numbers (integers, floats) are immutable and can be used as keys.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>tuple</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Tuples are immutable and are valid dictionary keys.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Dictionaries (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Iteration: Iterating through values()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which method would you use to iterate exclusively through the values of a dictionary called <code>system_status</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>system_status.values()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The <code>values()</code> method returns a view object that displays a list of all the values in the dictionary.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>system_status.keys()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This method is used to iterate through the keys.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>system_status.items()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This method is used to iterate through the key-value pairs (as tuples).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>system_status</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Iterating directly over the dictionary (e.g., <code>for x in system_status:</code>) iterates through its keys by default.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 3: Dictionaries (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Method: pop()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Consider the following code:</p><pre><code>sensor_readings = {"temp": 25, "humidity": 70, "pressure": 1012}
+removed_value = sensor_readings.pop("humidity")
+print(removed_value)
+print(sensor_readings)
+</code></pre><p>What is the final output?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>70<br>{"temp": 25, "pressure": 1012}</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The <code>pop()</code> method removes the specified key-value pair and returns the value. The dictionary is modified in place.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>70<br>{"temp": 25, "humidity": 70, "pressure": 1012}</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The <code>pop()</code> method modifies the dictionary by removing the item.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>{"humidity": 70}<br>{"temp": 25, "pressure": 1012}</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>pop()</code> returns only the value, not the key-value pair.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>None<br>{"temp": 25, "pressure": 1012}</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>pop()</code> returns the value of the removed item. <code>del</code> would not return a value.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Sets (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Operations: Intersection Operator</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which operator is used to find the intersection of two sets (i.e., elements common to both)?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>&</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The ampersand (<code>&</code>) operator performs a set intersection.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>|</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the union operator.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>-</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the difference operator.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>^</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the symmetric difference operator.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Sets (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Use Case: Removing Duplicates</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the most Pythonic way to remove duplicate elements from a list named <code>data_log</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>unique_items = list(set(data_log))</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Converting the list to a set automatically removes all duplicates. Converting it back to a list is common if the list format is needed.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Looping through the list and manually building a new list with checks for duplicates.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While this works, it is not the most concise or efficient (Pythonic) way.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>unique_items = data_log.unique()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Standard Python lists do not have a <code>.unique()</code> method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>unique_items = dict.fromkeys(data_log)</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While this clever trick also removes duplicates (by creating dictionary keys), using <code>set()</code> is the most direct and idiomatic method for this task.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Sets (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Method: pop() behavior</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given that sets are unordered, what can be said about the result of <code>my_set.pop()</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It removes and returns an arbitrary element from the set.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Because sets have no defined order, you cannot predict which element <code>pop()</code> will remove. It simply removes and returns one of the elements.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It removes and returns the "first" element of the set.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Sets do not have a "first" or "last" element due to their unordered nature.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It returns an element but does not remove it from the set.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>pop()</code> always removes the element it returns.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It raises a <code>TypeError</code> because you must specify which element to pop.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>pop()</code> for sets is called without arguments.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Functions (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Execution: Calling a Function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>After defining a function named <code>perform_health_check</code>, how do you execute the code inside it?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>By calling it with <code>perform_health_check()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. A function is called by writing its name followed by parentheses.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>By typing <code>run perform_health_check</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not valid Python syntax for calling a function.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It runs automatically after being defined.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Defining a function only creates it; it must be explicitly called to be executed.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>By typing <code>def perform_health_check()</code> again.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would redefine the function, not execute it.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 8: Functions (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Scope: Variable Accessibility</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>If you define a variable inside a function (a local variable), where can it be accessed?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Only from within that same function.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Local variables have a scope limited to the function in which they are defined. They are created when the function is called and destroyed when it exits.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>From any part of the program.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This describes a global variable.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>From within that function and any functions called by it.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Functions cannot access the local scope of the function that called them.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Only from outside that function.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the opposite of how local scope works.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Functions (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Principles: Reusability</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The "DRY" principle in software development stands for "Don't Repeat Yourself." How do functions help adhere to this principle?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>They allow you to write a block of code once and call it multiple times, avoiding repetition.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. By encapsulating logic in a function, you can reuse that logic anywhere in your program just by calling the function, which is the core idea of the DRY principle.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>By ensuring every variable in the program has a unique name.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While unique naming is important, it's not the primary way functions support the DRY principle.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>By automatically deleting code that appears more than once.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python does not automatically delete repeated code.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>By forcing all code to be written inside a function.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. You can write code outside of functions (in the global scope), but using functions promotes better organization and reusability.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 10: Arguments & Return (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Positional Arguments</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the function call <code>calculate_area(10, 5)</code>, what type of arguments are <code>10</code> and <code>5</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Positional arguments</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Their meaning is determined by their position in the function call.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Keyword arguments</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A keyword argument would be specified with a name, like <code>length=10</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Default arguments</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Default arguments are specified in the function definition, not the call.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Global arguments</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not a standard term for function arguments.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Arguments & Return (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Positional/Keyword Order</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the rule for combining positional and keyword arguments in a single function call?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>All positional arguments must come before any keyword arguments.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Once you use a keyword argument, all subsequent arguments must also be keyword arguments.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>All keyword arguments must come before any positional arguments.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would cause a <code>SyntaxError</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>They can be mixed in any order.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. There is a strict ordering rule.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>You cannot combine positional and keyword arguments in the same call.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. It is a common and powerful feature to combine them.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Arguments & Return (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Return: Multiple Values</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>When a function uses a statement like <code>return temp, pressure, status</code>, what is actually being returned?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>A single tuple containing the three values.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Python packages the multiple values into a single tuple, which can then be "unpacked" into separate variables by the caller.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A list containing the three values.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The default data structure for returning multiple items this way is a tuple.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Three separate values, which requires three assignment variables.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A function can only have one return value. In this case, that one value is a tuple that contains other values.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A dictionary with default keys "arg0", "arg1", and "arg2".</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The returned type is a tuple, not a dictionary.</p>]]></text></feedback>
+    </answer>
+  </question>
+</quiz>

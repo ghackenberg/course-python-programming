@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Test 1 for Session 3 -->
+  <!-- Total Questions: 12 -->
+
+  <!-- Question 1: Dictionaries (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Syntax: Creating an Empty Dictionary</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following is the correct way to create an empty dictionary in Python?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>my_dict = {}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Using empty curly braces <code>{}</code> creates an empty dictionary. Note that <code>set()</code> is used for an empty set.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_dict = []</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This creates an empty list.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_dict = ()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This creates an empty tuple.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_dict = set()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This creates an empty set, not a dictionary.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Dictionaries (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Method: Safe Access with get()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the dictionary <code>sensor_readings = {"temperature": 23.5}</code>, what is the result of the following code?</p><pre><code>print(sensor_readings.get("pressure", 0))</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>0</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The <code>get()</code> method safely accesses a key. If the key ("pressure") is not found, it returns the provided default value (0) instead of raising a KeyError.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>None</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>None</code> would be returned if no default value was provided, like <code>sensor_readings.get("pressure")</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A <code>KeyError</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A <code>KeyError</code> would be raised if you used bracket notation like <code>sensor_readings["pressure"]</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>23.5</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the value for the "temperature" key, not "pressure".</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 3: Dictionaries (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Iteration: Key-Value Pairs with items()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the output of the following code snippet?</p><pre><code>system_status = {"CPU": "80%", "RAM": "65%"}
+for component, usage in system_status.items():
+    print(f"{component}: {usage}")
+</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>CPU: 80%<br>RAM: 65%</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The <code>.items()</code> method returns key-value pairs, which are unpacked into the `component` and `usage` variables in each iteration of the loop.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Component: CPU<br>Component: RAM</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be closer to the output if you were only iterating through the keys.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Usage: 80%<br>Usage: 65%</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be the output if you were iterating through the values using <code>.values()</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A <code>TypeError</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The syntax is valid for iterating through a dictionary's items.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Sets (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Syntax: Creating an Empty Set</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the correct syntax for creating an empty set?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>my_set = set()</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. You must use the <code>set()</code> constructor to create an empty set, as <code>{}</code> creates an empty dictionary.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_set = {}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This creates an empty dictionary, a common point of confusion.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_set = []</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This creates an empty list.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>my_set = ({})</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This also creates an empty dictionary.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Sets (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Methods: remove() vs discard()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the key difference between the <code>remove()</code> and <code>discard()</code> methods for a set?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>remove()</code> raises a <code>KeyError</code> if the item is not found, while <code>discard()</code> does not.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. This is the main distinction. Use <code>remove()</code> when the element's absence is an error, and <code>discard()</code> when it is acceptable for the element to not be present.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>discard()</code> raises a <code>KeyError</code> if the item is not found, while <code>remove()</code> does not.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the reverse of the correct behavior.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>remove()</code> can only remove one item, while <code>discard()</code> can remove multiple.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Both methods remove a single specified item.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>There is no difference; they are aliases for the same operation.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. They have a distinct and important difference in error handling.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Sets (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Operations: Symmetric Difference</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the sets <code>set_a = {1, 2, 3, 4}</code> and <code>set_b = {3, 4, 5, 6}</code>, what is the result of <code>set_a ^ set_b</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>{1, 2, 5, 6}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The symmetric difference (<code>^</code>) operator returns a set containing elements that are in either of the sets, but not in both.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{3, 4}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the result of the intersection (<code>&amp;</code>) operation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{1, 2}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the result of the difference (<code>set_a - set_b</code>) operation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{1, 2, 3, 4, 5, 6}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the result of the union (<code>|</code>) operation.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Functions (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Definition: Keyword</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which keyword is used to begin a function definition in Python?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>def</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The <code>def</code> keyword is used to define a new function.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>function</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This keyword is used in other languages like JavaScript, but not Python.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>fun</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This keyword is used in languages like Kotlin, but not Python.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>define</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While it describes the action, the keyword is <code>def</code>.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 8: Functions (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Documentation: Docstrings</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the primary purpose of a docstring (a string literal enclosed in triple quotes <code>"""..."""</code>) placed at the beginning of a function body?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>To provide a brief explanation of what the function does, which can be accessed by help tools.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Docstrings are a standard way to document code and are used by various tools to provide help and information about the function.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To create a multi-line comment that is ignored by the interpreter.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While they function as comments, their specific purpose is for documentation that is attached to the function object itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To define the return value of the function.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The `return` keyword is used to specify the return value.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To disable the function from being executed.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A docstring has no effect on the execution of the function.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Functions (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Scope: Local vs. Global</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the output of the following code?</p>
+<pre><code>x = "global"
+
+def my_function():
+    x = "local"
+    print(x)
+
+my_function()
+print(x)
+</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>local<br>global</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Inside the function, a new local variable `x` is created and printed. This does not affect the global variable `x`, which is printed in the last line.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>local<br>local</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The function call does not modify the global variable `x` without the `global` keyword.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>global<br>global</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A new local variable `x` is defined and printed inside the function.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>An error occurs.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The code is valid and demonstrates variable scope.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 10: Arguments & Return (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Return: Default Value</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>If a function does not have an explicit <code>return</code> statement, what value does it return by default?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>None</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Python functions implicitly return <code>None</code> if they reach the end without an explicit <code>return</code> statement.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>0</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Functions do not return a numeric value by default.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>True</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Functions do not return a boolean value by default.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It raises a <code>SyntaxError</code>.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. It is perfectly valid for a function to not have a <code>return</code> statement.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Arguments & Return (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Default Value Syntax</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following function definitions is syntactically correct?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>def log_message(message, level="INFO"):</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Parameters with default values must be placed after all parameters without default values.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>def log_message(level="INFO", message):</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This will cause a <code>SyntaxError</code> because a non-default argument (`message`) follows a default argument (`level`).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>def log_message(message="INFO", level):</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This also violates the rule that non-default arguments cannot follow default arguments.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>def log_message(message, level="INFO", timestamp):</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The `timestamp` parameter is a non-default argument that follows the default argument `level`.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Arguments & Return (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: *args and **kwargs types</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Inside a function defined as <code>def my_func(*args, **kwargs):</code>, what are the data types of the <code>args</code> and <code>kwargs</code> variables?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>args</code> is a tuple, and <code>kwargs</code> is a dictionary.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. <code>*args</code> collects all extra positional arguments into a tuple, and <code>**kwargs</code> collects all extra keyword arguments into a dictionary.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>args</code> is a list, and <code>kwargs</code> is a dictionary.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While similar, <code>args</code> is a tuple, not a list. Tuples are immutable.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>args</code> is a tuple, and <code>kwargs</code> is a set.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>kwargs</code> is a dictionary to store key-value pairs.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Both are lists.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. They are different data types designed for different kinds of arguments.</p>]]></text></feedback>
+    </answer>
+  </question>
+</quiz>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Test 3 for Session 3 -->
+  <!-- Total Questions: 13 -->
+
+  <!-- Question 1: Dictionaries (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Syntax: Updating a value</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the dictionary <code>sensor_readings = {"temperature": 23.5}</code>, which line of code correctly updates the temperature to 24.1?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>sensor_readings["temperature"] = 24.1</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. You can update the value of an existing key by assigning a new value to it using bracket notation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>sensor_readings.update("temperature", 24.1)</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The <code>update()</code> method takes another dictionary or an iterable of key-value pairs, for example: <code>sensor_readings.update({"temperature": 24.1})</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>sensor_readings["temperature"].add(24.1)</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This syntax is not valid for updating a dictionary value.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>sensor_readings(temperature=24.1)</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Dictionaries are not callable in this way.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Dictionaries (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Operations: `in` keyword</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>in</code> keyword check for when used with a dictionary?</p><pre><code>config = {"theme": "dark", "language": "en"}
+if "theme" in config:
+    print("Found")
+</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It checks for the existence of a key.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. By default, the `in` operator checks if the given string matches one of the keys in the dictionary.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It checks for the existence of a value.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. To check for a value, you must explicitly check against the dictionary's values, like: `if "dark" in config.values():`.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It checks for the existence of a key-value pair.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. To check for a key-value pair, you would use the `items()` method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It checks if the dictionary is empty.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The `in` keyword is used for membership testing.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Sets (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Properties</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a defining characteristic of a Python set?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It cannot contain duplicate elements.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Sets automatically enforce uniqueness; any duplicate elements added are discarded.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is ordered by insertion time.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Sets are inherently unordered collections.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It uses a key-value pair structure.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This describes a dictionary.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is immutable.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Sets themselves are mutable (you can add or remove elements). There is an immutable version called a `frozenset`.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Sets (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Operations: Difference</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given <code>set_a = {1, 2, 3}</code> and <code>set_b = {3, 4, 5}</code>, what is the result of <code>set_b - set_a</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>{4, 5}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The difference operation (<code>-</code>) returns elements that are in the first set but not in the second set.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{1, 2}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be the result of <code>set_a - set_b</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{3}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the intersection of the two sets.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>{1, 2, 4, 5}</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the symmetric difference of the two sets.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Sets (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Set Creation from a list</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be the output of the following code snippet?</p><pre><code>data_points = [10, 20, 10, 30, 20, 10]
+unique_points = set(data_points)
+print(len(unique_points))
+</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>3</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. When the list is converted to a set, duplicate values are removed. The unique values are 10, 20, and 30, so the length of the resulting set is 3.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>6</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the length of the original list, not the set created from it.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>[10, 20, 30]</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The code prints the length of the set, not the set itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A <code>TypeError</code>.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. It is valid to create a set from a list.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Functions (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Syntax: Header</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What character must be at the end of a function's header line (the line with `def` and the function name)?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>A colon (<code>:</code>)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The colon signifies the start of the indented function body.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A semicolon (<code>;</code>)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Semicolons are not typically used to end lines in Python.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Curly braces (<code>{}</code>)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python uses indentation, not curly braces, to define code blocks.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Parentheses (<code>()</code>)</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Parentheses are used to enclose the function's parameters.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Functions (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Principles: Modularity</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which benefit of using functions relates to breaking down a complex problem into smaller, more manageable pieces?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Modularity</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Modularity is the concept of separating a program's functionality into independent, interchangeable modules (functions), such that each one contains everything necessary to execute a single aspect of the desired functionality.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Reusability</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Reusability is about using the same function in multiple places, but modularity is about the initial act of breaking the problem down.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Abstraction</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Abstraction is about hiding the complex details inside the function, which is a result of modularity, but not the act of breaking it down itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Readability</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While modularity improves readability, the term for breaking down the problem is modularity.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 8: Functions (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Scope: NameError</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the result of running the following code?</p>
+<pre><code>def my_function():
+    local_var = "I exist only here"
+    print(local_var)
+
+# print(local_var) 
+</code></pre>
+<p>Note: Assume the last line is uncommented and executed.</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>A <code>NameError</code> occurs on the last line.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The variable `local_var` is local to `my_function` and does not exist in the global scope. Trying to access it outside the function results in a `NameError`.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It prints "I exist only here" twice.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The variable `local_var` is not accessible from the global scope.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It prints nothing and gives no error.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Attempting to access an undefined variable will cause an error.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It prints `None`.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. `None` is a value, but in this case, the variable itself is not defined in the scope.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Arguments & Return (Easy) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Keyword Arguments</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a key benefit of using keyword arguments, such as <code>generate_report(author="Jane", title="Summary")</code>?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The order of the arguments does not matter, improving readability.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Keyword arguments allow you to pass arguments by name, making the function call more explicit and freeing you from having to remember the exact order of parameters.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>They are faster to execute than positional arguments.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. There is no significant performance difference.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>They allow you to pass an unlimited number of arguments.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the purpose of `**kwargs`, not standard keyword arguments.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>They can only be used for string values.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Keyword arguments can be used for any data type.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Arguments & Return (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Default Values</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the function <code>def log_message(message, level="INFO"):</code>, how would you call it to log the message "System Halt!" with the level "CRITICAL"?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>log_message("System Halt!", level="CRITICAL")</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The first argument is passed positionally, and the `level` argument is passed by keyword to override its default value.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>log_message(message="System Halt!", "CRITICAL")</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would raise a `SyntaxError` because a positional argument follows a keyword argument.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>log_message("System Halt!", "CRITICAL")</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. This is also a valid way to call the function using only positional arguments.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>log_message("CRITICAL", "System Halt!")</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would incorrectly assign "CRITICAL" to the `message` parameter and "System Halt!" to the `level` parameter due to their positions.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Arguments & Return (Medium) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Return: The `return` keyword</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens as soon as a <code>return</code> statement is executed inside a function?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The function immediately stops executing and sends the specified value back to the caller.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. Any code inside the function after the `return` statement is unreachable and will not be executed.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The function continues to execute any remaining code and returns the value at the end.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Execution is terminated immediately upon reaching `return`.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The function prints the return value to the console automatically.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The value is sent back to the caller, who can then choose to print it or assign it to a variable.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The function restarts from the beginning.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The function's execution is terminated.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Dictionaries (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Dict Keys: Immutability</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Why does Python require dictionary keys to be immutable?</p>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Because dictionaries are implemented using a hash table, and the hash of a key must remain constant.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. If a key's value could change, its hash would also change, and the dictionary would no longer be able to find the item.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To save memory, as immutable types are more memory-efficient.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While there can be memory benefits to immutability, the primary reason is the requirement of a constant hash value for the underlying data structure.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To prevent the user from accidentally changing the keys.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While it does prevent this, it's a consequence of the technical implementation, not the primary design goal itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is an arbitrary rule with no technical reason.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. There is a fundamental technical reason related to how dictionaries are implemented for fast lookups.</p>]]></text></feedback>
+    </answer>
+  </question>
+  
+  <!-- Question 13: Arguments & Return (Hard) -->
+  <question type="multichoice">
+    <name>
+      <text>Function Arguments: Unpacking *args</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the output of this code?</p>
+<pre><code>def calculator(*numbers):
+    if not numbers:
+        return 0
+    return sum(numbers)
+
+result = calculator(10, 20, 30)
+print(result)
+</code></pre>]]></text>
+    </questiontext>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct!</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>60</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct. The `*numbers` syntax gathers the positional arguments (10, 20, 30) into a tuple `(10, 20, 30)`. The `sum()` function then calculates their total, which is returned.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>(10, 20, 30)</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The function returns the sum of the numbers, not the tuple itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>0</code></p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The `if not numbers:` condition is false because arguments were passed.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A <code>TypeError</code>.</p>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The syntax is valid for handling an arbitrary number of positional arguments.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
