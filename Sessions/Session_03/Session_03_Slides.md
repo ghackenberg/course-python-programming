@@ -578,11 +578,16 @@ print(f"Symmetric Difference (method): {sym_diff_set_method}")
 
 ---
 
+<div class="columns">
+<div class="three"
+
 ### Practical Use Cases for Sets (1 / 3)
 
 **1. Removing Duplicates from a List:**
 ```python
-data_log = ["start", "process", "error", "process", "start", "finish"]
+data_log = [
+    "start", "process", "error", "process", "start", "finish"
+]
 
 unique_events = list(set(data_log))
 
@@ -591,7 +596,18 @@ print(f"Unique events: {unique_events}")
 # Output: ['error', 'start', 'finish', 'process'] (order may vary)
 ```
 
+</div>
+<div>
+
+![](./Images/List_Duplicates.jpg)
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div class="three">
 
 ### Practical Use Cases for Sets (2 / 3)
 
@@ -608,6 +624,14 @@ unauthorized_attempt = "David"
 if unauthorized_attempt not in approved_users:
     print(f"{unauthorized_attempt} is not authorized.")
 ```
+
+</div>
+<div>
+
+![](./Images/Set_Admin.jpg)
+
+</div>
+</div>
 
 ---
 
@@ -671,6 +695,8 @@ This section includes the following contents:
 
 ---
 
+![bg right](./Images/Specialized_Machine.jpg)
+
 ### What are Functions?
 
 In programming, a **function** is a block of organized, reusable code that is used to perform a single, related action.
@@ -719,6 +745,8 @@ print("This line is outside the function.")
 - Indented block: The body of the function, containing the code to be executed.
 
 ---
+
+![bg right:30%](./Images/Function_Greeting.jpg)
 
 ### Defining a Simple Function: `greet()`
 
@@ -914,6 +942,8 @@ This section includes the following contents:
 
 ---
 
+![bg contain right:45%](./Images/Function_Arguments.jpg)
+
 ### Function Communication: Arguments & Return Values
 
 Functions are not isolated; they often need to interact with the rest of your program. This communication happens in two primary ways:
@@ -996,6 +1026,8 @@ log_message("Disk usage is high!", level="WARNING")
 
 ---
 
+![bg contain right:30%](./Images/Function_Syntax_Error.jpg)
+
 ### Default Arguments (2 / 2)
 
 The following example will produce a `SyntaxError`, because arguments with default values must follow arguments *without* default arguments:
@@ -1003,8 +1035,10 @@ The following example will produce a `SyntaxError`, because arguments with defau
 ```python
 # Example of incorrect order (will cause a SyntaxError)
 
-# def func(a="default", b): # SyntaxError: non-default argument follows default argument
+# def func(a="default", b): 
 #     pass
+
+# SyntaxError: non-default argument follows default argument
 ```
 
 ---
@@ -1267,6 +1301,8 @@ Functions take inputs and produce outputs.
     *   Demonstrate calling it with only required arguments, with all arguments, and with some optional arguments.
 
 ---
+
+![bg contain right:30%](./Images/Function_Report_Generator.jpg)
 
 ### Exercise Ideas - **Function Arguments and Return Values** (3 / 3)
 
