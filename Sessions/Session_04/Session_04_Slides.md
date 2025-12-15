@@ -767,6 +767,8 @@ except Exception as e:
 print("Program continues to run...")
 ```
 
+**Note: *You will learn more about error handling in the next session!***
+
 ---
 
 ![bg right:40%](./Images/Exercise.jpg)
