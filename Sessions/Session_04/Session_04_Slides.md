@@ -270,6 +270,8 @@ pip install numpy
 pip install matplotlib
 ```
 
+**Note: *You will learn more about external packages and `pip` in the last session!***
+
 ---
 
 <div class="columns">
