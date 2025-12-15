@@ -69,7 +69,7 @@ Think of them as toolboxes for specific jobs. You grab the toolbox you need (`im
 ---
 
 <div class="columns">
-<div class="two">
+<div class="four">
 
 ### The `import` Statement
 
@@ -97,6 +97,10 @@ print(f"The square root of 16 is: {sqrt_of_16}")
 
 </div>
 <div>
+
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. The central element is a sturdy, open toolbox, viewed from a three-quarters perspective. The toolbox has a prominent label on its front that reads "math" in a clear, sans-serif font. Inside the toolbox, several stylized tools are neatly arranged. One tool is a shiny, metal pi symbol (π). Next to it is a tool shaped like a square root symbol (√) with a number inside. Another tool is a sine wave, representing `sin`. The tools should look tangible and well-defined, with clean lines and subtle shading to give them a 3D appearance.
+-->
 
 ![An abstract image representing a toolbox labeled 'math' with tools like pi, sqrt, sin inside.](./Images/Math_Toolbox.jpg)
 
@@ -135,7 +139,11 @@ print(f"Y coordinate: {y_coord:.3f} m")
 </div>
 <div>
 
-![A diagram of a simple robot arm showing its length, angle, and the resulting X/Y coordinates.](./Images/Robot_Arm_Kinematics.png)
+<!--
+A diagram illustrating the 2D kinematics of a single-link robot arm. The diagram is set against a grid background representing a Cartesian coordinate system. The origin (0,0) is clearly marked. A robot arm link, labeled with length `L`, is shown anchored at the origin and extending into the first quadrant. An arc with an arrowhead indicates the angle `θ` between the positive x-axis and the arm. Dashed lines project from the arm's tip down to the x-axis and across to the y-axis. The intersection points are labeled `x = L * cos(θ)` and `y = L * sin(θ)` respectively. The diagram should be clean, with clear labels and annotations.
+-->
+
+![A diagram of a simple robot arm showing its length, angle, and the resulting X/Y coordinates.](./Diagrams/Tikz/Robot_Arm_Kimenatics.tikz.svg)
 
 </div>
 </div>
@@ -229,9 +237,13 @@ print(log_entry)
 ```
 
 </div>
-<div class="two">
+<div>
 
-![An image of a data logger screen showing timestamped sensor readings scrolling by.](./Images/Data_Logger.png)
+<!--
+An illustration of a modern, sleek data logger device's screen, shown at a slight angle. The style is a professional technical drawing with comic-style shading on a white background. The screen displays a scrolling list of log entries against a dark background. Each entry is on a new line and follows a consistent format: a timestamp in brackets `[YYYY-MM-DD HH:MM:SS]`, followed by a hyphen, and then a "Sensor Reading" with a numerical value (e.g., `42.5`). The most recent entries are at the bottom, and older entries appear to scroll off the top of the screen, with a subtle motion blur effect on the topmost line to indicate movement. The device casing is minimalistic and has a single glowing LED light.
+-->
+
+![An image of a data logger screen showing timestamped sensor readings scrolling by.](./Images/Data_Logger.jpg)
 
 </div>
 </div>
@@ -239,7 +251,7 @@ print(log_entry)
 ---
 
 <div class="columns">
-<div class="two">
+<div class="three">
 
 ### Engineering Example: `random`
 
@@ -264,7 +276,11 @@ for i in range(5):
 </div>
 <div>
 
-![A line graph showing a steady ideal value with a noisy, fluctuating line representing simulated sensor readings around it.](./Images/Noisy_Signal.png)
+<!--
+A 2D line graph diagram. The x-axis is labeled "Time" and the y-axis is labeled "Pressure (psi)". A perfectly straight, horizontal dashed line runs across the middle of the graph, labeled "Ideal Value (100.0 psi)". A second, solid line represents the "Simulated Reading". This line fluctuates rapidly and randomly above and below the ideal value line, showing a noisy signal. The peaks and troughs of the noisy line are close to the ideal line, visually representing the `noise_level`. The plot area has a light grid background.
+-->
+
+![A line graph showing a steady ideal value with a noisy, fluctuating line representing simulated sensor readings around it.](./Diagrams/Tikz/Noisy_Signal.tikz.svg)
 
 </div>
 </div>
@@ -316,16 +332,16 @@ sum_array = array_a + array_b
 
 print(f"List addition: {list_a + list_b}")
 print(f"Numpy array addition: {sum_array}")
-
-# Scalar multiplication
-scaled_array = array_a * 2
-print(f"Numpy scalar multiplication: {scaled_array}")
 ```
 
 </div>
 <div>
 
-![A visual representation of vector addition, where two arrays are added element by element to produce a result array.](./Images/Vector_Addition.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. It visually represents numpy array addition. On the left, two horizontal arrays, "array_a" and "array_b," are shown as rows of three connected 3D blocks. `array_a` contains blocks with numbers `1`, `2`, and `3`. `array_b` contains blocks with `4`, `5`, and `6`. A large plus symbol (+) is positioned between them. To the right of an equals sign (=), a third array, "sum_array," is shown. Arrows connect corresponding blocks from `array_a` and `array_b` to the blocks in `sum_array`. The first block of `sum_array` shows `1` and `4` merging into a block labeled `5`. The second shows `2` and `5` merging into a block labeled `7`, and the third shows `3` and `6` merging into a block labeled `9`. The illustration clearly visualizes the element-wise addition.
+-->
+
+![A visual representation of vector addition, where two arrays are added element by element to produce a result array. w:1000](./Diagrams/Draw/Vector_Addition.svg)
 
 </div>
 </div>
@@ -422,11 +438,6 @@ pressure_psi = 14.7
 pressure_pa = conversions.psi_to_pa(pressure_psi)
 
 print(f"{pressure_psi} PSI is equal to {pressure_pa:.2f} Pascals.")
-
-temp_c = 25.0
-temp_k = conversions.celsius_to_kelvin(temp_c)
-
-print(f"{temp_c}°C is equal to {temp_k} K.")
 ```
 
 ---
@@ -456,17 +467,12 @@ Let's add a test block to our `conversions.py` module. This code will only run w
 # This block only runs when the script
 # is executed directly.
 if __name__ == "__main__":
-    print("Running tests for conversions module...")
+    print("Running tests...")
     
     # Test case 1
     p_psi = 100
     p_pa = psi_to_pa(p_psi)
     print(f"Test: {p_psi} PSI -> {p_pa:.0f} Pa")
-    
-    # Test case 2
-    t_c = 0
-    t_k = celsius_to_kelvin(t_c)
-    print(f"Test: {t_c}°C -> {t_k} K")
 ```
 
 </div>
@@ -476,14 +482,12 @@ if __name__ == "__main__":
 ```bash
 # This will run the test block
 > python conversions.py
-Running tests for conversions module...
+Running tests...
 Test: 100 PSI -> 689476 Pa
-Test: 0°C -> 273.15 K
 
-# Importing it in main.py will NOT run the test block
+# Importing it in main.py
 > python main.py
 14.7 PSI is equal to 101353.07 Pascals.
-25.0°C is equal to 298.15 K.
 ```
 
 </div>
@@ -549,7 +553,7 @@ plot_results(stress_data=[stress], title="Bridge Stress Analysis")
 
 ### A Word on `__init__.py`
 
-The `__init__.py` file is executed when the package is imported. It can be empty, but it can also be used for:
+The `__init__.py` file is executed when the package is imported. It can be empty, but supports:
 - Package-level initialization code.
 - Making functions from modules directly available at the package level.
 
@@ -619,7 +623,7 @@ Engineers constantly work with data that lives in files.
 ---
 
 <div class="columns">
-<div class="two">
+<div class="three">
 
 ### The `with open(...)` Statement
 
@@ -628,21 +632,28 @@ This is the modern, recommended way to open files in Python.
 ```python
 # 'r' is for 'read' mode
 with open('data.txt', 'r') as file:
-    # The file is now open and assigned to the variable 'file'.
-    # The code inside this indented block can work with the file.
+    # The file is now open and assigned
+    #  to the variable 'file'.
+    # The code inside this indented block
+    #  can work with the file.
     
     content = file.read()
     print(content)
 
-# Once the block is exited, Python AUTOMATICALLY closes the file.
+# Once the block is exited, Python AUTOMATICALLY
+#  closes the file.
 # This prevents errors and resource leaks.
 ```
 **Always use `with open(...)`!** It's safer and cleaner.
 
 </div>
-<div>
+<div class="two">
 
-![A diagram showing a locked file being automatically unlocked once the 'with' block is finished.](./Images/Auto_Close.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. The illustration is a sequence of two panels. In the first panel, a box labeled `with open(...) block` contains a file icon with a large, heavy padlock clamped onto it, symbolizing that the file is open and locked. An arrow labeled "Executing code..." points to the content inside the box. The second panel shows the state after execution. The `with open(...) block` box is now shown with an arrow exiting it. Outside the box, the same file icon is shown, but the padlock is now unlocked and hanging open, symbolizing that the file has been automatically and safely closed.
+-->
+
+![A diagram showing a locked file being automatically unlocked once the 'with' block is finished.](./Diagrams/Draw/Auto_Close.svg)
 
 </div>
 </div>
@@ -680,8 +691,7 @@ with open('machine_settings.txt', 'r') as f:
     for line in f:
         key, value = line.strip().split('=')
         settings[key] = value
-
-print(f"Loaded settings: {settings}")
+        
 speed = float(settings['speed'])
 print(f"Machine speed set to: {speed}")
 ```
@@ -689,7 +699,11 @@ print(f"Machine speed set to: {speed}")
 </div>
 <div>
 
-![An icon of a text file with key-value pairs being loaded into a dictionary in Python.](./Images/Config_Load.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. On the left, there is a stylized icon of a text file named `machine_settings.txt`. The file icon shows lines of text like `speed=1500` and `tolerance=0.05`. A large, curved arrow flows from this file towards the right. On the right, a Python dictionary structure is visualized as a 3D container labeled `settings`. Inside, there are key-value pairs visible as labeled compartments. For example, a compartment labeled `'speed'` contains the value `1500`, and another labeled `'tolerance'` contains `0.05`. The arrow visually connects the raw text from the file to the structured key-value pairs in the dictionary, illustrating the process of parsing and loading.
+-->
+
+![An icon of a text file with key-value pairs being loaded into a dictionary in Python. w:1000](./Diagrams/Draw/Config_Load.svg)
 
 </div>
 </div>
@@ -725,25 +739,26 @@ import csv
 readings = []
 with open('sensor_log.csv', 'r') as f:
     csv_reader = csv.reader(f)
-    
-    header = next(csv_reader) # Read the header row
-    print(f"CSV Headers: {header}")
-    
+    # Read the header row
+    header = next(csv_reader)
     # Iterate over the remaining rows
     for row in csv_reader:
         # Each row is a list of strings
         # ['2025-12-15 11:00:01', '25.4', '1012.4']
         readings.append(row)
 
-print("\nFirst two readings:")
+print("First reading:")
 print(readings[0])
-print(readings[1])
 ```
 
 </div>
 <div class="two">
 
-![A spreadsheet-like image representing a CSV file being parsed row by row.](./Images/CSV_Parse.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. On the left, a document icon labeled `sensor_log.csv` is depicted with its content shown as a grid of cells, resembling a spreadsheet. The first row is highlighted and labeled "Header". Below it are data rows. A magnifying glass, representing the `csv_reader`, is shown hovering over the second row of the CSV file. An arrow points from this row to the right, where the row is transformed into a Python list representation: `['2025-12-15 11:00:01', '25.4', '1012.4']`. This visually demonstrates how the `csv.reader` object iterates over the file and converts each row into a list of strings.
+-->
+
+![A spreadsheet-like image representing a CSV file being parsed row by row.](./Images/CSV_Parse.jpg)
 
 </div>
 </div>
@@ -793,7 +808,11 @@ The `json` module handles the conversion from a JSON string to a Python object a
 </div>
 <div>
 
-![An icon showing a JSON file's structure being mapped directly to a Python dictionary's structure.](./Images/JSON_to_Dict.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. On the left is a document icon labeled `robot_config.json`. Its content is visualized as a nested, branching tree structure, representing the JSON object with keys like `"robot_id"` and `"joint_limits"`. On the right is a representation of a Python dictionary, with curly braces `{}` and key-value pairs that mirror the JSON structure. A series of clean, glowing lines connect the keys and values in the JSON tree on the left to their corresponding keys and values in the Python dictionary on the right. This creates a clear visual mapping, demonstrating how `json.load()` directly translates the JSON structure into a native Python object.
+-->
+
+![An icon showing a JSON file's structure being mapped directly to a Python dictionary's structure.](./Images/JSON_to_Dict.jpg)
 
 </div>
 </div>
@@ -890,7 +909,11 @@ print("report.txt has been created.")
 </div>
 <div>
 
-![An icon of a pen writing lines of text into a file, showing the manual addition of newline characters.](./Images/File_Write.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. The image shows a stylized code block on the left with the Python command `f.write("Analysis Report\\n")`. An arrow points from this code to a document icon on the right, labeled `report.txt`. Inside the document, the text "Analysis Report" is shown being written by a floating fountain pen. The `\n` part of the code command is visually highlighted and transformed into a large, visible carriage return symbol (↵) at the end of the line inside the document, emphasizing that the newline character must be added manually to move the cursor to the next line.
+-->
+
+![An icon of a pen writing lines of text into a file, showing the manual addition of newline characters.](./Images/File_Write.jpg)
 
 </div>
 </div>
@@ -925,7 +948,11 @@ print("Events have been logged.")
 </div>
 <div>
 
-![An image of a text file 'event_log.txt' showing new log entries being added to the end of the file.](./Images/Log_Append.png)
+<!--
+An illustration in a professional technical drawing style with comic-style shading on a white background. It depicts a document icon labeled `event_log.txt`. The document already contains several lines of timestamped log entries. A dotted line indicates the end of the existing content. Below this line, a new log entry, such as `[2025-12-15 10:30:57] WARNING: Temperature exceeds 95C.`, is shown materializing, letter by letter. A glowing plus-sign icon (+) is positioned at the corner of the document with an arrow pointing to the new line being added, symbolizing the 'append' (`'a'`) mode. This clearly distinguishes it from overwriting the file's content.
+-->
+
+![An image of a text file 'event_log.txt' showing new log entries being added to the end of the file.](./Images/Log_Append.jpg)
 
 </div>
 </div>
@@ -949,7 +976,6 @@ data_rows = [
 
 with open('summary_results.csv', 'w', newline='') as f:
     writer = csv.writer(f)
-    
     writer.writerow(header) # Write the header row
     writer.writerows(data_rows) # Write all data rows
 
@@ -978,8 +1004,7 @@ machine_config = {
 }
 
 with open('machine_config.json', 'w') as f:
-    # json.dump writes the object to the file
-    # indent=4 makes the file human-readable
+    # json.dump writes the object to the file (indent=4 makes the file human-readable)
     json.dump(machine_config, f, indent=4)
 
 print("machine_config.json has been saved.")
@@ -1014,6 +1039,7 @@ timestamp,reading
 import csv
 
 readings = []
+
 # 1. READ data from CSV
 with open('raw_data.csv', 'r') as f_in:
     reader = csv.reader(f_in)
@@ -1027,7 +1053,7 @@ average = sum(readings) / len(readings)
 # 3. WRITE the summary report
 with open('analysis_summary.txt', 'w') as f_out:
     f_out.write("Analysis Summary\n")
-    f_out.write(f"Total readings processed: {len(readings)}\n")
+    f_out.write(f"Total readings: {len(readings)}\n")
     f_out.write(f"Average value: {average:.2f}\n")
 
 print("Analysis complete. Summary saved.")
