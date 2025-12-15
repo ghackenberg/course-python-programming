@@ -7,7 +7,15 @@ paginate: true
 math: mathjax
 ---
 
-<!-- Placeholder for description of chapter title image -->
+<!-- 
+A futuristic, abstract illustration set against a dark galaxy background full of stars and nebulae. 
+In the center, a luminous, schematic brain represents a Python program. Glowing, neon-blue data streams connect this core to several distinct, stylized objects.
+On the left, a holographic shelf holds glowing blocks labeled 'math', 'datetime', and 'numpy', symbolizing modules.
+Below that, a translucent container holds several of these blocks in an organized structure, representing a package.
+On the right, data streams flow from a floating document icon (labeled 'config.txt') into the central brain, illustrating reading from a file.
+Another stream flows out from the brain to a different document icon (labeled 'report.csv'), illustrating writing to a file.
+The entire image has a high-tech, digital feel, with vibrant, glowing elements contrasting against the dark space background.
+-->
 
 ![bg right](./Images/Chapter.jpg)
 
@@ -22,7 +30,15 @@ This chapter includes the following sections:
 
 ---
 
-<!-- Placeholder for description of section 1 title image -->
+<!--
+An abstract, high-contrast illustration against a dark galaxy background.
+In the center, a large, glowing Python logo acts as a gravitational point.
+Several luminous comets and data streams, colored in vibrant blues and purples, are being pulled from the starfield toward the central logo.
+These streams originate from distinct, stylized constellations, faintly shaped like toolboxes or books, and labeled with glowing text such as 'math', 'os', and 'numpy'.
+One prominent stream shows a package icon being pulled into the Python logo, with the text 'pip install' faintly glowing alongside it.
+Keywords like 'import' and 'from' are visible as ethereal, glowing text integrated into the data streams.
+The overall aesthetic is dynamic and cosmic, symbolizing the process of gathering and incorporating powerful tools from a vast ecosystem.
+-->
 
 ![bg right](./Images/Section_1.jpg)
 
@@ -326,7 +342,13 @@ print(f"Numpy scalar multiplication: {scaled_array}")
 
 ---
 
-<!-- Placeholder for description of section 2 title image -->
+<!--
+An abstract and conceptual illustration set against a dark galaxy backdrop.
+In the foreground, a programmer's hand, rendered in a glowing, blue, holographic wireframe style, is carefully assembling a new, luminous cube from raw stardust and light particles. This cube represents a custom module.
+Inside this newly formed cube, the text 'if __name__ == "__main__"' glows faintly, symbolizing its dual nature as both a runnable script and an importable module.
+The hand is placing this new cube into a larger, transparent, grid-like container that hovers in space. This container, representing a package, already holds other similar, glowing cubes.
+The scene evokes a sense of creation, precision, and organization, highlighting the process of building and structuring a project.
+-->
 
 ![bg right](./Images/Section_2.jpg)
 
@@ -560,7 +582,17 @@ stress = analysis.calculate_stress(1500, 0.02)
 
 ---
 
-<!-- Placeholder for description of section 4.3 title image -->
+<!--
+An abstract digital art piece against a dark galaxy background.
+In the center, an intricate, glowing schematic representing a Python script is actively absorbing data.
+From the left, several streams of light flow towards the script. These streams originate from different floating, ethereal document icons.
+One stream consists of glowing lines of text from a '.txt' file icon.
+A second stream is a grid of luminous cells flowing from a '.csv' file icon.
+A third stream is a branching, tree-like structure of light originating from a '.json' file icon.
+All data streams pass through a secure, brightly glowing tunnel or conduit labeled 'with open(...)', symbolizing safe file handling.
+One of the source document icons is shown flickering and semi-transparent, with a glowing question mark above it, artistically representing a potential 'FileNotFoundError'.
+The overall image is dynamic, illustrating data in various formats being securely channeled and read.
+-->
 
 ![bg right](./Images/Section_3.jpg)
 
@@ -800,7 +832,14 @@ print("Program continues to run...")
 
 ---
 
-<!-- Placeholder for description of section 4.4 title image -->
+<!--
+An abstract, futuristic illustration set against a dark, star-filled galaxy.
+A central, glowing Python script icon is emitting two distinct, powerful beams of light outwards to the right.
+The top beam targets a floating document icon. As the beam hits, the document's old, dim content is wiped away in a flash of fiery orange particles (representing 'w' for write/overwrite) and is replaced by new, bright blue, glowing content.
+The bottom beam targets a second document icon that already contains several lines of glowing text. The beam adds a new, bright line of text to the very end of the existing content, without disturbing what's already there (representing 'a' for append).
+The emitted light transforms into different structures as it reaches its destination: one part forms a grid of cells for a CSV file, another a branching tree for a JSON file, and a third simple lines of text for a TXT file.
+The image conveys a sense of finality and persistence, showing the program's results being saved in various structured formats.
+-->
 
 ![bg right](./Images/Section_4.jpg)
 
