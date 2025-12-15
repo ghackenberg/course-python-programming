@@ -7,16 +7,6 @@ paginate: true
 math: mathjax
 ---
 
-<!-- 
-A futuristic, abstract illustration set against a dark galaxy background full of stars and nebulae. 
-In the center, a luminous, schematic brain represents a Python program. Glowing, neon-blue data streams connect this core to several distinct, stylized objects.
-On the left, a holographic shelf holds glowing blocks labeled 'math', 'datetime', and 'numpy', symbolizing modules.
-Below that, a translucent container holds several of these blocks in an organized structure, representing a package.
-On the right, data streams flow from a floating document icon (labeled 'config.txt') into the central brain, illustrating reading from a file.
-Another stream flows out from the brain to a different document icon (labeled 'report.csv'), illustrating writing to a file.
-The entire image has a high-tech, digital feel, with vibrant, glowing elements contrasting against the dark space background.
--->
-
 ![bg right](./Images/Chapter.jpg)
 
 # Chapter 4: Modules, Packages & File I/O
@@ -29,16 +19,6 @@ This chapter includes the following sections:
 - 4.4: Writing to Files
 
 ---
-
-<!--
-An abstract, high-contrast illustration against a dark galaxy background.
-In the center, a large, glowing Python logo acts as a gravitational point.
-Several luminous comets and data streams, colored in vibrant blues and purples, are being pulled from the starfield toward the central logo.
-These streams originate from distinct, stylized constellations, faintly shaped like toolboxes or books, and labeled with glowing text such as 'math', 'os', and 'numpy'.
-One prominent stream shows a package icon being pulled into the Python logo, with the text 'pip install' faintly glowing alongside it.
-Keywords like 'import' and 'from' are visible as ethereal, glowing text integrated into the data streams.
-The overall aesthetic is dynamic and cosmic, symbolizing the process of gathering and incorporating powerful tools from a vast ecosystem.
--->
 
 ![bg right](./Images/Section_1.jpg)
 
@@ -98,10 +78,6 @@ print(f"The square root of 16 is: {sqrt_of_16}")
 </div>
 <div>
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. The central element is a sturdy, open toolbox, viewed from a three-quarters perspective. The toolbox has a prominent label on its front that reads "math" in a clear, sans-serif font. Inside the toolbox, several stylized tools are neatly arranged. One tool is a shiny, metal pi symbol (π). Next to it is a tool shaped like a square root symbol (√) with a number inside. Another tool is a sine wave, representing `sin`. The tools should look tangible and well-defined, with clean lines and subtle shading to give them a 3D appearance.
--->
-
 ![An abstract image representing a toolbox labeled 'math' with tools like pi, sqrt, sin inside.](./Images/Math_Toolbox.jpg)
 
 </div>
@@ -138,10 +114,6 @@ print(f"Y coordinate: {y_coord:.3f} m")
 
 </div>
 <div>
-
-<!--
-A diagram illustrating the 2D kinematics of a single-link robot arm. The diagram is set against a grid background representing a Cartesian coordinate system. The origin (0,0) is clearly marked. A robot arm link, labeled with length `L`, is shown anchored at the origin and extending into the first quadrant. An arc with an arrowhead indicates the angle `θ` between the positive x-axis and the arm. Dashed lines project from the arm's tip down to the x-axis and across to the y-axis. The intersection points are labeled `x = L * cos(θ)` and `y = L * sin(θ)` respectively. The diagram should be clean, with clear labels and annotations.
--->
 
 ![A diagram of a simple robot arm showing its length, angle, and the resulting X/Y coordinates.](./Diagrams/Tikz/Robot_Arm_Kimenatics.tikz.svg)
 
@@ -239,10 +211,6 @@ print(log_entry)
 </div>
 <div>
 
-<!--
-An illustration of a modern, sleek data logger device's screen, shown at a slight angle. The style is a professional technical drawing with comic-style shading on a white background. The screen displays a scrolling list of log entries against a dark background. Each entry is on a new line and follows a consistent format: a timestamp in brackets `[YYYY-MM-DD HH:MM:SS]`, followed by a hyphen, and then a "Sensor Reading" with a numerical value (e.g., `42.5`). The most recent entries are at the bottom, and older entries appear to scroll off the top of the screen, with a subtle motion blur effect on the topmost line to indicate movement. The device casing is minimalistic and has a single glowing LED light.
--->
-
 ![An image of a data logger screen showing timestamped sensor readings scrolling by.](./Images/Data_Logger.jpg)
 
 </div>
@@ -275,10 +243,6 @@ for i in range(5):
 
 </div>
 <div>
-
-<!--
-A 2D line graph diagram. The x-axis is labeled "Time" and the y-axis is labeled "Pressure (psi)". A perfectly straight, horizontal dashed line runs across the middle of the graph, labeled "Ideal Value (100.0 psi)". A second, solid line represents the "Simulated Reading". This line fluctuates rapidly and randomly above and below the ideal value line, showing a noisy signal. The peaks and troughs of the noisy line are close to the ideal line, visually representing the `noise_level`. The plot area has a light grid background.
--->
 
 ![A line graph showing a steady ideal value with a noisy, fluctuating line representing simulated sensor readings around it.](./Diagrams/Tikz/Noisy_Signal.tikz.svg)
 
@@ -337,10 +301,6 @@ print(f"Numpy array addition: {sum_array}")
 </div>
 <div>
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. It visually represents numpy array addition. On the left, two horizontal arrays, "array_a" and "array_b," are shown as rows of three connected 3D blocks. `array_a` contains blocks with numbers `1`, `2`, and `3`. `array_b` contains blocks with `4`, `5`, and `6`. A large plus symbol (+) is positioned between them. To the right of an equals sign (=), a third array, "sum_array," is shown. Arrows connect corresponding blocks from `array_a` and `array_b` to the blocks in `sum_array`. The first block of `sum_array` shows `1` and `4` merging into a block labeled `5`. The second shows `2` and `5` merging into a block labeled `7`, and the third shows `3` and `6` merging into a block labeled `9`. The illustration clearly visualizes the element-wise addition.
--->
-
 ![A visual representation of vector addition, where two arrays are added element by element to produce a result array. w:1000](./Diagrams/Draw/Vector_Addition.svg)
 
 </div>
@@ -357,14 +317,6 @@ An illustration in a professional technical drawing style with comic-style shadi
 3.  **Time Delay:** Import the `time` module. Write a script that prints "Starting process...", then waits for 3 seconds using `time.sleep(3)`, and finally prints "Process complete."
 
 ---
-
-<!--
-An abstract and conceptual illustration set against a dark galaxy backdrop.
-In the foreground, a programmer's hand, rendered in a glowing, blue, holographic wireframe style, is carefully assembling a new, luminous cube from raw stardust and light particles. This cube represents a custom module.
-Inside this newly formed cube, the text 'if __name__ == "__main__"' glows faintly, symbolizing its dual nature as both a runnable script and an importable module.
-The hand is placing this new cube into a larger, transparent, grid-like container that hovers in space. This container, representing a package, already holds other similar, glowing cubes.
-The scene evokes a sense of creation, precision, and organization, highlighting the process of building and structuring a project.
--->
 
 ![bg right](./Images/Section_2.jpg)
 
@@ -586,18 +538,6 @@ stress = analysis.calculate_stress(1500, 0.02)
 
 ---
 
-<!--
-An abstract digital art piece against a dark galaxy background.
-In the center, an intricate, glowing schematic representing a Python script is actively absorbing data.
-From the left, several streams of light flow towards the script. These streams originate from different floating, ethereal document icons.
-One stream consists of glowing lines of text from a '.txt' file icon.
-A second stream is a grid of luminous cells flowing from a '.csv' file icon.
-A third stream is a branching, tree-like structure of light originating from a '.json' file icon.
-All data streams pass through a secure, brightly glowing tunnel or conduit labeled 'with open(...)', symbolizing safe file handling.
-One of the source document icons is shown flickering and semi-transparent, with a glowing question mark above it, artistically representing a potential 'FileNotFoundError'.
-The overall image is dynamic, illustrating data in various formats being securely channeled and read.
--->
-
 ![bg right](./Images/Section_3.jpg)
 
 ## 4.3: Reading from Files
@@ -649,10 +589,6 @@ with open('data.txt', 'r') as file:
 </div>
 <div class="two">
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. The illustration is a sequence of two panels. In the first panel, a box labeled `with open(...) block` contains a file icon with a large, heavy padlock clamped onto it, symbolizing that the file is open and locked. An arrow labeled "Executing code..." points to the content inside the box. The second panel shows the state after execution. The `with open(...) block` box is now shown with an arrow exiting it. Outside the box, the same file icon is shown, but the padlock is now unlocked and hanging open, symbolizing that the file has been automatically and safely closed.
--->
-
 ![A diagram showing a locked file being automatically unlocked once the 'with' block is finished.](./Diagrams/Draw/Auto_Close.svg)
 
 </div>
@@ -698,10 +634,6 @@ print(f"Machine speed set to: {speed}")
 
 </div>
 <div>
-
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. On the left, there is a stylized icon of a text file named `machine_settings.txt`. The file icon shows lines of text like `speed=1500` and `tolerance=0.05`. A large, curved arrow flows from this file towards the right. On the right, a Python dictionary structure is visualized as a 3D container labeled `settings`. Inside, there are key-value pairs visible as labeled compartments. For example, a compartment labeled `'speed'` contains the value `1500`, and another labeled `'tolerance'` contains `0.05`. The arrow visually connects the raw text from the file to the structured key-value pairs in the dictionary, illustrating the process of parsing and loading.
--->
 
 ![An icon of a text file with key-value pairs being loaded into a dictionary in Python. w:1000](./Diagrams/Draw/Config_Load.svg)
 
@@ -754,10 +686,6 @@ print(readings[0])
 </div>
 <div class="two">
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. On the left, a document icon labeled `sensor_log.csv` is depicted with its content shown as a grid of cells, resembling a spreadsheet. The first row is highlighted and labeled "Header". Below it are data rows. A magnifying glass, representing the `csv_reader`, is shown hovering over the second row of the CSV file. An arrow points from this row to the right, where the row is transformed into a Python list representation: `['2025-12-15 11:00:01', '25.4', '1012.4']`. This visually demonstrates how the `csv.reader` object iterates over the file and converts each row into a list of strings.
--->
-
 ![A spreadsheet-like image representing a CSV file being parsed row by row.](./Images/CSV_Parse.jpg)
 
 </div>
@@ -808,10 +736,6 @@ The `json` module handles the conversion from a JSON string to a Python object a
 </div>
 <div>
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. On the left is a document icon labeled `robot_config.json`. Its content is visualized as a nested, branching tree structure, representing the JSON object with keys like `"robot_id"` and `"joint_limits"`. On the right is a representation of a Python dictionary, with curly braces `{}` and key-value pairs that mirror the JSON structure. A series of clean, glowing lines connect the keys and values in the JSON tree on the left to their corresponding keys and values in the Python dictionary on the right. This creates a clear visual mapping, demonstrating how `json.load()` directly translates the JSON structure into a native Python object.
--->
-
 ![An icon showing a JSON file's structure being mapped directly to a Python dictionary's structure.](./Images/JSON_to_Dict.jpg)
 
 </div>
@@ -850,15 +774,6 @@ print("Program continues to run...")
 3.  **CSV Data:** Create a `data.csv` file with a few rows of numbers (e.g., `1,2,3` on the first line, `4,5,6` on the second). Use the `csv` module to read the file and calculate the sum of the numbers in each row.
 
 ---
-
-<!--
-An abstract, futuristic illustration set against a dark, star-filled galaxy.
-A central, glowing Python script icon is emitting two distinct, powerful beams of light outwards to the right.
-The top beam targets a floating document icon. As the beam hits, the document's old, dim content is wiped away in a flash of fiery orange particles (representing 'w' for write/overwrite) and is replaced by new, bright blue, glowing content.
-The bottom beam targets a second document icon that already contains several lines of glowing text. The beam adds a new, bright line of text to the very end of the existing content, without disturbing what's already there (representing 'a' for append).
-The emitted light transforms into different structures as it reaches its destination: one part forms a grid of cells for a CSV file, another a branching tree for a JSON file, and a third simple lines of text for a TXT file.
-The image conveys a sense of finality and persistence, showing the program's results being saved in various structured formats.
--->
 
 ![bg right](./Images/Section_4.jpg)
 
@@ -909,10 +824,6 @@ print("report.txt has been created.")
 </div>
 <div>
 
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. The image shows a stylized code block on the left with the Python command `f.write("Analysis Report\\n")`. An arrow points from this code to a document icon on the right, labeled `report.txt`. Inside the document, the text "Analysis Report" is shown being written by a floating fountain pen. The `\n` part of the code command is visually highlighted and transformed into a large, visible carriage return symbol (↵) at the end of the line inside the document, emphasizing that the newline character must be added manually to move the cursor to the next line.
--->
-
 ![An icon of a pen writing lines of text into a file, showing the manual addition of newline characters.](./Images/File_Write.jpg)
 
 </div>
@@ -947,10 +858,6 @@ print("Events have been logged.")
 
 </div>
 <div>
-
-<!--
-An illustration in a professional technical drawing style with comic-style shading on a white background. It depicts a document icon labeled `event_log.txt`. The document already contains several lines of timestamped log entries. A dotted line indicates the end of the existing content. Below this line, a new log entry, such as `[2025-12-15 10:30:57] WARNING: Temperature exceeds 95C.`, is shown materializing, letter by letter. A glowing plus-sign icon (+) is positioned at the corner of the document with an arrow pointing to the new line being added, symbolizing the 'append' (`'a'`) mode. This clearly distinguishes it from overwriting the file's content.
--->
 
 ![An image of a text file 'event_log.txt' showing new log entries being added to the end of the file.](./Images/Log_Append.jpg)
 
