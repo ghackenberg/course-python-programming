@@ -308,6 +308,8 @@ print(f"Numpy array addition: {sum_array}")
 
 ---
 
+![bg right:40%](./Images/Exercise.jpg)
+
 ### Exercises: Importing Modules
 
 1.  **Circle Calculations:** Import the `math` module. Write a script that asks the user for the radius of a circle and prints its circumference (`2 * pi * r`) and area (`pi * r^2`).
@@ -525,6 +527,8 @@ stress = analysis.calculate_stress(1500, 0.02)
 ```
 
 ---
+
+![bg right:30%](./Images/Exercise.jpg)
 
 ### Exercises: Custom Modules
 
@@ -765,6 +769,8 @@ print("Program continues to run...")
 
 ---
 
+![bg right:40%](./Images/Exercise.jpg)
+
 ### Exercises: Reading Files
 
 1.  **Read and Print:** Create a text file named `info.txt` with a few lines of text. Write a Python script that reads the entire file and prints its content to the console.
@@ -970,6 +976,8 @@ print("Analysis complete. Summary saved.")
 </div>
 
 ---
+
+![bg right:30%](./Images/Exercise.jpg)
 
 ### Exercises: Writing Files
 
