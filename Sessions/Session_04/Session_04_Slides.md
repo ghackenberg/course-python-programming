@@ -115,7 +115,7 @@ print(f"Y coordinate: {y_coord:.3f} m")
 </div>
 <div>
 
-![A diagram of a simple robot arm showing its length, angle, and the resulting X/Y coordinates.](./Diagrams/Tikz/Robot_Arm_Kimenatics.tikz.svg)
+![A diagram of a simple robot arm showing its length, angle, and the resulting X/Y coordinates. w:1000](./Diagrams/Tikz/Robot_Arm_Kimenatics.tikz.svg)
 
 </div>
 </div>
