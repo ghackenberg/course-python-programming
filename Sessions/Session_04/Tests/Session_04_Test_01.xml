@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 04 Test 01</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>Session 04 Test 01</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+<!-- question: 1  -->
+  <question type="multichoice">
+    <name>
+      <text>Importing a Standard Library Module</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which module from the Python Standard Library would you use for mathematical calculations like square roots and trigonometric functions (e.g., sine, cosine)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>math</code> module provides access to a wide range of mathematical functions and constants.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>math</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. The <code>math</code> module is the standard choice for these functions.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>datetime</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The <code>datetime</code> module is for working with dates and times.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>random</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The <code>random</code> module is for generating random numbers.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>os</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The <code>os</code> module provides a way of using operating system dependent functionality.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 2  -->
+  <question type="multichoice">
+    <name>
+      <text>Alias with 'as'</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the primary purpose of using an alias when importing a module, such as in the statement <code>import numpy as np</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Aliasing is a common practice to make code more concise and readable, especially for modules with long names.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>To provide a shorter, more convenient name for the module to reduce typing.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the main reason for using aliases.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To hide the original module's functions from the global namespace.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The module's contents are still accessed, just through a different name.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To increase the execution speed of the program.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Aliasing has no impact on performance.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To automatically import all functions from the module.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It only renames the module itself. You still need to access functions via the alias (e.g., <code>np.array()</code>).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 3  -->
+  <question type="multichoice">
+    <name>
+      <text>Difference between import and from...import</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the key difference between <code>import math</code> and <code>from math import pi</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The way you access the imported members is the main difference. <code>import math</code> brings the module name into your namespace, while <code>from math import pi</code> brings the specific variable <code>pi</code> into your namespace.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>After <code>import math</code>, you must use <code>math.pi</code>. After <code>from math import pi</code>, you can use <code>pi</code> directly.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This accurately describes how namespaces are affected.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>from math import pi</code> is faster because it only loads a part of the module.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Python loads the entire module in both cases; the difference is only how names are accessed.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>import math</code> is the only way to access the <code>pi</code> constant.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Both methods allow you to use <code>pi</code>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>There is no difference; they are functionally identical.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. They are not identical because they require different syntax to access the module's contents.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 4  -->
+  <question type="multichoice">
+    <name>
+      <text>PyPI purpose</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is PyPI (Python Package Index)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>PyPI is the official third-party software repository for Python. It is a central place where developers can publish and share their packages with the community.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The official public repository for Python packages that can be installed using `pip`.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. PyPI is the central hub for the Python community's open-source packages.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A built-in module in the Python Standard Library for managing installations.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. PyPI is an online service, not a built-in module. `pip` is the tool used to interact with it.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A specific version of the Python interpreter focused on performance.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. PyPI is a package repository, not a Python interpreter like CPython or PyPy.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>An integrated development environment (IDE) for Python.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. PyPI is a repository of code, not an editor like VS Code or PyCharm.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 5  -->
+    <question type="multichoice">
+    <name>
+      <text>Creating a Python Module</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the simplest way to create a basic Python module?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Any valid Python file can be used as a module. Its filename becomes the module name when imported.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Create a file with a <code>.py</code> extension and write Python code in it.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is all that is needed to create a module.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Create a directory and place an <code>__init__.py</code> file inside it.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This defines a package, which is a collection of modules.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Use the <code>pip create module</code> command.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. There is no such command.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Compile a text file into a <code>.pyc</code> file.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. <code>.pyc</code> files are generated automatically by Python from <code>.py</code> files.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 6  -->
+  <question type="multichoice">
+    <name>
+      <text>Purpose of __name__ == "__main__"</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the primary purpose of the <code>if __name__ == "__main__":</code> block in a Python script?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>This conditional block allows a Python file to be used both as an importable module and as a runnable script. The code inside the block will only execute when the file is run directly from the command line.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>To allow code to be executed only when the file is run as a script, not when it is imported.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the standard way to provide a script with test code or a command-line entry point.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To define the main function of the program that is always executed first.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Python executes code from top to bottom. This block is a conditional check, not a function definition like `main` in C++ or Java.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To improve the performance of the script by pre-compiling the code inside it.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This construct has no impact on performance.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>To declare global variables that can be used by all functions in the module.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Global variables are typically declared at the top level of a module, not inside this block.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 7  -->
+  <question type="multichoice">
+    <name>
+      <text>Value of __name__ when imported</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You have two files in the same directory: <code>main.py</code> and <code>utils.py</code>. The file <code>main.py</code> contains the line <code>import utils</code>. When you run <code>python main.py</code>, what is the value of the <code>__name__</code> variable inside <code>utils.py</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>__name__</code> variable is a special built-in variable. It is set to <code>"__main__"</code> for the script that is being executed directly. For any imported modules, it is set to the name of the module file.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>"utils"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. When a file is imported, its <code>__name__</code> is the filename without the <code>.py</code> extension.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"__main__"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. <code>"__main__"</code> would be the value of <code>__name__</code> inside <code>main.py</code>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"main"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is the name of the script being run, not the name of the imported module.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"utils.py"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The <code>.py</code> extension is not included in the module's name.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 8  -->
+  <question type="multichoice">
+    <name>
+      <text>Discouraged import practice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Why is the practice of using <code>from module import *</code> generally discouraged in larger projects?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>While convenient, importing everything with <code>*</code> can lead to code that is difficult to read and debug because it's unclear where functions or variables came from. It also increases the risk of name collisions.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It pollutes the current namespace, making it hard to tell where a function originated and increasing the risk of name conflicts.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the primary reason style guides like PEP 8 advise against it.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It significantly slows down the program because it imports unused functions.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The entire module is loaded into memory regardless of the import style, so the performance impact is negligible.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is not supported in newer versions of Python.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This syntax is still valid, it's just considered poor practice.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It prevents the use of aliases with the `as` keyword.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. These are two different ways of importing; one does not prevent the other.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 9  -->
+  <question type="multichoice">
+    <name>
+      <text>Recommended way to open a file</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the modern, recommended way to open a file in Python that ensures the file is automatically closed after you are done with it?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>with</code> statement simplifies exception handling by encapsulating common preparation and cleanup tasks. In the case of file I/O, it automatically closes the file, even if errors occur inside the block.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Using the <code>with open(...) as ...:</code> statement.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the standard and safest way to handle file objects.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>file = open(...)</code> followed by <code>file.close()</code> inside a <code>try...finally</code> block.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. While this works, it is more verbose and less "Pythonic" than using the <code>with</code> statement, which handles this for you.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>file = open(...)</code> and relying on Python's garbage collector to close it.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Relying on garbage collection is unreliable and can lead to resource leaks.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Using <code>file.read_and_close()</code>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. No such method exists on file objects.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 10  -->
+  <question type="multichoice">
+    <name>
+      <text>Reading file memory efficiency</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>When reading a very large text file (e.g., several gigabytes), which method is the most memory-efficient?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>For large files, it's crucial to avoid loading the entire file into memory at once. Iterating over the file object reads it one line at a time, making it highly memory-efficient.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Iterating through the file object with a loop: <code>for line in file:</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This method reads the file line-by-line without storing it all in memory.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Using <code>file.read()</code> to load the entire content into a string.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This would attempt to load the entire multi-gigabyte file into RAM, likely causing a <code>MemoryError</code>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Using <code>file.readlines()</code> to get a list of all lines.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is also memory-intensive as it loads all lines into a list in memory.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Using <code>json.load(file)</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is for reading JSON files and would also load the entire structure into memory.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 11  -->
+  <question type="multichoice">
+    <name>
+      <text>Reading CSV with header</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>When using Python's <code>csv</code> module to read a file that has a header row, what is the common way to skip the header before processing the data rows?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>csv.reader</code> object is an iterator. The <code>next()</code> function retrieves the next item from an iterator. Calling it once will consume the header row, so the subsequent loop will start from the first data row.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Use <code>next(csv_reader)</code> after creating the reader object but before the loop.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This advances the iterator past the header row.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Open the file with an offset: <code>open('file.csv', 'r', offset=1)</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `open` function does not have an `offset` parameter for this purpose.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Read the file once with <code>file.read()</code> and then process the result.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is inefficient and doesn't take advantage of the `csv` module's line-by-line processing.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The <code>csv.reader</code> automatically skips the header.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. By default, `csv.reader` treats all rows the same; you must manually handle the header.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 12  -->
+    <question type="multichoice">
+    <name>
+      <text>Reading JSON file</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You have a file <code>config.json</code> containing <code>{ "id": "RX-78", "active": true }</code>. Which code snippet correctly reads this file and allows you to access the value <code>"RX-78"</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>json</code> module is essential for working with JSON data. The <code>json.load()</code> function parses a JSON file and converts it into a Python dictionary.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<pre><code>import json
+with open('config.json', 'r') as f:
+    data = json.load(f)
+robot_id = data['id']</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. <code>json.load()</code> reads the file object and returns a dictionary that you can access with keys.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>import json
+with open('config.json', 'r') as f:
+    data = f.read()
+robot_id = data['id']</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This reads the file content as a single string. You cannot access dictionary keys on a string.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>import json
+data = json.read('config.json')
+robot_id = data['id']</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The <code>json</code> module does not have a <code>read()</code> function; you must open the file first.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>with open('config.json', 'r') as f:
+    robot_id = f.get('id')</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. File objects do not have a <code>get()</code> method for accessing content.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 13  -->
+  <question type="multichoice">
+    <name>
+      <text>File writing 'w' vs 'a'</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the fundamental difference between opening a file with mode <code>'w'</code> (write) versus mode <code>'a'</code> (append)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Understanding the difference between write and append modes is crucial for preventing accidental data loss. 'w' starts from a blank slate, while 'a' adds to what's already there.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Mode <code>'w'</code> will delete the existing content of a file, while mode <code>'a'</code> will add new content to the end of the file.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. <code>'w'</code> overwrites the file, and <code>'a'</code> preserves existing content and adds to it.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Mode <code>'w'</code> can create a new file but <code>'a'</code> cannot.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Both modes will create the file if it does not exist.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Mode <code>'a'</code> is faster for writing than mode <code>'w'</code>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. There is no significant performance difference between the two modes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>There is no difference; they behave identically.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Their behavior regarding existing file content is critically different.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 14  -->
+  <question type="multichoice">
+    <name>
+      <text>Writing newlines to file</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You use the <code>file.write()</code> method to save two strings to a text file. What must you do to ensure the second string starts on a new line?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Unlike the <code>print()</code> function, the <code>file.write()</code> method does not automatically add a newline character at the end of the string. You must add it explicitly.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Manually add a newline character (<code>\n</code>) to the end of the first string.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. For example: <code>file.write("First line\n")</code>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nothing, <code>file.write()</code> automatically adds a newline.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is a common mistake; <code>write()</code> does not add newlines.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Use <code>file.writeline()</code> instead of <code>file.write()</code>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. There is a <code>writelines()</code> method for writing a list of strings, but not a <code>writeline()</code> method that automatically adds a newline.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Open the file in binary mode (<code>'wb'</code>).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Binary mode is for writing bytes, not text, and would not solve the newline issue.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 15  -->
+  <question type="multichoice">
+    <name>
+      <text>Writing JSON with formatting</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>When using <code>json.dump()</code> to write a Python dictionary to a file, what argument can you provide to make the resulting JSON file human-readable with pretty-printing?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>indent</code> parameter in <code>json.dump()</code> tells it to use a specified number of spaces for indentation, which formats the JSON output nicely over multiple lines.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>indent=4</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. Setting an integer value for <code>indent</code> enables pretty-printing.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>pretty=True</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. There is no <code>pretty</code> parameter in the <code>json.dump</code> function.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>format='readable'</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Formatting is controlled by the <code>indent</code> parameter.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>human_readable=True</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not a valid parameter for <code>json.dump</code>.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>

@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 04 Test 05</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>Session 04 Test 05</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+<!-- question: 1  -->
+  <question type="multichoice">
+    <name>
+      <text>Benefit of `with open(...)`</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the primary safety and reliability benefit of using the <code>with open(...) as file:</code> syntax for file handling?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The `with` statement creates a context manager. For files, this manager guarantees that the file's `close()` method will be called when the block is exited, regardless of whether it finishes successfully or an error occurs. This prevents resource leaks.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It automatically and safely closes the file, even if errors occur within the block.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This automatic cleanup is the main reason it is the recommended approach.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It makes the file reading and writing operations faster.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It has no impact on the speed of the I/O operations themselves.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It automatically creates the file if it doesn't exist when reading.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. In read mode (`'r'`), a `FileNotFoundError` will still occur. The `with` statement doesn't change this.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It loads the entire file into memory for easier access.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `with` statement itself doesn't determine how the file is read; the methods you call on the file object (like `.read()` or iterating) do.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 2  -->
+  <question type="multichoice">
+    <name>
+      <text>Accessing nested JSON data</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>After loading the following JSON into a Python dictionary named <code>config</code>, how would you access the maximum angle of joint "J1"?</p>
+<pre><code>{
+  "robot_id": "RX-78",
+  "joint_limits": [
+    {"joint": "J1", "min": -180, "max": 180},
+    {"joint": "J2", "min": -90, "max": 90}
+  ]
+}</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Accessing nested data involves chaining index and key access. `config['joint_limits']` gets the list, `[0]` gets the first dictionary in the list, and `['max']` gets the value associated with the "max" key in that dictionary.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>config['joint_limits'][0]['max']</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This properly navigates the dictionary and list structure.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>config['joint_limits']['J1']['max']</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. `joint_limits` is a list, so you must access its elements with an integer index (like `[0]`), not a string key.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>config.joint_limits[0].max</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This dot notation is for accessing object attributes, not dictionary keys. While some libraries create objects that allow this, standard dictionary access uses square brackets `[]`.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>config['J1']['max']</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The "J1" information is nested inside the `joint_limits` list, which must be accessed first.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 3  -->
+  <question type="multichoice">
+    <name>
+      <text>Writing a list with `writelines`</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is a major caveat of using <code>file.writelines(list_of_strings)</code> to write a list of strings to a file?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Much like `file.write()`, the `file.writelines()` method does not add any line separators between the elements from the list. If you want each string to be on a new line, you must ensure each string in the list already ends with a `\n` character.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It does not add newline characters between the strings.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. All the strings are concatenated together in the file. E.g., `writelines(['a', 'b'])` results in "ab".</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It can only be used with files opened in append mode (`'a'`).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It works perfectly fine in write mode (`'w'`) as well.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It automatically sorts the list alphabetically before writing.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It writes the elements in the order they appear in the list.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It raises an error if the list contains empty strings.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It will happily write empty strings to the file.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 4  -->
+  <question type="multichoice">
+    <name>
+      <text>Handling `FileNotFoundError`</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which code snippet demonstrates the most robust and "Pythonic" way to handle a potential <code>FileNotFoundError</code> when opening a file for reading?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The `try...except` block is the standard for exception handling. It's better than checking for the file's existence beforehand because it avoids a "race condition" (where the file could be deleted between the check and the open) and directly handles the error state.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<pre><code>try:
+    with open('data.txt', 'r') as f:
+        content = f.read()
+except FileNotFoundError:
+    print("File not found.")
+    content = ""</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This gracefully handles the error and allows the program to continue with a default value.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>import os
+if os.path.exists('data.txt'):
+    with open('data.txt', 'r') as f:
+        content = f.read()</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not the preferred way as it can lead to race conditions and is less direct than handling the exception.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>with open('data.txt', 'r+'):
+    # 'r+' will create the file
+    content = f.read()</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `r+` mode will *not* create the file if it doesn't exist; it will raise a `FileNotFoundError`.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<pre><code>with open('data.txt', 'w'):
+    # Open in write mode first to create it
+with open('data.txt', 'r') as f:
+    content = f.read()</code></pre>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is a destructive anti-pattern. If the file *did* exist, opening it in `'w'` mode would have erased all its content.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 5  -->
+  <question type="multichoice">
+    <name>
+      <text>Importing from a package in `main.py`</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the project structure below, which statement in <code>main.py</code> will correctly import the <code>plot_results</code> function?</p>
+<pre><code>stress_analysis_project/
+├── main.py
+└── analysis/
+    ├── __init__.py
+    ├── calculations.py
+    └── plotting.py 
+        # contains def plot_results(): ...</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>To import from a package, you use dot notation that follows the directory structure. `analysis` is the package, `plotting` is the module within it, and `plot_results` is the function you want to import.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>from analysis.plotting import plot_results</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This follows the path `package.module` to specify where the function is.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>from plotting import plot_results</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Python doesn't know to look inside the `analysis` directory for `plotting.py` without being told.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>import plot_results from analysis.plotting</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not valid Python import syntax.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>from analysis import plotting.plot_results</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `import` keyword must be followed by the name of the member you are importing, not another path.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 6  -->
+  <question type="multichoice">
+    <name>
+      <text>Code execution on import</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You have a module `status.py` with the content: <code>print("Status module ready.")</code>. What happens when another script executes the line <code>import status</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>When a module is imported for the first time in a Python session, the interpreter executes the code in the module file from top to bottom. Any top-level code (code not inside a function or class) will run immediately.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The text "Status module ready." is printed to the console.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. The `print` statement is executed as the module is loaded.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Nothing happens until a function from the module is called.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Top-level code runs immediately upon import.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>A `SyntaxError` occurs because code should be inside functions.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It is perfectly valid to have executable code at the top level of a module.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The `status` module is made available, but nothing is printed.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `print` function is executed as part of the import process.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 7  -->
+  <question type="multichoice">
+    <name>
+      <text>Value of __name__ when run directly</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>If you have a script named <code>my_app.py</code> and you run it from the command line using <code>python my_app.py</code>, what will be the value of the special variable <code>__name__</code> inside that script?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Python sets the `__name__` variable to the string "`__main__`" for the script that is the entry point of the program. This allows the script to know whether it is being run directly or imported as a module.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>"__main__"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the value assigned to the top-level script.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"my_app"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This would be the value of `__name__` if the script were imported by another module.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>"my_app.py"</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `.py` extension is not included.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>None</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. `__name__` always has a string value in this context.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 8  -->
+  <question type="multichoice">
+    <name>
+      <text>Standard Library Module for Timestamps</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which module in the Python Standard Library is essential for getting the current time to create timestamps for a data log?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The <code>datetime</code> module provides classes for manipulating dates and times. <code>datetime.now()</code> is commonly used to get the current local date and time.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>datetime</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the standard module for all date and time operations.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>time</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. While the `time` module also deals with time, `datetime` provides a more convenient and object-oriented interface for creating and formatting timestamps.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>calendar</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `calendar` module is for generating calendars, not for handling timestamps.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>os</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The `os` module is for interacting with the operating system.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 9  -->
+  <question type="multichoice">
+    <name>
+      <text>Installing NumPy</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the correct <code>pip</code> command to install the fundamental package for scientific computing in Python, which is commonly aliased as <code>np</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The package name for installation can sometimes differ from the name used when importing it. The package that provides the `numpy` module is itself named "numpy".</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>pip install numpy</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This command downloads and installs the NumPy package.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>pip install np</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. `np` is the conventional alias used in code, but it is not the name of the package on PyPI.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>pip numpy install</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The syntax is `pip install <package-name>`.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>python install numpy</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. `pip` is the command-line tool for installation.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 10  -->
+  <question type="multichoice">
+    <name>
+      <text>Empty __init__.py file</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Is it valid for an <code>__init__.py</code> file to be completely empty?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The mere presence of the `__init__.py` file is what matters for defining a regular package. It can be empty, or it can contain code to initialize the package or "promote" variables from submodules.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Yes, its presence is enough to mark the directory as a package.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. An empty `__init__.py` file is a very common scenario.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, it must contain a list of all modules in the package.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not required.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No, it must contain at least one line of code to be valid.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. An empty file is perfectly valid.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Yes, but this will prevent any modules in the package from being imported.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The presence of the file is what *enables* the modules to be imported as part of a package.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 11  -->
+  <question type="multichoice">
+    <name>
+      <text>Iterating over a file object</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens when you use a `for` loop to iterate directly over a file object, as in <code>for line in file_object:</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>File objects in Python are iterators. Iterating over them with a `for` loop is a memory-efficient way to process a file one line at a time. Each `line` in the loop is a string that includes the trailing newline character.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The loop reads the file one line at a time, which is very memory-efficient.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. This is the preferred method for reading large text files.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The loop reads the file one character at a time.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It reads line by line. To read character by character, you would need a different approach.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It loads the entire file into a list and then iterates over the list.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is what `file.readlines()` does. Iterating directly on the file object avoids creating this intermediate list.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It results in a `TypeError` because file objects are not iterable.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. File objects are indeed iterable.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 12  -->
+  <question type="multichoice">
+    <name>
+      <text>JSON human-readable output</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You are saving a Python dictionary to a JSON file and want the output to be easy for a human to read. Which arguments should you provide to <code>json.dump()</code>?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The `json.dump()` function has several parameters to control the output format. The `indent` parameter is used to specify the number of spaces for each level of indentation, which makes the file structured and readable.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>indent=4</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. For example, <code>json.dump(data, f, indent=4)</code> creates a nicely formatted file.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>pretty_print=True</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not a valid argument for `json.dump()`.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>verbose=True</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not a valid argument for `json.dump()`.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>format='human'</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This is not a valid argument for `json.dump()`.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 13  -->
+  <question type="multichoice">
+    <name>
+      <text>Writing to file requires newline</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>If you execute the following code, what will be the content of <code>output.txt</code>?</p>
+<pre><code>with open('output.txt', 'w') as f:
+    f.write("Line 1")
+    f.write("Line 2")</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The `file.write()` method writes exactly the string you give it. It does not add any characters, including newlines. To put text on separate lines, you must explicitly add the newline character `\n`.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><code>Line 1Line 2</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. The two strings are written consecutively without any separator.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>Line 1\nLine 2</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. This shows the newline character literally. The actual content would have `Line 1` and `Line 2` on separate lines.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><code>Line 2</code></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The second write does not overwrite the first; it just adds to the file right after the first one.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Line 1
+Line 2</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. `write` does not add a newline automatically. The result would be `Line 1Line 2`</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 14 -->
+<question type="multichoice">
+    <name>
+      <text>CSV Writer `newline` argument</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What problem does setting `newline=''` in `open('data.csv', 'w', newline='')` solve when using the `csv.writer`?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The issue arises from how different operating systems handle newline characters (`\n` vs `\r\n`). Python's text mode file I/O tries to normalize these, but the `csv` writer also has its own newline logic. Using `newline=''` tells the `open` function to not do any newline translation, letting the `csv.writer` handle it exclusively and preventing extra blank rows from appearing in the output file.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It prevents the creation of unwanted blank rows between data rows on some operating systems.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. It ensures that line endings are handled correctly and consistently by the `csv` module.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It forces the CSV file to be written without any newlines, putting all data on a single line.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It just disables the text-mode translation of newlines for the file object; the `csv.writer` still writes row separators.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It tells the writer to use a comma instead of a newline to separate rows.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It controls newline translation, not the row delimiter itself.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It is required to enable UTF-8 encoding for the file.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Encoding is controlled by the separate `encoding` argument.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 15 -->
+<question type="multichoice">
+    <name>
+      <text>Combining CSV reading and writing</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You have a `raw_data.csv` file. Your task is to read the numeric data from it, calculate the average, and write the average to `summary.txt`. This is an example of what common workflow?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>This is the classic "Read, Process, Write" pattern. You read from one file source, perform some data transformation or analysis, and write the output to another file destination.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Read, Process, Write</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct. You are reading the CSV, processing it to find the average, and writing the result to a text file.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Data Validation</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. While you might validate the data as part of the process, the overall workflow is data transformation.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Exception Handling</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Exception handling would be part of making this workflow robust (e.g., catching `FileNotFoundError`), but it isn't the name of the workflow itself.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Modular Programming</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. You might use modular programming to organize this workflow, but it is not the name of the workflow itself.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
