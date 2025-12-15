@@ -392,7 +392,6 @@ import conversions
 # Now use the functions and constants from it
 pressure_psi = 14.7
 pressure_pa = conversions.psi_to_pa(pressure_psi)
-
 print(f"{pressure_psi} PSI is equal to {pressure_pa:.2f} Pascals.")
 ```
 
