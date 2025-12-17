@@ -13,7 +13,7 @@
 <!-- question: 1  -->
   <question type="multichoice">
     <name>
-      <text>Using an imported function</text>
+      <text>Q01: Using an imported function</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the following code, how do you correctly calculate the area of a circle with a radius of 5?</p>
@@ -69,7 +69,7 @@ circle_radius = 5.0</code></pre>]]></text>
 <!-- question: 2  -->
   <question type="multichoice">
     <name>
-      <text>Using an aliased module</text>
+      <text>Q02: Using an aliased module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the import statement <code>import datetime as dt</code>, how would you correctly get the current time?</p>]]></text>
@@ -123,7 +123,7 @@ circle_radius = 5.0</code></pre>]]></text>
 <!-- question: 3  -->
   <question type="multichoice">
     <name>
-      <text>Standard Library Module for Randomness</text>
+      <text>Q03: Standard Library Module for Randomness</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>To simulate a noisy sensor reading by adding a small, unpredictable value, which module from the Python Standard Library would be most appropriate?</p>]]></text>
@@ -177,7 +177,7 @@ circle_radius = 5.0</code></pre>]]></text>
 <!-- question: 4  -->
   <question type="multichoice">
     <name>
-      <text>Importing your own module</text>
+      <text>Q04: Importing your own module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a project with two files in the same directory: <code>main.py</code> and <code>conversions.py</code>. The <code>conversions.py</code> file contains a function <code>psi_to_pa(psi)</code>. How do you import and use this function in <code>main.py</code>?</p>]]></text>
@@ -234,7 +234,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 5  -->
   <question type="multichoice">
     <name>
-      <text>Running the __main__ block</text>
+      <text>Q05: Running the __main__ block</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Under which circumstance will the code inside an <code>if __name__ == "__main__":</code> block be executed?</p>]]></text>
@@ -288,7 +288,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 6  -->
   <question type="multichoice">
     <name>
-      <text>Benefit of custom modules</text>
+      <text>Q06: Benefit of custom modules</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a key benefit of creating your own modules, such as moving a set of validation functions into a `validators.py` file?</p>]]></text>
@@ -342,7 +342,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 7  -->
   <question type="multichoice">
     <name>
-      <text>File reading error</text>
+      <text>Q07: File reading error</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What specific error will Python raise if you attempt to execute <code>with open('non_existent_file.txt', 'r') as f:</code> and the file does not exist?</p>]]></text>
@@ -396,7 +396,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 8  -->
   <question type="multichoice">
     <name>
-      <text>Parsing a simple config file</text>
+      <text>Q08: Parsing a simple config file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a file <code>settings.txt</code> with the content <code>speed=1500</code>. After reading this line into a variable <code>line</code>, which line of code correctly extracts the key 'speed' and the value '1500'?</p>]]></text>
@@ -450,7 +450,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 9  -->
   <question type="multichoice">
     <name>
-      <text>Module for reading CSV files</text>
+      <text>Q09: Module for reading CSV files</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>For reading a Comma-Separated Values (CSV) file, what is the recommended Python module to use for robustly handling the data, especially if values might contain commas?</p>]]></text>
@@ -504,7 +504,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 10  -->
   <question type="multichoice">
     <name>
-      <text>Opening file in append mode</text>
+      <text>Q10: Opening file in append mode</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which file mode should you use to add new entries to the end of a log file without deleting its existing content?</p>]]></text>
@@ -558,7 +558,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 11  -->
   <question type="multichoice">
     <name>
-      <text>Function for writing a dictionary to JSON</text>
+      <text>Q11: Function for writing a dictionary to JSON</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which function from the <code>json</code> module is used to write a Python dictionary object to an open file object?</p>]]></text>
@@ -612,7 +612,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 12  -->
   <question type="multichoice">
     <name>
-      <text>Writing CSV Header</text>
+      <text>Q12: Writing CSV Header</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When using a <code>csv.writer</code> object named <code>writer</code>, which method is used to write a single list representing the header row?</p>]]></text>
@@ -666,7 +666,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 13  -->
   <question type="multichoice">
     <name>
-      <text>Read-Process-Write Workflow</text>
+      <text>Q13: Read-Process-Write Workflow</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In a typical engineering task, what does the "Read, Process, Write" workflow involve?</p>]]></text>
@@ -720,7 +720,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 14 -->
 <question type="multichoice">
     <name>
-      <text>Vector addition with lists vs numpy</text>
+      <text>Q14: Vector addition with lists vs numpy</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>list_a = [1, 2, 3]</code> and <code>list_b = [4, 5, 6]</code>, what is the result of <code>list_a + list_b</code>? And how does this differ from the result of adding them as NumPy arrays?</p>]]></text>
@@ -774,7 +774,7 @@ pressure_pa = psi_to_pa(14.7)</code></pre>]]></text>
 <!-- question: 15 -->
 <question type="multichoice">
     <name>
-      <text>Python's "batteries-included" philosophy</text>
+      <text>Q15: Python's "batteries-included" philosophy</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does Python's "batteries-included" philosophy refer to?</p>]]></text>

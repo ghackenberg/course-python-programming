@@ -13,7 +13,7 @@
 <!-- question: 1  -->
   <question type="multichoice">
     <name>
-      <text>from ... import statement</text>
+      <text>Q01: from ... import statement</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the main advantage of using the <code>from math import sqrt</code> statement over <code>import math</code>?</p>]]></text>
@@ -67,7 +67,7 @@
 <!-- question: 2  -->
   <question type="multichoice">
     <name>
-      <text>Datetime formatting</text>
+      <text>Q02: Datetime formatting</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the <code>datetime</code> module, which method is used to format a datetime object into a custom string representation like "YYYY-MM-DD"?</p>]]></text>
@@ -121,7 +121,7 @@
 <!-- question: 3  -->
   <question type="multichoice">
     <name>
-      <text>Python Package Definition</text>
+      <text>Q03: Python Package Definition</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In Python, what is a "package"?</p>]]></text>
@@ -175,7 +175,7 @@
 <!-- question: 4  -->
   <question type="multichoice">
     <name>
-      <text>Test block in a module</text>
+      <text>Q04: Test block in a module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have created a module `kinematics.py`. How can you add test code to this file that runs only when you execute <code>python kinematics.py</code> directly, but not when it's imported by another script?</p>]]></text>
@@ -229,7 +229,7 @@
 <!-- question: 5  -->
   <question type="multichoice">
     <name>
-      <text>Reusability benefit of modules</text>
+      <text>Q05: Reusability benefit of modules</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following best demonstrates the "Reusability" benefit of creating a custom module?</p>]]></text>
@@ -283,7 +283,7 @@
 <!-- question: 6  -->
   <question type="multichoice">
     <name>
-      <text>File reading methods review</text>
+      <text>Q06: File reading methods review</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which file reading method reads the entire content of a file into a single string?</p>]]></text>
@@ -337,7 +337,7 @@
 <!-- question: 7  -->
   <question type="multichoice">
     <name>
-      <text>Reading JSON into Python object</text>
+      <text>Q07: Reading JSON into Python object</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When you use <code>data = json.load(file_object)</code> to read a JSON file, what type of Python object is typically created in the <code>data</code> variable?</p>]]></text>
@@ -391,7 +391,7 @@
 <!-- question: 8  -->
   <question type="multichoice">
     <name>
-      <text>Parsing CSV with csv.reader</text>
+      <text>Q08: Parsing CSV with csv.reader</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When you iterate over a <code>csv.reader</code> object, what is the data type of each <code>row</code> you get in the loop?</p>
@@ -449,7 +449,7 @@
 <!-- question: 9  -->
   <question type="multichoice">
     <name>
-      <text>Effect of file write mode</text>
+      <text>Q09: Effect of file write mode</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a file named <code>report.txt</code> that already contains data. What happens to the file when you execute the following code?</p>
@@ -505,7 +505,7 @@
 <!-- question: 10  -->
   <question type="multichoice">
     <name>
-      <text>Appending to a log file</text>
+      <text>Q10: Appending to a log file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which code snippet correctly implements a function to append a new log message to <code>event_log.txt</code>?</p>]]></text>
@@ -568,7 +568,7 @@
 <!-- question: 11  -->
   <question type="multichoice">
     <name>
-      <text>json.dump vs json.dumps</text>
+      <text>Q11: json.dump vs json.dumps</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the key difference between <code>json.dump()</code> and <code>json.dumps()</code>?</p>]]></text>
@@ -622,7 +622,7 @@
 <!-- question: 12  -->
   <question type="multichoice">
     <name>
-      <text>file.write() return value</text>
+      <text>Q12: file.write() return value</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <code>file.write(string)</code> method return?</p>]]></text>
@@ -676,7 +676,7 @@
 <!-- question: 13  -->
   <question type="multichoice">
     <name>
-      <text>Creating a CSV file from data</text>
+      <text>Q13: Creating a CSV file from data</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a list of lists representing rows of data. Which module and method combination is the standard way to write this data to a CSV file?</p>
@@ -735,7 +735,7 @@
 <!-- question: 14 -->
 <question type="multichoice">
     <name>
-      <text>Benefit of NumPy Arrays</text>
+      <text>Q14: Benefit of NumPy Arrays</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a primary advantage of using NumPy arrays over standard Python lists for numerical and engineering calculations?</p>]]></text>
@@ -789,7 +789,7 @@
 <!-- question: 15 -->
 <question type="multichoice">
     <name>
-      <text>Code execution with if __name__ == "__main__"</text>
+      <text>Q15: Code execution with if __name__ == "__main__"</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a file `my_module.py` with the following content:</p>

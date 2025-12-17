@@ -13,7 +13,7 @@
 <!-- question: 1  -->
   <question type="multichoice">
     <name>
-      <text>Keyword for importing</text>
+      <text>Q01: Keyword for importing</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the main Python keyword used to bring the code from one module into another?</p>]]></text>
@@ -67,7 +67,7 @@
 <!-- question: 2  -->
   <question type="multichoice">
     <name>
-      <text>Installing External Packages</text>
+      <text>Q02: Installing External Packages</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the standard command-line tool used to install external packages from the Python Package Index (PyPI)?</p>]]></text>
@@ -121,7 +121,7 @@
 <!-- question: 3  -->
   <question type="multichoice">
     <name>
-      <text>Name conflict with from...import</text>
+      <text>Q03: Name conflict with from...import</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider two modules, <code>module_a.py</code> and <code>module_b.py</code>, which both contain a function named <code>process_data()</code>. What will happen if you run the following code?</p>
@@ -178,7 +178,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 4  -->
   <question type="multichoice">
     <name>
-      <text>Radians vs Degrees in math module</text>
+      <text>Q04: Radians vs Degrees in math module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why do most functions in Python's <code>math</code> module, such as <code>math.sin()</code> and <code>math.cos()</code>, expect angles to be in radians rather than degrees?</p>]]></text>
@@ -232,7 +232,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 5  -->
   <question type="multichoice">
     <name>
-      <text>Role of __init__.py</text>
+      <text>Q05: Role of __init__.py</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary role of an <code>__init__.py</code> file inside a directory?</p>]]></text>
@@ -286,7 +286,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 6  -->
   <question type="multichoice">
     <name>
-      <text>Importing from a sub-directory</text>
+      <text>Q06: Importing from a sub-directory</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the project structure below, how would you correctly import the function <code>calculate_stress</code> from <code>calculations.py</code> into <code>main.py</code>?</p>
@@ -345,7 +345,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 7  -->
   <question type="multichoice">
     <name>
-      <text>Effect of code in __init__.py</text>
+      <text>Q07: Effect of code in __init__.py</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you add the line <code>from .calculations import calculate_stress</code> inside the <code>analysis/__init__.py</code> file, what is the effect on how you can import it in <code>main.py</code>?</p>]]></text>
@@ -399,7 +399,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 8  -->
   <question type="multichoice">
     <name>
-      <text>File reading mode</text>
+      <text>Q08: File reading mode</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When using <code>with open(...)</code>, which mode character do you use to open a file for reading text?</p>]]></text>
@@ -453,7 +453,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 9  -->
   <question type="multichoice">
     <name>
-      <text>Difference between read() and readlines()</text>
+      <text>Q09: Difference between read() and readlines()</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>After opening a file object <code>f</code>, what is the main difference in the return type of <code>f.read()</code> compared to <code>f.readlines()</code>?</p>]]></text>
@@ -508,7 +508,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 10  -->
   <question type="multichoice">
     <name>
-      <text>Gracefully handling FileNotFoundError</text>
+      <text>Q10: Gracefully handling FileNotFoundError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which Python construct should you use to prevent your program from crashing if it tries to read a file that does not exist?</p>]]></text>
@@ -562,7 +562,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 11  -->
   <question type="multichoice">
     <name>
-      <text>Contents of f.readlines() list</text>
+      <text>Q11: Contents of f.readlines() list</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When you use <code>lines = file.readlines()</code>, what does each string in the resulting <code>lines</code> list (except possibly the last one) contain at the end that often needs to be removed?</p>]]></text>
@@ -616,7 +616,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 12  -->
     <question type="multichoice">
     <name>
-      <text>Creating a file in append mode</text>
+      <text>Q12: Creating a file in append mode</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you open a file that does not exist using append mode (<code>'a'</code>), what will happen?</p>]]></text>
@@ -670,7 +670,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 13  -->
   <question type="multichoice">
     <name>
-      <text>Writing CSV blank rows</text>
+      <text>Q13: Writing CSV blank rows</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When writing to a CSV file using the <code>csv.writer</code>, why is it important to specify <code>newline=''</code> in the <code>open()</code> function (i.e., <code>open('data.csv', 'w', newline='')</code>)?</p>]]></text>
@@ -724,7 +724,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 14  -->
   <question type="multichoice">
     <name>
-      <text>Danger of write mode</text>
+      <text>Q14: Danger of write mode</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a significant danger of opening an existing file in write mode (<code>'w'</code>)?</p>]]></text>
@@ -778,7 +778,7 @@ process_data()</code></pre>]]></text>
 <!-- question: 15  -->
   <question type="multichoice">
     <name>
-      <text>Writing a list of lists to CSV</text>
+      <text>Q15: Writing a list of lists to CSV</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a list of lists, such as <code>data = [['ID', 'Value'], ['A', 1], ['B', 2]]</code>. After creating a <code>csv.writer</code> object named <code>writer</code>, which method would you use to write all the inner lists as rows in the CSV file at once?</p>]]></text>

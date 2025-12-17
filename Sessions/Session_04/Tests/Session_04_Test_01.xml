@@ -13,7 +13,7 @@
 <!-- question: 1  -->
   <question type="multichoice">
     <name>
-      <text>Importing a Standard Library Module</text>
+      <text>Q01: Importing a Standard Library Module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which module from the Python Standard Library would you use for mathematical calculations like square roots and trigonometric functions (e.g., sine, cosine)?</p>]]></text>
@@ -67,7 +67,7 @@
 <!-- question: 2  -->
   <question type="multichoice">
     <name>
-      <text>Alias with 'as'</text>
+      <text>Q02: Alias with 'as'</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary purpose of using an alias when importing a module, such as in the statement <code>import numpy as np</code>?</p>]]></text>
@@ -121,7 +121,7 @@
 <!-- question: 3  -->
   <question type="multichoice">
     <name>
-      <text>Difference between import and from...import</text>
+      <text>Q03: Difference between import and from...import</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the key difference between <code>import math</code> and <code>from math import pi</code>?</p>]]></text>
@@ -175,7 +175,7 @@
 <!-- question: 4  -->
   <question type="multichoice">
     <name>
-      <text>PyPI purpose</text>
+      <text>Q04: PyPI purpose</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is PyPI (Python Package Index)?</p>]]></text>
@@ -229,7 +229,7 @@
 <!-- question: 5  -->
     <question type="multichoice">
     <name>
-      <text>Creating a Python Module</text>
+      <text>Q05: Creating a Python Module</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the simplest way to create a basic Python module?</p>]]></text>
@@ -283,7 +283,7 @@
 <!-- question: 6  -->
   <question type="multichoice">
     <name>
-      <text>Purpose of __name__ == "__main__"</text>
+      <text>Q06: Purpose of __name__ == "__main__"</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary purpose of the <code>if __name__ == "__main__":</code> block in a Python script?</p>]]></text>
@@ -337,7 +337,7 @@
 <!-- question: 7  -->
   <question type="multichoice">
     <name>
-      <text>Value of __name__ when imported</text>
+      <text>Q07: Value of __name__ when imported</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have two files in the same directory: <code>main.py</code> and <code>utils.py</code>. The file <code>main.py</code> contains the line <code>import utils</code>. When you run <code>python main.py</code>, what is the value of the <code>__name__</code> variable inside <code>utils.py</code>?</p>]]></text>
@@ -391,7 +391,7 @@
 <!-- question: 8  -->
   <question type="multichoice">
     <name>
-      <text>Discouraged import practice</text>
+      <text>Q08: Discouraged import practice</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is the practice of using <code>from module import *</code> generally discouraged in larger projects?</p>]]></text>
@@ -445,7 +445,7 @@
 <!-- question: 9  -->
   <question type="multichoice">
     <name>
-      <text>Recommended way to open a file</text>
+      <text>Q09: Recommended way to open a file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the modern, recommended way to open a file in Python that ensures the file is automatically closed after you are done with it?</p>]]></text>
@@ -499,7 +499,7 @@
 <!-- question: 10  -->
   <question type="multichoice">
     <name>
-      <text>Reading file memory efficiency</text>
+      <text>Q10: Reading file memory efficiency</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When reading a very large text file (e.g., several gigabytes), which method is the most memory-efficient?</p>]]></text>
@@ -553,7 +553,7 @@
 <!-- question: 11  -->
   <question type="multichoice">
     <name>
-      <text>Reading CSV with header</text>
+      <text>Q11: Reading CSV with header</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When using Python's <code>csv</code> module to read a file that has a header row, what is the common way to skip the header before processing the data rows?</p>]]></text>
@@ -607,7 +607,7 @@
 <!-- question: 12  -->
     <question type="multichoice">
     <name>
-      <text>Reading JSON file</text>
+      <text>Q12: Reading JSON file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a file <code>config.json</code> containing <code>{ "id": "RX-78", "active": true }</code>. Which code snippet correctly reads this file and allows you to access the value <code>"RX-78"</code>?</p>]]></text>
@@ -670,7 +670,7 @@ robot_id = data['id']</code></pre>]]></text>
 <!-- question: 13  -->
   <question type="multichoice">
     <name>
-      <text>File writing 'w' vs 'a'</text>
+      <text>Q13: File writing 'w' vs 'a'</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the fundamental difference between opening a file with mode <code>'w'</code> (write) versus mode <code>'a'</code> (append)?</p>]]></text>
@@ -724,7 +724,7 @@ robot_id = data['id']</code></pre>]]></text>
 <!-- question: 14  -->
   <question type="multichoice">
     <name>
-      <text>Writing newlines to file</text>
+      <text>Q14: Writing newlines to file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You use the <code>file.write()</code> method to save two strings to a text file. What must you do to ensure the second string starts on a new line?</p>]]></text>
@@ -778,7 +778,7 @@ robot_id = data['id']</code></pre>]]></text>
 <!-- question: 15  -->
   <question type="multichoice">
     <name>
-      <text>Writing JSON with formatting</text>
+      <text>Q15: Writing JSON with formatting</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When using <code>json.dump()</code> to write a Python dictionary to a file, what argument can you provide to make the resulting JSON file human-readable with pretty-printing?</p>]]></text>

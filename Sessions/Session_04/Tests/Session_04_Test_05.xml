@@ -13,7 +13,7 @@
 <!-- question: 1  -->
   <question type="multichoice">
     <name>
-      <text>Benefit of `with open(...)`</text>
+      <text>Q01: Benefit of `with open(...)`</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the primary safety and reliability benefit of using the <code>with open(...) as file:</code> syntax for file handling?</p>]]></text>
@@ -67,7 +67,7 @@
 <!-- question: 2  -->
   <question type="multichoice">
     <name>
-      <text>Accessing nested JSON data</text>
+      <text>Q02: Accessing nested JSON data</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>After loading the following JSON into a Python dictionary named <code>config</code>, how would you access the maximum angle of joint "J1"?</p>
@@ -128,7 +128,7 @@
 <!-- question: 3  -->
   <question type="multichoice">
     <name>
-      <text>Writing a list with `writelines`</text>
+      <text>Q03: Writing a list with `writelines`</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a major caveat of using <code>file.writelines(list_of_strings)</code> to write a list of strings to a file?</p>]]></text>
@@ -182,7 +182,7 @@
 <!-- question: 4  -->
   <question type="multichoice">
     <name>
-      <text>Handling `FileNotFoundError`</text>
+      <text>Q04: Handling `FileNotFoundError`</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which code snippet demonstrates the most robust and "Pythonic" way to handle a potential <code>FileNotFoundError</code> when opening a file for reading?</p>]]></text>
@@ -249,7 +249,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 5  -->
   <question type="multichoice">
     <name>
-      <text>Importing from a package in `main.py`</text>
+      <text>Q05: Importing from a package in `main.py`</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given the project structure below, which statement in <code>main.py</code> will correctly import the <code>plot_results</code> function?</p>
@@ -310,7 +310,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 6  -->
   <question type="multichoice">
     <name>
-      <text>Code execution on import</text>
+      <text>Q06: Code execution on import</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a module `status.py` with the content: <code>print("Status module ready.")</code>. What happens when another script executes the line <code>import status</code>?</p>]]></text>
@@ -364,7 +364,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 7  -->
   <question type="multichoice">
     <name>
-      <text>Value of __name__ when run directly</text>
+      <text>Q07: Value of __name__ when run directly</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you have a script named <code>my_app.py</code> and you run it from the command line using <code>python my_app.py</code>, what will be the value of the special variable <code>__name__</code> inside that script?</p>]]></text>
@@ -418,7 +418,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 8  -->
   <question type="multichoice">
     <name>
-      <text>Standard Library Module for Timestamps</text>
+      <text>Q08: Standard Library Module for Timestamps</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which module in the Python Standard Library is essential for getting the current time to create timestamps for a data log?</p>]]></text>
@@ -472,7 +472,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 9  -->
   <question type="multichoice">
     <name>
-      <text>Installing NumPy</text>
+      <text>Q09: Installing NumPy</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the correct <code>pip</code> command to install the fundamental package for scientific computing in Python, which is commonly aliased as <code>np</code>?</p>]]></text>
@@ -526,7 +526,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 10  -->
   <question type="multichoice">
     <name>
-      <text>Empty __init__.py file</text>
+      <text>Q10: Empty __init__.py file</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Is it valid for an <code>__init__.py</code> file to be completely empty?</p>]]></text>
@@ -580,7 +580,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 11  -->
   <question type="multichoice">
     <name>
-      <text>Iterating over a file object</text>
+      <text>Q11: Iterating over a file object</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens when you use a `for` loop to iterate directly over a file object, as in <code>for line in file_object:</code>?</p>]]></text>
@@ -634,7 +634,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 12  -->
   <question type="multichoice">
     <name>
-      <text>JSON human-readable output</text>
+      <text>Q12: JSON human-readable output</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You are saving a Python dictionary to a JSON file and want the output to be easy for a human to read. Which arguments should you provide to <code>json.dump()</code>?</p>]]></text>
@@ -688,7 +688,7 @@ with open('data.txt', 'r') as f:
 <!-- question: 13  -->
   <question type="multichoice">
     <name>
-      <text>Writing to file requires newline</text>
+      <text>Q13: Writing to file requires newline</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you execute the following code, what will be the content of <code>output.txt</code>?</p>
@@ -746,7 +746,7 @@ Line 2</p>]]></text>
 <!-- question: 14 -->
 <question type="multichoice">
     <name>
-      <text>CSV Writer `newline` argument</text>
+      <text>Q14: CSV Writer `newline` argument</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What problem does setting `newline=''` in `open('data.csv', 'w', newline='')` solve when using the `csv.writer`?</p>]]></text>
@@ -800,7 +800,7 @@ Line 2</p>]]></text>
 <!-- question: 15 -->
 <question type="multichoice">
     <name>
-      <text>Combining CSV reading and writing</text>
+      <text>Q15: Combining CSV reading and writing</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a `raw_data.csv` file. Your task is to read the numeric data from it, calculate the average, and write the average to `summary.txt`. This is an example of what common workflow?</p>]]></text>
