@@ -9,7 +9,8 @@
 *.synctex.gz
 *.toc
 *.vrb
-_*
+
+__pycache__
 
 **/Include
 **/Scripts
