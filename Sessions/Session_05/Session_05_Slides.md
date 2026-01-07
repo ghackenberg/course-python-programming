@@ -97,6 +97,110 @@ print("Wrong indentation")
 <div class="columns">
 <div class="two">
 
+### Common Syntax Errors: **Missing Colon**
+
+The colon `:` is crucial in Python. It marks the start of a code block.
+
+**You need a colon after:**
+- `if`, `elif`, `else` statements
+- `for` and `while` loops
+- `def` (function definitions)
+- `class` (class definitions)
+
+</div>
+<div class="two">
+
+```python
+# ERROR
+if x > 10
+    print("Large")
+
+# CORRECT
+if x > 10:
+    print("Large")
+
+# ERROR
+def greet(name)
+    print(f"Hi {name}")
+
+# CORRECT
+def greet(name):
+    print(f"Hi {name}")
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Syntax Errors: **Mismatched Brackets**
+
+Parentheses `()`, brackets `[]`, and braces `{}` must always come in pairs.
+
+- If you forget a closing `)`, Python might report the error on the **next** line!
+- **Tip:** Count your open and close brackets.
+
+</div>
+<div class="two">
+
+```python
+# ERROR: Missing closing )
+result = (5 + 3 * (2 - 1)
+
+# Python keeps looking for the )
+# and crashes on the next line.
+print("Done") 
+# SyntaxError often points here!
+
+# CORRECT
+result = (5 + 3 * (2 - 1))
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Syntax Errors: **Confusion `=` vs `==`**
+
+This is a classic mistake.
+
+- `=` is for **Assignment** (putting a value into a variable).
+- `==` is for **Comparison** (checking if two values are equal).
+
+**You cannot use `=` inside an `if` condition.**
+
+</div>
+<div class="two">
+
+```python
+# ERROR
+if score = 100:
+    print("Winner!")
+
+# SyntaxError: invalid syntax
+# (Python thinks you are trying 
+# to assign inside an if)
+
+# CORRECT
+if score == 100:
+    print("Winner!")
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
 ### **Runtime** Errors (Exceptions)
 
 **"The Crash"**
@@ -231,6 +335,97 @@ print(avg)
 avg = (2 + 4) / 2
 print(avg)
 # Result: 3.0 (Correct)
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Logical Errors: **Off-By-One**
+
+A classic error in loops where you iterate one time too many or too few.
+
+- Often happens with `range()`.
+- Remember: `range(n)` goes from `0` to `n-1`.
+
+</div>
+<div class="two">
+
+```python
+# Goal: Print numbers 1 to 5
+# ERROR: Prints 0, 1, 2, 3, 4
+for i in range(5):
+    print(i)
+
+# CORRECT
+for i in range(1, 6):
+    print(i)
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Logical Errors: **Infinite Loops**
+
+If the condition in a `while` loop never becomes `False`, the program hangs forever.
+
+- **Cause:** Forgetting to update the loop variable.
+- **Symptom:** Program freezes, fans spin up.
+
+</div>
+<div class="two">
+
+```python
+count = 10
+while count > 0:
+    print(count)
+    # Forgot to decrease count!
+    # count -= 1
+    
+# This loop runs forever!
+# Use Ctrl+C to stop it.
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Logical Errors: **Floating Point Precision**
+
+Computers store decimals in binary, which isn't always exact.
+
+- Comparing floats directly with `==` is dangerous.
+- Use a small "epsilon" or `math.isclose`.
+
+</div>
+<div class="two">
+
+```python
+result = 0.1 + 0.2
+print(result)
+# Output: 0.30000000000000004
+
+# ERROR: Returns False!
+if result == 0.3:
+    print("Equal")
+
+# CORRECT
+import math
+if math.isclose(result, 0.3):
+    print("Equal")
 ```
 
 </div>
