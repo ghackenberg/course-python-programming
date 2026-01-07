@@ -1,0 +1,18 @@
+graph TD
+    A[Start: Run Code] --> B{Syntax<br/>Check}
+    B -- Fail --> C[<b>Syntax Error</b>
+Code never runs]
+    B -- Pass --> E
+    E{Runtime<br/>Operation}
+    E -- Illegal Op
+e.g. Div by 0 --> F[<b>Runtime Error</b>
+Crash!]
+    E -- Valid Op --> G{Check<br/>Result}
+    G -- Wrong Outcome --> H[<b>Logical Error</b>
+Silent Failure]
+    G -- Correct Outcome --> I[<b>Success</b>]
+    
+    style C fill:#ffcccc,stroke:#333,stroke-width:2px
+    style F fill:#ffcccc,stroke:#333,stroke-width:2px
+    style H fill:#ffcccc,stroke:#333,stroke-width:2px
+    style I fill:#ccffcc,stroke:#333,stroke-width:2px

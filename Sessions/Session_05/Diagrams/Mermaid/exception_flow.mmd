@@ -1,0 +1,16 @@
+flowchart TD
+    Start([Start]) --> Try[Try Block: Execute Code]
+    Try --> Error{Exception Occurred?}
+    
+    Error -- Yes --> Catch[Except Block: Handle Error]
+    Error -- No --> Else[Else Block: Run if Success]
+    
+    Catch --> Finally[Finally Block: Cleanup]
+    Else --> Finally
+    
+    Finally --> End([End / Continue])
+    
+    style Try fill:#d4f1f4,stroke:#333
+    style Catch fill:#f8d7da,stroke:#333
+    style Else fill:#d1e7dd,stroke:#333
+    style Finally fill:#fff3cd,stroke:#333

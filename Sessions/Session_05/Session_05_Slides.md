@@ -48,7 +48,7 @@ Errors are an inevitable part of programming. Understanding them is the first st
 <div class="columns">
 <div class="two">
 
-### Syntax Errors
+### **Syntax** Errors
 
 **"The Grammar Police"**
 
@@ -86,7 +86,7 @@ VS Code usually highlights these with red squiggly lines immediately.
 <div class="columns">
 <div class="two">
 
-### Runtime Errors (Exceptions)
+### **Runtime** Errors (Exceptions)
 
 **"The Crash"**
 
@@ -126,7 +126,7 @@ These cause the program to stop immediately unless handled.
 <div class="columns">
 <div class="two">
 
-### Logical Errors
+### **Logical** Errors
 
 **"The Silent Failure"**
 
@@ -171,7 +171,7 @@ print(avg)
 ---
 
 <div class="columns">
-<div class="three">
+<div class="two">
 
 ### Engineering Example: Robot Arm
 
@@ -340,14 +340,14 @@ finally:
 ---
 
 <div class="columns">
-<div>
+<div class="three">
 
 ### Exception Handling Flowchart
 
 Visualizing the path of execution through `try`, `except`, `else`, and `finally`.
 
 </div>
-<div>
+<div class="two">
 
 ![Flowchart showing the logic flow of try-except-else-finally blocks. (Mermaid)](./Diagrams/Mermaid/exception_flow.svg)
 
@@ -356,47 +356,55 @@ Visualizing the path of execution through `try`, `except`, `else`, and `finally`
 
 ---
 
-<div class="columns">
-<div class="three">
-
 ### Engineering Example: Robust Sensor Reading
 
+
 We need to read a sensor value from a string (e.g., from a serial port).
+
+<div class="columns top">
+<div class="three">
 
 ```python
 def process_sensor_data(raw_data):
     try:
-        # 1. Simulate parsing
+        # 1. Empty check
         if not raw_data:
             raise ValueError("Empty data")
-        
+        # 2. Float conversion
         value = float(raw_data)
-        
-        # 2. Logic check
+        # 3. Logic check
         if value < 0:
             print("Warning: Negative reading.")
         else:
             print(f"Reading processed: {value}")
-
     except ValueError as e:
         print(f"Data Error: {e}")
-        
-finally:
+    finally:
         print("Sensor cycle complete.\n")
-
-process_sensor_data("25.5")  # Valid
-process_sensor_data("abc")   # Invalid
 ```
 
 </div>
 <div class="two">
 
-**Output:**
+**Example 1:**
+
+```python
+process_sensor_data("25.5")
+```
+
 ```
 Reading processed: 25.5
 Sensor cycle complete.
+```
 
-Data Error: could not convert string to float: 'abc'
+**Example 2:**
+
+```python
+process_sensor_data("abc")
+```
+
+```
+Data Error: ...
 Sensor cycle complete.
 ```
 
@@ -465,7 +473,7 @@ except ValueError as e:
 ---
 
 <div class="columns">
-<div class="two">
+<div class="four">
 
 ### Engineering Example: Actuator Limits
 
@@ -488,7 +496,7 @@ def extend_actuator(length_mm):
 ```
 
 </div>
-<div class="two">
+<div>
 
 ![Diagram showing a linear actuator with limit switches, illustrating the physical limits enforced by code. (Tikz)](./Diagrams/Tikz/actuator_limits.tikz.svg)
 
