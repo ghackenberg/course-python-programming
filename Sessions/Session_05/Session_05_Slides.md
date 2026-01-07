@@ -231,7 +231,7 @@ Robust software must anticipate and handle problems, not just crash.
 <div class="columns">
 <div>
 
-### What is Exception Handling?
+### What is **Exception Handling**?
 
 In the "Happy Path," everything goes right. In the real world, files are missing, networks fail, and users enter bad data.
 
@@ -291,7 +291,7 @@ Program continues...
 
 ---
 
-### Handling Specific Exceptions
+### Handling **Specific Exceptions**
 
 It is best practice to catch **specific** errors rather than a bare `except`. This prevents masking other unexpected issues.
 
@@ -366,7 +366,7 @@ finally:
 <div class="columns">
 <div class="three">
 
-### Exception Handling Flowchart
+### Exception Handling **Flowchart**
 
 Visualizing the path of execution through `try`, `except`, `else`, and `finally`.
 
@@ -383,7 +383,7 @@ Visualizing the path of execution through `try`, `except`, `else`, and `finally`
 <div class="columns top">
 <div class="three">
 
-### Engineering Example: Robust Sensor Reading
+### Engineering Example: **Robust Sensor Reading**
 
 
 Read a sensor value from a string (e.g., from a serial port).
@@ -468,7 +468,7 @@ Sometimes, *you* need to be the one to stop the program.
 <div class="columns">
 <div>
 
-### Why Raise Exceptions?
+### Why **Raise Exceptions**?
 
 You can explicitly trigger an error using the `raise` keyword.
 
@@ -511,7 +511,7 @@ except ValueError as e:
 
 ---
 
-### Engineering Example: Actuator Limits
+### Engineering Example: **Actuator Limits**
 
 A linear actuator has a maximum extension length. We must prevent commands that exceed this.
 
@@ -724,7 +724,9 @@ A heater control loop is misbehaving.
 
 ```python
 while True:
-    current_temp = read_sensor() # Returns "25.0"?
+    current_temp = read_sensor()
+    # -> Returns "25.0"?
+    
     target_temp = 100.0
     
     # Bug: String vs Float comparison logic
