@@ -137,6 +137,73 @@ print(my_list[5])
 <div class="columns">
 <div class="two">
 
+### Common Built-in Exceptions (1/2)
+
+- **`ValueError`**: Right type, but inappropriate value.
+  - Example: `int("abc")` (expects digits).
+- **`KeyError`**: Looking up a dictionary key that doesn't exist.
+  - Example: `my_dict['id']` where `'id'` is missing.
+- **`AttributeError`**: Trying to use a method or property that doesn't exist for that object.
+  - Example: `my_list.push(5)` (should be `append`).
+
+</div>
+<div class="two">
+
+```python
+# ValueError
+age = int("old")
+
+# KeyError
+prices = {"apple": 0.5}
+print(prices["banana"])
+
+# AttributeError
+text = "Python"
+text.reverse() 
+# strings have no reverse() method
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
+### Common Built-in Exceptions (2/2)
+
+- **`FileNotFoundError`**: Trying to open a file that doesn't exist on the disk.
+  - Example: `open("config.json")`
+- **`ModuleNotFoundError`**: Trying to import a library that isn't installed.
+  - Example: `import pandas` (if not installed).
+- **`OverflowError`**: A calculation exceeds the maximum limit for a numeric type.
+  - Example: `2.0**10000`
+
+</div>
+<div class="two">
+
+```python
+# FileNotFoundError
+with open("missing_data.csv") as f:
+    pass
+
+# ModuleNotFoundError
+import super_cool_ai_library
+
+# OverflowError
+import math
+print(math.exp(1000))
+```
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div class="two">
+
 ### **Logical** Errors
 
 **"The Silent Failure"**
@@ -211,6 +278,8 @@ Identify the type of error (Syntax, Runtime, or Logical) in the following scenar
 3.  **Code:** `value = int("ten")` (trying to convert a non-numeric string).
 4.  **Code:** `def my_func() print("Hi")` (missing colon).
 5.  **Code:** You write a loop to count to 10, but it counts to 9.
+6.  **Code:** `data = {"temp": 25.5}; print(data["humidity"])` (key is missing).
+7.  **Code:** `import math; print(math.calculat_sqrt(4))` (typo in method name).
 
 ---
 
