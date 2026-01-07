@@ -35,6 +35,9 @@ Errors are an inevitable part of programming. Understanding them is the first st
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Reality of Bugs
 
 > "If debugging is the process of removing software bugs, then programming must be the process of putting them in." – Edsger W. Dijkstra
@@ -42,6 +45,14 @@ Errors are an inevitable part of programming. Understanding them is the first st
 - **Bugs are normal:** Every developer, from beginner to expert, makes mistakes.
 - **Feedback:** Errors are not failures; they are feedback mechanisms telling you what needs to be fixed.
 - **Categories:** Python errors generally fall into three categories: Syntax, Runtime, and Logical.
+
+</div>
+<div>
+
+![](./Images/Reality_of_Bugs.png)
+
+</div>
+</div>
 
 ---
 
@@ -76,7 +87,7 @@ def my_func():
 print("Wrong indentation")
 ```
 
-VS Code usually highlights these with red squiggly lines immediately.
+*VS Code usually highlights these with red squiggly lines immediately.*
 
 </div>
 </div>
@@ -116,7 +127,7 @@ my_list = [1, 2, 3]
 print(my_list[5])
 ```
 
-These cause the program to stop immediately unless handled.
+*These cause the program to stop immediately unless handled.*
 
 </div>
 </div>
@@ -217,6 +228,9 @@ Robust software must anticipate and handle problems, not just crash.
 
 ---
 
+<div class="columns">
+<div>
+
 ### What is Exception Handling?
 
 In the "Happy Path," everything goes right. In the real world, files are missing, networks fail, and users enter bad data.
@@ -224,6 +238,14 @@ In the "Happy Path," everything goes right. In the real world, files are missing
 **Exception Handling** allows us to "catch" errors (exceptions) when they occur and handle them gracefully, preventing the program from crashing.
 
 **Analogy:** wearing a safety harness. If you slip (error), you don't fall (crash); the harness catches you.
+
+</div>
+<div>
+
+![Fun illustration of exception handling as a safety harness](./Images/Exception_Handling.png)
+
+</div>
+</div>
 
 ---
 
@@ -240,6 +262,8 @@ If an error occurs, execution jumps immediately to the `except` block.
 
 </div>
 <div class="two">
+
+**Example:**
 
 ```python
 try:
@@ -356,13 +380,13 @@ Visualizing the path of execution through `try`, `except`, `else`, and `finally`
 
 ---
 
+<div class="columns top">
+<div class="three">
+
 ### Engineering Example: Robust Sensor Reading
 
 
-We need to read a sensor value from a string (e.g., from a serial port).
-
-<div class="columns top">
-<div class="three">
+Read a sensor value from a string (e.g., from a serial port).
 
 ```python
 def process_sensor_data(raw_data):
@@ -392,6 +416,8 @@ def process_sensor_data(raw_data):
 process_sensor_data("25.5")
 ```
 
+*Output:*
+
 ```
 Reading processed: 25.5
 Sensor cycle complete.
@@ -402,6 +428,8 @@ Sensor cycle complete.
 ```python
 process_sensor_data("abc")
 ```
+
+*Output:*
 
 ```
 Data Error: ...
@@ -437,6 +465,9 @@ Sometimes, *you* need to be the one to stop the program.
 
 ---
 
+<div class="columns">
+<div>
+
 ### Why Raise Exceptions?
 
 You can explicitly trigger an error using the `raise` keyword.
@@ -445,6 +476,14 @@ You can explicitly trigger an error using the `raise` keyword.
 1.  **Enforce Rules:** Prevent code from running with invalid data (e.g., setting a motor speed to -9999).
 2.  **Signal Caller:** Inform the function that called your code that something went wrong and it cannot continue.
 3.  **Fail Fast:** It's better to stop immediately than to produce corrupt data that causes problems later.
+
+</div>
+<div>
+
+![A fun technical illustration of raising an exception](./Images/Raise_Exception.png)
+
+</div>
+</div>
 
 ---
 
@@ -472,9 +511,6 @@ except ValueError as e:
 
 ---
 
-<div class="columns">
-<div class="four">
-
 ### Engineering Example: Actuator Limits
 
 A linear actuator has a maximum extension length. We must prevent commands that exceed this.
@@ -494,14 +530,6 @@ def extend_actuator(length_mm):
 
     print(f"Actuator extending to {length_mm}mm...")
 ```
-
-</div>
-<div>
-
-![Diagram showing a linear actuator with limit switches, illustrating the physical limits enforced by code. (Tikz)](./Diagrams/Tikz/actuator_limits.tikz.svg)
-
-</div>
-</div>
 
 ---
 
@@ -552,6 +580,9 @@ When things go wrong, how do you find the root cause?
 
 ---
 
+<div class="columns">
+<div class="two">
+
 ### The Debugging Mindset
 
 > "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." – Brian Kernighan
@@ -561,6 +592,14 @@ When things go wrong, how do you find the root cause?
 3.  **Isolate:** Narrow down where the error is (which function? which line?).
 4.  **Hypothesize:** What do you *think* is happening?
 5.  **Verify:** Test your hypothesis.
+
+</div>
+<div class="two">
+
+![A fun illustration of the debugging mindset](./Images/Debugging_Mindset.png)
+
+</div>
+</div>
 
 ---
 
@@ -589,6 +628,9 @@ def complex_calculation(x):
 
 ---
 
+<div class="columns">
+<div class="two">
+
 ### Rubber Duck Debugging
 
 The method of debugging code by explaining it, line-by-line, to an inanimate object (like a rubber duck).
@@ -596,7 +638,13 @@ The method of debugging code by explaining it, line-by-line, to an inanimate obj
 - **Why it works:** Explaining the problem forces you to slow down and articulate your logic.
 - Often, you'll find the bug halfway through the explanation: *"So the loop iterates over the list and... wait, I'm iterating over the wrong list."*
 
-![bg right:30%](./Images/Rubber_Duck.jpg)
+</div>
+<div class="two">
+
+![A fun technical illustration of rubber duck debugging](./Images/Rubber_Duck_Debugging.png)
+
+</div>
+</div>
 
 ---
 
