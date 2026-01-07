@@ -924,6 +924,29 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 
 ---
 
+<div class="columns">
+<div class="two">
+
+### **Breakpoints**: Stopping Time
+
+A breakpoint is an intentional pausing point in a program.
+
+- **How to set:** Click to the left of the line number in VS Code (a red dot appears).
+- **What happens:** When Python reaches that line, it **stops** before executing it.
+- **Why use them:** You can "freeze" the program's state to see exactly what is happening at a specific moment.
+
+</div>
+<div class="two">
+
+![Illustration of setting a breakpoint in VS Code](./Images/VS_Code_Breakpoint.png)
+
+*Think of it as a "Pause" button for your code.*
+
+</div>
+</div>
+
+---
+
 ### Stepping Through Code
 
 Once paused at a breakpoint, you use these controls:
