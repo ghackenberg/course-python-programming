@@ -867,16 +867,61 @@ When things go wrong, how do you find the root cause?
 
 ---
 
+<div class="columns">
+<div>
+
+### The Fibonacci Sequence
+
+The Fibonacci sequence is a classic mathematical series often used in programming interviews and debugging exercises.
+
+**Definition:**
+Each number is the sum of the two preceding ones.
+
+$$
+F_n = F_{n-1} + F_{n-2}
+$$
+
+**Base Cases:**
+$$
+F_0 = 0, \quad F_1 = 1
+$$
+
+**The Sequence:**
+$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots$
+
+</div>
+<div>
+
+| Index ($n$) | Calculation ($F_{n-1} + F_{n-2}$) | Result ($F_n$) |
+| :--- | :--- | :--- |
+| 0 | Base Case | 0 |
+| 1 | Base Case | 1 |
+| 2 | $0 + 1$ | 1 |
+| 3 | $1 + 1$ | 2 |
+| 4 | $1 + 2$ | 3 |
+| 5 | $2 + 3$ | 5 |
+| 6 | $3 + 5$ | 8 |
+| 7 | $5 + 8$ | 13 |
+| 8 | $8 + 13$ | 21 |
+
+</div>
+</div>
+
+---
+
 ### Example: The "Zero" Bug
 
 Let's look at a common logical error in `Debugging.py`.
 
 ```python
 def calculate_factorial(n):
+
     result = 1
+
     # Bug: range(n) starts at 0!
     for i in range(n):
         result = result * i
+
     return result
 
 print(calculate_factorial(5))
