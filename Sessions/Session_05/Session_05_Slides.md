@@ -872,7 +872,7 @@ When things go wrong, how do you find the root cause?
 
 ### The Fibonacci Sequence
 
-The Fibonacci sequence is a classic mathematical series often used in programming interviews and debugging exercises.
+The Fibonacci sequence is a classic mathe-matical series often used in programming interviews and debugging exercises.
 
 **Definition:**
 Each number is the sum of the two preceding ones.
@@ -887,7 +887,9 @@ F_0 = 0, \quad F_1 = 1
 $$
 
 **The Sequence:**
-$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots$
+$$
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots
+$$
 
 </div>
 <div>
@@ -908,6 +910,9 @@ $0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots$
 </div>
 
 ---
+
+<div class="columns">
+<div>
 
 ### Example: The "Zero" Bug
 
@@ -930,6 +935,15 @@ print(calculate_factorial(5))
 
 **Why is it 0?**
 Let's use the debugger to find out.
+
+</div>
+<div>
+
+![A fun illustration of the zero bug](./Images/Zero_Bug.png)
+
+
+</div>
+</div>
 
 ---
 
@@ -1219,14 +1233,15 @@ def calculate_factorial(n):
 
 ---
 
-<div class="columns">
-<div class="two">
-
 ### Engineering Example: Debugging a Control Loop
 
 A heater control loop is misbehaving.
 
+<div class="columns">
+<div class="two">
+
 **Scenario:** The heater never turns off.
+
 **Debug Steps:**
 1.  Set **Breakpoint** inside the `while` loop.
 2.  **Watch** `current_temp` and `target_temp`.
