@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Category: Session 05 Test 04 -->
+  <question type="category">
+    <category>
+      <text>$course$/Session_05/Test_04</text>
+    </category>
+  </question>
+
+  <!-- Question 1: Sensor Data Scenario -->
+  <question type="multichoice">
+    <name>
+      <text>Scenario - Sensor Data</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You are parsing sensor data: <code>value = float("")</code>. The string is empty. What error occurs?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Converting an empty string to a float raises a <code>ValueError</code>.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[ValueError]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeError]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[IndexError]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[0.0]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It does not default to 0.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 2: Predict Output - Else -->
+  <question type="multichoice">
+    <name>
+      <text>Predict Output - Else</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Predict the output:</p>
+<pre><code class="language-python">try:
+    x = 5
+except:
+    print("Error")
+else:
+    print("Success")</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>No error occurs in the try block, so the <code>except</code> block is skipped and the <code>else</code> block runs.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Success]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Error]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Error Success]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[(Nothing is printed)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 3: Logical Error - Loop -->
+  <question type="multichoice">
+    <name>
+      <text>Logical Error - Loop</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is wrong with this loop?</p>
+<pre><code class="language-python">n = 5
+while n > 0:
+    print(n)
+    n + 1</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The line <code>n + 1</code> calculates a value but doesn't assign it back to <code>n</code>. Thus, <code>n</code> remains 5, causing an infinite loop.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Infinite loop (n is not updated).]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Syntax Error at n + 1.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. It's valid syntax (just useless).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It prints 1 to 5.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It prints 5, 6, 7...]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. n stays 5.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 4: Debugging Mindset -->
+  <question type="multichoice">
+    <name>
+      <text>Debugging Mindset - Isolate</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does "Isolate the Bug" mean in the debugging mindset?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Isolating means narrowing down the search area to a specific function or block of code where the error is likely happening.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Narrowing down where the error is located.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Putting the computer in a separate room.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Deleting the buggy code immediately.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Asking for help immediately.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 5: Exception Breakpoints -->
+  <question type="multichoice">
+    <name>
+      <text>Debugger - Exception Breakpoints</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In VS Code, checking "Raised Exceptions" in the breakpoints list allows you to...</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>It causes the debugger to pause automatically whenever an exception occurs, just before the crash.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Pause execution immediately when an error occurs.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ignore all exceptions.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Highlight syntax errors.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Fix the exception automatically.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 6: Difficulty to Fix -->
+  <question type="multichoice">
+    <name>
+      <text>Error Difficulty Comparison</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>According to the slides, which type of error is generally the hardest to fix and why?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Logical errors are hardest because Python gives no error message; you must verify the output yourself.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Logical Error, because there is no error message.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Syntax Error, because the code doesn't run.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. These are usually easy to fix.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Runtime Error, because it crashes.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The traceback usually points to the issue.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[All are equally hard.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 7: Range Logic -->
+  <question type="multichoice">
+    <name>
+      <text>Logical Error - Factorial</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the "Zero Bug" example from the slides, why did the factorial function return 0?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The loop used <code>range(n)</code> which includes 0. Multiplying the result by 0 made the total 0.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The loop included 0, and multiplying by 0 clears the result.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The function returned before the loop started.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Factorial of any number is 0.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[There was a syntax error.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 8: Catch-All Exception -->
+  <question type="multichoice">
+    <name>
+      <text>Catch-All Exception</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which block catches <strong>any</strong> runtime error that wasn't caught by previous blocks?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><code>except Exception:</code> or a bare <code>except:</code> catches all exceptions.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[except Exception:]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[finally:]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[else:]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[catch_all:]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 9: Engineering Example -->
+  <question type="multichoice">
+    <name>
+      <text>Scenario - Robot Arm</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the Robot Arm example, using <code>sin</code> instead of <code>cos</code> results in the robot punching a wall. What type of error is this?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The code runs and calculates a value, but the calculation is wrong (wrong logic). This is a Logical Error.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Logical Error]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Runtime Error]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Syntax Error]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hardware Error]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. While hardware is damaged, the cause is a software logical error.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 10: Stack Frames -->
+  <question type="multichoice">
+    <name>
+      <text>Debugger - Stack Frames</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In the Call Stack, where is the most recently called function (the currently running one) located?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>The Call Stack is LIFO (Last-In, First-Out). The most recent function is at the top.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[At the top.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[At the bottom.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[In the middle.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It is not shown.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: Assertive Programming (Raise) -->
+  <question type="multichoice">
+    <name>
+      <text>Scenario - Validation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You have a function <code>set_age(age)</code>. If <code>age</code> is "old" (a string), what should you do?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>You should check the type or try to convert it, and raise a TypeError or ValueError if the input is invalid.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Raise a TypeError or ValueError.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Set age to 0.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. Silent failure is bad.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Print "Error" and continue.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect. The program might crash later.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Delete the user.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: Debugger Toolbar -->
+  <question type="multichoice">
+    <name>
+      <text>Debugger - Continue</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which button/key resumes program execution until the next breakpoint is hit?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Continue (F5) resumes execution.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Continue (F5)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Step Over (F10)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Step Into (F11)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Stop (Shift+F5)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13: Order of Operations -->
+  <question type="multichoice">
+    <name>
+      <text>Logical Error - Parentheses</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>To fix the logic error in <code>avg = 2 + 4 / 2</code> (which results in 4.0 instead of 3.0), what should you do?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>You need parentheses to force addition before division: <code>(2 + 4) / 2</code>.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Add parentheses: (2 + 4) / 2]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Use integer division: 2 + 4 // 2]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Change the numbers.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Import the math library.]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 14: Try-Except-Finally Output -->
+  <question type="multichoice">
+    <name>
+      <text>Predict Output - Finally</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Predict the output:</p>
+<pre><code class="language-python">try:
+    print("A")
+    1/0
+except:
+    print("B")
+finally:
+    print("C")</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>"A" prints. Error occurs. "B" prints (except). "C" prints (finally).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A, B, C]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A, C]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A, B]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[B, C]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+  <!-- Question 15: Syntax vs Logical -->
+  <question type="multichoice">
+    <name>
+      <text>Syntax vs Logical Identification</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of these is a Logical Error?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Calculating area as <code>r * 2</code> instead of <code>r ** 2</code> is a valid Python statement, but logically wrong for area.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[area = radius * 2 (instead of radius ** 2)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[print("Hello"]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect (Syntax).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[x = 1/0]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect (Runtime).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[if x > 5]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Incorrect (Syntax).</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
