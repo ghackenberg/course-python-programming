@@ -938,8 +938,8 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 - **Breakpoints:** Click the red dot in the margin to tell Python to PAUSE execution at that line.
 - **Variables Window:** See the current value of *every* variable while paused.
 - **Watch Window:** Track specific expressions (e.g., `result * i`).
-- **Call Stack Window:** TODO
-- **Breakpoints Window:** TODO
+- **Call Stack Window:** View the active function calls.
+- **Breakpoints Window:** Manage breakpoints and catch crashes.
 - **Debug Toolbar:** Controls for moving through code.
 
 ---
@@ -947,7 +947,13 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 <div class="columns">
 <div>
 
-TODO Python file editor, line numbers (Click to add a breakpoint)
+### Setting a **Breakpoint**
+
+A **breakpoint** is a marker that tells the debugger to **PAUSE** execution at a specific line.
+
+- **How to set:** Click to the left of the line number in the editor (or press `F9`).
+- **Visual:** A red dot appears.
+- **Effect:** When Python reaches this line, it freezes, allowing you to inspect the state.
 
 </div>
 <div>
@@ -962,7 +968,13 @@ TODO Python file editor, line numbers (Click to add a breakpoint)
 <div class="columns">
 <div>
 
-TODO Python file editor, run button (Python Debugger: Debug Python File)
+### Starting the **Debugger**
+
+You must start the program in "Debug Mode" (not just Run).
+
+- **Run Button:** Click the small down-arrow next to the Run button and select **"Debug Python File"**.
+- **Sidebar:** Click the "Run and Debug" icon (Play button with a bug) and click "Run and Debug".
+- **Shortcut:** Press `F5`.
 
 </div>
 <div>
@@ -977,7 +989,13 @@ TODO Python file editor, run button (Python Debugger: Debug Python File)
 <div class="columns">
 <div>
 
-TODO Python debugger perspective, python file viewer (Yellow current line marker, temporary variable value annotations)
+### The **Debug View**
+
+When execution hits a breakpoint, VS Code enters debug mode.
+
+- **Yellow Line:** The line that is *about to be executed*.
+- **Debug Sidebar:** Opens on the left, displaying variables and stack.
+- **Status Bar:** Turns orange to indicate debugging is active.
 
 </div>
 <div>
@@ -992,7 +1010,15 @@ TODO Python debugger perspective, python file viewer (Yellow current line marker
 <div class="columns">
 <div>
 
-TODO Debugger Toolbar (Continue, Step over, Step into, Step out)
+### The **Debug Toolbar**
+
+Controls the flow of execution.
+
+1.  **Continue (F5):** Resume running until the next breakpoint.
+2.  **Step Over (F10):** Execute the current line. (Does not enter functions).
+3.  **Step Into (F11):** Jump *inside* the function call.
+4.  **Step Out (Shift+F11):** Finish current function and return.
+5.  **Stop (Shift+F5):** Terminate the program.
 
 </div>
 <div>
@@ -1013,7 +1039,14 @@ TODO Debugger Toolbar (Continue, Step over, Step into, Step out)
 <div class="columns">
 <div>
 
-TODO Variables window (Locals and globals)
+### Inspecting **Variables**
+
+The **Variables** section shows the current memory state.
+
+- **Locals:** Variables inside the current function scope.
+- **Globals:** Variables defined at the module level.
+- **Inspect:** Expand lists and objects to see their contents.
+- **Modify:** You can double-click a value to change it while the program is paused!
 
 </div>
 <div>
@@ -1028,7 +1061,13 @@ TODO Variables window (Locals and globals)
 <div class="columns">
 <div>
 
-TODO Watch window (custom expressions)
+### The **Watch** Window
+
+Track specific expressions that aren't just simple variables.
+
+- **Custom Expressions:** Click `+` and type any valid Python code (e.g., `i * 2` or `len(my_list) > 0`).
+- **Live Updates:** The value is re-calculated every time you step.
+- **Focus:** Helps you ignore noise and focus on key data.
 
 </div>
 <div>
@@ -1043,7 +1082,13 @@ TODO Watch window (custom expressions)
 <div class="columns">
 <div>
 
-TODO Call stack window (<module> and calculate_factorial)
+### The **Call Stack**
+
+Shows the chain of function calls that led to the current line.
+
+- **Stack Frames:** The top item is the current function. The item below called it, and so on.
+- **Navigation:** Click on a lower frame to "jump back in time" and see the variables in that function's scope.
+- **Context:** Essential for understanding *how* you got to a specific state.
 
 </div>
 <div>
@@ -1058,7 +1103,13 @@ TODO Call stack window (<module> and calculate_factorial)
 <div class="columns">
 <div>
 
-TODO Breakpoints window (Raised exceptions, uncaught exceptions, user uncaught exceptions, ...)
+### The **Breakpoints** List
+
+Manages where the debugger should stop.
+
+- **Toggle:** Enable/Disable breakpoints without deleting them.
+- **Exception Breakpoints:** Check **"Raised Exceptions"** to make the debugger stop *immediately* when a crash occurs (before the program exits).
+    - This is the "Magic Button" for finding bugs!
 
 </div>
 <div>
