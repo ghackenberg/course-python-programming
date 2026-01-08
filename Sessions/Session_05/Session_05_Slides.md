@@ -867,28 +867,46 @@ When things go wrong, how do you find the root cause?
 
 ---
 
+### Example: The "Zero" Bug
+
+Let's look at a common logical error in `Debugging.py`.
+
+```python
+def calculate_factorial(n):
+    result = 1
+    # Bug: range(n) starts at 0!
+    for i in range(n):
+        result = result * i
+    return result
+
+print(calculate_factorial(5))
+# Output: 0 (Expected 120)
+```
+
+**Why is it 0?**
+Let's use the debugger to find out.
+
+---
+
 ### Print Debugging
 
 The simplest way to see what's happening is inserting `print()` statements.
 
 ```python
-def complex_calculation(x):
-    print(f"DEBUG: Start calc, x={x}") # Trace entry
-    
-    y = x * 2
-    print(f"DEBUG: y calculated as {y}") # Trace intermediate
-    
-    if y > 10:
-        z = y + 5
-    else:
-        z = y - 5
-        
-    print(f"DEBUG: Final z={z}") # Trace result
-    return z
+def calculate_factorial(n):
+    result = 1
+    for i in range(n):
+        print(f"DEBUG: i={i}, result={result}") # Trace execution
+        result = result * i
+    return result
 ```
 
+**Output:**
+`DEBUG: i=0, result=1`
+`DEBUG: i=1, result=0` ... *Ah! `i` starts at 0.*
+
 **Pros:** fast, no tools needed.
-**Cons:** messy, need to remove them later, hard for complex objects.
+**Cons:** messy, need to remove them later.
 
 ---
 
@@ -900,7 +918,7 @@ def complex_calculation(x):
 The method of debugging code by explaining it, line-by-line, to an inanimate object (like a rubber duck).
 
 - **Why it works:** Explaining the problem forces you to slow down and articulate your logic.
-- Often, you'll find the bug halfway through the explanation: *"So the loop iterates over the list and... wait, I'm iterating over the wrong list."*
+- Often, you'll find the bug halfway through the explanation: *"So the loop starts at 0... wait, it shouldn't multiply by 0!"*
 
 </div>
 <div class="two">
@@ -919,76 +937,167 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 **Key Features:**
 - **Breakpoints:** Click the red dot in the margin to tell Python to PAUSE execution at that line.
 - **Variables Window:** See the current value of *every* variable while paused.
-- **Watch Window:** Track specific expressions (e.g., `x + y`).
+- **Watch Window:** Track specific expressions (e.g., `result * i`).
 - **Debug Toolbar:** Controls for moving through code.
 
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
-### **Breakpoints**: Stopping Time
-
-A breakpoint is an intentional pausing point in a program.
-
-- **How to set:** Click to the left of the line number in VS Code (a red dot appears).
-- **What happens:** When Python reaches that line, it **stops** before executing it.
-- **Why use them:** You can "freeze" the program's state to see exactly what is happening at a specific moment.
+TODO Click to add a breakpoint
 
 </div>
-<div class="two">
+<div>
 
-![Illustration of setting a breakpoint in VS Code](./Images/VS_Code_Breakpoint.png)
-
-*Think of it as a "Pause" button for your code.*
+![Illustration of setting a breakpoint in VS Code](./Screenshots/VS_Code_Debugger_Breakpoints.png)
 
 </div>
 </div>
-
----
-
-### Stepping Through Code
-
-Once paused at a breakpoint, you use these controls:
-
-1.  **Continue (`F5`):** Run until the next breakpoint.
-2.  **Step Over (`F10`):** Run the current line. If it's a function call, do the whole function and stop at the next line in *current* file.
-3.  **Step Into (`F11`):** If the current line is a function call, go *inside* that function.
-4.  **Step Out (`Shift+F11`):** Run the rest of the current function and return to the caller.
 
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
-### Inspecting Variables
-
-When paused, look at the **Variables** pane on the left.
-
-- You can see lists, dictionaries, and objects expanded.
-- You can see exactly how data changes step-by-step.
-- You can even **change** values on the fly to test "what-if" scenarios without restarting.
+TODO Python Debugger: Debug Python File
 
 </div>
-<div class="two">
+<div>
 
-![Screenshot or diagram of the VS Code debugger interface showing variables, watch window, and call stack. (Placeholder)](./Images/VS_Code_Debugger.jpg)
+![](./Screenshots/VS_Code_Debugger_Run.png)
 
 </div>
 </div>
 
 ---
 
-### The Call Stack
+<div class="columns">
+<div>
 
-The **Call Stack** shows you the chain of function calls that led to the current line.
+TODO Yellow current line marker, temporary variable value annotations
 
-- `Function C` (Current location)
-- called by `Function B`
-- called by `Function A`
-- called by `<module>` (Main script)
+</div>
+<div>
 
-**Why it's useful:** If `Function C` crashes, looking at the call stack helps you understand *who* called it and *why* it received bad arguments.
+![](./Screenshots/VS_Code_Debugger_Controls.png)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+TODO Controls (Continue, Step over, Step into, Step out)
+
+</div>
+<div>
+
+![](./Screenshots/VS_Code_Debugger_Controls.png)
+
+</div>
+</div>
+
+---
+
+<!-- class: blank -->
+
+![bg contain 80%](./Images/Debugging_Controls.png)
+
+---
+
+<div class="columns">
+<div>
+
+TODO Locals and globals
+
+</div>
+<div>
+
+![](./Screenshots/VS_Code_Debugger_Variables.png)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+TODO Watch expressions
+
+</div>
+<div>
+
+![](./Screenshots/VS_Code_Debugger_Watch.png)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+TODO Call stack (<module> and calculate_factorial)
+
+</div>
+<div>
+
+![](./Screenshots/VS_Code_Debugger_Call_Stack.png)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
+TODO Breakpoints (Raised exceptions, uncaught exceptions, user uncaught exceptions, ...)
+
+</div>
+<div>
+
+![](./Screenshots/VS_Code_Debugger_Active_Breakpoints.png)
+
+</div>
+</div>
+
+---
+
+### The Fix: Adjusting the Range
+
+To fix the logical error, we must ensure the loop starts at `1` or iterates over the correct values.
+
+<div class="columns">
+<div class="two">
+
+**Option A: Range with Start**
+```python
+def calculate_factorial(n):
+    result = 1
+    # Start at 1, end at n
+    for i in range(1, n + 1):
+        result *= i
+    return result
+```
+
+</div>
+<div class="two">
+
+**Option B: Using Math Library**
+```python
+import math
+
+def calculate_factorial(n):
+    return math.factorial(n)
+```
+
+</div>
+</div>
 
 ---
 
