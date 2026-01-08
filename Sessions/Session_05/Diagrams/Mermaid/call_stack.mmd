@@ -1,0 +1,17 @@
+graph BT
+    %% Styling for the frames
+    classDef active fill:#ffeb3b,stroke:#333,stroke-width:4px;
+    classDef paused fill:#e3f2fd,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+    
+    subgraph Stack ["Call Stack (Last-In, First-Out)"]
+        direction BT
+        
+        Frame1["<b>Stack Frame 1 (Bottom)</b><br/>Function: <code>main()</code><br/>Status: Waiting<br/>Line: 42<br/><code>result = process_request()</code>"]:::paused
+        
+        Frame2["<b>Stack Frame 2</b><br/>Function: <code>process_request()</code><br/>Status: Waiting<br/>Line: 15<br/><code>data = verify_user()</code>"]:::paused
+        
+        Frame3["<b>Stack Frame 3 (Top)</b><br/>Function: <code>verify_user()</code><br/>Status: <b>Active</b><br/>Line: 5<br/><code>if user_id is None:</code>"]:::active
+        
+        Frame1 --> |Calls| Frame2
+        Frame2 --> |Calls| Frame3
+    end

@@ -1103,6 +1103,26 @@ Shows the chain of function calls that led to the current line.
 <div class="columns">
 <div>
 
+### Visualizing the **Call Stack**
+
+- **LIFO Structure:** Last-In, First-Out. The most recent function is on top.
+- **Stack Frames:** Each block represents a function call.
+- **Active Frame:** The top frame is the one currently running.
+- **Paused Frames:** Frames below are waiting for the function above to return.
+
+</div>
+<div>
+
+![Illustration of the call stack](./Images/Call_Stack_Illustration.png)
+
+</div>
+</div>
+
+---
+
+<div class="columns">
+<div>
+
 ### The **Breakpoints** List
 
 Manages where the debugger should stop.
