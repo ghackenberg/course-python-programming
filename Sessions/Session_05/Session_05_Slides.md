@@ -938,6 +938,8 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 - **Breakpoints:** Click the red dot in the margin to tell Python to PAUSE execution at that line.
 - **Variables Window:** See the current value of *every* variable while paused.
 - **Watch Window:** Track specific expressions (e.g., `result * i`).
+- **Call Stack Window:** TODO
+- **Breakpoints Window:** TODO
 - **Debug Toolbar:** Controls for moving through code.
 
 ---
@@ -945,7 +947,7 @@ VS Code has a powerful built-in debugger. Stop using `print()` for hard problems
 <div class="columns">
 <div>
 
-TODO Click to add a breakpoint
+TODO Python file editor, line numbers (Click to add a breakpoint)
 
 </div>
 <div>
@@ -960,7 +962,7 @@ TODO Click to add a breakpoint
 <div class="columns">
 <div>
 
-TODO Python Debugger: Debug Python File
+TODO Python file editor, run button (Python Debugger: Debug Python File)
 
 </div>
 <div>
@@ -975,7 +977,7 @@ TODO Python Debugger: Debug Python File
 <div class="columns">
 <div>
 
-TODO Yellow current line marker, temporary variable value annotations
+TODO Python debugger perspective, python file viewer (Yellow current line marker, temporary variable value annotations)
 
 </div>
 <div>
@@ -990,7 +992,7 @@ TODO Yellow current line marker, temporary variable value annotations
 <div class="columns">
 <div>
 
-TODO Controls (Continue, Step over, Step into, Step out)
+TODO Debugger Toolbar (Continue, Step over, Step into, Step out)
 
 </div>
 <div>
@@ -1011,7 +1013,7 @@ TODO Controls (Continue, Step over, Step into, Step out)
 <div class="columns">
 <div>
 
-TODO Locals and globals
+TODO Variables window (Locals and globals)
 
 </div>
 <div>
@@ -1026,7 +1028,7 @@ TODO Locals and globals
 <div class="columns">
 <div>
 
-TODO Watch expressions
+TODO Watch window (custom expressions)
 
 </div>
 <div>
@@ -1041,7 +1043,7 @@ TODO Watch expressions
 <div class="columns">
 <div>
 
-TODO Call stack (<module> and calculate_factorial)
+TODO Call stack window (<module> and calculate_factorial)
 
 </div>
 <div>
@@ -1056,7 +1058,7 @@ TODO Call stack (<module> and calculate_factorial)
 <div class="columns">
 <div>
 
-TODO Breakpoints (Raised exceptions, uncaught exceptions, user uncaught exceptions, ...)
+TODO Breakpoints window (Raised exceptions, uncaught exceptions, user uncaught exceptions, ...)
 
 </div>
 <div>
