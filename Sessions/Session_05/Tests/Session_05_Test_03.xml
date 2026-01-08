@@ -10,7 +10,7 @@
   <!-- Question 1: Try Execution Flow -->
   <question type="multichoice">
     <name>
-      <text>Try-Except Flow (Exception)</text>
+      <text>Q01: Try-Except Flow (Exception)</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider the following code:</p>
@@ -60,7 +60,7 @@ except ZeroDivisionError:
   <!-- Question 2: Step Into -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Step Into</text>
+      <text>Q02: Debugger - Step Into</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When debugging, if the current line is <code>my_function()</code>, what does <strong>Step Into</strong> (F11) do?</p>]]></text>
@@ -103,7 +103,7 @@ except ZeroDivisionError:
   <!-- Question 3: Step Out -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Step Out</text>
+      <text>Q03: Debugger - Step Out</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the purpose of <strong>Step Out</strong> (Shift+F11)?</p>]]></text>
@@ -146,7 +146,7 @@ except ZeroDivisionError:
   <!-- Question 4: Logical Error - Operator Precedence -->
   <question type="multichoice">
     <name>
-      <text>Logical Error - Precedence</text>
+      <text>Q04: Logical Error - Precedence</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the result of <code>2 + 4 / 2</code>?</p>]]></text>
@@ -189,7 +189,7 @@ except ZeroDivisionError:
   <!-- Question 5: Raising specific error -->
   <question type="multichoice">
     <name>
-      <text>Raising ValueError</text>
+      <text>Q05: Raising ValueError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you write a function to set a motor speed, and the input is negative, which is the most appropriate error to raise?</p>]]></text>
@@ -232,7 +232,7 @@ except ZeroDivisionError:
   <!-- Question 6: Variable Inspection -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Changing Variables</text>
+      <text>Q06: Debugger - Changing Variables</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>True or False: In VS Code Debugger, you can manually change the value of a variable while the program is paused.</p>]]></text>
@@ -263,7 +263,7 @@ except ZeroDivisionError:
   <!-- Question 7: Uncaught Exception -->
   <question type="multichoice">
     <name>
-      <text>Uncaught Exception</text>
+      <text>Q07: Uncaught Exception</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens if an exception is raised but there is no matching <code>except</code> block?</p>]]></text>
@@ -306,7 +306,7 @@ except ZeroDivisionError:
   <!-- Question 8: Multiple Except Blocks -->
   <question type="multichoice">
     <name>
-      <text>Multiple Except Blocks</text>
+      <text>Q08: Multiple Except Blocks</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Can you have multiple <code>except</code> blocks for a single <code>try</code> block?</p>]]></text>
@@ -349,7 +349,7 @@ except ZeroDivisionError:
   <!-- Question 9: Raising vs Returning -->
   <question type="multichoice">
     <name>
-      <text>Raising vs Returning Error Codes</text>
+      <text>Q09: Raising vs Returning Error Codes</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is raising an exception generally better than returning an error code (like -1)?</p>]]></text>
@@ -392,7 +392,7 @@ except ZeroDivisionError:
   <!-- Question 10: Exception as e -->
   <question type="multichoice">
     <name>
-      <text>Exception variable</text>
+      <text>Q10: Exception variable</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In <code>except ValueError as e:</code>, what is <code>e</code>?</p>]]></text>
@@ -435,7 +435,7 @@ except ZeroDivisionError:
   <!-- Question 11: OverflowError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - OverflowError</text>
+      <text>Q11: Runtime - OverflowError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What causes an <code>OverflowError</code>?</p>]]></text>
@@ -478,7 +478,7 @@ except ZeroDivisionError:
   <!-- Question 12: Dictionary Key Error -->
   <question type="multichoice">
     <name>
-      <text>Runtime - KeyError</text>
+      <text>Q12: Runtime - KeyError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p><code>data = {"a": 1}</code>. What happens if you access <code>data["b"]</code>?</p>]]></text>
@@ -521,7 +521,7 @@ except ZeroDivisionError:
   <!-- Question 13: Debugging - Locals -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Locals</text>
+      <text>Q13: Debugger - Locals</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the debugger Variables view, what are "Locals"?</p>]]></text>
@@ -564,7 +564,7 @@ except ZeroDivisionError:
   <!-- Question 14: Debugging - Active Line -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Active Line</text>
+      <text>Q14: Debugger - Active Line</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When the debugger pauses and highlights a line in yellow, that line has...</p>]]></text>
@@ -607,7 +607,7 @@ except ZeroDivisionError:
   <!-- Question 15: FileNotFoundError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - FileNotFoundError</text>
+      <text>Q15: Runtime - FileNotFoundError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which function call would raise a <code>FileNotFoundError</code>?</p>]]></text>

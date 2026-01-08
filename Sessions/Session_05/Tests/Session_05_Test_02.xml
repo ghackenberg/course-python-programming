@@ -10,7 +10,7 @@
   <!-- Question 1: Syntax Analysis -->
   <question type="multichoice">
     <name>
-      <text>Syntax Analysis - Parentheses</text>
+      <text>Q01: Syntax Analysis - Parentheses</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is wrong with the following code?</p>
@@ -54,7 +54,7 @@
   <!-- Question 2: Assignment vs Comparison -->
   <question type="multichoice">
     <name>
-      <text>Syntax - Assignment in If</text>
+      <text>Q02: Syntax - Assignment in If</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why does <code>if x = 5:</code> cause a Syntax Error?</p>]]></text>
@@ -97,7 +97,7 @@
   <!-- Question 3: IndexError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - IndexError</text>
+      <text>Q03: Runtime - IndexError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Given <code>list = [1, 2, 3]</code>, what error does <code>print(list[5])</code> raise?</p>]]></text>
@@ -140,7 +140,7 @@
   <!-- Question 4: Else Block -->
   <question type="multichoice">
     <name>
-      <text>Try-Except-Else</text>
+      <text>Q04: Try-Except-Else</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When using <code>try-except-else</code>, when does the code in the <strong>else</strong> block run?</p>]]></text>
@@ -183,7 +183,7 @@
   <!-- Question 5: Finally Block -->
   <question type="multichoice">
     <name>
-      <text>Finally Block Usage</text>
+      <text>Q05: Finally Block Usage</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is the <code>finally</code> block useful for file handling?</p>]]></text>
@@ -226,7 +226,7 @@
   <!-- Question 6: Call Stack -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Call Stack</text>
+      <text>Q06: Debugger - Call Stack</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does the <strong>Call Stack</strong> show in the debugger?</p>]]></text>
@@ -269,7 +269,7 @@
   <!-- Question 7: Watch Window -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Watch Window</text>
+      <text>Q07: Debugger - Watch Window</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What can you do in the <strong>Watch</strong> window of the debugger?</p>]]></text>
@@ -312,7 +312,7 @@
   <!-- Question 8: Floating Point Error -->
   <question type="multichoice">
     <name>
-      <text>Logical Error - Floating Point</text>
+      <text>Q08: Logical Error - Floating Point</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why does <code>0.1 + 0.2 == 0.3</code> return <code>False</code> in Python?</p>]]></text>
@@ -355,7 +355,7 @@
   <!-- Question 9: Raising Exceptions Purpose -->
   <question type="multichoice">
     <name>
-      <text>Raising Exceptions - Purpose</text>
+      <text>Q09: Raising Exceptions - Purpose</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is "Failing Fast" (raising an exception immediately) considered good practice?</p>]]></text>
@@ -398,7 +398,7 @@
   <!-- Question 10: Step Over vs Into -->
   <question type="multichoice">
     <name>
-      <text>Debugger - Step Over</text>
+      <text>Q10: Debugger - Step Over</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What does <strong>Step Over</strong> (F10) do?</p>]]></text>
@@ -441,7 +441,7 @@
   <!-- Question 11: Specific Exceptions -->
   <question type="multichoice">
     <name>
-      <text>Catching Specific Exceptions</text>
+      <text>Q11: Catching Specific Exceptions</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why is <code>except ValueError:</code> better than a bare <code>except:</code>?</p>]]></text>
@@ -484,7 +484,7 @@
   <!-- Question 12: NameError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - NameError</text>
+      <text>Q12: Runtime - NameError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What causes a <code>NameError</code>?</p>]]></text>
@@ -527,7 +527,7 @@
   <!-- Question 13: AttributeError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - AttributeError</text>
+      <text>Q13: Runtime - AttributeError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you try to call <code>"hello".append("x")</code>, what error do you get and why?</p>]]></text>
@@ -570,7 +570,7 @@
   <!-- Question 14: TypeError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - TypeError</text>
+      <text>Q14: Runtime - TypeError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What error is caused by <code>total = "Price: " + 100</code>?</p>]]></text>
@@ -613,7 +613,7 @@
   <!-- Question 15: ModuleNotFoundError -->
   <question type="multichoice">
     <name>
-      <text>Runtime - ModuleNotFoundError</text>
+      <text>Q15: Runtime - ModuleNotFoundError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you try to <code>import super_cool_ai_library</code> and it is not installed, what error occurs?</p>]]></text>

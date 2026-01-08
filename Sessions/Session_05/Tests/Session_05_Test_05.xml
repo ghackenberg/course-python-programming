@@ -10,7 +10,7 @@
   <!-- Question 1: Complex Try Logic -->
   <question type="multichoice">
     <name>
-      <text>Complex Try Logic</text>
+      <text>Q01: Complex Try Logic</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider:</p>
@@ -59,7 +59,7 @@ except ValueError:
   <!-- Question 2: Math.isclose -->
   <question type="multichoice">
     <name>
-      <text>Floating Point Fix</text>
+      <text>Q02: Floating Point Fix</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>How should you correctly compare two floats <code>a</code> and <code>b</code> for equality?</p>]]></text>
@@ -102,7 +102,7 @@ except ValueError:
   <!-- Question 3: Actuator Logic -->
   <question type="multichoice">
     <name>
-      <text>Scenario - Actuator</text>
+      <text>Q03: Scenario - Actuator</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You have a function <code>extend_actuator(length)</code>. If <code>length > MAX_LENGTH</code>, what should occur?</p>]]></text>
@@ -145,7 +145,7 @@ except ValueError:
   <!-- Question 4: Heater Control Debug -->
   <question type="multichoice">
     <name>
-      <text>Scenario - Heater</text>
+      <text>Q04: Scenario - Heater</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the heater control example, the heater never turned off because...</p>]]></text>
@@ -188,7 +188,7 @@ except ValueError:
   <!-- Question 5: Recursive Debugging -->
   <question type="multichoice">
     <name>
-      <text>Recursion Limit</text>
+      <text>Q05: Recursion Limit</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What error occurs if a function calls itself infinitely without a base case?</p>]]></text>
@@ -231,7 +231,7 @@ except ValueError:
   <!-- Question 6: Except Order -->
   <question type="multichoice">
     <name>
-      <text>Except Block Ordering</text>
+      <text>Q06: Except Block Ordering</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you have both <code>except ValueError:</code> and <code>except Exception:</code>, which one should come first?</p>]]></text>
@@ -274,7 +274,7 @@ except ValueError:
   <!-- Question 7: Traceback -->
   <question type="multichoice">
     <name>
-      <text>Traceback Information</text>
+      <text>Q07: Traceback Information</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What information does a Traceback primarily provide?</p>]]></text>
@@ -317,7 +317,7 @@ except ValueError:
   <!-- Question 8: Breakpoint Condition (Advanced) -->
   <question type="multichoice">
     <name>
-      <text>Conditional Breakpoints</text>
+      <text>Q08: Conditional Breakpoints</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Can you set a breakpoint that only pauses execution if <code>x > 100</code>?</p>]]></text>
@@ -360,7 +360,7 @@ except ValueError:
   <!-- Question 9: Continue vs Step Over -->
   <question type="multichoice">
     <name>
-      <text>Continue vs Step Over</text>
+      <text>Q09: Continue vs Step Over</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If you are at line 10 and put a breakpoint at line 50. Which command gets you to line 50 fastest?</p>]]></text>
@@ -403,7 +403,7 @@ except ValueError:
   <!-- Question 10: Finally Return -->
   <question type="multichoice">
     <name>
-      <text>Finally vs Return</text>
+      <text>Q10: Finally vs Return</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>If a <code>try</code> block has a <code>return</code> statement, does the <code>finally</code> block still run?</p>]]></text>
@@ -446,7 +446,7 @@ except ValueError:
   <!-- Question 11: Call Stack Navigation -->
   <question type="multichoice">
     <name>
-      <text>Call Stack Navigation</text>
+      <text>Q11: Call Stack Navigation</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Why would you click on a lower frame in the Call Stack?</p>]]></text>
@@ -489,7 +489,7 @@ except ValueError:
   <!-- Question 12: Raise Custom Message -->
   <question type="multichoice">
     <name>
-      <text>Raise Custom Message</text>
+      <text>Q12: Raise Custom Message</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>How do you raise a ValueError with a custom message "Invalid ID"?</p>]]></text>
@@ -532,7 +532,7 @@ except ValueError:
   <!-- Question 13: Debugging - Watch Expression -->
   <question type="multichoice">
     <name>
-      <text>Watch Expression Validity</text>
+      <text>Q13: Watch Expression Validity</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Can you put a function call like <code>len(my_list)</code> inside the Watch window?</p>]]></text>
@@ -575,7 +575,7 @@ except ValueError:
   <!-- Question 14: Try-Except Scope -->
   <question type="multichoice">
     <name>
-      <text>Try Block Scope</text>
+      <text>Q14: Try Block Scope</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Is a variable defined inside a <code>try</code> block accessible after the block (if no error occurs)?</p>]]></text>
@@ -618,7 +618,7 @@ except ValueError:
   <!-- Question 15: Defensive Programming -->
   <question type="multichoice">
     <name>
-      <text>Defensive Programming</text>
+      <text>Q15: Defensive Programming</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The practice of writing code that checks for invalid data and raises exceptions to protect itself is known as...</p>]]></text>

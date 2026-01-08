@@ -10,7 +10,7 @@
   <!-- Question 1: Basic Definition -->
   <question type="multichoice">
     <name>
-      <text>Types of Errors - Definition</text>
+      <text>Q01: Types of Errors - Definition</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which type of error occurs <strong>before</strong> the code is executed, preventing Python from understanding the script?</p>]]></text>
@@ -62,7 +62,7 @@
   <!-- Question 2: Analogy -->
   <question type="multichoice">
     <name>
-      <text>Exception Handling - Analogy</text>
+      <text>Q02: Exception Handling - Analogy</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>The slides compare <strong>Exception Handling</strong> to which real-world safety mechanism?</p>]]></text>
@@ -105,7 +105,7 @@
   <!-- Question 3: Syntax Identification -->
   <question type="multichoice">
     <name>
-      <text>Syntax Error - Identification</text>
+      <text>Q03: Syntax Error - Identification</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following lines contains a <strong>Syntax Error</strong>?</p>]]></text>
@@ -148,7 +148,7 @@
   <!-- Question 4: Logical Error Definition -->
   <question type="multichoice">
     <name>
-      <text>Logical Error - Definition</text>
+      <text>Q04: Logical Error - Definition</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which statement best describes a <strong>Logical Error</strong>?</p>]]></text>
@@ -191,7 +191,7 @@
   <!-- Question 5: Try Block -->
   <question type="multichoice">
     <name>
-      <text>Try Block Purpose</text>
+      <text>Q05: Try Block Purpose</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is the purpose of the <code>try</code> block in Python?</p>]]></text>
@@ -234,7 +234,7 @@
   <!-- Question 6: ZeroDivisionError -->
   <question type="multichoice">
     <name>
-      <text>Runtime Error - ZeroDivision</text>
+      <text>Q06: Runtime Error - ZeroDivision</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which error is raised by the following code?</p>
@@ -278,7 +278,7 @@
   <!-- Question 7: Indentation -->
   <question type="multichoice">
     <name>
-      <text>Syntax Error - Indentation</text>
+      <text>Q07: Syntax Error - Indentation</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Python relies on <strong>indentation</strong> to define code blocks. If your indentation is incorrect, which error do you get?</p>]]></text>
@@ -321,7 +321,7 @@
   <!-- Question 8: Except Block -->
   <question type="multichoice">
     <name>
-      <text>Except Block Execution</text>
+      <text>Q08: Except Block Execution</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>When does the code inside an <code>except</code> block run?</p>]]></text>
@@ -364,7 +364,7 @@
   <!-- Question 9: Value Error -->
   <question type="multichoice">
     <name>
-      <text>Runtime Error - ValueError</text>
+      <text>Q09: Runtime Error - ValueError</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What happens if you try to run <code>int("hello")</code>?</p>]]></text>
@@ -407,7 +407,7 @@
   <!-- Question 10: Logical Error Example -->
   <question type="multichoice">
     <name>
-      <text>Logical Error - Range</text>
+      <text>Q10: Logical Error - Range</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>You want to print numbers from 1 to 5, but you write <code>for i in range(5): print(i)</code>. What does this code print?</p>]]></text>
@@ -450,7 +450,7 @@
   <!-- Question 11: Debugging - Breakpoint -->
   <question type="multichoice">
     <name>
-      <text>Debugging - Breakpoint</text>
+      <text>Q11: Debugging - Breakpoint</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>In the VS Code debugger, what is a <strong>breakpoint</strong> (the red dot)?</p>]]></text>
@@ -493,7 +493,7 @@
   <!-- Question 12: Debugging - Rubber Duck -->
   <question type="multichoice">
     <name>
-      <text>Rubber Duck Debugging</text>
+      <text>Q12: Rubber Duck Debugging</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is "Rubber Duck Debugging"?</p>]]></text>
@@ -536,7 +536,7 @@
   <!-- Question 13: Infinite Loop -->
   <question type="multichoice">
     <name>
-      <text>Infinite Loop Cause</text>
+      <text>Q13: Infinite Loop Cause</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which of the following is a common cause of an <strong>infinite loop</strong>?</p>]]></text>
@@ -579,7 +579,7 @@
   <!-- Question 14: Debugging - Print -->
   <question type="multichoice">
     <name>
-      <text>Print Debugging</text>
+      <text>Q14: Print Debugging</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>What is a disadvantage of "Print Debugging" (using print statements to find bugs)?</p>]]></text>
@@ -622,7 +622,7 @@
   <!-- Question 15: Raise Keyword -->
   <question type="multichoice">
     <name>
-      <text>Raise Keyword</text>
+      <text>Q15: Raise Keyword</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Which Python keyword is used to manually trigger an exception?</p>]]></text>
