@@ -868,43 +868,43 @@ When things go wrong, how do you find the root cause?
 ---
 
 <div class="columns">
-<div>
+<div class="six">
 
-### The Fibonacci Sequence
+### Factorial Numbers
 
-The Fibonacci sequence is a classic mathe-matical series often used in programming interviews and debugging exercises.
+The factorial of a non-negative integer $n$ is the product of all positive integers less than or equal to $n$. It is a common example for recursion and loops.
 
 **Definition:**
-Each number is the sum of the two preceding ones.
+The product of all positive integers up to $n$.
 
 $$
-F_n = F_{n-1} + F_{n-2}
+n! = n \times (n-1)! = n \times (n-1) \times \dots \times 1
 $$
 
-**Base Cases:**
+**Base Case:**
 $$
-F_0 = 0, \quad F_1 = 1
+0! = 1
 $$
 
 **The Sequence:**
 $$
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots
+1, 1, 2, 6, 24, 120, 720, 5040, \dots
 $$
 
 </div>
 <div>
 
-| Index ($n$) | Calculation ($F_{n-1} + F_{n-2}$) | Result ($F_n$) |
+| $n$ | Calculation | $n!$ |
 | :--- | :--- | :--- |
-| 0 | Base Case | 0 |
-| 1 | Base Case | 1 |
-| 2 | $0 + 1$ | 1 |
-| 3 | $1 + 1$ | 2 |
-| 4 | $1 + 2$ | 3 |
-| 5 | $2 + 3$ | 5 |
-| 6 | $3 + 5$ | 8 |
-| 7 | $5 + 8$ | 13 |
-| 8 | $8 + 13$ | 21 |
+| 0 | Base Case | 1 |
+| 1 | 1 | 1 |
+| 2 | $2 \times 1$ | 2 |
+| 3 | $3 \times 2 \times 1$ | 6 |
+| 4 | $4 \times 6$ | 24 |
+| 5 | $5 \times 24$ | 120 |
+| 6 | $6 \times 120$ | 720 |
+| 7 | $7 \times 720$ | 5040 |
+| 8 | $8 \times 5040$ | 40320 |
 
 </div>
 </div>
