@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant User
+    participant r1 as Object (r1)
+    participant Class as Robot Class
+    User->>Class: r1.say_hello()
+    Note over Class: Python passes 'r1' as 'self'
+    Class->>r1: Access data (if needed)
+    Class-->>User: Print "Beep boop..."

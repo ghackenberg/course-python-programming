@@ -70,17 +70,7 @@ Inheritance allows us to define a generic **Parent Class** (Base Class) and gene
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    Vehicle <|-- Car
-    Vehicle <|-- Truck
-    Vehicle <|-- Motorcycle
-    class Vehicle {
-        +speed
-        +color
-        +move()
-    }
-</div>
+![](./Diagrams/Mermaid/vehicle_inheritance.svg)
 
 </div>
 </div>
@@ -209,17 +199,7 @@ class FlyingRobot(Robot):
 </div>
 <div>
 
-<div class="mermaid">
-sequenceDiagram
-    participant Main
-    participant Child as FlyingRobot
-    participant Parent as Robot
-    Main->>Child: FlyingRobot("Icarus", 50)
-    Child->>Parent: super().__init__("Icarus")
-    Parent-->>Child: Name set
-    Child-->>Child: Wingspan set
-    Child-->>Main: Return Object
-</div>
+![](./Diagrams/Mermaid/super_init_sequence.svg)
 
 </div>
 </div>
@@ -234,7 +214,7 @@ sequenceDiagram
 ---
 
 <div class="columns">
-<div class="two">
+<div class="three">
 
 ### Engineering Example: Sensors
 
@@ -261,18 +241,7 @@ print(ts.read_temp()) # Specific to TempSensor
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    Sensor <|-- TempSensor
-    class Sensor {
-        +id
-        +status
-        +log()
-    }
-    class TempSensor {
-        +read_temp() float
-    }
-</div>
+![](./Diagrams/Mermaid/sensor_inheritance.svg)
 
 </div>
 </div>
@@ -328,31 +297,22 @@ class Boat:
         print("Sailing on water")
 
 # List of different objects
-vehicles = [Car(), Boat(), Car()]
+vehicles = [Car(), Boat()]
 
 # The loop doesn't care about the type!
-for v in vehicles:
-    v.move()
+for v in vehicles: v.move()
 ```
 
-<div class="mermaid">
-flowchart LR
-    L[Loop: for v in vehicles] --> C{v.move()}
-    C -->|v is Car| M1[Run Car.move]
-    C -->|v is Boat| M2[Run Boat.move]
-    M1 --> N[Next Iteration]
-    M2 --> N
-</div>
-
 **Output:**
+```
 Driving on road
 Sailing on water
-Driving on road
+```
 
 </div>
 <div>
 
-![Illustration of a universal remote control operating different devices (TV, Stereo, AC).](./Images/Polymorphism_Remote.jpg)
+![](./Diagrams/Mermaid/polymorphism_flowchart.svg)
 
 </div>
 </div>
@@ -419,17 +379,7 @@ for m in machines:
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    direction LR
-    class Conveyor {
-        +step()
-    }
-    class RobotArm {
-        +step()
-    }
-    note "Polymorphism: Both implement step()"
-</div>
+![](./Diagrams/Mermaid/simulation_loop_classes.svg)
 
 </div>
 <div>
@@ -590,25 +540,7 @@ print(m.speed) # Output: 100 (Still)
 </div>
 <div>
 
-<div class="mermaid">
-sequenceDiagram
-    participant User
-    participant Setter as @speed.setter
-    participant Data as self._speed
-    User->>Setter: m.speed = 100
-    Setter->>Data: _speed = 100
-    User->>Setter: m.speed = -50
-    Setter--xUser: Print "Error!" (Data unchanged)
-</div>
-
-<div class="mermaid">
-classDiagram
-    class Motor {
-        -int _speed
-        +speed() int
-        +speed(value) void
-    }
-</div>
+![](./Diagrams/Mermaid/property_setter_sequence.svg)
 
 </div>
 </div>
@@ -746,31 +678,9 @@ def startup(driver: PLCDriver):
 </div>
 <div>
 
-<div class="mermaid">
-sequenceDiagram
-    participant Main
-    participant Func as startup()
-    participant Siemens as SiemensDriver
-    Main->>Func: startup(my_siemens_driver)
-    Func->>Siemens: connect("192.168.0.1")
-    Siemens-->>Func: Connected
-    Func-->>Main: Done
-</div>
+![](./Diagrams/Mermaid/universal_driver_sequence.svg)
 
-<div class="mermaid">
-classDiagram
-    direction LR
-    class PLCDriver {
-        <<Abstract>>
-        +connect(ip)*
-        +read_register(addr)*
-    }
-    class SiemensDriver {
-        +connect(ip)
-        +read_register(addr)
-    }
-    PLCDriver <|-- SiemensDriver
-</div>
+![](./Diagrams/Mermaid/plc_driver_abstract.svg)
 
 </div>
 </div>

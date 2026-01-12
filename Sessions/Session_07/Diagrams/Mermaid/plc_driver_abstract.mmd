@@ -1,0 +1,12 @@
+classDiagram
+    direction LR
+    class PLCDriver {
+        <<Abstract>>
+        +connect(ip)*
+        +read_register(addr)*
+    }
+    class SiemensDriver {
+        +connect(ip)
+        +read_register(addr)
+    }
+    PLCDriver <|-- SiemensDriver

@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant Main
+    participant Child as FlyingRobot
+    participant Parent as Robot
+    Main->>Child: FlyingRobot("Icarus", 50)
+    Child->>Parent: super().__init__("Icarus")
+    Parent-->>Child: Name set
+    Child-->>Child: Wingspan set
+    Child-->>Main: Return Object

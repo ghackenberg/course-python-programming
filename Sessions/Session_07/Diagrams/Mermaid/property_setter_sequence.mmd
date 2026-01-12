@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant User
+    participant Setter as @speed.setter
+    participant Data as self._speed
+    User->>Setter: m.speed = 100
+    Setter->>Data: _speed = 100
+    User->>Setter: m.speed = -50
+    Setter--xUser: Print "Error!" (Data unchanged)

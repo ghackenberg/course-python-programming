@@ -1,0 +1,10 @@
+classDiagram
+    Sensor <|-- TempSensor
+    class Sensor {
+        +id
+        +status
+        +log()
+    }
+    class TempSensor {
+        +read_temp() float
+    }

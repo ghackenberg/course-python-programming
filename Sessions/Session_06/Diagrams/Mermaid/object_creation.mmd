@@ -1,0 +1,5 @@
+flowchart TB
+    A["Call Robot()"] --> B{Memory<br/>Allocated}
+    B --> C[__init__ called]
+    C --> D[Attributes Set]
+    D --> E[Object Returned]

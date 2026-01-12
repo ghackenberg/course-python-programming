@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant Main
+    participant Func as startup()
+    participant Siemens as SiemensDriver
+    Main->>Func: startup(my_siemens_driver)
+    Func->>Siemens: connect("192.168.0.1")
+    Siemens-->>Func: Connected
+    Func-->>Main: Done

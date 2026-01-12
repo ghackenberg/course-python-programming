@@ -1,0 +1,6 @@
+flowchart TB
+    L[Loop: for v in vehicles] --> C{"v.move()"}
+    C -->|v is Car| M1[Run Car.move]
+    C -->|v is Boat| M2[Run Boat.move]
+    M1 --> N[Next Iteration]
+    M2 --> N

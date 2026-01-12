@@ -64,18 +64,7 @@ area = calculate_area(length, width)
 </div>
 <div>
 
-<div class="mermaid">
-flowchart LR
-    subgraph Procedural
-    direction LR
-    D[Data] --> F[Function]
-    end
-    subgraph OOP
-    O[Object]
-    O -->|Contains| D2[Data]
-    O -->|Contains| F2[Methods]
-    end
-</div>
+![](./Diagrams/Mermaid/procedural_vs_oop.svg)
 
 </div>
 </div>
@@ -122,7 +111,7 @@ In Industry 4.0, we talk about **Digital Twins**: virtual replicas of physical s
 </div>
 <div>
 
-![Diagram showing a physical motor on one side and a code block representing it on the other, connected by arrows. (Mermaid)](./Diagrams/Mermaid/digital_twin.svg)
+![Diagram showing a physical motor on one side and a code block representing it on the other, connected by arrows. (Diffusion model)](./Images/digital_twin.jpg)
 
 </div>
 </div>
@@ -385,14 +374,7 @@ print(item1 == item2)
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    class InventoryItem {
-        +String name
-        +int quantity
-        +String location
-    }
-</div>
+![](./Diagrams/Mermaid/inventory_item.svg)
 
 </div>
 <div>
@@ -533,16 +515,7 @@ r1.say_hello()
 </div>
 <div class="two">
 
-<div class="mermaid">
-sequenceDiagram
-    participant User
-    participant r1 as Object (r1)
-    participant Class as Robot Class
-    User->>Class: r1.say_hello()
-    Note over Class: Python passes 'r1' as 'self'
-    Class->>r1: Access data (if needed)
-    Class-->>User: Print "Beep boop..."
-</div>
+![](./Diagrams/Mermaid/method_call.svg)
 
 **Wait!** We defined `say_hello(self)` with one parameter, but we called `r1.say_hello()` with zero arguments. Why didn't it crash?
 
@@ -654,14 +627,7 @@ print(f"Reading: {val}")
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    class TemperatureSensor {
-        +float offset
-        +read_value() float
-        +calibrate(offset) void
-    }
-</div>
+![](./Diagrams/Mermaid/temperature_sensor.svg)
 
 </div>
 <div>
@@ -706,6 +672,9 @@ We need a way to ensure every object starts with a valid state.
 
 ---
 
+<div class="columns">
+<div class="six">
+
 ### The Constructor: `__init__`
 
 Python has a special method named `__init__` (double underscore init double underscore).
@@ -725,12 +694,12 @@ r1 = Robot()
 print(r1.battery) # 100
 ```
 
-<div class="mermaid">
-flowchart LR
-    A[Call Robot()] --> B{Memory Allocated}
-    B --> C[__init__ called]
-    C --> D[Attributes Set]
-    D --> E[Object Returned]
+</div>
+<div>
+
+![](./Diagrams/Mermaid/object_creation.svg)
+
+</div>
 </div>
 
 ---
@@ -858,7 +827,7 @@ print(f"Point created at {p1}")
 ---
 
 <div class="columns">
-<div>
+<div class="two">
 
 ### Engineering Example: Data Logger Class
 
@@ -875,8 +844,7 @@ class DataLogger:
         print(f"[{self.sensor_id}] Logged: {value}")
         
     def get_average(self):
-        if not self.storage:
-            return 0
+        if not self.storage: return 0
         return sum(self.storage) / len(self.storage)
 
 logger = DataLogger("TEMP_01")
@@ -888,15 +856,7 @@ print(f"Average: {logger.get_average()}")
 </div>
 <div>
 
-<div class="mermaid">
-classDiagram
-    class DataLogger {
-        +String sensor_id
-        +List storage
-        +log(value)
-        +get_average() float
-    }
-</div>
+![](./Diagrams/Mermaid/data_logger.svg)
 
 </div>
 </div>
