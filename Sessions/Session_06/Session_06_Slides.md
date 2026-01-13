@@ -300,7 +300,7 @@ print(robot_2)
 </div>
 <div>
 
-![Diagram showing two variables pointing to two distinct boxes in memory, both labeled 'Robot'. (Mermaid)](./Diagrams/Mermaid/memory_instances.svg)
+![Diagram showing two variables pointing to two distinct boxes in memory, both labeled 'Robot'. (Mermaid)](./Images/memory_instances.png)
 
 </div>
 </div>
@@ -567,7 +567,7 @@ This is how one block of code (the method) can work for infinite different objec
 </div>
 <div>
 
-![Diagram showing 'self' acting as a dynamic link between the method code and the specific object instance in memory. (Mermaid)](./Diagrams/Mermaid/self_parameter.svg)
+![Diagram showing 'self' acting as a dynamic link between the method code and the specific object instance in memory. (Mermaid)](./Images/self_parameter.png)
 
 </div>
 </div>
@@ -810,7 +810,7 @@ print(f"Point created at {p1}")
 </div>
 <div>
 
-![Diagram of a coordinate system with a point plotted at (10, 20). (Tikz)](./Diagrams/Tikz/coordinate_point.tikz.svg)
+![Diagram of a coordinate system with a point plotted at (10, 20). (Tikz)](./Images/coordinate_point.png)
 
 </div>
 </div>
