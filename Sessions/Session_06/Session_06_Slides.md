@@ -95,7 +95,7 @@ Instead of `length` and `width` floating around, we have a `Rectangle` object th
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### The "Digital Twin" Concept
 
@@ -111,7 +111,7 @@ In Industry 4.0, we talk about **Digital Twins**: virtual replicas of physical s
 </div>
 <div>
 
-![Diagram showing a physical motor on one side and a code block representing it on the other, connected by arrows. (Diffusion model)](./Images/digital_twin.jpg)
+![Diagram showing a physical motor on one side and a code block representing it on the other, connected by arrows. (Diffusion model)](./Images/digital_twin.png)
 
 </div>
 </div>
@@ -143,7 +143,7 @@ Ask **"What things are interacting?"**
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Analogy Visualization
 
@@ -156,7 +156,7 @@ You create objects **many times**.
 </div>
 <div>
 
-![Illustration of a blueprint of a car and several colored cars appearing from it. (Diffusion Model)](./Images/Car_Factory_Analogy.jpg)
+![Illustration of a blueprint of a car and several colored cars appearing from it. (Diffusion Model)](./Images/Car_Factory_Analogy.png)
 
 </div>
 </div>
@@ -279,7 +279,7 @@ robot_2 = Robot()
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Independent Instances
 
@@ -349,7 +349,7 @@ r is NOT an integer.
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Example: A Warehouse System
 
@@ -374,12 +374,7 @@ print(item1 == item2)
 </div>
 <div>
 
-![](./Diagrams/Mermaid/inventory_item.svg)
-
-</div>
-<div>
-
-![Illustration of shelves in a warehouse with boxes representing objects.](./Images/Warehouse_Objects.jpg)
+![Illustration of shelves in a warehouse with boxes representing objects.](./Images/Warehouse_Objects.png)
 
 </div>
 </div>
@@ -558,7 +553,7 @@ r1.status_report()
 ---
 
 <div class="columns">
-<div class="three">
+<div>
 
 ### The `self` Parameter: Visualized
 
@@ -602,7 +597,7 @@ r1.charge(20)  # amount=20 -> battery becomes 70
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Engineering Example: Sensor Class
 
@@ -627,12 +622,7 @@ print(f"Reading: {val}")
 </div>
 <div>
 
-![](./Diagrams/Mermaid/temperature_sensor.svg)
-
-</div>
-<div>
-
-![Illustration of a digital temperature sensor component.](./Images/Temp_Sensor.jpg)
+![Illustration of a digital temperature sensor component.](./Images/Temp_Sensor.png)
 
 </div>
 </div>
@@ -795,7 +785,7 @@ c1 = Circle(5) # OK
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Example: Coordinate Point
 
@@ -808,7 +798,8 @@ class Point:
         self.y = y
         
     def __str__(self):
-        # Special method for string representation
+        # Special method for
+        #  string representation
         # Called when we print(p1)
         return f"({self.x}, {self.y})"
 
