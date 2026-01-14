@@ -464,6 +464,28 @@ class DigitalProduct(Product):
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Multi-level Inheritance
+
+**Scenario:** You are modeling a fleet of vehicles.
+
+1.  Create a base class `Vehicle` that takes a `brand` in `__init__`.
+2.  Create a child class `LandVehicle` that inherits from `Vehicle` and adds a `wheels` attribute.
+3.  Create a grandchild class `Car` that inherits from `LandVehicle` and adds a `doors` attribute.
+4.  Use `super()` in each `__init__` to ensure all attributes are set correctly.
+
+</div>
+<div>
+
+![Technical drawing showing multi-level inheritance: Vehicle -> LandVehicle -> Car.](./Images/exercise_multilevel_inheritance.png)
+
+</div>
+</div>
+
+---
+
 <!-- Illustration of shapes (circle, square, triangle) fitting into the same hole or interface. -->
 
 ![bg right](./Images/Section_2.png)
@@ -738,6 +760,28 @@ channels = [Email(), SMS(), PushNotification()]
 for c in channels:
     c.send("System Update")
 ```
+
+---
+
+<div class="columns">
+<div>
+
+### Exercise: Duck Typing Media Player
+
+**Scenario:** You are building a versatile media player.
+
+1.  Create three independent classes (no shared parent): `AudioFile`, `VideoFile`, and `YouTubeStream`.
+2.  Give each class a `play()` method that prints a specific message.
+3.  Create a function `start_playback(media)` that simply calls `media.play()`.
+4.  Demonstrate that the function works with instances of all three classes.
+
+</div>
+<div>
+
+![Technical drawing showing a central play button connected to audio, video, and streaming icons representing duck typing.](./Images/exercise_duck_typing_media.png)
+
+</div>
+</div>
 
 ---
 
@@ -1027,6 +1071,28 @@ t.target_temperature = 45 # Invalid -> Error message
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Secure Vault
+
+**Scenario:** You are coding a digital vault.
+
+1.  Create a class `SecureVault` with a **private** attribute `__master_key`.
+2.  Add a `property` called `master_key` that returns a masked version (e.g., "XXXX").
+3.  Add a method `log_access()` that prints "Access logged!".
+4.  Modify the getter to call `log_access()` every time the key is requested.
+
+</div>
+<div>
+
+![Technical drawing showing a digital vault with a masked master key and access logs.](./Images/exercise_secure_vault.png)
+
+</div>
+</div>
+
+---
+
 <!-- Illustration of a transparent blueprint or a ghost outline. -->
 
 ![bg right](./Images/Section_4.png)
@@ -1245,6 +1311,28 @@ def checkout(gateway, amount):
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: UI Element ABC
+
+**Scenario:** You are building a graphical user interface.
+
+1.  Create an abstract class `UIElement(ABC)` with an abstract method `render()`.
+2.  Implement a `Button` class that renders "Drawing a clickable button".
+3.  Implement a `TextField` class that renders "Drawing an input field".
+4.  Create a list of UI elements and render them all in a loop.
+
+</div>
+<div>
+
+![Technical drawing showing a button and text field being rendered as modular UI components.](./Images/exercise_ui_elements.png)
+
+</div>
+</div>
+
+---
+
 <!-- Illustration of Lego blocks snapping together (composition) vs a family tree (inheritance). -->
 
 ![bg right](./Images/Section_5.png)
@@ -1429,6 +1517,28 @@ class Smartphone:
 # Inheritance would imply a Smartphone IS A Battery, which is false.
 # Composition allows us to swap or add components (e.g. Dual Camera) easily.
 ```
+
+---
+
+<div class="columns">
+<div>
+
+### Exercise: Car and GPS
+
+**Scenario:** A car can have different navigation systems.
+
+1.  Create a `StandardGPS` class with a `navigate(destination)` method.
+2.  Create a `Car` class that **has a** `gps` attribute (Composition).
+3.  Add a `drive_to(location)` method to `Car` that uses its `gps` to navigate.
+4.  Show how you can change the car's GPS system to a `ProfessionalGPS` without changing the `Car` class.
+
+</div>
+<div>
+
+![Technical drawing showing a car dashboard with swappable GPS units representing composition.](./Images/exercise_car_gps.png)
+
+</div>
+</div>
 
 ---
 
