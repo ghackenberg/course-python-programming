@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 07 - Test 01</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: Procedural vs OOP</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the context of programming paradigms, what is the primary shift in thinking when moving from Procedural to Object-Oriented Programming (OOP)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>OOP shifts the focus from the sequence of steps (procedures) to the entities (objects) that interact within a system.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Shifting from "things" to "steps".]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This describes the shift towards Procedural programming, not OOP.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Shifting from "steps" to "things".]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! OOP is about modeling real-world "things" as objects.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Moving from global logic to local spaghetti code.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. OOP aims to reduce spaghetti code by organizing data and logic into objects.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Separating data and logic into different files.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While files can be separate, OOP actually bundles data and logic together into objects.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Class vs Object Analogy</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Using the car factory analogy, which of the following represents the <strong>Class</strong>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A class is the abstract blueprint, while an object is the concrete, usable instance built from that blueprint.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The blueprint or engineering design of the car.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! The class defines the structure but isn't the physical car itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A specific red car with a unique VIN number.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This represents an <strong>Object</strong> (an instance of the class).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The assembly line worker.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. The worker might represent the runtime or constructor, but not the class itself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The act of driving the car.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This represents a method or behavior of the car object.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Naming Conventions</text></name>
+    <questiontext format="html"><text><![CDATA[<p>According to PEP 8, which naming convention should be used for <strong>Class names</strong> in Python?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>PEP 8 specifies PascalCase for classes to distinguish them from variables and functions (snake_case).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[snake_case]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is used for functions, methods, and variables.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[PascalCase]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! PascalCase (e.g., RobotArm) is the standard for Python classes.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[camelCase]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is common in Java/JavaScript but not standard for Python classes.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[UPPER_CASE]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is used for constants.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: The pass Keyword</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the purpose of the <code>pass</code> keyword when defining a class?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>In Python, code blocks (like classes or functions) cannot be empty. <code>pass</code> is a null operation that satisfies this syntactic requirement.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To end the execution of the program.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>exit()</code> or <code>sys.exit()</code> is used for that.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To serve as a placeholder when a class body cannot be empty.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It allows you to define the structure now and add details later.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To skip the current iteration of a loop.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. That would be the <code>continue</code> keyword.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To return a value from a method.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. That would be the <code>return</code> keyword.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Instantiation Syntax</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you create an instance (object) of a class named <code>Robot</code> in Python?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>To instantiate a class, you call the class name as if it were a function.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>r = new Robot()</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python does not use a <code>new</code> keyword.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>r = Robot()</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Simply calling the class name creates the object.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>r = Robot.create()</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While you could define such a method, it is not the standard way to instantiate.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>instance r = Robot</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not valid Python syntax.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Instance Independence</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you create two objects <code>r1 = Robot()</code> and <code>r2 = Robot()</code>, which statement is true about their relationship in memory?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Each time a class is instantiated, a new, unique object is created in memory.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They share the same memory address.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Each object has its own unique address in memory.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[They are separate entities at different memory locations.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Objects are independent of each other.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Modifying an attribute in r1 always changes it in r2.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Because they are separate, instance attributes are independent.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are identical and <code>r1 == r2</code> will always be True.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. By default, <code>==</code> checks if they are the <strong>same</strong> object (same address).</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: The self Parameter</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does the <code>self</code> parameter represent in a Python method?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p><code>self</code> is how an object refers to its own attributes and methods from within the class definition.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The class itself.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>self</code> refers to the <strong>instance</strong>, not the class definition.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The specific instance (object) that is calling the method.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Python passes the object itself as the first argument automatically.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A global variable accessible by all classes.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>self</code> is local to the method and specific to the instance.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The parent class from which the object inherits.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>super()</code> is used to refer to the parent class.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: The __init__ Method</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When is the <code>__init__</code> method automatically called in Python?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The <code>__init__</code> method (constructor) ensures that an object starts its life with valid data.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Immediately when a new object is created.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It initializes the object's state.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only when the programmer manually calls it.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While you <em>can</em> call it manually, Python calls it automatically during instantiation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[When the class is being deleted.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. That would be the <code>__del__</code> method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Every time a method of the class is called.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. It only runs once per object creation.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Inheritance Concept</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In inheritance, what is the "Golden Rule" for determining if one class should inherit from another?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Inheritance should model a specialization relationship, not just a combination of parts.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The "has-a" relationship test.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. "Has-a" refers to <strong>Composition</strong>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The "is-a" relationship test.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! A child class "is a" specific version of the parent class.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The "part-of" relationship test.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. "Part-of" is another way to describe <strong>Composition</strong>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The "uses-a" relationship test.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. "Uses-a" refers to dependency or association between objects.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: The super() Function</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the primary use of the <code>super()</code> function in a child class?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p><code>super()</code> allows you to delegate tasks back to the parent class, avoiding code duplication.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To create a new instance of the child class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Normal class instantiation is used for that.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To call a method or the constructor of the parent class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It is most commonly used in <code>__init__</code> to set up inherited data.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To hide attributes from the parent class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>super()</code> actually exposes the parent's functionality.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To terminate the inheritance chain.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python doesn't have a specific command to "terminate" a chain; you just stop inheriting.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Polymorphism Interface</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which concept allows different classes to be used through the same interface (e.g., calling <code>.move()</code> on both a Car and a Boat)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Polymorphism means "many forms" and allows code to be more generic and flexible.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Encapsulation]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Encapsulation is about hiding internal details.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Polymorphism]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It allows treating different objects as if they were the same generic type.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abstraction]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Abstraction is about defining a generic concept without implementation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Composition]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Composition is building objects from other objects.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Duck Typing</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does "Duck Typing" in Python imply?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Duck Typing shifts the check from "what are you?" (class) to "what can you do?" (methods).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[You must explicitly declare the type of every object.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. That would be <strong>Static Typing</strong>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only objects that inherit from the 'Duck' class can be used.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is just an analogy name.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[If an object has the required methods at runtime, Python will use them regardless of the object's class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! "If it quacks like a duck, it is a duck."</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Python automatically converts all objects into ducks to save memory.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is nonsensical.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: Private Access Modifiers</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In Python, what is the naming convention to indicate that an attribute is "private" (hard to access)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Python uses underscores to signal internal implementation details to other developers.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A single underscore prefix (e.g., <code>_price</code>)]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This signals <strong>Protected</strong> (internal use), but it's still easily accessible.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A double underscore prefix (e.g., <code>__price</code>)]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This triggers name mangling, making the attribute harder to access accidentally.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The <code>private</code> keyword.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python does not have a <code>private</code> keyword.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Writing the attribute in ALL_CAPS.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is used for constants.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Abstract Classes Purpose</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why would you define a class as an <strong>Abstract Base Class (ABC)</strong>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Abstract classes act as templates that ensure all descendants follow a specific structure.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To make the code run faster.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. ABCs actually add a tiny bit of overhead and are for design, not performance.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To define a "contract" or interface that all child classes must implement.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It enforces that certain methods exist in all child classes.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To prevent any other classes from inheriting from it.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. ABCs are <em>intended</em> for inheritance; you cannot even use them without it.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To allow multiple inheritance without name collisions.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While it can help, it's not the primary purpose.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Composition vs Inheritance</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which design principle is summarized by the phrase "Favor Composition over Inheritance"?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Composition is often more flexible than inheritance because it avoids deep, rigid class hierarchies.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Everything should be a child of another class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be over-using inheritance.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Building complex objects by combining simpler objects ("has-a") is often more flexible than rigid hierarchies ("is-a").]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Composition allows you to swap parts easily at runtime.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Always use global variables instead of objects.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This goes against OOP principles entirely.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Inheritance is the only way to reuse code.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Composition and functions are also primary ways to reuse code.</p>]]></text></feedback>
+    </answer>
+  </question>
+</quiz>

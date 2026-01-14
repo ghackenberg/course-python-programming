@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 07 - Test 04</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: OOP Modeling Question</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When looking at a system for OOP modeling, what is the most important question to ask?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>OOP is about modeling real-world entities and their interactions.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA["What are the sequential steps?"]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the central question of <strong>Procedural</strong> programming.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA["What things are interacting?"]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Identifying the "things" (objects) is the first step in OOP design.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA["How many loops do I need?"]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While important for implementation, this doesn't help with the high-level object model.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA["Which global variables should I use?"]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. OOP aims to eliminate global variables in favor of encapsulated state.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Reusability Benefit</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the main benefit of creating a <code>TemperatureSensor</code> class in Project A and then using it in Project B?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Well-designed classes are self-contained assets that can be reused across different applications.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Abstraction]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Abstraction is a technique, but not the specific benefit described here.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Reusability ("Write once, use everywhere")]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This saves time and reduces errors by using proven code.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Encapsulation]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Encapsulation is <em>how</em> the class is built, but reusability is the <em>outcome</em>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Polymorphism]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Polymorphism allows using the sensor in generic ways, but doesn't specifically describe the act of moving it between projects.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Identity of Instances</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In Python, what does "Everything is an object" mean?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Python's architecture is built entirely on the concept of objects, providing a very consistent experience.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Everything must be written inside a single class.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would result in terrible design and is not required by Python.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Even basic types like <code>int</code> and <code>str</code> are instances of classes.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! You can even call methods on numbers (e.g., <code>(5).bit_length()</code>).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Variables cannot store data, only pointers.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While technically true at a low level, this is not what the phrase "everything is an object" refers to conceptually.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[You cannot use functions without classes.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python supports standalone functions, though internally even they are objects.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: Method Call Syntax</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If <code>r1</code> is an object with a method <code>say_hello(self)</code>, how do you call it in your code?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Python's syntactic sugar automatically handles passing the instance as the <code>self</code> argument.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Robot.say_hello(r1)</code> (Manual way, not recommended)]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While this technically works internally, it is not the standard way to write clean Python code.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>r1.say_hello()</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This is the standard and clean way to call a method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>r1.say_hello(self)</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. You never pass <code>self</code> explicitly when calling a method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>say_hello(r1)</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This looks like a standalone function call, not a method call.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Attributes vs Variables</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the difference between a local variable in <code>__init__</code> and an attribute?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The <code>self.</code> prefix is what makes a piece of data stick to the object instance.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[There is no difference.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. There is a massive difference in scope and lifetime.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Local variables die when __init__ finishes; attributes live as long as the object lives.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Attributes are stored "on" the object for future use.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Attributes are global; local variables are private.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Attributes are local to the <strong>instance</strong>, not globally accessible by everyone.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Local variables are stored on the disk; attributes in RAM.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Both are stored in the computer's memory (RAM).</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Default Parameters</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In <code>def __init__(self, voltage=12):</code>, what happens if you instantiate the class with <code>m = Motor()</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Default parameters allow for flexible object configuration.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The code crashes because an argument is missing.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Because a default value (12) is provided, the argument is optional.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The <code>voltage</code> attribute is set to <code>12</code> by default.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! The constructor uses the provided default value.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The <code>voltage</code> attribute remains <code>None</code>.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. It will be <code>12</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Python asks the user for a value during runtime.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python does not automatically prompt for missing function arguments.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: Maintainability in OOP</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How does OOP improve maintainability when a bug is found in a sensor calculation?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The "Single Source of Truth" principle makes bug fixing much more efficient.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[You have to fix it in every script that uses the sensor.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be a problem with <strong>Procedural</strong> code or duplicated logic.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[You fix it in one method inside the class, and all sensor objects are fixed instantly.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Centrally defining logic is a huge advantage of classes.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The debugger automatically fixes it.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Debuggers help you <em>find</em> bugs, but you still have to fix them yourself.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Inheritance prevents bugs from occurring.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. No programming concept can prevent logic errors from being written.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Hierarchy Example</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the hierarchy <strong>Animal -> Mammal -> Dog</strong>, which class is the most <strong>specific</strong>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Hierarchies go from generic (top) to specialized (bottom).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Animal]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Animal is the most <strong>generic</strong> parent.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Mammal]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Mammal is more specific than Animal, but less specific than Dog.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Dog]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Dog is the most specialized (at the bottom of this hierarchy).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are all equally specific.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Inheritance creates a clear gradient of specialization.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: The __str__ Method</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the purpose of overriding the <code>__str__</code> method inherited from <code>object</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Customizing <code>__str__</code> makes debugging and logging much easier by providing helpful text descriptions.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To convert the object into a byte stream.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This would be serialization, not <code>__str__</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To define a human-readable string representation of the object (used by <code>print()</code>).]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! It allows you to see what's inside the object when you print it.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To compare two objects for equality.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. That is the purpose of <code>__eq__</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To delete the object's string attributes.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This method is for viewing/representing, not for deleting.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Equality Override</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which magic method should you override to change the behavior of the <code>==</code> operator for your objects?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Overriding equality is useful when you want to compare objects based on their data rather than their memory address.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__init__</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is the constructor.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>__eq__</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! <code>eq</code> stands for <strong>equal</strong>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__str__</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is for string representation.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__isequal__</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not a standard Python magic method.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Static vs Dynamic Typing</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a characteristic of <strong>Dynamic Typing</strong> in Python regarding Polymorphism?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Dynamic typing provides extreme flexibility at the cost of compile-time safety checks.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The compiler checks all types before the program runs.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This describes <strong>Static Typing</strong> (like in Java or C++).</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[You can pass any object to a function as long as it has the required methods at runtime.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This is also known as "Duck Typing".</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[You must declare the parent class of every argument.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python doesn't require type declarations for arguments.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Objects cannot change their methods once created.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While technically true for class-level methods, it's not a characteristic of dynamic typing itself.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Public Data Problem</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why is making all attributes <strong>public</strong> potentially dangerous?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Encapsulation protects the integrity of an object's internal state.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It consumes more memory.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Privacy doesn't change memory usage.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[External code can set attributes to nonsensical or invalid values (e.g., <code>age = -5</code>).]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! Without encapsulation, you lose control over your data's validity.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The code will not compile.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Python will happily compile and run code with only public attributes.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Methods will run slower.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Privacy checks in Python are conventions and don't slow down the execution significantly.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: The @setter Decorator</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you define a method that validates and sets the value of a property named <code>age</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Properties provide a "Pythonic" way to intercept and validate attribute changes.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>@property</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. <code>@property</code> is for the <strong>Getter</strong>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>@age.setter</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This decorator links a method to the assignment operation <code>obj.age = value</code>.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>@set_age</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not a standard Python decorator.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>@validate(age)</code>]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is not a standard Python decorator.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Abstract Class contract</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which analogy best describes an <strong>Abstract Class</strong> that defines methods but provides no implementation?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Abstract classes enforce consistency across large development teams and complex systems.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A finished product.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A finished product would be a concrete class or an instance.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A contract that signatories (child classes) must fulfill.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! If you sign the "Shape" contract, you MUST provide an "area" method.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A physical machine.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. A physical machine would be an object instance.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A generic toolbox.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. While a toolbox is a good analogy for a module, an ABC is more about rules than tools.</p>]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Composition Trap</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a common mistake when designing a class for a "Car" and an "Engine"?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Always apply the "is-a" test before inheriting. A car is not a type of engine.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Using Composition instead of Inheritance.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. Using composition is actually the <strong>correct</strong> approach here.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Using Inheritance (<code>class Car(Engine)</code>), implying a Car IS an Engine.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Correct! This is a classic "inheritance abuse" mistake.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Using objects to represent physical parts.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is exactly what OOP is meant for.</p>]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Providing a start() method for the engine.]]></text>
+      <feedback format="html"><text><![CDATA[<p>Incorrect. This is a logical behavior for an engine.</p>]]></text></feedback>
+    </answer>
+  </question>
+</quiz>
