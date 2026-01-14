@@ -40,6 +40,9 @@ Don't start from scratch. Build upon what exists.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The DRY Principle
 
 **DRY: Don't Repeat Yourself.**
@@ -49,9 +52,17 @@ Imagine you are coding a traffic simulation.
 - `Truck` has speed, color, and can move.
 - `Motorcycle` has speed, color, and can move.
 
-Writing the same code 3 times is inefficient and error-prone. If you fix a bug in `Car.move()`, you have to remember to fix it in `Truck` and `Motorcycle` too.
+Writing the same code 3 times is inefficient and error-prone.
 
 **Inheritance** is the solution to this redundancy.
+
+</div>
+<div>
+
+![Illustration showing messy repeated code versus clean inherited code.](./Images/dry_principle.png)
+
+</div>
+</div>
 
 ---
 
@@ -139,6 +150,9 @@ c.drive() # Output: Toyota is moving.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The `is-a` Relationship
 
 Inheritance models an **"is-a"** relationship. This is the "Golden Rule" of inheritance.
@@ -148,8 +162,16 @@ Inheritance models an **"is-a"** relationship. This is the "Golden Rule" of inhe
 - A Square **is a** Shape.
 
 **Test it:** "Is a [Child] always a [Parent]?"
-- Is a Truck a Vehicle? Yes. (Good Inheritance)
-- Is a Wheel a Car? No. A Wheel is *part of* a Car. (Do **not** use Inheritance here. Use Composition.)
+- Is a Truck a Vehicle? Yes.
+- Is a Wheel a Car? No.
+
+</div>
+<div>
+
+![Illustration of the is-a relationship test.](./Images/is_a_relationship.png)
+
+</div>
+</div>
 
 ---
 
@@ -351,16 +373,26 @@ If `Car`, `Boat`, and `Plane` all have a `move()` method, I don't need to know e
 
 ---
 
+<div class="columns">
+<div>
+
 ### "Plug and Play" Analogy
 
 Think of a **USB Port**.
 
 - You can plug in a Mouse, a Keyboard, a Printer, or a Flash Drive.
-- The computer doesn't need a specific physical port for "Mouse" and another for "Keyboard".
 - It has a universal interface (USB).
 - When you plug it in, the device behaves according to its own nature.
 
 **Polymorphism** is the USB port of programming.
+
+</div>
+<div>
+
+![Illustration of USB polymorphism.](./Images/usb_polymorphism.png)
+
+</div>
+</div>
 
 ---
 
@@ -499,14 +531,25 @@ for m in machines:
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Open/Closed Principle
 
 Polymorphism supports a key software design principle:
 
 **Software entities should be open for extension, but closed for modification.**
 
-- **Open for Extension:** We can add a new `Drone` class (with a `step()` method).
-- **Closed for Modification:** We don't need to change the `simulation_loop` code. It already works with the new Drone!
+- **Open for Extension:** We can add a new `Drone` class.
+- **Closed for Modification:** We don't need to change the `simulation_loop` code.
+
+</div>
+<div>
+
+![Illustration of the Open/Closed Principle.](./Images/open_closed_robot.png)
+
+</div>
+</div>
 
 ---
 
@@ -883,6 +926,9 @@ The two pillars of OOP design.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Trap of Inheritance
 
 Newcomers often over-use inheritance.
@@ -891,8 +937,15 @@ Newcomers often over-use inheritance.
 `class Car(Engine): ...`
 
 - Is a Car an Engine? No.
-- If you inherit, the Car gets `spark_plugs` and `cylinders` mixed into its own attributes. It's messy.
-- What if a Car has *two* engines (Hybrid)? You can't inherit twice easily.
+- If you inherit, the Car gets `spark_plugs` mixed into its own attributes. It's messy.
+
+</div>
+<div>
+
+![Illustration of the inheritance trap showing a car that is just an engine with wheels.](./Images/inheritance_trap.png)
+
+</div>
+</div>
 
 ---
 
