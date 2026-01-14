@@ -116,7 +116,7 @@ Inheritance allows us to define a generic **Parent Class** (Base Class / Supercl
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Defining Inheritance
 
