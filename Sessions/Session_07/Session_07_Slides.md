@@ -55,6 +55,9 @@ Writing the same code 3 times is inefficient and error-prone. If you fix a bug i
 
 ---
 
+<div class="columns">
+<div>
+
 ### Biological Analogy
 
 Think of genetics.
@@ -66,6 +69,14 @@ Think of genetics.
 In programming:
 - **Parent Class:** The generic ancestor (e.g., `Animal`).
 - **Child Class:** The specific descendant (e.g., `Dog`).
+
+</div>
+<div>
+
+![Illustration of robot inheritance and genetics.](./Images/robot_genetics.png)
+
+</div>
+</div>
 
 ---
 
@@ -391,6 +402,9 @@ Sailing on water
 
 ---
 
+<div class="columns">
+<div>
+
 ### "Duck Typing"
 
 Python is a dynamic language. It uses a concept called **Duck Typing**:
@@ -401,6 +415,14 @@ Python does not check "Is this object a Child of Vehicle?".
 It simply checks "Does this object have a `.move()` method?" at runtime.
 
 If yes, it runs. If no, it crashes (`AttributeError`).
+
+</div>
+<div>
+
+![Illustration of a mechanical duck symbolizing duck typing.](./Images/mechanical_duck.png)
+
+</div>
+</div>
 
 ---
 
@@ -504,6 +526,9 @@ Protecting the inner workings.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The "Black Box" Concept
 
 An object should be a **Black Box**.
@@ -514,6 +539,14 @@ An object should be a **Black Box**.
 1.  **Safety:** Prevent invalid data (e.g., `speed = -100`).
 2.  **Simplicity:** The user doesn't need to know how the engine works, just where the gas pedal is.
 3.  **Flexibility:** You can change the internal code later without breaking other people's code.
+
+</div>
+<div>
+
+![Illustration of a black box representing encapsulation.](./Images/black_box_mystery.png)
+
+</div>
+</div>
 
 ---
 
@@ -713,6 +746,9 @@ We want to enforce that *every* child of `Shape` *must* implement an `area()` me
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Contract Analogy
 
 Think of an Abstract Class as a **Contract**.
@@ -720,6 +756,14 @@ Think of an Abstract Class as a **Contract**.
 - **The Contract:** "If you want to be a `Shape`, you MUST provide a way to calculate `area`."
 - **The Signatories:** `Circle` and `Square` sign the contract by writing the code for `area`.
 - **Enforcement:** If `Triangle` tries to be a `Shape` but forgets to write `area`, Python forbids it from being created.
+
+</div>
+<div>
+
+![Illustration of a contract for shapes representing abstract classes.](./Images/shape_contract.png)
+
+</div>
+</div>
 
 ---
 
@@ -853,6 +897,9 @@ Newcomers often over-use inheritance.
 
 ---
 
+<div class="columns">
+<div>
+
 ### Using Composition
 
 Instead of inheriting, we store the object as an attribute.
@@ -873,6 +920,14 @@ class Car:
 ```
 
 This is **Composition**. The `Car` is composed of an `Engine`.
+
+</div>
+<div>
+
+![Illustration of a modular car representing composition.](./Images/modular_car.png)
+
+</div>
+</div>
 
 ---
 
