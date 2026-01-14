@@ -828,7 +828,6 @@ Imagine writing a control system that talks to different PLCs.
 class PLCDriver(ABC):
     @abstractmethod
     def connect(self, ip): pass
-        
     @abstractmethod
     def read_register(self, addr): pass
 
