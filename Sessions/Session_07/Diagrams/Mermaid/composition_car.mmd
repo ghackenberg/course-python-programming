@@ -1,0 +1,18 @@
+classDiagram
+    class Car {
+        +Engine engine
+        +start()
+    }
+    class Engine {
+        +start()
+    }
+    class ElectricEngine {
+        +start()
+    }
+    class GasEngine {
+        +start()
+    }
+    
+    Car *-- Engine : Has-a
+    Engine <|-- ElectricEngine : Is-a
+    Engine <|-- GasEngine : Is-a

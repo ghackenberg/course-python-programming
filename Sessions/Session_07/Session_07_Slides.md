@@ -19,6 +19,7 @@ This chapter includes the following sections:
 - 7.2: Polymorphism
 - 7.3: Encapsulation
 - 7.4: Abstract Classes
+- 7.5: Composition vs. Inheritance
 
 ---
 
@@ -32,9 +33,10 @@ Don't start from scratch. Build upon what exists.
 
 - The DRY Principle
 - Parent and Child Classes
+- The `is-a` Relationship
 - The `super()` Function
 - Overriding vs Extending
-- Practical Examples
+- The `object` Base Class
 
 ---
 
@@ -42,14 +44,28 @@ Don't start from scratch. Build upon what exists.
 
 **DRY: Don't Repeat Yourself.**
 
-Imagine you are coding a game.
+Imagine you are coding a traffic simulation.
 - `Car` has speed, color, and can move.
 - `Truck` has speed, color, and can move.
 - `Motorcycle` has speed, color, and can move.
 
-Writing the same code 3 times is bad. If you fix a bug in `Car.move()`, you have to fix it in `Truck` and `Motorcycle` too.
+Writing the same code 3 times is inefficient and error-prone. If you fix a bug in `Car.move()`, you have to remember to fix it in `Truck` and `Motorcycle` too.
 
-**Inheritance** solves this.
+**Inheritance** is the solution to this redundancy.
+
+---
+
+### Biological Analogy
+
+Think of genetics.
+
+- You inherit traits (attributes) like eye color or height from your parents.
+- You inherit abilities (behaviors) like walking or talking.
+- You also have unique traits (your specific job, your hobbies) that your parents don't have.
+
+In programming:
+- **Parent Class:** The generic ancestor (e.g., `Animal`).
+- **Child Class:** The specific descendant (e.g., `Dog`).
 
 ---
 
@@ -58,9 +74,9 @@ Writing the same code 3 times is bad. If you fix a bug in `Car.move()`, you have
 
 ### The Concept of Inheritance
 
-Inheritance allows us to define a generic **Parent Class** (Base Class) and generic methods once.
+Inheritance allows us to define a generic **Parent Class** (Base Class / Superclass) and generic methods once.
 
-**Child Classes** (Derived Classes) inherit all attributes and methods from the Parent.
+**Child Classes** (Derived Classes / Subclasses) inherit all attributes and methods from the Parent automatically.
 
 - **Vehicle** (Parent)
     - `Car` (Child)
@@ -95,7 +111,7 @@ class Vehicle:
 
 # Child Class (Derived Class)
 class Car(Vehicle):
-    # Car inherits everything from Vehicle!
+    # Car inherits everything!
     pass
 
 c = Car("Toyota")
@@ -114,19 +130,37 @@ c.drive() # Output: Toyota is moving.
 
 ### The `is-a` Relationship
 
-Inheritance models an **"is-a"** relationship.
+Inheritance models an **"is-a"** relationship. This is the "Golden Rule" of inheritance.
 
 - A Car **is a** Vehicle.
 - A Manager **is an** Employee.
 - A Square **is a** Shape.
 
-If you cannot say "X is a Y", you probably shouldn't use inheritance. (e.g., A Car has a Wheel, but a Car *is not* a Wheel. Use composition instead.)
+**Test it:** "Is a [Child] always a [Parent]?"
+- Is a Truck a Vehicle? Yes. (Good Inheritance)
+- Is a Wheel a Car? No. A Wheel is *part of* a Car. (Do **not** use Inheritance here. Use Composition.)
+
+---
+
+### Visualizing Hierarchy
+
+Proper inheritance creates a taxonomy (classification system).
+
+- **Animal**
+    - **Mammal**
+        - **Dog**
+        - **Cat**
+    - **Reptile**
+        - **Snake**
+
+Everything that applies to `Animal` (e.g., `eat()`) applies to `Dog`.
+Everything that applies to `Mammal` (e.g., `produce_milk()`) applies to `Dog`.
 
 ---
 
 ### Adding Specific Functionality
 
-Child classes are not just copies. They can have their own specific methods.
+Child classes are not just clones. They are specialized versions.
 
 ```python
 class Car(Vehicle):
@@ -138,13 +172,13 @@ class Truck(Vehicle):
         print("Loading heavy cargo...")
 
 c = Car("BMW")
-c.drive()     # Inherited
+c.drive()     # Inherited from Vehicle
 c.honk()      # Specific to Car
 
 t = Truck("Volvo")
-t.drive()     # Inherited
+t.drive()     # Inherited from Vehicle
 t.load_cargo()# Specific to Truck
-# t.honk()    # Error! Truck has no honk.
+# t.honk()    # Error! Truck has no honk method.
 ```
 
 ---
@@ -177,11 +211,11 @@ e.drive() # Electric Car moving silently...
 
 ### The `super()` Function
 
-Often, you don't want to *replace* the parent completely, but *extend* it.
+Often, you don't want to *replace* the parent logic completely, but *extend* it.
 
 `super()` gives you a reference to the Parent class.
 
-Commonly used in `__init__`.
+Commonly used in `__init__` to ensure the parent sets up its part of the data.
 
 ```python
 class Robot:
@@ -210,6 +244,7 @@ class FlyingRobot(Robot):
 
 1.  **Code Reuse:** You don't have to re-type `self.name = name` in every child class.
 2.  **Maintainability:** If the Parent's `__init__` logic changes (e.g., adding an ID generation), all children get the update automatically.
+3.  **Consistency:** Ensures the object is fully initialized.
 
 ---
 
@@ -248,13 +283,36 @@ print(ts.read_temp()) # Specific to TempSensor
 
 ---
 
-### The `object` Class
+### The `object` Base Class
 
 In Python 3, all classes inherit from a built-in base class called `object`, even if you don't specify it.
 
-`class Robot:` is actually `class Robot(object):`.
+`class Robot:` is identical to `class Robot(object):`.
 
-This is why every object comes with built-in methods like `__str__`, `__eq__`, etc.
+This is why every object comes with built-in "Magic Methods" like:
+- `__init__` (Constructor)
+- `__str__` (String representation)
+- `__eq__` (Equality check `==`)
+
+---
+
+### Customizing `__str__`
+
+By overriding the method inherited from `object`, we can change how our object prints.
+
+```python
+class Car(Vehicle):
+    def __str__(self):
+        return f"Car({self.brand})"
+
+c = Car("Audi")
+
+# Without __str__ override:
+print(c) # <__main__.Car object at 0x7f...>
+
+# With __str__ override:
+print(c) # Car(Audi)
+```
 
 ---
 
@@ -267,10 +325,10 @@ This is why every object comes with built-in methods like `__str__`, `__eq__`, e
 Many forms, one interface.
 
 - What is Polymorphism?
+- The "Plug and Play" Analogy
 - Treating objects uniformly
 - "Duck Typing"
-- Polymorphism in Functions
-- Practical Simulation Example
+- The Open/Closed Principle
 
 ---
 
@@ -278,7 +336,20 @@ Many forms, one interface.
 
 **Polymorphism** (Greek: "many forms") means that different classes can be used through the same **Interface**.
 
-If `Car`, `Boat`, and `Plane` all have a `move()` method, I don't need to know which one I have. I just call `.move()`, and the object does the right thing.
+If `Car`, `Boat`, and `Plane` all have a `move()` method, I don't need to know explicitly which one I have. I just call `.move()`, and the object does the "right thing" for its type.
+
+---
+
+### "Plug and Play" Analogy
+
+Think of a **USB Port**.
+
+- You can plug in a Mouse, a Keyboard, a Printer, or a Flash Drive.
+- The computer doesn't need a specific physical port for "Mouse" and another for "Keyboard".
+- It has a universal interface (USB).
+- When you plug it in, the device behaves according to its own nature.
+
+**Polymorphism** is the USB port of programming.
 
 ---
 
@@ -300,7 +371,8 @@ class Boat:
 vehicles = [Car(), Boat()]
 
 # The loop doesn't care about the type!
-for v in vehicles: v.move()
+for v in vehicles: 
+    v.move()
 ```
 
 **Output:**
@@ -321,35 +393,49 @@ Sailing on water
 
 ### "Duck Typing"
 
-Python is a dynamic language. It uses **Duck Typing**:
+Python is a dynamic language. It uses a concept called **Duck Typing**:
 
 > "If it walks like a duck and quacks like a duck, then it must be a duck."
 
 Python does not check "Is this object a Child of Vehicle?".
-It checks "Does this object have a `.move()` method?"
+It simply checks "Does this object have a `.move()` method?" at runtime.
 
 If yes, it runs. If no, it crashes (`AttributeError`).
 
 ---
 
-### Polymorphism in Functions
+### Static vs. Dynamic Typing
 
-Functions can accept any object that satisfies the expected interface.
+- **Static (Java/C#):** You must declare "This function takes a `Vehicle`". The compiler ensures only children of `Vehicle` are passed.
+- **Dynamic (Python):** You pass *anything*. Flexibility is higher, but you must ensure the object has the required methods.
 
 ```python
-def start_trip(vehicle):
-    # This function works with ANY object
-    # that has a move() method.
-    print("Starting trip...")
-    vehicle.move()
-    print("Trip ended.")
-
-c = Car()
-b = Boat()
-
-start_trip(c) # Works!
-start_trip(b) # Works!
+def start_trip(thing):
+    thing.move() 
+    # Works for Car, Boat, or even a 'GameCharacter' 
+    # as long as it has .move()
 ```
+
+---
+
+### Polymorphism in Functions
+
+Functions become much more powerful when they can accept any object that satisfies an interface.
+
+```python
+def activate_device(device):
+    print("Activating...")
+    device.turn_on()
+    print("Device is active.")
+
+# Can be used with:
+# - LightBulb
+# - Motor
+# - Heater
+# - CoffeeMachine
+```
+
+This allows us to write generic code that works with objects we haven't even invented yet!
 
 ---
 
@@ -358,7 +444,7 @@ start_trip(b) # Works!
 
 ### Engineering Example: Simulation Loop
 
-Imagine simulating a factory. Every machine has a `step()` function.
+Imagine simulating a smart factory. Every machine has a `step()` function.
 
 ```python
 class Conveyor:
@@ -391,6 +477,17 @@ for m in machines:
 
 ---
 
+### The Open/Closed Principle
+
+Polymorphism supports a key software design principle:
+
+**Software entities should be open for extension, but closed for modification.**
+
+- **Open for Extension:** We can add a new `Drone` class (with a `step()` method).
+- **Closed for Modification:** We don't need to change the `simulation_loop` code. It already works with the new Drone!
+
+---
+
 <!-- Illustration of a capsule or a safe, symbolizing protected contents. -->
 
 ![bg right](./Images/Section_3.png)
@@ -399,19 +496,21 @@ for m in machines:
 
 Protecting the inner workings.
 
-- Why Hide Data?
+- The "Black Box" Concept
 - Public, Protected, Private
 - Name Mangling
 - Getters and Setters
-- Properties (`@property`)
+- Python Properties (`@property`)
 
 ---
 
-### The Public Interface
+### The "Black Box" Concept
 
-An object should present a clean **Interface** (methods) to the world, but hide its **Implementation** (data).
+An object should be a **Black Box**.
+- **Public:** Buttons and Screens (The Interface).
+- **Private:** Wires, Chips, Gears (The Implementation).
 
-**Why?**
+**Why hide data?**
 1.  **Safety:** Prevent invalid data (e.g., `speed = -100`).
 2.  **Simplicity:** The user doesn't need to know how the engine works, just where the gas pedal is.
 3.  **Flexibility:** You can change the internal code later without breaking other people's code.
@@ -447,7 +546,7 @@ print(a.balance) # OK: 100
 print(a._pin)    # 1234 
 ```
 
-**Rule:** If you see `_variable`, treat it as private.
+**Rule:** If you see `_variable`, treat it as private. It's a "Keep Out" sign, not a locked door.
 
 ---
 
@@ -466,51 +565,65 @@ s = Secret()
 # AttributeError: 'Secret' object has no attribute '__code'
 ```
 
-It's not truly secure (you can access it via `_Secret__code`), but it prevents accidental access.
+It's not truly secure (you can access it via `s._Secret__code`), but it prevents accidental access and namespace collisions.
 
 ---
 
-### Getters and Setters (The Old Way)
+### The Problem with Public Data
 
-In languages like Java, you write `get_speed()` and `set_speed()` methods to control access.
+Why not just make everything public?
 
 ```python
-class Motor:
-    def __init__(self):
-        self.__speed = 0
+class Person:
+    def __init__(self, age):
+        self.age = age
 
-    def get_speed(self):
-        return self.__speed
-
-    def set_speed(self, speed):
-        if speed < 0:
-            print("Error: Negative speed.")
-        else:
-            self.__speed = speed
+p = Person(25)
+p.age = -5 # This makes no sense, but Python allows it!
 ```
-This works, but it's "un-Pythonic" (verbose).
+
+We need a way to intercept the assignment and check if the value is valid.
+
+---
+
+### Getters and Setters (Traditional)
+
+In languages like Java/C++, you write methods to control access.
+
+```python
+class Person:
+    def set_age(self, age):
+        if age < 0:
+            print("Error: Age cannot be negative.")
+        else:
+            self._age = age
+
+    def get_age(self):
+        return self._age
+```
+
+**Problem:** To read the age, you now have to type `p.get_age()` instead of `p.age`. This changes how you use the object.
 
 ---
 
 ### The Pythonic Way: `@property`
 
-Python allows you to use methods as if they were attributes!
+Python allows you to use methods as if they were attributes! You get the control of methods with the simplicity of variables.
 
 ```python
-class Motor:
-    def __init__(self):
-        self._speed = 0
+class Person:
+    def __init__(self, age):
+        self._age = age
 
     @property         # The Getter
-    def speed(self):
-        return self._speed
+    def age(self):
+        return self._age
 
-    @speed.setter     # The Setter
-    def speed(self, value):
+    @age.setter       # The Setter
+    def age(self, value):
         if value < 0:
-            print("Error!")
-        else:
-            self._speed = value
+            raise ValueError("Age cannot be negative")
+        self._age = value
 ```
 
 ---
@@ -520,21 +633,21 @@ class Motor:
 
 ### Using Properties
 
-To the user, `speed` looks like a variable. But underneath, it runs your methods!
+To the user, `age` looks like a normal variable. But underneath, it runs your methods!
 
 ```python
-m = Motor()
-
-# Calls the setter
-m.speed = 100 
-print("Set to 100")
+p = Person(30)
 
 # Calls the setter (Validation logic runs!)
-m.speed = -50 
-# Output: Error!
+p.age = 40 
+print("Set to 40")
+
+# Calls the setter and crashes
+# p.age = -5 
+# ValueError: Age cannot be negative
 
 # Calls the getter
-print(m.speed) # Output: 100 (Still)
+print(p.age) # 40
 ```
 
 </div>
@@ -547,25 +660,26 @@ print(m.speed) # Output: 100 (Still)
 
 ---
 
-### Read-Only Attributes
+### Computed Properties
 
-If you define a `@property` getter but **no** setter, the attribute becomes read-only.
+Properties are also great for values that are calculated on the fly, ensuring data consistency.
 
 ```python
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
     @property
     def area(self):
-        # Calculated on the fly
-        return 3.14 * self.radius ** 2
+        # We don't store 'area'. We calculate it.
+        return self.width * self.height
 
-c = Circle(10)
-print(c.area) # 314.0
+r = Rectangle(5, 10)
+print(r.area) # 50
 
-# c.area = 50 
-# AttributeError: can't set attribute
+r.width = 10
+print(r.area) # 100 (Automatically updated!)
 ```
 
 ---
@@ -582,7 +696,7 @@ Blueprints for blueprints.
 - The `abc` Module
 - Abstract Methods
 - Enforcing Interfaces
-- Engineering Example
+- The "Contract" Analogy
 
 ---
 
@@ -596,6 +710,16 @@ Sometimes, a Parent Class is so generic that it shouldn't exist as an object.
 - `Shape` is an **Abstract Concept**.
 
 We want to enforce that *every* child of `Shape` *must* implement an `area()` method.
+
+---
+
+### The Contract Analogy
+
+Think of an Abstract Class as a **Contract**.
+
+- **The Contract:** "If you want to be a `Shape`, you MUST provide a way to calculate `area`."
+- **The Signatories:** `Circle` and `Square` sign the contract by writing the code for `area`.
+- **Enforcement:** If `Triangle` tries to be a `Shape` but forgets to write `area`, Python forbids it from being created.
 
 ---
 
@@ -644,7 +768,7 @@ sq = Square(5) # This works!
 ### Why use Abstract Classes?
 
 1.  **Guarantees:** You know for sure that any `Shape` object has an `area()` method.
-2.  **Design:** It forces you to think about the "Contract" or "Interface" of your system before writing details.
+2.  **Design:** It forces you to think about the "Interface" of your system before writing details.
 3.  **Teamwork:** One person defines the Interface (`PLCDriver`), others implement specific versions (`SiemensDriver`, `AllenBradleyDriver`).
 
 ---
@@ -687,46 +811,125 @@ def startup(driver: PLCDriver):
 
 ---
 
-### Exercises: Inheritance
+<!-- Illustration of Lego blocks snapping together (composition) vs a family tree (inheritance). -->
 
-1.  Create a class `Employee` with `name` and `salary`.
-2.  Create a child class `Manager` that inherits from `Employee`.
-3.  Add a `department` attribute to `Manager`.
-4.  Override a `show_info()` method to display name, salary, and department.
+![bg right](./Images/Section_5.png)
 
----
+## 7.5: Composition vs. Inheritance
 
-### Exercises: Polymorphism
+The two pillars of OOP design.
 
-1.  Create classes `Cat` ("Meow") and `Dog` ("Woof") with a `speak()` method.
-2.  Create a list `animals = [Cat(), Dog(), Cat()]`.
-3.  Loop through the list and make them all speak.
+- "Is-a" vs. "Has-a"
+- When to use Inheritance
+- When to use Composition
+- Why Composition is often better
 
 ---
 
-### Exercises: Encapsulation
+### The Two Relationships
 
-1.  Create a `BankVault` class.
-2.  Add a private attribute `__secret_code` (e.g., "1234").
-3.  Add a method `unlock(guess)` that prints "Open!" if the guess matches, or "Alarm!" otherwise.
-4.  Try to access `__secret_code` directly and see the error.
+1.  **Inheritance ("Is-a"):**
+    - A `Car` **is a** `Vehicle`.
+    - A `Dog` **is an** `Animal`.
+    - Relationship is permanent and rigid.
+
+2.  **Composition ("Has-a"):**
+    - A `Car` **has an** `Engine`.
+    - A `Computer` **has a** `Monitor`.
+    - Relationship is flexible and modular.
 
 ---
 
-### Exercises: Abstract Classes
+### The Trap of Inheritance
 
-1.  Define an abstract class `Appliance` with an abstract method `turn_on()`.
-2.  Create a `Fan` class that prints "Fan spinning...".
-3.  Create a `Light` class that prints "Light glowing...".
-4.  Verify that you cannot create an `Appliance` object directly.
+Newcomers often over-use inheritance.
+
+**Bad Example:**
+`class Car(Engine): ...`
+
+- Is a Car an Engine? No.
+- If you inherit, the Car gets `spark_plugs` and `cylinders` mixed into its own attributes. It's messy.
+- What if a Car has *two* engines (Hybrid)? You can't inherit twice easily.
+
+---
+
+### Using Composition
+
+Instead of inheriting, we store the object as an attribute.
+
+```python
+class Engine:
+    def start(self):
+        print("Vroom!")
+
+class Car:
+    def __init__(self):
+        # The Car HAS AN Engine
+        self.engine = Engine()
+    
+    def drive(self):
+        self.engine.start()
+        print("Car moving")
+```
+
+This is **Composition**. The `Car` is composed of an `Engine`.
+
+---
+
+<div class="columns">
+<div class="three">
+
+### Flexibility of Composition
+
+With composition, we can swap parts easily.
+
+```python
+class ElectricEngine:
+    def start(self):
+        print("Hummmm...")
+
+class Car:
+    def __init__(self, engine_type):
+        self.engine = engine_type
+```
+
+Now we can build a Gas Car or an Electric Car without changing the `Car` class!
+
+`c = Car(ElectricEngine())`
+
+</div>
+<div>
+
+![Diagram showing a Car object containing an Engine object slot, where different engine blocks can be fitted. (Mermaid)](./Diagrams/Mermaid/composition_car.svg)
+
+</div>
+</div>
+
+---
+
+### Rule of Thumb
+
+- Use **Inheritance** only when the child is a proper subtype of the parent and you want to reuse the parent's code *exactly* as is or slightly modified.
+- Use **Composition** when you want to use another class's features but aren't that "thing".
+
+> **"Favor Composition over Inheritance."**
+> *(Design Patterns, Gang of Four)*
 
 ---
 
 # Chapter 7: Summary
 
-- **Inheritance (`class Child(Parent)`)**: Build new classes on top of existing ones. DRY principle.
-- **`super()`**: Access parent methods from the child.
-- **Polymorphism**: Different objects, same interface. "Duck Typing".
-- **Encapsulation**: Hide internal state using `_` and `__`.
-- **Properties (`@property`)**: The Pythonic way to control access (Getters/Setters).
-- **Abstract Classes (`ABC`)**: Define templates and enforce implementation rules.
+- **Inheritance (`class Child(Parent)`)**: "Is-a" relationship. Code reuse.
+- **Polymorphism**: Treating different objects as the same type. "Duck Typing".
+- **Encapsulation**: "Black Box". Protect data. Use `@property` for getters/setters.
+- **Abstract Classes (`ABC`)**: Define contracts. Enforce implementation of methods.
+- **Composition**: "Has-a" relationship. Flexible building blocks. Often better than inheritance.
+
+---
+
+### Final Exercises
+
+1.  **Inheritance:** Create `Employee`, `Manager`, `Developer`. `Manager` has a `team_size`. `Developer` has `programming_languages`.
+2.  **Polymorphism:** Create a list of employees. Loop through and call `work()`. Manager prints "Managing...", Dev prints "Coding...".
+3.  **Encapsulation:** Make `salary` private. Add a property to read it, but only allow setting it if the new value is higher (raise).
+4.  **Composition:** Create a `Team` class that **has a** list of `Employee` objects. Add methods to `add_member()` and `show_team()`.
