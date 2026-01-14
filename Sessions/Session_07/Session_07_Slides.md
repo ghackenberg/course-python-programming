@@ -59,7 +59,7 @@ Writing the same code 3 times is inefficient and error-prone.
 </div>
 <div>
 
-![Illustration showing messy repeated code versus clean inherited code.](./Images/dry_principle.png)
+![Technical drawing of a traffic simulation on a computer screen showing a car, truck, and motorcycle with speed and color annotations.](./Images/dry_principle_traffic.png)
 
 </div>
 </div>
@@ -84,7 +84,7 @@ In programming:
 </div>
 <div>
 
-![Illustration of robot inheritance and genetics.](./Images/robot_genetics.png)
+![Technical drawing of inheritance showing an Animal parent class and Dog and Cat child classes with animals and labels.](./Images/animal_inheritance.png)
 
 </div>
 </div>
@@ -92,7 +92,7 @@ In programming:
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### The Concept of Inheritance
 
@@ -108,7 +108,7 @@ Inheritance allows us to define a generic **Parent Class** (Base Class / Supercl
 </div>
 <div>
 
-![](./Diagrams/Mermaid/vehicle_inheritance.svg)
+![Technical drawing of vehicle inheritance showing Vehicle as parent and Car, Truck, and Motorcycle as children with icons.](./Images/vehicle_inheritance.png)
 
 </div>
 </div>
@@ -143,7 +143,7 @@ c.drive() # Output: Toyota is moving.
 </div>
 <div>
 
-![Diagram showing Vehicle class at top, pointing down to Car and Truck classes. (Mermaid)](./Diagrams/Mermaid/inheritance_vehicle.svg)
+![](./Diagrams/Mermaid/vehicle_inheritance.svg)
 
 </div>
 </div>
@@ -175,6 +175,9 @@ Inheritance models an **"is-a"** relationship. This is the "Golden Rule" of inhe
 
 ---
 
+<div class="columns">
+<div>
+
 ### Visualizing Hierarchy
 
 Proper inheritance creates a taxonomy (classification system).
@@ -189,7 +192,18 @@ Proper inheritance creates a taxonomy (classification system).
 Everything that applies to `Animal` (e.g., `eat()`) applies to `Dog`.
 Everything that applies to `Mammal` (e.g., `produce_milk()`) applies to `Dog`.
 
+</div>
+<div>
+
+![Technical drawing of a biological taxonomy hierarchy showing Animal, Mammal, Reptile, Dog, Cat, and Snake.](./Images/hierarchy_taxonomy.png)
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div>
 
 ### Adding Specific Functionality
 
@@ -214,7 +228,18 @@ t.load_cargo()# Specific to Truck
 # t.honk()    # Error! Truck has no honk method.
 ```
 
+</div>
+<div>
+
+![Technical drawing showing a car honking and a truck being loaded with cargo.](./Images/specific_functionality.png)
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div>
 
 ### Overriding Methods
 
@@ -236,6 +261,14 @@ v.drive() # Vehicle moving...
 e = ElectricCar("Tesla")
 e.drive() # Electric Car moving silently...
 ```
+
+</div>
+<div>
+
+![Technical drawing showing a noisy classical vehicle and a silent electric car.](./Images/overriding_methods.png)
+
+</div>
+</div>
 
 ---
 
@@ -316,6 +349,9 @@ print(ts.read_temp()) # Specific to TempSensor
 
 ---
 
+<div class="columns">
+<div>
+
 ### The `object` Base Class
 
 In Python 3, all classes inherit from a built-in base class called `object`, even if you don't specify it.
@@ -326,6 +362,14 @@ This is why every object comes with built-in "Magic Methods" like:
 - `__init__` (Constructor)
 - `__str__` (String representation)
 - `__eq__` (Equality check `==`)
+
+</div>
+<div>
+
+![Technical drawing showing the object base class hierarchy with Robot, Car, and Person classes.](./Images/object_base_class.png)
+
+</div>
+</div>
 
 ---
 
@@ -349,6 +393,30 @@ print(c) # Car(Audi)
 
 ---
 
+### Customizing `__eq__`
+
+By default, `==` checks if two variables point to the **same object** in memory.
+
+Overriding `__eq__` allows us to define what "equality" means for our data.
+
+```python
+class Car(Vehicle):
+    def __eq__(self, other):
+        # 1. Check if 'other' is also a Car
+        if not isinstance(other, Car):
+            return False
+        # 2. Compare relevant attributes
+        return self.brand == other.brand
+
+c1 = Car("Audi")
+c2 = Car("Audi")
+
+print(c1 == c2) # True (Brands match)
+print(c1 is c2) # False (Different objects in memory)
+```
+
+---
+
 <!-- Illustration of shapes (circle, square, triangle) fitting into the same hole or interface. -->
 
 ![bg right](./Images/Section_2.png)
@@ -365,11 +433,22 @@ Many forms, one interface.
 
 ---
 
+<div class="columns">
+<div>
+
 ### What is Polymorphism?
 
 **Polymorphism** (Greek: "many forms") means that different classes can be used through the same **Interface**.
 
 If `Car`, `Boat`, and `Plane` all have a `move()` method, I don't need to know explicitly which one I have. I just call `.move()`, and the object does the "right thing" for its type.
+
+</div>
+<div>
+
+![Technical drawing showing a car, boat, and plane all responding to a 'move()' command in their own way.](./Images/polymorphism_concept.png)
+
+</div>
+</div>
 
 ---
 
@@ -458,6 +537,9 @@ If yes, it runs. If no, it crashes (`AttributeError`).
 
 ---
 
+<div class="columns">
+<div>
+
 ### Static vs. Dynamic Typing
 
 - **Static (Java/C#):** You must declare "This function takes a `Vehicle`". The compiler ensures only children of `Vehicle` are passed.
@@ -470,7 +552,18 @@ def start_trip(thing):
     # as long as it has .move()
 ```
 
+</div>
+<div>
+
+![Technical drawing comparing rigid static typing with flexible dynamic duck typing.](./Images/static_vs_dynamic.png)
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div>
 
 ### Polymorphism in Functions
 
@@ -491,10 +584,18 @@ def activate_device(device):
 
 This allows us to write generic code that works with objects we haven't even invented yet!
 
+</div>
+<div>
+
+![Technical drawing showing a single function activating multiple types of devices (lightbulb, motor, heater, coffee machine).](./Images/polymorphism_functions.png)
+
+</div>
+</div>
+
 ---
 
 <div class="columns">
-<div class="two">
+<div>
 
 ### Engineering Example: Simulation Loop
 
@@ -519,12 +620,7 @@ for m in machines:
 </div>
 <div>
 
-![](./Diagrams/Mermaid/simulation_loop_classes.svg)
-
-</div>
-<div>
-
-![Diagram of a simulation loop iterating over a list of generic Machine objects. (Mermaid)](./Diagrams/Mermaid/simulation_loop.svg)
+![Technical drawing showing a list of machines and a loop calling the step method on each object.](./Images/simulation_loop_factory.png)
 
 </div>
 </div>
@@ -546,7 +642,7 @@ Polymorphism supports a key software design principle:
 </div>
 <div>
 
-![Illustration of the Open/Closed Principle.](./Images/open_closed_robot.png)
+![Technical drawing showing the addition of a Drone class while the simulation loop remains protected and untouched.](./Images/open_closed_drone.png)
 
 </div>
 </div>
@@ -593,17 +689,31 @@ An object should be a **Black Box**.
 
 ---
 
+<div class="columns">
+<div>
+
 ### Access Modifiers in Python
 
 Unlike Java or C++, Python does not enforce strict privacy. It relies on **Naming Conventions**.
 
 | Level | Syntax | Meaning |
 | :--- | :--- | :--- |
-| **Public** | `name` | Accessible from anywhere. Normal use. |
-| **Protected** | `_name` | "Internal use only". Please don't touch from outside. |
-| **Private** | `__name` | Hard to access. Implementation detail. |
+| **Public** | `name` | Accessible |
+| **Protected** | `_name` | "Internal use" |
+| **Private** | `__name` | "Hard to access" |
+
+</div>
+<div>
+
+![Technical drawing showing three gates representing Public, Protected, and Private access levels in Python.](./Images/access_modifiers.png)
+
+</div>
+</div>
 
 ---
+
+<div class="columns">
+<div>
 
 ### Public vs Protected
 
@@ -623,6 +733,14 @@ print(a._pin)    # 1234
 ```
 
 **Rule:** If you see `_variable`, treat it as private. It's a "Keep Out" sign, not a locked door.
+
+</div>
+<div>
+
+![Technical drawing showing a visible balance (public) and a masked PIN with a keep-out sign (protected).](./Images/public_vs_protected_pin.png)
+
+</div>
+</div>
 
 ---
 
@@ -645,6 +763,9 @@ It's not truly secure (you can access it via `s._Secret__code`), but it prevents
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Problem with Public Data
 
 Why not just make everything public?
@@ -659,6 +780,14 @@ p.age = -5 # This makes no sense, but Python allows it!
 ```
 
 We need a way to intercept the assignment and check if the value is valid.
+
+</div>
+<div>
+
+![Technical drawing illustrating how public data can be set to nonsensical values like a negative age.](./Images/problem_public_data.png)
+
+</div>
+</div>
 
 ---
 
@@ -776,6 +905,9 @@ Blueprints for blueprints.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Concept of Abstraction
 
 Sometimes, a Parent Class is so generic that it shouldn't exist as an object.
@@ -786,6 +918,14 @@ Sometimes, a Parent Class is so generic that it shouldn't exist as an object.
 - `Shape` is an **Abstract Concept**.
 
 We want to enforce that *every* child of `Shape` *must* implement an `area()` method.
+
+</div>
+<div>
+
+![Technical drawing showing an abstract ghostly 'Shape' parent and concrete 'Circle' and 'Square' children.](./Images/abstraction_shapes.png)
+
+</div>
+</div>
 
 ---
 
@@ -810,6 +950,9 @@ Think of an Abstract Class as a **Contract**.
 
 ---
 
+<div class="columns">
+<div>
+
 ### Abstract Base Classes (ABCs)
 
 Python provides the `abc` module to create Abstract Classes.
@@ -828,7 +971,18 @@ class Shape(ABC):
         # No implementation. Just a rule.
 ```
 
+</div>
+<div>
+
+![Technical drawing showing the ABC structure with an abstractmethod as an empty puzzle piece and children filling it.](./Images/abc_implementation.png)
+
+</div>
+</div>
+
 ---
+
+<div class="columns">
+<div>
 
 ### Enforcing Rules
 
@@ -849,6 +1003,14 @@ class Square(Shape):
 
 sq = Square(5) # This works!
 ```
+
+</div>
+<div>
+
+![Technical drawing showing a TypeError when trying to instantiate an abstract Shape class.](./Images/enforcing_rules.png)
+
+</div>
+</div>
 
 ---
 
@@ -912,6 +1074,9 @@ The two pillars of OOP design.
 
 ---
 
+<div class="columns">
+<div>
+
 ### The Two Relationships
 
 1.  **Inheritance ("Is-a"):**
@@ -923,6 +1088,14 @@ The two pillars of OOP design.
     - A `Car` **has an** `Engine`.
     - A `Computer` **has a** `Monitor`.
     - Relationship is flexible and modular.
+
+</div>
+<div>
+
+![Technical drawing comparing the 'Is-a' inheritance relationship with the 'Has-a' composition relationship.](./Images/two_relationships.png)
+
+</div>
+</div>
 
 ---
 
