@@ -417,6 +417,53 @@ print(c1 is c2) # False (Different objects in memory)
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Product Hierarchy
+
+**Scenario:** You are managing an e-commerce platform.
+
+1.  Create a parent class `Product` with attributes `name` and `price`.
+2.  Create a child class `PhysicalProduct` that inherits from `Product` and adds a `weight` attribute.
+3.  Create a child class `DigitalProduct` that inherits from `Product` and adds a `file_size` attribute.
+4.  Override the `__str__` method in both child classes to provide a clear description.
+
+</div>
+<div>
+
+![Technical drawing of a product hierarchy showing physical and digital products.](./Images/exercise_product_hierarchy.png)
+
+</div>
+</div>
+
+---
+
+### Solution: Product Hierarchy
+
+```python
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class PhysicalProduct(Product):
+    def __init__(self, name, price, weight):
+        super().__init__(name, price)
+        self.weight = weight
+    def __str__(self):
+        return f"Physical: {self.name} (${self.price}, {self.weight}kg)"
+
+class DigitalProduct(Product):
+    def __init__(self, name, price, file_size):
+        super().__init__(name, price)
+        self.file_size = file_size
+    def __str__(self):
+        return f"Digital: {self.name} (${self.price}, {self.file_size}MB)"
+```
+
+---
+
 <!-- Illustration of shapes (circle, square, triangle) fitting into the same hole or interface. -->
 
 ![bg right](./Images/Section_2.png)
@@ -642,15 +689,59 @@ Polymorphism supports a key software design principle:
 </div>
 <div>
 
-![Technical drawing showing the addition of a Drone class while the simulation loop remains protected and untouched.](./Images/open_closed_drone.png)
+![Technical drawing showing the addition of a Drone class while the simulation loop remains protected and untouched.](./Images/open_closed_drone.png)      
 
 </div>
 </div>
 
 ---
 
-<!-- Illustration of a capsule or a safe, symbolizing protected contents. -->
+<div class="columns">
+<div>
 
+### Exercise: Notification System
+
+**Scenario:** Your product needs to send notifications via different channels.
+
+1.  Create three classes: `Email`, `SMS`, and `PushNotification`.
+2.  Each class must have a `send(message)` method.
+3.  Create a list called `channels` containing one instance of each.
+4.  Write a loop that iterates through the `channels` and calls `.send("System Update")` on each.
+
+</div>
+<div>
+
+![Technical drawing of a notification system showing email, SMS, and push notification icons.](./Images/exercise_notification_system.png)
+
+</div>
+</div>
+
+---
+
+### Solution: Notification System
+
+```python
+class Email:
+    def send(self, message):
+        print(f"Sending Email: {message}")
+
+class SMS:
+    def send(self, message):
+        print(f"Sending SMS: {message}")
+
+class PushNotification:
+    def send(self, message):
+        print(f"Sending Push: {message}")
+
+channels = [Email(), SMS(), PushNotification()]
+
+for c in channels:
+    c.send("System Update")
+```
+
+---
+
+<!-- Illustration of a capsule or a safe, symbolizing protected contents. -->
 ![bg right](./Images/Section_3.png)
 
 ## 7.3: Encapsulation
@@ -889,6 +980,53 @@ print(r.area) # 100 (Automatically updated!)
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Smart Thermostat
+
+**Scenario:** You are designing a smart home thermostat.
+
+1.  Create a class `SmartThermostat` with a protected attribute `_target_temperature`.
+2.  Implement a `@property` (getter) to read the temperature.
+3.  Implement a `@target_temperature.setter` that validates the input (15 to 30).
+4.  Test it by trying to set a valid (22) and an invalid (45) temperature.
+
+</div>
+<div>
+
+![Technical drawing of a smart thermostat with temperature controls.](./Images/exercise_smart_thermostat.png)
+
+</div>
+</div>
+
+---
+
+### Solution: Smart Thermostat
+
+```python
+class SmartThermostat:
+    def __init__(self):
+        self._target_temperature = 20
+
+    @property
+    def target_temperature(self):
+        return self._target_temperature
+
+    @target_temperature.setter
+    def target_temperature(self, value):
+        if 15 <= value <= 30:
+            self._target_temperature = value
+        else:
+            print("Error: Temperature must be between 15 and 30.")
+
+t = SmartThermostat()
+t.target_temperature = 22 # Valid
+t.target_temperature = 45 # Invalid -> Error message
+```
+
+---
+
 <!-- Illustration of a transparent blueprint or a ghost outline. -->
 
 ![bg right](./Images/Section_4.png)
@@ -1059,6 +1197,54 @@ def startup(driver: PLCDriver):
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Payment Gateway ABC
+
+**Scenario:** Your platform must support various payment providers.
+
+1.  Create an abstract base class `PaymentGateway(ABC)` with an abstract method `process(amount)`.
+2.  Implement `StripeGateway` and `PayPalGateway`.
+3.  Create a function `checkout(gateway, amount)` that calls `gateway.process(amount)`.
+4.  Try to instantiate `PaymentGateway` directly.
+
+</div>
+<div>
+
+![Technical drawing of a payment gateway showing credit card processing through Stripe and PayPal.](./Images/exercise_payment_gateway.png)
+
+</div>
+</div>
+
+---
+
+### Solution: Payment Gateway ABC
+
+```python
+from abc import ABC, abstractmethod
+
+class PaymentGateway(ABC):
+    @abstractmethod
+    def process(self, amount):
+        pass
+
+class StripeGateway(PaymentGateway):
+    def process(self, amount):
+        print(f"Stripe: Processing ${amount}")
+
+class PayPalGateway(PaymentGateway):
+    def process(self, amount):
+        print(f"PayPal: Processing ${amount}")
+
+def checkout(gateway, amount):
+    gateway.process(amount)
+
+# pg = PaymentGateway() # TypeError!
+```
+
+---
+
 <!-- Illustration of Lego blocks snapping together (composition) vs a family tree (inheritance). -->
 
 ![bg right](./Images/Section_5.png)
@@ -1197,6 +1383,55 @@ Now we can build a Gas Car or an Electric Car without changing the `Car` class!
 
 ---
 
+<div class="columns">
+<div>
+
+### Exercise: Smartphone Components
+
+**Scenario:** A smartphone is a complex product made of modules.
+
+1.  Create classes `Screen`, `Battery`, and `Camera`.
+2.  Create a `Smartphone` class that uses **Composition** to include these three components.
+3.  Add a `get_system_report()` method to `Smartphone`.
+4.  Why is it better to use composition here instead of making `Smartphone` inherit from `Battery`?
+
+</div>
+<div>
+
+![Technical drawing of a smartphone and its modular components (Screen, Battery, Camera).](./Images/exercise_smartphone_components.png)
+
+</div>
+</div>
+
+---
+
+### Solution: Smartphone Components
+
+```python
+class Screen:
+    def status(self): return "Screen: OK"
+class Battery:
+    def status(self): return "Battery: 80%"
+class Camera:
+    def status(self): return "Camera: Ready"
+
+class Smartphone:
+    def __init__(self):
+        self.screen = Screen()
+        self.battery = Battery()
+        self.camera = Camera()
+    
+    def get_system_report(self):
+        print(self.screen.status())
+        print(self.battery.status())
+        print(self.camera.status())
+
+# Inheritance would imply a Smartphone IS A Battery, which is false.
+# Composition allows us to swap or add components (e.g. Dual Camera) easily.
+```
+
+---
+
 # Chapter 7: Summary
 
 - **Inheritance (`class Child(Parent)`)**: "Is-a" relationship. Code reuse.
@@ -1204,12 +1439,3 @@ Now we can build a Gas Car or an Electric Car without changing the `Car` class!
 - **Encapsulation**: "Black Box". Protect data. Use `@property` for getters/setters.
 - **Abstract Classes (`ABC`)**: Define contracts. Enforce implementation of methods.
 - **Composition**: "Has-a" relationship. Flexible building blocks. Often better than inheritance.
-
----
-
-### Final Exercises
-
-1.  **Inheritance:** Create `Employee`, `Manager`, `Developer`. `Manager` has a `team_size`. `Developer` has `programming_languages`.
-2.  **Polymorphism:** Create a list of employees. Loop through and call `work()`. Manager prints "Managing...", Dev prints "Coding...".
-3.  **Encapsulation:** Make `salary` private. Add a property to read it, but only allow setting it if the new value is higher (raise).
-4.  **Composition:** Create a `Team` class that **has a** list of `Employee` objects. Add methods to `add_member()` and `show_team()`.
