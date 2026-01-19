@@ -57,9 +57,9 @@ A **Stack** is a linear data structure that follows a particular order in which 
 </div>
 <div class="two">
 
-<!-- A fun, technical-style drawing of a vertical glass tube. Glowing data blocks are being dropped into the top. An indicator points to the top block as "First Out". Cartoon-like shading, white background, square format. -->
+<!-- A technical-style drawing of a vertical glass container representing a stack. Colorful data blocks are stacked vertically. The topmost block is clearly labeled 'Last In / First Out'. An arrow points to the top block showing it being removed. Cartoon-like shading, white background, square format. -->
 
-![Illustration of the LIFO principle using a vertical tube and colorful data blocks.](./Images/Stack_LIFO.jpg)
+![Illustration of the LIFO principle using a vertical tube and colorful data blocks.](./Images/Stack_LIFO.png)
 
 </div>
 </div>
@@ -239,9 +239,9 @@ Recall the **Call Stack** from Session 5:
 </div>
 <div class="two">
 
-<!-- A technical illustration of a holographic mirror reflecting a vertical stack of data frames, representing function call layers. Clear cartoon-like shading, white background, square format. -->
+<!-- A simple, clear technical drawing of a vertical call stack with three rectangular frames. The bottom two frames are light blue, and the top frame is a distinct bright orange to indicate the active frame. Cartoon-like shading, white background, square format. -->
 
-![Illustration of the call stack using nested function call frames.](./Images/Call_Stack_Frames.jpg)
+![Illustration of the call stack using nested function call frames.](./Images/Call_Stack_Frames.png)
 
 </div>
 </div>
