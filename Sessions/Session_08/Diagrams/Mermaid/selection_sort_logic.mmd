@@ -1,0 +1,11 @@
+graph TB
+    subgraph "Step 2"
+    direction TB
+    S1[5] --- S2[10] --- S3[7]
+    end
+    subgraph "Step 1"
+    direction TB
+    U1[10] --- U2[5] --- U3[7]
+    end
+    U2 -. Swap with .-> U1
+    S3 -. Swap with .-> S2

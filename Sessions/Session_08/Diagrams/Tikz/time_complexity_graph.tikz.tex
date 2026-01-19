@@ -1,0 +1,19 @@
+\documentclass[tikz]{standalone}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[domain=0:4, scale=1.5]
+    % Axes
+    \draw[-{Stealth}, thick] (0,0) -- (4.5,0) node[right, font=\sffamily] {Data Size ($n$)};
+    \draw[-{Stealth}, thick] (0,0) -- (0,4.5) node[above, font=\sffamily] {Execution Time};
+
+    % Quadratic Scaling (Slow)
+    \draw[very thick, red, smooth] plot (\x, {0.25*\x*\x}) node[above, font=\sffamily\small] {Quadratic (Slow)};
+    
+    % Linear Scaling (Moderate)
+    \draw[very thick, orange, smooth] plot (\x, {\x}) node[right, font=\sffamily\small] {Linear (Good)};
+
+    % Logarithmic Scaling (Fast)
+    \draw[very thick, green!60!black, smooth] plot (\x, {ln(\x+1)*1.5}) node[right, font=\sffamily\small] {Logarithmic (Excellent)};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,6 @@
+graph TB
+    subgraph Sorted Hand
+    C1[2] --- C2[5] --- C3[8]
+    end
+    Cnew[4] -. Insert before 5 .-> C2
+    C1 -. Insert after 2 .-> Cnew
