@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 08 - Test 04 (Exam)</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: FIFO Principle</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a FIFO structure, if you add A, B, and C in that order, which one is removed first?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>FIFO (First-In, First-Out) means the first item added (A) is the first to be removed.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[A]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[B]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[C]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[None of them]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Stack Memory Behavior</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What happens when a stack is full and you attempt to <strong>push</strong> another element?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Pushing onto a full stack results in a Stack Overflow.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Stack Overflow]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Stack Underflow]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Segmentation Fault]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The stack automatically resizes.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Doubly Linked List Traversal</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which feature of a Doubly Linked List makes it more flexible than a Singly Linked List for navigation?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Bidirectional pointers allow traversal in both directions (forward and backward).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[It can be traversed in both directions.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It uses half the memory of a singly linked list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It has a fixed size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It provides direct index access to nodes.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: Recursion Tree Growth</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What happens to the amount of work in a simple recursive Fibonacci function as <code>n</code> increases?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The number of calls (work) doubles or triples with each step because it solves two sub-problems per call.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[It grows exponentially (doubles or triples each step).]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It grows linearly.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It stays constant.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It decreases as n gets larger.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Bubble Sort optimization</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How can you optimize Bubble Sort to stop early if the list is already sorted?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>By using a boolean flag to check if any swaps were made during a pass.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Check if any swaps were made during a pass.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Check if the first and last elements are equal.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Decrease the number of elements in each pass.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Bubble sort cannot be optimized.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Stack Code: Operation sequence</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the state of the stack after these operations?</p>
+<pre><code>s = []
+s.append(10)
+s.append(20)
+s.pop()
+s.append(30)
+s.append(40)
+s.pop()</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. [10]. 2. [10, 20]. 3. [10]. 4. [10, 30]. 5. [10, 30, 40]. 6. [10, 30].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[[10, 30]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[10, 20, 30, 40]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[10, 40]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[20, 40]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: Queue Code: Deque trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the following <code>deque</code> trace:</p>
+<pre><code>from collections import deque
+q = deque()
+q.append(5)
+q.append(15)
+q.popleft()
+q.append(25)
+print(list(q))</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. [5]. 2. [5, 15]. 3. [15]. 4. [15, 25].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[[15, 25]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[5, 15, 25]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[5, 25]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[25]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Linked List Traversal Print</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is printed by the following traversal?</p>
+<pre><code># head points to Node(1) -> Node(2) -> Node(3)
+current = head
+while current:
+    print(current.data * 2, end=" ")
+    current = current.next</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The code multiplies each node's data by 2 during traversal: 2 4 6.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[2 4 6 ]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1 2 3 ]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[2 4 6 8 ]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[None]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Recursion: mystery function</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of <code>mystery(3)</code>?</p>
+<pre><code>def mystery(n):
+    if n == 0:
+        return 0
+    return n + mystery(n - 1)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>3 + mystery(2) = 3 + (2 + mystery(1)) = 3 + 2 + (1 + 0) = 6.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[6]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[5]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Recursive string reversal</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Consider the logic: "The reverse of a string is the reverse of the rest followed by the first character." What is the result of <code>rev("abc")</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>rev("abc") = rev("bc") + "a" = (rev("c") + "b") + "a" = "c" + "b" + "a" = "cba".</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[cba]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[abc]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[acb]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[bac]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Sorting: Insertion Sort trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A list <code>[5, 2, 9]</code> is being sorted. In the first step of Insertion Sort (starting at index 1), what is the value of the <strong>key</strong> and what is the list after the first insertion?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Key = 2. It is compared to 5, 5 shifts right, 2 is placed at index 0. Result: [2, 5, 9].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Key = 2, Result = [2, 5, 9]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Key = 5, Result = [5, 2, 9]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Key = 9, Result = [5, 2, 9]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Key = 2, Result = [5, 2, 9]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Sorting: Bubble Sort Pass 1 result</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which element is guaranteed to be in its correct final sorted position after <strong>two</strong> full passes of Bubble Sort on a list of 5 elements?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Each pass places the next largest element at the end. Pass 1 = Largest, Pass 2 = Second Largest.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The two largest elements.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The two smallest elements.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Only the largest element.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The entire list.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: Big O Scaling: Comparison</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Comparing "Linear Scaling" and "Quadratic Scaling", which one grows significantly slower as the input size becomes very large?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Linear scaling (double data = double time) is much better than quadratic scaling (double data = four times the time).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Linear Scaling]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Quadratic Scaling]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[They grow at the same rate.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It depends on the computer hardware.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Recursion: base case check</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the following code, what would happen if the base case check <code>if n == 0</code> was removed?</p>
+<pre><code>def f(n):
+    # if n == 0: return 1
+    return n * f(n - 1)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Without the stopping condition, the function will call itself infinitely until the stack overflows.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The function will run until a RecursionError occurs.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The function will return 0 immediately.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The function will return 1 immediately.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The code will compile but won't run.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Selection Sort code: min_idx</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Look at this part of Selection Sort:</p>
+<pre><code>for i in range(n):
+    min_idx = i
+    for j in range(i + 1, n):
+        if arr[j] < arr[min_idx]:
+            min_idx = j</code></pre>
+<p>If <code>arr = [5, 2, 8]</code> and <code>i = 0</code>, what is <code>min_idx</code> after the <code>j</code> loop finishes?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The loop compares 5 to 2 (min_idx becomes 1) and then 2 to 8. Final min_idx is 1.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[2]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[5]]></text></answer>
+  </question>
+</quiz>

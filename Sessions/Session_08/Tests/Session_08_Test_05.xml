@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 08 - Test 05 (Exam)</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: Stack vs Queue: Removal</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you add elements to a structure and the <strong>most recently added</strong> element is the one removed next, which structure are you using?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>This is the LIFO (Last-In, First-Out) principle, which defines a Stack.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Stack]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Queue]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linked List]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Array]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Stack implementation: Pop</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the logical result of calling <code>pop()</code> on an <strong>empty</strong> stack?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Removing from an empty stack causes an error called "Stack Underflow".</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Stack Underflow]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Stack Overflow]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Recursion Depth Exceeded]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The stack remains empty without error.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Queue Performance</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why is removing the first element of a standard Python list (<code>pop(0)</code>) slower than adding an element to the end (<code>append()</code>)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Removing the first element requires shifting all remaining elements to fill the empty space.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Because all other elements must be shifted left.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because the list must be re-sorted.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because lists can only grow in size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because memory must be deleted manually.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: Linked List Traversal Time</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a linked list, how does the time required to find an element at the <strong>end</strong> of the list change if you double the number of nodes?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Traversal time is proportional to size; doubling nodes doubles the time (Linear Scaling).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The time doubles.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time increases fourfold.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time stays the same.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time decreases.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Circular Linked List</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the distinguishing feature of a <strong>Circular Linked List</strong>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The last node's <code>next</code> pointer points back to the head node instead of being <code>None</code>.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The last node points back to the first node.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It has no pointers.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It can only store numbers in a circular pattern.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It is automatically sorted in a circle.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Recursion: Matryoshka analogy</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the Matryoshka doll analogy for recursion, what corresponds to the final, smallest doll that cannot be opened?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The smallest doll represents the base case, where the recursion stops.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The base case.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The recursive step.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The call stack.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The input parameter.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: Recursion: Stack Depth growth</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you call a recursive function 100 times deeper (100 nested calls), what happens to the system's memory?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Each call adds a new frame to the call stack, so memory usage grows linearly with the depth of recursion.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Memory usage increases because 100 frames are added to the stack.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Memory usage stays exactly the same.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Memory usage decreases as the problem gets smaller.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Memory is only used for the final result.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Sorting: Quadratic Scaling graph</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Based on the performance graph, why is Quadratic Scaling (O(n^2)) considered problematic for large datasets?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Because the execution time grows much faster than the data size, eventually becoming unmanageable.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The time increases much faster than the input size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time increases slower than the input size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time increases at the exact same rate as the input size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The time stays constant.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Sorting: Timsort hybrid</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which two algorithms are combined to form Python's Timsort?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Timsort is a hybrid of Merge Sort and Insertion Sort.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Merge Sort and Insertion Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Bubble Sort and Selection Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Quick Sort and Selection Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Bubble Sort and Insertion Sort]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Stack Trace Code output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the code:</p>
+<pre><code>s = []
+for i in range(5):
+    s.append(i)
+s.pop()
+s.pop()
+print(s[-1])</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. [0, 1, 2, 3, 4]. 2. Pop 4 -> [0, 1, 2, 3]. 3. Pop 3 -> [0, 1, 2]. 4. s[-1] is 2.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[2]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[4]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Queue Trace Code output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the code:</p>
+<pre><code>from collections import deque
+q = deque([10, 20])
+q.append(30)
+val = q.popleft()
+q.append(val + 5)
+print(list(q))</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. [10, 20, 30]. 2. popleft removes 10. 3. val is 10. 4. append(15). Result: [20, 30, 15].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[[20, 30, 15]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[10, 20, 30, 15]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[30, 15, 20]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[10, 15]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Recursive mystery output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the result of <code>m(5, 3)</code>?</p>
+<pre><code>def m(a, b):
+    if b == 0:
+        return a
+    return m(a + 1, b - 1)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>m(5, 3) -> m(6, 2) -> m(7, 1) -> m(8, 0) -> returns 8.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[8]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[5]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[15]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: Sorting: Bubble Sort swapping</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the first pass of Bubble Sort on <code>[10, 5, 20, 2]</code>, how many times will a **swap** occur?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. 10,5 -> Swap [5, 10, 20, 2]. 2. 10,20 -> No swap. 3. 20,2 -> Swap [5, 10, 2, 20]. Total swaps = 2.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[2]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Sorting: Selection Sort pass 1</text></name>
+    <questiontext format="html"><text><![CDATA[<p>After the first pass of Selection Sort on <code>[9, 1, 5, 3]</code>, what is the state of the list?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The smallest element (1) is found and swapped with the first element (9). Result: [1, 9, 5, 3].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[[1, 9, 5, 3]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[1, 3, 5, 9]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[9, 1, 5, 3]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[1, 5, 3, 9]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Sorting: Insertion Sort logic trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the list <code>[3, 8, 2, 7]</code>. If the "key" for the current Insertion Sort step is <code>2</code>, which elements will be shifted to the right?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The key 2 is compared with 8 and 3. Since both are larger, both 3 and 8 will be shifted.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[3 and 8]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Only 8]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Only 3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[No elements will be shifted.]]></text></answer>
+  </question>
+</quiz>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 08 - Test 03 (Preparation)</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: Stack Analogy Logic</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a stack of plates in a cafeteria, which plate is the most accessible?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The top plate is the only one that can be removed without disturbing the others (LIFO).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The one at the very top.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The one at the very bottom.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The one in the exact middle.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[All plates are equally accessible.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Queue Checkout Analogy</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a supermarket checkout line (Queue), who is served first?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The person at the front of the line is served first (FIFO).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The person who joined the line first.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The person who joined the line last.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The person with the most items.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[A random person from the line.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Node Pointer Purpose</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a Linked List node, what is the purpose of the <code>next</code> pointer?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>It stores the memory location of the following node in the chain.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[To link the current node to the next node in sequence.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To store the numeric value of the node.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To point back to the head of the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To store the name of the list.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: Continuous Memory Advantage</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the primary benefit of storing array elements in a single, continuous block of memory?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>It allows the computer to jump directly to any element using its index (instant access).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Instant access to any element via its index.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Faster insertion at the beginning of the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Easier resizing without moving data.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[No need for index numbers.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Recursion: Stopping condition</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which part of a recursive function defines the "simplest instance" that can be solved directly?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The base case handles the simplest possible input without further recursion.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The base case.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The recursive step.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The function header.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The return type.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Sorting: Bubble Sort "Bubbling"</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why is Bubble Sort named "Bubble" Sort?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Because larger elements gradually "bubble up" to their correct position at the end of the list in each pass.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Because large elements move towards the end like bubbles rising in water.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it uses a circular data structure.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it only works for decimal numbers.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it shuffles the list randomly.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: Efficient Stack Code Output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of the following sequence?</p>
+<pre><code>stack = []
+stack.append("A")
+stack.append("B")
+stack.append("C")
+stack.pop()
+print(stack[-1])</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. ["A", "B", "C"]. 2. Pop "C" -> ["A", "B"]. 3. Peek -> "B".</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[B]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[C]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[A]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[IndexError]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Queue Code Trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the following <code>deque</code> operations:</p>
+<pre><code>from collections import deque
+q = deque(["Task 1", "Task 2"])
+q.append("Task 3")
+q.popleft()
+print(q[0])</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. ["Task 1", "Task 2", "Task 3"]. 2. popleft() removes "Task 1" -> ["Task 2", "Task 3"]. 3. q[0] is "Task 2".</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Task 2]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Task 1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Task 3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[deque(["Task 2", "Task 3"])]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Linked List Deletion logic</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a list <code>A -> B -> C -> None</code>, to delete node <code>B</code>, which pointer must be changed?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The <code>next</code> pointer of node <code>A</code> must be updated to point directly to node <code>C</code>.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[A.next]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[B.next]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[head]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[C.next]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Factorial recursive step</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which line of code correctly represents the recursive step for calculating <code>factorial(n)</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Factorial is n multiplied by the factorial of n-1.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[<code>return n * factorial(n - 1)</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>return n + factorial(n - 1)</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>return factorial(n - 1)</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>return n * (n - 1)</code>]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Recursion vs Iteration: Memory</text></name>
+    <questiontext format="html"><text><![CDATA[<p>According to the comparison in Section 8.3, how is memory usage characterized for recursion?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Recursion memory usage scales with the depth of the recursion because each call adds a frame to the stack.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Higher (scales with depth)]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Lower (constant)]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Instant]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It does not use memory.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Sorting: Algorithm Comparison table</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Based on the algorithm comparison table, which sorting method is "Fast (if sorted)" for its best-case scenario?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Both Bubble Sort and Insertion Sort can be fast if the data is already sorted.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Bubble and Insertion Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Selection Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[All basic sorting algorithms]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[None of them]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: Recursive Power trace output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the result of <code>power(2, 4)</code>?</p>
+<pre><code>def power(base, exp):
+    if exp == 0:
+        return 1
+    return base * power(base, exp - 1)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>2 * 2 * 2 * 2 * 1 = 16.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[16]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[8]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[4]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[32]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Selection Sort finding minimum</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the first pass of Selection Sort on <code>[15, 12, 18, 11]</code>, what is the found "min_idx" at the end of the inner loop?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The smallest value is 11, which is at index 3.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[11]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Python list.sort() return value</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the value of <code>result</code> in the following code?</p>
+<pre><code>data = [3, 1, 2]
+result = data.sort()</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The <code>.sort()</code> method modifies the list in-place and returns <code>None</code>.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[None]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[1, 2, 3]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[3, 2, 1]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+  </question>
+</quiz>

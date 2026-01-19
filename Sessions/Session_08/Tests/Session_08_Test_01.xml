@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/Default for Python Programming - Session 08 - Test 01 (Preparation)</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q01: Stack Logic</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In a LIFO data structure, which element is retrieved first?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>LIFO (Last-In, First-Out) means the most recently added item is the first to be removed.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The one that was added last.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The one that was added first.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The one with the smallest value.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The one with the largest value.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q02: Queue Characteristics</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the defining behavior of a standard Queue?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Queues follow the FIFO (First-In, First-Out) principle.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Elements enter at the rear and leave from the front.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements enter and leave from the same end.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements are automatically sorted upon entry.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements can be accessed directly via their index.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q03: Linked List Node Structure</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is stored within a single node of a singly linked list?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A node typically stores a data value and a pointer (reference) to the next node.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The data and a reference to the next node.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The data and its position index in the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The data and a reference to the head of the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[References to all other nodes in the list.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q04: Memory: Array vs Linked List</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which statement correctly describes how memory is allocated for a standard Python list (array) compared to a linked list?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Arrays use contiguous blocks, while linked list nodes can be scattered across memory.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Arrays use a continuous block of memory, while linked list nodes are scattered.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linked lists use a continuous block, while arrays are scattered.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Both data structures require a single continuous block of memory.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linked lists require less memory because they don't use pointers.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Recursive Termination</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the primary role of the <strong>base case</strong> in a recursive function?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The base case prevents infinite recursion by providing a stopping condition.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[To provide a stopping condition for the function.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To handle the most complex part of the problem.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To initiate the first self-call of the function.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To calculate the final sum of all results.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q06: Sorting Efficiency (Big O)</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In algorithms with quadratic scaling (like Bubble Sort), if the input size is increased from 10 to 20, what happens to the estimated execution time?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Quadratic scaling means that doubling the input size (x2) leads to four times (2^2 = 4) the execution time.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[It increases by approximately four times.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It doubles.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It increases only slightly.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It stays the same.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q07: Python Built-in Sorting</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which hybrid algorithm is used by Python's <code>.sort()</code> method?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Python uses Timsort, a hybrid of Merge Sort and Insertion Sort.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Timsort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Bubble Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Quick Sort]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Selection Sort]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Stack Implementation Code</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Consider the following Python code:</p>
+<pre><code>stack = [5, 10, 15]
+stack.append(20)
+stack.pop()
+stack.append(25)
+print(stack[-1])</code></pre>
+<p>What is the printed output?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. Start: [5, 10, 15]. 2. Push 20: [5, 10, 15, 20]. 3. Pop: [5, 10, 15]. 4. Push 25: [5, 10, 15, 25]. 5. Peek: 25.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[25]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[20]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[15]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[5]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Queue Efficiency Tool</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which class from the <code>collections</code> module is specifically designed for efficient FIFO operations?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The <code>deque</code> (double-ended queue) is optimized for fast additions and removals at both ends.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[deque]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Stack]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[LinkedList]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[ordered_list]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Linked List Traversal Code</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Analyze the following traversal logic:</p>
+<pre><code>current = head
+while current:
+    if current.data == "Target":
+        print("Found")
+        break
+    current = current.next</code></pre>
+<p>What happens if "Target" is the <strong>last</strong> node in a list of 5 nodes?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The loop will visit all 5 nodes sequentially before finding the target.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The loop executes 5 times.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The loop executes only once.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[An error occurs because index 4 is not found.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The code prints "None" before finding the target.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q11: Recursive Power Output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of the following function when called as <code>power(3, 2)</code>?</p>
+<pre><code>def power(base, exp):
+    if exp == 0:
+        return 1
+    return base * power(base, exp - 1)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>power(3, 2) = 3 * power(3, 1) = 3 * (3 * power(3, 0)) = 3 * 3 * 1 = 9.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[9]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[6]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[27]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Bubble Sort Trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>A list <code>[4, 2, 1, 3]</code> is being sorted using Bubble Sort. What is the state of the list after the <strong>first full pass</strong> (outer loop iteration 1)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>1. Compare 4,2 -> Swap [2, 4, 1, 3]. 2. Compare 4,1 -> Swap [2, 1, 4, 3]. 3. Compare 4,3 -> Swap [2, 1, 3, 4].</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[[2, 1, 3, 4]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[1, 2, 3, 4]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[2, 4, 1, 3]]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[[4, 3, 2, 1]]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q13: Selection Sort Concept</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In Selection Sort, if we have a list of 5 elements, how many times will the algorithm "select" a minimum element to swap it into position?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Selection sort performs N-1 or N passes to place each element correctly.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[5]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[25]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q14: Factorial Stack Depth</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When calculating <code>factorial(4)</code> recursively, how many stack frames (function calls) exist on the call stack at the moment the base case is reached?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Calls are made for: factorial(4), factorial(3), factorial(2), factorial(1), and factorial(0). Total = 5 frames.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[5]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[4]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[10]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Recursive Sum Trace</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of the following code?</p>
+<pre><code>def r_sum(nums):
+    if not nums:
+        return 0
+    return nums[0] + r_sum(nums[1:])
+
+print(r_sum([10, 20]))</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>r_sum([10, 20]) = 10 + r_sum([20]) = 10 + (20 + r_sum([])) = 10 + 20 + 0 = 30.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[30]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[10]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[20]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+</quiz>
