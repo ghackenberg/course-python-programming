@@ -6,6 +6,7 @@
     </category>
   </question>
 
+  <!-- 8.1 Stacks -->
   <question type="multichoice">
     <name><text>Q01: Stack Logic</text></name>
     <questiontext format="html"><text><![CDATA[<p>In a LIFO data structure, which element is retrieved first?</p>]]></text></questiontext>
@@ -20,85 +21,7 @@
   </question>
 
   <question type="multichoice">
-    <name><text>Q02: Queue Characteristics</text></name>
-    <questiontext format="html"><text><![CDATA[<p>What is the defining behavior of a standard Queue?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Queues follow the FIFO (First-In, First-Out) principle.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[Elements enter at the rear and leave from the front.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Elements enter and leave from the same end.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Elements are automatically sorted upon entry.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Elements can be accessed directly via their index.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q03: Linked List Node Structure</text></name>
-    <questiontext format="html"><text><![CDATA[<p>What is stored within a single node of a singly linked list?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>A node typically stores a data value and a pointer (reference) to the next node.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[The data and a reference to the next node.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[The data and its position index in the list.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[The data and a reference to the head of the list.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[References to all other nodes in the list.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q04: Memory: Array vs Linked List</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Which statement correctly describes how memory is allocated for a standard Python list (array) compared to a linked list?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Arrays use contiguous blocks, while linked list nodes can be scattered across memory.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[Arrays use a continuous block of memory, while linked list nodes are scattered.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Linked lists use a continuous block, while arrays are scattered.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Both data structures require a single continuous block of memory.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Linked lists require less memory because they don't use pointers.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q05: Recursive Termination</text></name>
-    <questiontext format="html"><text><![CDATA[<p>What is the primary role of the <strong>base case</strong> in a recursive function?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The base case prevents infinite recursion by providing a stopping condition.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[To provide a stopping condition for the function.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[To handle the most complex part of the problem.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[To initiate the first self-call of the function.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[To calculate the final sum of all results.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q06: Sorting Efficiency (Big O)</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In algorithms with quadratic scaling (like Bubble Sort), if the input size is increased from 10 to 20, what happens to the estimated execution time?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Quadratic scaling means that doubling the input size (x2) leads to four times (2^2 = 4) the execution time.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[It increases by approximately four times.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It doubles.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It increases only slightly.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It stays the same.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q07: Python Built-in Sorting</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Which hybrid algorithm is used by Python's <code>.sort()</code> method?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Python uses Timsort, a hybrid of Merge Sort and Insertion Sort.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[Timsort]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Bubble Sort]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Quick Sort]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Selection Sort]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q08: Stack Implementation Code</text></name>
+    <name><text>Q02: Stack Implementation Code</text></name>
     <questiontext format="html"><text><![CDATA[<p>Consider the following Python code:</p>
 <pre><code>stack = [5, 10, 15]
 stack.append(20)
@@ -117,7 +40,34 @@ print(stack[-1])</code></pre>
   </question>
 
   <question type="multichoice">
-    <name><text>Q09: Queue Efficiency Tool</text></name>
+    <name><text>Q03: Stack Application</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which common software feature is typically implemented using a Stack data structure?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The Undo/Redo mechanism is a classic application of a Stack (LIFO).</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Undo/Redo mechanism]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Printer queue]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Task scheduling]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Customer service line]]></text></answer>
+  </question>
+
+  <!-- 8.1 Queues -->
+  <question type="multichoice">
+    <name><text>Q04: Queue Characteristics</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the defining behavior of a standard Queue?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Queues follow the FIFO (First-In, First-Out) principle.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Elements enter at the rear and leave from the front.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements enter and leave from the same end.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements are automatically sorted upon entry.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Elements can be accessed directly via their index.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q05: Queue Efficiency Tool</text></name>
     <questiontext format="html"><text><![CDATA[<p>Which class from the <code>collections</code> module is specifically designed for efficient FIFO operations?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>The <code>deque</code> (double-ended queue) is optimized for fast additions and removals at both ends.</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
@@ -130,7 +80,47 @@ print(stack[-1])</code></pre>
   </question>
 
   <question type="multichoice">
-    <name><text>Q10: Linked List Traversal Code</text></name>
+    <name><text>Q06: Queue Inefficiency</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why is using a standard Python list as a Queue (using <code>pop(0)</code>) inefficient for large datasets?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Removing the first element requires shifting all remaining elements one position to the left.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Because all other elements must be shifted.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it requires sorting the list first.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it consumes too much memory.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Because it deletes the entire list.]]></text></answer>
+  </question>
+
+  <!-- 8.2 Linked Lists -->
+  <question type="multichoice">
+    <name><text>Q07: Linked List Node Structure</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is stored within a single node of a singly linked list?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>A node typically stores a data value and a pointer (reference) to the next node.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The data and a reference to the next node.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The data and its position index in the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The data and a reference to the head of the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[References to all other nodes in the list.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Memory: Array vs Linked List</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which statement correctly describes how memory is allocated for a standard Python list (array) compared to a linked list?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Arrays use contiguous blocks, while linked list nodes can be scattered across memory.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Arrays use a continuous block of memory, while linked list nodes are scattered.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linked lists use a continuous block, while arrays are scattered.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Both data structures require a single continuous block of memory.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linked lists require less memory because they don't use pointers.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q09: Linked List Traversal Code</text></name>
     <questiontext format="html"><text><![CDATA[<p>Analyze the following traversal logic:</p>
 <pre><code>current = head
 while current:
@@ -150,7 +140,34 @@ while current:
   </question>
 
   <question type="multichoice">
-    <name><text>Q11: Recursive Power Output</text></name>
+    <name><text>Q10: Linked List Insertion Head</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the time complexity of inserting a new node at the beginning (Head) of a Linked List?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Inserting at the head is an instant (constant time) operation as it only involves pointer updates.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Instant (Constant time)]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Proportional to list size (Linear time)]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Proportional to list size squared (Quadratic time)]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It depends on the data type.]]></text></answer>
+  </question>
+
+  <!-- 8.3 Recursion -->
+  <question type="multichoice">
+    <name><text>Q11: Recursive Termination</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the primary role of the <strong>base case</strong> in a recursive function?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The base case prevents infinite recursion by providing a stopping condition.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[To provide a stopping condition for the function.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To handle the most complex part of the problem.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To initiate the first self-call of the function.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[To calculate the final sum of all results.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Recursive Power Output</text></name>
     <questiontext format="html"><text><![CDATA[<p>What is the output of the following function when called as <code>power(3, 2)</code>?</p>
 <pre><code>def power(base, exp):
     if exp == 0:
@@ -167,33 +184,7 @@ while current:
   </question>
 
   <question type="multichoice">
-    <name><text>Q12: Bubble Sort Trace</text></name>
-    <questiontext format="html"><text><![CDATA[<p>A list <code>[4, 2, 1, 3]</code> is being sorted using Bubble Sort. What is the state of the list after the <strong>first full pass</strong> (outer loop iteration 1)?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>1. Compare 4,2 -> Swap [2, 4, 1, 3]. 2. Compare 4,1 -> Swap [2, 1, 4, 3]. 3. Compare 4,3 -> Swap [2, 1, 3, 4].</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[[2, 1, 3, 4]]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[[1, 2, 3, 4]]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[[2, 4, 1, 3]]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[[4, 3, 2, 1]]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q13: Selection Sort Concept</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In Selection Sort, if we have a list of 5 elements, how many times will the algorithm "select" a minimum element to swap it into position?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Selection sort performs N-1 or N passes to place each element correctly.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[5]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[25]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q14: Factorial Stack Depth</text></name>
+    <name><text>Q13: Factorial Stack Depth</text></name>
     <questiontext format="html"><text><![CDATA[<p>When calculating <code>factorial(4)</code> recursively, how many stack frames (function calls) exist on the call stack at the moment the base case is reached?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Calls are made for: factorial(4), factorial(3), factorial(2), factorial(1), and factorial(0). Total = 5 frames.</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
@@ -206,7 +197,7 @@ while current:
   </question>
 
   <question type="multichoice">
-    <name><text>Q15: Recursive Sum Trace</text></name>
+    <name><text>Q14: Recursive Sum Trace</text></name>
     <questiontext format="html"><text><![CDATA[<p>What is the output of the following code?</p>
 <pre><code>def r_sum(nums):
     if not nums:
@@ -222,5 +213,18 @@ print(r_sum([10, 20]))</code></pre>]]></text></questiontext>
     <answer fraction="0" format="html"><text><![CDATA[10]]></text></answer>
     <answer fraction="0" format="html"><text><![CDATA[20]]></text></answer>
     <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q15: Recursive Call Stack</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What structure does Python use to manage active function calls during recursion?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Python uses the Call Stack (a stack data structure) to keep track of active function calls.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[The Call Stack]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The Heap]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The Queue]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[The Loop]]></text></answer>
   </question>
 </quiz>

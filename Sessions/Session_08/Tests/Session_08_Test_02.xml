@@ -6,6 +6,7 @@
     </category>
   </question>
 
+  <!-- 8.1 Stacks -->
   <question type="multichoice">
     <name><text>Q01: Stack Operations</text></name>
     <questiontext format="html"><text><![CDATA[<p>Which operation allows you to view the top element of a stack without removing it?</p>]]></text></questiontext>
@@ -20,7 +21,21 @@
   </question>
 
   <question type="multichoice">
-    <name><text>Q02: Queue Structure</text></name>
+    <name><text>Q02: Stack LIFO Principle</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does the LIFO principle stand for?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>LIFO stands for Last-In, First-Out, meaning the last element added is the first one removed.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Last-In, First-Out]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Last-In, First-Over]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[List-In, First-Out]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Linear-In, First-Out]]></text></answer>
+  </question>
+
+  <!-- 8.1 Queues -->
+  <question type="multichoice">
+    <name><text>Q03: Queue Structure</text></name>
     <questiontext format="html"><text><![CDATA[<p>What is the logical name for the two ends of a Queue?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Queues have a Front (where elements leave) and a Rear (where elements enter).</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
@@ -33,46 +48,20 @@
   </question>
 
   <question type="multichoice">
-    <name><text>Q03: Doubly Linked List Pointers</text></name>
-    <questiontext format="html"><text><![CDATA[<p>What is unique about a node in a <strong>Doubly Linked List</strong> compared to a Singly Linked List?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Doubly linked nodes store two pointers: one to the next node and one to the previous node.</p>]]></text></generalfeedback>
+    <name><text>Q04: Python deque methods</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When using <code>from collections import deque</code>, which code snippet correctly implements the FIFO principle for adding and then removing an item?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Items enter with <code>.append()</code> and leave from the other side with <code>.popleft()</code>.</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[It has pointers to both the next and the previous nodes.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It has a pointer to the middle of the list.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It can only store numeric data.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It does not use pointers at all.]]></text></answer>
+    <answer fraction="100" format="html"><text><![CDATA[<code>d.append(x)</code> followed by <code>d.popleft()</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>d.append(x)</code> followed by <code>d.pop()</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>d.push(x)</code> followed by <code>d.pop()</code>]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[<code>d.add(x)</code> followed by <code>d.remove(x)</code>]]></text></answer>
   </question>
 
   <question type="multichoice">
-    <name><text>Q04: Recursion Rule: Input</text></name>
-    <questiontext format="html"><text><![CDATA[<p>To ensure a recursive function eventually stops, how must the input change during the recursive step?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The input must become simpler or smaller to move closer to the base case.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[It must move closer to the base case.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It must stay exactly the same.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It must double in size.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It must be converted to a different data type.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q05: Bubble Sort Swapping Condition</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In a standard ascending Bubble Sort, when are two adjacent elements swapped?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>They are swapped if the left element is greater than the right element.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[If the left element is greater than the right element.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[If the left element is smaller than the right element.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Only if both elements are equal to zero.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[After every 10 comparisons.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q06: Stack vs Queue Code Analysis</text></name>
+    <name><text>Q05: Stack vs Queue Code Analysis</text></name>
     <questiontext format="html"><text><![CDATA[<p>You have an empty data structure. You perform the following:</p>
 <pre><code>add(1)
 add(2)
@@ -91,7 +80,34 @@ print(val)</code></pre>
   </question>
 
   <question type="multichoice">
-    <name><text>Q07: Linked List Insertion: Head</text></name>
+    <name><text>Q06: Queue Enqueue</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What term describes adding an element to the rear of a Queue?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Adding an element to a Queue is called Enqueue.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Enqueue]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Dequeue]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Push]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Pop]]></text></answer>
+  </question>
+
+  <!-- 8.2 Linked Lists -->
+  <question type="multichoice">
+    <name><text>Q07: Doubly Linked List Pointers</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is unique about a node in a <strong>Doubly Linked List</strong> compared to a Singly Linked List?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Doubly linked nodes store two pointers: one to the next node and one to the previous node.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[It has pointers to both the next and the previous nodes.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It has a pointer to the middle of the list.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It can only store numeric data.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It does not use pointers at all.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q08: Linked List Insertion: Head</text></name>
     <questiontext format="html"><text><![CDATA[<p>What is the primary advantage of inserting a node at the <strong>Head</strong> of a linked list compared to an array?</p>]]></text></questiontext>
     <generalfeedback format="html"><text><![CDATA[<p>Linked lists only need to update pointers, while arrays must shift every single element to the right.</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
@@ -104,7 +120,47 @@ print(val)</code></pre>
   </question>
 
   <question type="multichoice">
-    <name><text>Q08: Recursive Countdown Output</text></name>
+    <name><text>Q09: Linked List: contains() logic</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Consider a linked list <code>10 -> 20 -> 30 -> None</code>. To check if it contains the value <code>30</code>, how many nodes must the algorithm visit?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The algorithm starts at the head (10), goes to 20, and then finds 30. Total = 3 nodes.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[3]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[2]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q10: Linked List Access</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which operation is generally faster in a standard Python List (Array) compared to a Linked List?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Arrays provide O(1) instant access by index, whereas Linked Lists require O(n) traversal.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[Accessing an element by index.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Inserting at the beginning.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Deleting from the beginning.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Growing in size.]]></text></answer>
+  </question>
+
+  <!-- 8.3 Recursion -->
+  <question type="multichoice">
+    <name><text>Q11: Recursion Rule: Input</text></name>
+    <questiontext format="html"><text><![CDATA[<p>To ensure a recursive function eventually stops, how must the input change during the recursive step?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>The input must become simpler or smaller to move closer to the base case.</p>]]></text></generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100" format="html"><text><![CDATA[It must move closer to the base case.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It must stay exactly the same.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It must double in size.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It must be converted to a different data type.]]></text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Q12: Recursive Countdown Output</text></name>
     <questiontext format="html"><text><![CDATA[<p>What does the following code print?</p>
 <pre><code>def countdown(n):
     if n <= 0:
@@ -122,58 +178,6 @@ countdown(2)</code></pre>]]></text></questiontext>
     <answer fraction="0" format="html"><text><![CDATA[1 2 Done]]></text></answer>
     <answer fraction="0" format="html"><text><![CDATA[2 1 0 Done]]></text></answer>
     <answer fraction="0" format="html"><text><![CDATA[Done 1 2]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q09: Sorting: Selection Sort Trace</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In Selection Sort, after finding the minimum element in a list <code>[5, 8, 2, 9]</code>, with which element will the number <code>2</code> be swapped in the first pass?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The minimum (2) is swapped with the first element of the unsorted part (5).</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[5]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[8]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[9]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[It won't be swapped.]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q10: Linked List: contains() logic</text></name>
-    <questiontext format="html"><text><![CDATA[<p>Consider a linked list <code>10 -> 20 -> 30 -> None</code>. To check if it contains the value <code>30</code>, how many nodes must the algorithm visit?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The algorithm starts at the head (10), goes to 20, and then finds 30. Total = 3 nodes.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[3]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[1]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[2]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[0]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q11: Python deque methods</text></name>
-    <questiontext format="html"><text><![CDATA[<p>When using <code>from collections import deque</code>, which code snippet correctly implements the FIFO principle for adding and then removing an item?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Items enter with <code>.append()</code> and leave from the other side with <code>.popleft()</code>.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[<code>d.append(x)</code> followed by <code>d.popleft()</code>]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[<code>d.append(x)</code> followed by <code>d.pop()</code>]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[<code>d.push(x)</code> followed by <code>d.pop()</code>]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[<code>d.add(x)</code> followed by <code>d.remove(x)</code>]]></text></answer>
-  </question>
-
-  <question type="multichoice">
-    <name><text>Q12: Sorting: Insertion Sort logic</text></name>
-    <questiontext format="html"><text><![CDATA[<p>In Insertion Sort, what happens to the elements that are larger than the current "key" being inserted?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>Larger elements are shifted one position to the right to create space for the key.</p>]]></text></generalfeedback>
-    <defaultgrade>1.0</defaultgrade>
-    <single>true</single>
-    <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[They are shifted one position to the right.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[They are deleted from the list.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[They are swapped with the head of the list.]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[They stay exactly where they are.]]></text></answer>
   </question>
 
   <question type="multichoice">
@@ -203,15 +207,15 @@ countdown(2)</code></pre>]]></text></questiontext>
   </question>
 
   <question type="multichoice">
-    <name><text>Q15: Sorting: Python sorted() custom key</text></name>
-    <questiontext format="html"><text><![CDATA[<p>What is the result of <code>sorted(["apple", "kiwi", "banana"], key=len)</code>?</p>]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[<p>The strings are sorted by their length: "kiwi" (4), "apple" (5), "banana" (6).</p>]]></text></generalfeedback>
+    <name><text>Q15: Recursion Base Case Logic</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What happens if a recursive function lacks a valid base case?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[<p>Without a base case, the function calls itself indefinitely, leading to a stack overflow error.</p>]]></text></generalfeedback>
     <defaultgrade>1.0</defaultgrade>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
-    <answer fraction="100" format="html"><text><![CDATA[['kiwi', 'apple', 'banana']]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[['apple', 'banana', 'kiwi']]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[['banana', 'apple', 'kiwi']]]></text></answer>
-    <answer fraction="0" format="html"><text><![CDATA[['kiwi', 'banana', 'apple']]]></text></answer>
+    <answer fraction="100" format="html"><text><![CDATA[It runs infinitely (until the program crashes).]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It returns 0 by default.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It stops automatically after 10 calls.]]></text></answer>
+    <answer fraction="0" format="html"><text><![CDATA[It behaves like a normal loop.]]></text></answer>
   </question>
 </quiz>
