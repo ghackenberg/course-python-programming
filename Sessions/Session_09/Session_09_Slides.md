@@ -161,9 +161,9 @@ pip install requests~=2.25.1
 </div>
 <div class="two">
 
-<!-- Mermaid diagram showing a timeline of versions. '==' points to one specific dot. '>=' highlights all dots after a point. '~=' highlights a specific range. -->
+<!-- Technical illustration showing how version specifiers select different ranges of software versions. Technical drawing style with cartoon-like shading. -->
 
-![Diagram visualizing how version specifiers select different ranges of software versions.](./Diagrams/Mermaid/version_specifiers.svg)
+![Diagram visualizing how version specifiers select different ranges of software versions.](./Images/Version_Specifiers.png)
 
 </div>
 </div>
