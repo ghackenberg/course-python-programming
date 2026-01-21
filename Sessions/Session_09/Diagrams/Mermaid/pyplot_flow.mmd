@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User
+    participant PLT as matplotlib.pyplot
+    participant Fig as Figure
+    
+    User->>PLT: import matplotlib.pyplot as plt
+    User->>PLT: plt.plot(x, y)
+    PLT->>Fig: Create Line Plot
+    User->>PLT: plt.title("My Plot")
+    PLT->>Fig: Set Title
+    User->>PLT: plt.show()
+    PLT->>User: Display Window

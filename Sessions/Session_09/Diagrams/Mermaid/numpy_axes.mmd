@@ -1,0 +1,13 @@
+graph TD
+    subgraph Array 2D
+        direction TB
+        C1[Col 1] --- C2[Col 2] --- C3[Col 3]
+        R1[Row 1]
+        R2[Row 2]
+    end
+    
+    Axis0[Axis 0] -->|Collapses Rows| SumCols[Sum of Columns]
+    Axis1[Axis 1] -->|Collapses Cols| SumRows[Sum of Rows]
+    
+    style Axis0 fill:#ffcc80
+    style Axis1 fill:#80cbc4

@@ -1,0 +1,8 @@
+graph TD
+    Input(sensors.csv) -->|Load| DF[DataFrame]
+    DF -->|Filter Temp > 100| AlertDF[Alerts DataFrame]
+    AlertDF -->|Save| Output(alerts.csv)
+    
+    style Input fill:#f5f5f5,stroke:#333
+    style Output fill:#ffcdd2,stroke:#b71c1c
+    style AlertDF fill:#fff9c4,stroke:#fbc02d

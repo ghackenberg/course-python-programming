@@ -1,0 +1,6 @@
+graph TD
+    File(data.csv) -->|pd.read_csv| Func[Read Function]
+    Func -->|Parses| DF[DataFrame Object]
+    
+    style File fill:#ffe0b2,stroke:#e65100
+    style DF fill:#c8e6c9,stroke:#2e7d32

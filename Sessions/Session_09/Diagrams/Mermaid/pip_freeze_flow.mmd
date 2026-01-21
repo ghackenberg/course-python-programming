@@ -1,0 +1,7 @@
+graph TD
+    Env[Current Python Environment] -->|Contains| Pkgs[Installed Packages]
+    Pkgs -->|Scanned by| Freeze[pip freeze]
+    Freeze -->|Outputs| File(requirements.txt)
+    
+    style Env fill:#e1f5fe,stroke:#01579b
+    style File fill:#fff9c4,stroke:#fbc02d

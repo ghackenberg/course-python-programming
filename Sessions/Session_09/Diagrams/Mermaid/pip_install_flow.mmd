@@ -1,0 +1,8 @@
+graph TD
+    User([User]) -->|Types 'pip install pkg'| Terminal[Terminal]
+    Terminal -->|Executes| Pip[pip Tool]
+    Pip -->|Requests 'pkg'| PyPI((PyPI Repo))
+    PyPI -->|Sends package files| Pip
+    Pip -->|Installs to| LibFolder[Python /Lib/site-packages]
+    style PyPI fill:#f9f,stroke:#333,stroke-width:2px
+    style LibFolder fill:#bbf,stroke:#333,stroke-width:2px
