@@ -1,0 +1,30 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{positioning, shadows, shapes.symbols}
+
+\begin{document}
+\begin{tikzpicture}[
+    icon/.style={
+        rectangle, 
+        draw=none, 
+        minimum size=2cm, 
+        rounded corners, 
+        text=white, 
+        font=\sffamily\bfseries\Large,
+        drop shadow
+    }
+]
+
+\node[icon, fill=cyan] (get) {GET};
+\node[icon, fill=green!70!black, right=1cm of get] (post) {POST};
+\node[icon, fill=orange, below=1cm of get] (put) {PUT};
+\node[icon, fill=red, right=1cm of put] (delete) {DELETE};
+
+% Labels for CRUD
+\node[below=2mm of get] {\tiny READ};
+\node[below=2mm of post] {\tiny CREATE};
+\node[below=2mm of put] {\tiny UPDATE};
+\node[below=2mm of delete] {\tiny DELETE};
+
+\end{tikzpicture}
+\end{document}
+

@@ -1,0 +1,5 @@
+graph TD
+    Start([Start]) --> Get[requests.get]
+    Get --> Wait[Wait for Server]
+    Wait --> Receive[Receive Response Object]
+    Receive --> End([End])

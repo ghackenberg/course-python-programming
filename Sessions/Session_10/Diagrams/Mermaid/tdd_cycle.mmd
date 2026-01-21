@@ -1,0 +1,14 @@
+stateDiagram-v2
+    direction TB
+    Red: Write Test (Red)
+    Green: Write Code (Green)
+    Refactor: Refactor
+    
+    [*] --> Red
+    Red --> Green
+    Green --> Refactor
+    Refactor --> Red
+    
+    style Red fill:#ff9999
+    style Green fill:#99ff99
+    style Refactor fill:#9999ff

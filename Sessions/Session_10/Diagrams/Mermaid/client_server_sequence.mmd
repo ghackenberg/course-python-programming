@@ -1,0 +1,6 @@
+sequenceDiagram
+    participant Client as Python Script
+    participant Server as Remote Server
+    
+    Client->>Server: GET /weather
+    Server-->>Client: 200 OK (JSON Data)
