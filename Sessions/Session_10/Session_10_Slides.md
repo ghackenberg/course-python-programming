@@ -1599,4 +1599,16 @@ I will give you a script that is functional but "messy" (vague names, no types, 
 2. Add type hints and docstrings.
 3. Write two unit tests to prove it works.
 
+---
+
+# Chapter 10: Summary
+
+- **Web APIs (REST)** allow software systems to communicate using standard HTTP methods and JSON data.
+- The **`requests`** library is the industry standard for consuming APIs in a human-friendly way.
+- **Automated Testing** with **`pytest`** ensures code quality, prevents regressions, and reduces long-term costs.
+- **Documentation** (Docstrings) and **Clean Code** principles are essential for collaboration and maintainability.
+- Professional engineering requires a balance of functional code, robust testing, and clear communication.
+
+---
+
 **Congratulations on completing the course!**
