@@ -18,19 +18,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the command that is the opposite of 'install'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pip uninstall <package_name></code>]]></text>
-      <feedback format="html">Correct. This will prompt for confirmation and then remove the package.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This will prompt for confirmation and then remove the package.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip remove <package_name></code>]]></text>
-      <feedback format="html">Incorrect. pip uses 'uninstall', not 'remove'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. pip uses 'uninstall', not 'remove'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip delete <package_name></code>]]></text>
-      <feedback format="html">Incorrect. pip uses 'uninstall'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. pip uses 'uninstall'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip install --remove <package_name></code>]]></text>
-      <feedback format="html">Incorrect. Uninstalling is not an option for the install command.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Uninstalling is not an option for the install command.]]></text></feedback>
     </answer>
   </question>
 
@@ -46,19 +46,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Check the dimensions and the default data type for NumPy ones.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[[1., 1.], [1., 1.]]</code>]]></text>
-      <feedback format="html">Correct. A 2x2 matrix of floating-point ones.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. A 2x2 matrix of floating-point ones.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[1., 1., 1., 1.]</code>]]></text>
-      <feedback format="html">Incorrect. The shape (2, 2) implies a 2-dimensional array.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The shape (2, 2) implies a 2-dimensional array.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[[1, 1], [1, 1]]</code>]]></text>
-      <feedback format="html">Incorrect. By default, NumPy creates arrays of floats (indicated by the dot).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. By default, NumPy creates arrays of floats (indicated by the dot).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[[0., 0.], [0., 0.]]</code>]]></text>
-      <feedback format="html">Incorrect. This would be the result of np.zeros().</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would be the result of np.zeros().]]></text></feedback>
     </answer>
   </question>
 
@@ -74,19 +74,19 @@
     <incorrectfeedback format="html"><text>Incorrect. ndim refers to the number of axes/dimensions, not the size or shape.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[2]]></text>
-      <feedback format="html">Correct. Rows and columns make 2 dimensions.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Rows and columns make 2 dimensions.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[9]]></text>
-      <feedback format="html">Incorrect. 9 is the size (total elements).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 9 is the size (total elements).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[3]]></text>
-      <feedback format="html">Incorrect. 3 is the length of each dimension in the shape (3, 3).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 3 is the length of each dimension in the shape (3, 3).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[1]]></text>
-      <feedback format="html">Incorrect. 1D arrays are vectors, 2D arrays are matrices.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 1D arrays are vectors, 2D arrays are matrices.]]></text></feedback>
     </answer>
   </question>
 
@@ -102,19 +102,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Recall how NumPy handles operations between an array and a single number.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[The value 5 is added to <strong>every</strong> element in the array.]]></text>
-      <feedback format="html">Correct. This is the simplest form of broadcasting.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the simplest form of broadcasting.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The value 5 is only added to the first element.]]></text>
-      <feedback format="html">Incorrect. NumPy operations are element-wise by default.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. NumPy operations are element-wise by default.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It causes an error because you can't add a number to an array.]]></text>
-      <feedback format="html">Incorrect. NumPy is specifically designed to allow this.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. NumPy is specifically designed to allow this.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The value 5 is appended to the end of the array.]]></text>
-      <feedback format="html">Incorrect. The '+' operator performs addition, not concatenation.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The '+' operator performs addition, not concatenation.]]></text></feedback>
     </answer>
   </question>
 
@@ -130,19 +130,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Remember the slice syntax [start:stop:step].</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[1, 3, 5]</code>]]></text>
-      <feedback format="html">Correct. Starts at index 0, then skips to 2, then 4.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Starts at index 0, then skips to 2, then 4.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[2, 4]</code>]]></text>
-      <feedback format="html">Incorrect. This would happen if you started at index 1: arr[1::2].</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would happen if you started at index 1: arr[1::2].]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[1, 2]</code>]]></text>
-      <feedback format="html">Incorrect. This is not how the step parameter works.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is not how the step parameter works.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[5, 4, 3, 2, 1]</code>]]></text>
-      <feedback format="html">Incorrect. Reversing would require a negative step: [::-1].</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Reversing would require a negative step: [::-1].]]></text></feedback>
     </answer>
   </question>
 
@@ -158,19 +158,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Think about how the keys and values of the dictionary map to the table structure.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA["A" and "B"]]></text>
-      <feedback format="html">Correct. Keys map to columns, values map to the data in those columns.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Keys map to columns, values map to the data in those columns.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[0 and 1]]></text>
-      <feedback format="html">Incorrect. These would be the row indices if not specified otherwise.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. These would be the row indices if not specified otherwise.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA["row1" and "row2"]]></text>
-      <feedback format="html">Incorrect. Row names are the index, not the columns.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Row names are the index, not the columns.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The DataFrame will not have column names.]]></text>
-      <feedback format="html">Incorrect. DataFrames always have column labels, even if they are just integers.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. DataFrames always have column labels, even if they are just integers.]]></text></feedback>
     </answer>
   </question>
 
@@ -186,19 +186,19 @@
     <incorrectfeedback format="html"><text>Incorrect. It's a small number used to quickly check the data structure.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[5]]></text>
-      <feedback format="html">Correct. Standard Pandas behavior.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Standard Pandas behavior.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[10]]></text>
-      <feedback format="html">Incorrect. You can get 10 by calling head(10), but the default is 5.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. You can get 10 by calling head(10), but the default is 5.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[1]]></text>
-      <feedback format="html">Incorrect. Just one row wouldn't be very helpful for checking structure.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Just one row wouldn't be very helpful for checking structure.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[All rows]]></text>
-      <feedback format="html">Incorrect. Printing all rows could crash your terminal if the file is large.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Printing all rows could crash your terminal if the file is large.]]></text></feedback>
     </answer>
   </question>
 
@@ -214,19 +214,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Contrast label-based vs. integer-based selection attributes.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>.loc</code>]]></text>
-      <feedback format="html">Correct. 'loc' is short for location (by label).</feedback>
+      <feedback format="html"><text><![CDATA[Correct. 'loc' is short for location (by label).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.iloc</code>]]></text>
-      <feedback format="html">Incorrect. .iloc is for integer positions.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .iloc is for integer positions.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.select</code>]]></text>
-      <feedback format="html">Incorrect. There is no .select attribute in standard Pandas for this.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no .select attribute in standard Pandas for this.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.get</code>]]></text>
-      <feedback format="html">Incorrect. .get() is a method, but .loc is the standard for multidimensional selection.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .get() is a method, but .loc is the standard for multidimensional selection.]]></text></feedback>
     </answer>
   </question>
 
@@ -242,19 +242,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether the output shows data types, the first few rows, or calculated statistics.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[A summary of statistics (mean, min, max, etc.) for numerical columns.]]></text>
-      <feedback format="html">Correct. It's the go-to for exploratory data analysis.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It's the go-to for exploratory data analysis.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A list of data types for each column.]]></text>
-      <feedback format="html">Incorrect. That would be .info() or .dtypes.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That would be .info() or .dtypes.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The raw data from the first 5 rows.]]></text>
-      <feedback format="html">Incorrect. That would be .head().</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That would be .head().]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A list of missing values in the DataFrame.]]></text>
-      <feedback format="html">Incorrect. You would use .isnull().sum() for that.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. You would use .isnull().sum() for that.]]></text></feedback>
     </answer>
   </question>
 
@@ -270,19 +270,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the command that specifically mentions 'grid'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.grid(True)</code>]]></text>
-      <feedback format="html">Correct. This toggles the grid on.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This toggles the grid on.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.show_grid()</code>]]></text>
-      <feedback format="html">Incorrect. No such function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such function.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.draw_background()</code>]]></text>
-      <feedback format="html">Incorrect. Not a standard Matplotlib command.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not a standard Matplotlib command.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.lines(type="grid")</code>]]></text>
-      <feedback format="html">Incorrect. Too complex; the command is just .grid().</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Too complex; the command is just .grid().]]></text></feedback>
     </answer>
   </question>
 
@@ -298,19 +298,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Check the parameter name used to specify the color of markers.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.scatter(x, y, color="red")</code>]]></text>
-      <feedback format="html">Correct. 'color' or 'c' can be used.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. 'color' or 'c' can be used.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.scatter(x, y, style="red")</code>]]></text>
-      <feedback format="html">Incorrect. 'style' is not a parameter for color.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'style' is not a parameter for color.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.scatter(x, y, paint="red")</code>]]></text>
-      <feedback format="html">Incorrect. No such parameter.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such parameter.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.red_scatter(x, y)</code>]]></text>
-      <feedback format="html">Incorrect. Not a standard function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not a standard function.]]></text></feedback>
     </answer>
   </question>
 
@@ -326,19 +326,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether Matplotlib is limited to just one format or can handle many common ones.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Most common formats like PNG, PDF, and SVG.]]></text>
-      <feedback format="html">Correct. It automatically detects the format from the file extension.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It automatically detects the format from the file extension.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Only PNG.]]></text>
-      <feedback format="html">Incorrect. It supports many vector and raster formats.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. It supports many vector and raster formats.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Only JPEG.]]></text>
-      <feedback format="html">Incorrect. JPEG is supported, but so are many others.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. JPEG is supported, but so are many others.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It doesn't save files; it only shows them on screen.]]></text>
-      <feedback format="html">Incorrect. plt.savefig() is a core part of the library.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. plt.savefig() is a core part of the library.]]></text></feedback>
     </answer>
   </question>
 
@@ -354,19 +354,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Recall the command and the flag used to specify a file as the source for installation.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pip install -r requirements.txt</code>]]></text>
-      <feedback format="html">Correct. This is the standard procedure for setting up a project.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the standard procedure for setting up a project.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip install requirements.txt</code>]]></text>
-      <feedback format="html">Incorrect. Without -r, pip tries to find a package named 'requirements.txt' on PyPI.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Without -r, pip tries to find a package named 'requirements.txt' on PyPI.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip run requirements.txt</code>]]></text>
-      <feedback format="html">Incorrect. pip has no 'run' command.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. pip has no 'run' command.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip load requirements.txt</code>]]></text>
-      <feedback format="html">Incorrect. There is no 'load' command.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no 'load' command.]]></text></feedback>
     </answer>
   </question>
 
@@ -382,19 +382,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider how NumPy is implemented and how it stores data in memory compared to standard Python lists.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[They are implemented in C and use contiguous blocks of memory.]]></text>
-      <feedback format="html">Correct. This allows for massive optimization compared to Python's generic lists.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This allows for massive optimization compared to Python's generic lists.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They use the GPU by default.]]></text>
-      <feedback format="html">Incorrect. Standard NumPy runs on the CPU. (Libraries like CuPy use the GPU).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Standard NumPy runs on the CPU. (Libraries like CuPy use the GPU).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They automatically multi-thread all operations.]]></text>
-      <feedback format="html">Incorrect. While some low-level math is multi-threaded, it's not the primary reason for the speedup.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While some low-level math is multi-threaded, it's not the primary reason for the speedup.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They are actually slower, but have more features.]]></text>
-      <feedback format="html">Incorrect. They are significantly faster for numeric work.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. They are significantly faster for numeric work.]]></text></feedback>
     </answer>
   </question>
 
@@ -410,20 +410,22 @@
     <incorrectfeedback format="html"><text>Incorrect. Remember the restrictions on using dot notation to access DataFrame columns.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Because the column name contains a space.]]></text>
-      <feedback format="html">Correct. Dot notation only works for names that are valid Python identifiers (no spaces, doesn't start with a number).</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Dot notation only works for names that are valid Python identifiers (no spaces, doesn't start with a number).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Because "Sales Data" is a string.]]></text>
-      <feedback format="html">Incorrect. All column names are typically strings.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. All column names are typically strings.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Because dot syntax is only for methods, not data.]]></text>
-      <feedback format="html">Incorrect. Pandas specifically enables dot syntax for column access as a convenience.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Pandas specifically enables dot syntax for column access as a convenience.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It won't fail; it is the recommended way to access all columns.]]></text>
-      <feedback format="html">Incorrect. Bracket notation <code>df["Sales Data"]</code> is safer and always works.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Bracket notation <code>df["Sales Data"]</code> is safer and always works.]]></text></feedback>
     </answer>
   </question>
 
 </quiz>
+
+

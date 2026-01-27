@@ -18,19 +18,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider where 'pip' downloads packages from by default.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[The official repository for third-party Python software.]]></text>
-      <feedback format="html">Correct. Almost all open-source libraries are hosted here.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Almost all open-source libraries are hosted here.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The built-in library that comes with Python.]]></text>
-      <feedback format="html">Incorrect. That is the 'Standard Library'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is the 'Standard Library'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A compiler for Python code.]]></text>
-      <feedback format="html">Incorrect. PyPI is a repository, not a tool for execution.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. PyPI is a repository, not a tool for execution.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A type of Python virtual environment.]]></text>
-      <feedback format="html">Incorrect. 'venv' or 'conda' are types of virtual environments.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'venv' or 'conda' are types of virtual environments.]]></text></feedback>
     </answer>
   </question>
 
@@ -46,19 +46,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the function name that refers to the 'Identity' matrix.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>np.eye(3)</code>]]></text>
-      <feedback format="html">Correct. Generates a 3x3 identity matrix.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Generates a 3x3 identity matrix.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.identity_matrix(3)</code>]]></text>
-      <feedback format="html">Incorrect. Not the standard NumPy function name.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not the standard NumPy function name.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.ones((3, 3))</code>]]></text>
-      <feedback format="html">Incorrect. This would have ones everywhere, not just on the diagonal.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would have ones everywhere, not just on the diagonal.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.diag(3)</code>]]></text>
-      <feedback format="html">Incorrect. np.diag() is used to extract a diagonal or create a diagonal array from a list of values.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. np.diag() is used to extract a diagonal or create a diagonal array from a list of values.]]></text></feedback>
     </answer>
   </question>
 
@@ -74,19 +74,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the function that 'fills' an array with a constant value.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>np.full(5, 9.9)</code>]]></text>
-      <feedback format="html">Correct. First argument is shape/size, second is the value.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. First argument is shape/size, second is the value.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.zeros(5) + 9.9</code>]]></text>
-      <feedback format="html">Incorrect. While this works via broadcasting, np.full is the more direct and idiomatic way.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While this works via broadcasting, np.full is the more direct and idiomatic way.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.array([9.9] * 5)</code>]]></text>
-      <feedback format="html">Incorrect. Inefficient for large arrays; np.full is preferred.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Inefficient for large arrays; np.full is preferred.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.ones(5) * 9.9</code>]]></text>
-      <feedback format="html">Incorrect. Similar to zeros+9.9, it works but is less direct than np.full.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Similar to zeros+9.9, it works but is less direct than np.full.]]></text></feedback>
     </answer>
   </question>
 
@@ -102,19 +102,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the standard attribute name for data types in NumPy.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>.dtype</code>]]></text>
-      <feedback format="html">Correct. e.g., int64, float64, etc.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. e.g., int64, float64, etc.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.type</code>]]></text>
-      <feedback format="html">Incorrect. .type is not a standard attribute for this.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .type is not a standard attribute for this.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.elements</code>]]></text>
-      <feedback format="html">Incorrect. No such attribute exists.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such attribute exists.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>.format</code>]]></text>
-      <feedback format="html">Incorrect. format is used for strings, not array types.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. format is used for strings, not array types.]]></text></feedback>
     </answer>
   </question>
 
@@ -132,19 +132,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Apply the condition to each element and see which ones 'pass'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[10, 20]</code>]]></text>
-      <feedback format="html">Correct. Only 10 and 20 are greater than 8.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Only 10 and 20 are greater than 8.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[True, False, True, False]</code>]]></text>
-      <feedback format="html">Incorrect. This would be the 'mask' itself, but the code applies the mask to the array.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would be the 'mask' itself, but the code applies the mask to the array.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[20]</code>]]></text>
-      <feedback format="html">Incorrect. 10 is also greater than 8.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 10 is also greater than 8.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[An error occurs.]]></text>
-      <feedback format="html">Incorrect. This is valid NumPy filtering.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is valid NumPy filtering.]]></text></feedback>
     </answer>
   </question>
 
@@ -160,19 +160,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the parameter in read_csv that controls header detection.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", header=None)</code>]]></text>
-      <feedback format="html">Correct. This tells Pandas to use integers as column names instead of the first row.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This tells Pandas to use integers as column names instead of the first row.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", header=False)</code>]]></text>
-      <feedback format="html">Incorrect. The value should be 'None', not 'False'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The value should be 'None', not 'False'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", names=False)</code>]]></text>
-      <feedback format="html">Incorrect. 'names' is used to provide custom labels, not to disable headers.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'names' is used to provide custom labels, not to disable headers.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", skip_header=True)</code>]]></text>
-      <feedback format="html">Incorrect. No such parameter exists.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such parameter exists.]]></text></feedback>
     </answer>
   </question>
 
@@ -188,19 +188,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Consider which method detects nulls and how to count them.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df.isnull().sum()</code>]]></text>
-      <feedback format="html">Correct. isnull() returns Booleans, and sum() counts the Trues.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. isnull() returns Booleans, and sum() counts the Trues.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.describe()</code>]]></text>
-      <feedback format="html">Incorrect. Describe only shows counts of non-null values, it doesn't explicitly count nulls.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Describe only shows counts of non-null values, it doesn't explicitly count nulls.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.info()</code>]]></text>
-      <feedback format="html">Incorrect. Info shows non-null counts, but requires mental subtraction to find the number of missing values.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Info shows non-null counts, but requires mental subtraction to find the number of missing values.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.check_empty()</code>]]></text>
-      <feedback format="html">Incorrect. No such method.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such method.]]></text></feedback>
     </answer>
   </question>
 
@@ -216,19 +216,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Check whether the end value of a slice is included in label-based indexing.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>loc</code> is <strong>inclusive</strong> of the end label, while <code>iloc</code> is <strong>exclusive</strong>.]]></text>
-      <feedback format="html">Correct. df.loc["A":"C"] includes "C", but df.iloc[0:2] does not include index 2.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. df.loc["A":"C"] includes "C", but df.iloc[0:2] does not include index 2.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>iloc</code> is inclusive, while <code>loc</code> is exclusive.]]></text>
-      <feedback format="html">Incorrect. It's the other way around.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. It's the other way around.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Both are always exclusive.]]></text>
-      <feedback format="html">Incorrect. Pandas labels are treated differently than integer offsets.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Pandas labels are treated differently than integer offsets.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Both are always inclusive.]]></text>
-      <feedback format="html">Incorrect. Slicing in Python is generally exclusive, and iloc follows this rule.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Slicing in Python is generally exclusive, and iloc follows this rule.]]></text></feedback>
     </answer>
   </question>
 
@@ -244,19 +244,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Contrast whether you are dropping a row or a column.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[That you are dropping a <strong>column</strong>.]]></text>
-      <feedback format="html">Correct. axis=1 means columns.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. axis=1 means columns.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[That you are dropping a <strong>row</strong>.]]></text>
-      <feedback format="html">Incorrect. Dropping rows uses axis=0 (the default).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Dropping rows uses axis=0 (the default).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[That you are dropping all duplicates.]]></text>
-      <feedback format="html">Incorrect. Axis doesn't control duplicate logic.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Axis doesn't control duplicate logic.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[That you are dropping the index.]]></text>
-      <feedback format="html">Incorrect. Index is a separate object, though related to axis 0.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Index is a separate object, though related to axis 0.]]></text></feedback>
     </answer>
   </question>
 
@@ -272,19 +272,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the parameter that describes the 'width' of the line.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>linewidth</code>]]></text>
-      <feedback format="html">Correct. e.g., linewidth=3.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. e.g., linewidth=3.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>size</code>]]></text>
-      <feedback format="html">Incorrect. size is not a standard line plot parameter.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. size is not a standard line plot parameter.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>weight</code>]]></text>
-      <feedback format="html">Incorrect. No such parameter.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such parameter.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>thickness</code>]]></text>
-      <feedback format="html">Incorrect. While descriptive, the argument is called 'linewidth'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While descriptive, the argument is called 'linewidth'.]]></text></feedback>
     </answer>
   </question>
 
@@ -300,19 +300,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Consider how data is grouped in a histogram.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[The number of vertical bars used to group the data.]]></text>
-      <feedback format="html">Correct. More bins result in a more detailed (but noisier) distribution view.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. More bins result in a more detailed (but noisier) distribution view.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The number of data points to plot.]]></text>
-      <feedback format="html">Incorrect. All data points in 'data' are processed regardless of bins.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. All data points in 'data' are processed regardless of bins.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The maximum value on the y-axis.]]></text>
-      <feedback format="html">Incorrect. The y-axis scale is determined by the data frequency.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The y-axis scale is determined by the data frequency.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The width of the entire figure.]]></text>
-      <feedback format="html">Incorrect. Figure width is controlled by plt.figure(figsize=...).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Figure width is controlled by plt.figure(figsize=...).]]></text></feedback>
     </answer>
   </question>
 
@@ -328,19 +328,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the acronym representing 'Dots Per Inch'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.savefig("file.png", dpi=300)</code>]]></text>
-      <feedback format="html">Correct. Higher dpi means better print quality.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Higher dpi means better print quality.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.savefig("file.png", quality=100)</code>]]></text>
-      <feedback format="html">Incorrect. 'quality' is sometimes used for JPEGs, but 'dpi' is the standard for resolution.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'quality' is sometimes used for JPEGs, but 'dpi' is the standard for resolution.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.savefig("file.png", res=300)</code>]]></text>
-      <feedback format="html">Incorrect. The parameter is 'dpi'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The parameter is 'dpi'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.save_high_res("file.png")</code>]]></text>
-      <feedback format="html">Incorrect. Not a standard function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not a standard function.]]></text></feedback>
     </answer>
   </question>
 
@@ -356,19 +356,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for a flag that modifies the 'pip list' output to show only old packages.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pip list --outdated</code>]]></text>
-      <feedback format="html">Correct. This is very useful for maintenance.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is very useful for maintenance.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip check</code>]]></text>
-      <feedback format="html">Incorrect. pip check is used to find broken dependencies, not necessarily newer versions.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. pip check is used to find broken dependencies, not necessarily newer versions.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip show all</code>]]></text>
-      <feedback format="html">Incorrect. No such command.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such command.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip search updates</code>]]></text>
-      <feedback format="html">Incorrect. pip search is for finding new packages, not checking versions of installed ones.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. pip search is for finding new packages, not checking versions of installed ones.]]></text></feedback>
     </answer>
   </question>
 
@@ -384,19 +384,19 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Consider how NumPy's homogeneity (all same type) helps save space.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[They store data in a much more compact, contiguous way, using less RAM.]]></text>
-      <feedback format="html">Correct. Essential for 'Big Data' applications.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Essential for 'Big Data' applications.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They automatically compress data into .zip format in memory.]]></text>
-      <feedback format="html">Incorrect. They don't compress; they just store more efficiently.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. They don't compress; they just store more efficiently.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They only store every second element to save space.]]></text>
-      <feedback format="html">Incorrect. They store all data, but without the overhead of Python's generic objects.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. They store all data, but without the overhead of Python's generic objects.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They store data on the hard drive instead of RAM.]]></text>
-      <feedback format="html">Incorrect. Standard arrays are in RAM. (Memory-mapping exists but is a specialized feature).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Standard arrays are in RAM. (Memory-mapping exists but is a specialized feature).]]></text></feedback>
     </answer>
   </question>
 
@@ -412,20 +412,22 @@ print(arr[mask])</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the method designed to modify column or index labels.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df.rename(columns={"OldName": "NewName"})</code>]]></text>
-      <feedback format="html">Correct. This is the safest and most common way.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the safest and most common way.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df["OldName"].name = "NewName"</code>]]></text>
-      <feedback format="html">Incorrect. This changes the name of the Series object but doesn't update the DataFrame's column mapping.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This changes the name of the Series object but doesn't update the DataFrame's column mapping.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.change_column("OldName", "NewName")</code>]]></text>
-      <feedback format="html">Incorrect. No such method.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such method.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.update_labels({"OldName": "NewName"})</code>]]></text>
-      <feedback format="html">Incorrect. No such method.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such method.]]></text></feedback>
     </answer>
   </question>
 
 </quiz>
+
+

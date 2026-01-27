@@ -18,19 +18,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Contrast the 'requester' (e.g., a browser or script) with the 'provider' (e.g., a database server).</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[The requester of data or services (e.g., your Python script).]]></text>
-      <feedback format="html">Correct. It initiates the interaction by sending a request.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It initiates the interaction by sending a request.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The machine that stores and provides the data.]]></text>
-      <feedback format="html">Incorrect. That is the Server.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is the Server.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The physical cable connecting the computers.]]></text>
-      <feedback format="html">Incorrect. That is the Network infrastructure.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is the Network infrastructure.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The user who sits in front of the computer.]]></text>
-      <feedback format="html">Incorrect. While a human might trigger the client, the 'Client' refers to the software/system making the request.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While a human might trigger the client, the 'Client' refers to the software/system making the request.]]></text></feedback>
     </answer>
   </question>
 
@@ -46,19 +46,19 @@
     <incorrectfeedback format="html"><text>Incorrect. POST is for creation; look for the verb used for replacement/update.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[PUT]]></text>
-      <feedback format="html">Correct. Often used to update a complete object.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Often used to update a complete object.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[GET]]></text>
-      <feedback format="html">Incorrect. GET only reads data.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. GET only reads data.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[POST]]></text>
-      <feedback format="html">Incorrect. POST is generally used to create *new* items.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. POST is generally used to create *new* items.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[DELETE]]></text>
-      <feedback format="html">Incorrect. DELETE removes the resource.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. DELETE removes the resource.]]></text></feedback>
     </answer>
   </question>
 
@@ -74,19 +74,19 @@
     <incorrectfeedback format="html"><text>Incorrect. It's a client error related to authentication.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Unauthorized (You need to provide valid credentials/API key).]]></text>
-      <feedback format="html">Correct. The server requires you to log in or provide a token.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. The server requires you to log in or provide a token.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Forbidden (You are logged in, but don't have permission for this specific action).]]></text>
-      <feedback format="html">Incorrect. That is 403 Forbidden.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is 403 Forbidden.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Not Found.]]></text>
-      <feedback format="html">Incorrect. That is 404.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is 404.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Bad Request.]]></text>
-      <feedback format="html">Incorrect. That is 400.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is 400.]]></text></feedback>
     </answer>
   </question>
 
@@ -102,19 +102,19 @@
     <incorrectfeedback format="html"><text>Incorrect. The domain follows the protocol (https://) and precedes the path.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>api.github.com</code>]]></text>
-      <feedback format="html">Correct. This identifies the server you are talking to.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This identifies the server you are talking to.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>https</code>]]></text>
-      <feedback format="html">Incorrect. This is the Protocol.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is the Protocol.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>/users/octocat</code>]]></text>
-      <feedback format="html">Incorrect. This is the Path.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is the Path.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>octocat</code>]]></text>
-      <feedback format="html">Incorrect. This is a specific resource identifier within the path.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is a specific resource identifier within the path.]]></text></feedback>
     </answer>
   </question>
 
@@ -130,19 +130,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the parameter name specifically designed for JSON data.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>requests.post(url, json=data)</code>]]></text>
-      <feedback format="html">Correct. This is the recommended way to send JSON.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the recommended way to send JSON.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.post(url, data=data)</code>]]></text>
-      <feedback format="html">Incorrect. Using 'data' sends the dictionary as form data, not as a JSON object.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Using 'data' sends the dictionary as form data, not as a JSON object.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.post(url, params=data)</code>]]></text>
-      <feedback format="html">Incorrect. 'params' sends the data in the URL query string, not the body.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'params' sends the data in the URL query string, not the body.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.post(url, body=data)</code>]]></text>
-      <feedback format="html">Incorrect. 'body' is not a valid parameter name for the requests library.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'body' is not a valid parameter name for the requests library.]]></text></feedback>
     </answer>
   </question>
 
@@ -158,24 +158,24 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether there is a boolean attribute or a specific status code range to check.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Check if <code>response.ok</code> is <code>True</code>.]]></text>
-      <feedback format="html">Correct. .ok is True for any status code between 200 and 299.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. .ok is True for any status code between 200 and 299.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Check if <code>response.success</code> is <code>True</code>.]]></text>
-      <feedback format="html">Incorrect. There is no .success attribute.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no .success attribute.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Check if <code>response.code == "OK"</code>.]]></text>
-      <feedback format="html">Incorrect. .status_code is an integer, and "OK" is a string.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .status_code is an integer, and "OK" is a string.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Check if <code>bool(response)</code> is <code>True</code>.]]></text>
-      <feedback format="html">Incorrect. (Wait, actually bool(response) DOES return True for 200-299, but .ok is the taught/standard way in requests). Let's pick a clearer incorrect answer.</feedback>
-      <feedback format="html">Incorrect. While valid, .ok is more descriptive and standard for this library.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. (Wait, actually bool(response) DOES return True for 200-299, but .ok is the taught/standard way in requests). Let's pick a clearer incorrect answer.]]></text></feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While valid, .ok is more descriptive and standard for this library.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Check if <code>response.headers["Status"] == 200</code>.]]></text>
-      <feedback format="html">Incorrect. Status is an attribute (.status_code), not usually a header entry.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Status is an attribute (.status_code), not usually a header entry.]]></text></feedback>
     </answer>
   </question>
 
@@ -191,19 +191,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the attribute name used for HTTP metadata.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>response.headers</code>]]></text>
-      <feedback format="html">Correct. It's a case-insensitive dictionary-like object.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It's a case-insensitive dictionary-like object.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>response.metadata</code>]]></text>
-      <feedback format="html">Incorrect. No such attribute.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such attribute.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>response.info</code>]]></text>
-      <feedback format="html">Incorrect. .info() is used in urllib, but not in requests.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .info() is used in urllib, but not in requests.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>response.params</code>]]></text>
-      <feedback format="html">Incorrect. Params are what the client sends, not what the server returns.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Params are what the client sends, not what the server returns.]]></text></feedback>
     </answer>
   </question>
 
@@ -219,19 +219,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether unit tests target the whole application or just small, independent parts.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[To verify that the smallest testable parts (units) of the application work correctly in isolation.]]></text>
-      <feedback format="html">Correct. This makes it easier to pinpoint exactly where a bug is.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This makes it easier to pinpoint exactly where a bug is.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To check if the entire system works together as a whole.]]></text>
-      <feedback format="html">Incorrect. That is Integration Testing or System Testing.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is Integration Testing or System Testing.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To find out how many users the server can handle.]]></text>
-      <feedback format="html">Incorrect. That is Load Testing or Performance Testing.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That is Load Testing or Performance Testing.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To ensure the user interface looks beautiful.]]></text>
-      <feedback format="html">Incorrect. This is usually part of UI/UX testing or manual testing.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is usually part of UI/UX testing or manual testing.]]></text></feedback>
     </answer>
   </question>
 
@@ -247,19 +247,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether the program continues or if an error is raised.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[An <code>AssertionError</code> is raised, and the test case fails.]]></text>
-      <feedback format="html">Correct. This is how pytest knows the test did not pass.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is how pytest knows the test did not pass.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The program prints a warning but continues to the next line.]]></text>
-      <feedback format="html">Incorrect. Assert is a hard stop; it must be true for execution to proceed.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Assert is a hard stop; it must be true for execution to proceed.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The computer reboots.]]></text>
-      <feedback format="html">Incorrect. (Obviously).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. (Obviously).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The function is automatically fixed by the interpreter.]]></text>
-      <feedback format="html">Incorrect. Python does not have auto-healing capabilities.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Python does not have auto-healing capabilities.]]></text></feedback>
     </answer>
   </question>
 
@@ -275,19 +275,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the simple command-line command used to trigger the testing framework.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Run the command <code>pytest</code> in your terminal.]]></text>
-      <feedback format="html">Correct. Pytest automatically discovers files matching the test pattern.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Pytest automatically discovers files matching the test pattern.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Run <code>python run_all_tests.py</code>.]]></text>
-      <feedback format="html">Incorrect. This would only work if you manually wrote a script with that name.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would only work if you manually wrote a script with that name.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Double-click on each .py file.]]></text>
-      <feedback format="html">Incorrect. This would execute the tests but wouldn't provide a unified report.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This would execute the tests but wouldn't provide a unified report.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Copy and paste all code into a single file.]]></text>
-      <feedback format="html">Incorrect. This is messy and unnecessary.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is messy and unnecessary.]]></text></feedback>
     </answer>
   </question>
 
@@ -303,19 +303,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Recall the order: fail the test, pass the test, clean up the code.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Red, Green, Refactor.]]></text>
-      <feedback format="html">Correct. Write failing test -> make it pass -> clean up code.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Write failing test -> make it pass -> clean up code.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Green, Red, Refactor.]]></text>
-      <feedback format="html">Incorrect. You can't pass a test before you've written it.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. You can't pass a test before you've written it.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Refactor, Red, Green.]]></text>
-      <feedback format="html">Incorrect. Refactoring happens AFTER the logic is verified by a test.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Refactoring happens AFTER the logic is verified by a test.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Code, Test, Debug.]]></text>
-      <feedback format="html">Incorrect. This is the traditional 'Test-Last' approach, not TDD.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is the traditional 'Test-Last' approach, not TDD.]]></text></feedback>
     </answer>
   </question>
 
@@ -331,19 +331,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Check the standard recommendation from PEP 257.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Triple double-quotes <code>"""..."""</code>]]></text>
-      <feedback format="html">Correct. This is the convention for both single and multi-line docstrings.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the convention for both single and multi-line docstrings.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Single hashtags <code>#...</code>]]></text>
-      <feedback format="html">Incorrect. These are for regular comments, which are not recognized as docstrings.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. These are for regular comments, which are not recognized as docstrings.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Forward slashes and asterisks <code>/*...*/</code>]]></text>
-      <feedback format="html">Incorrect. This is C/Java syntax, not Python.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is C/Java syntax, not Python.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Angle brackets <code>&lt;!--...--&gt;</code>]]></text>
-      <feedback format="html">Incorrect. This is HTML syntax.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is HTML syntax.]]></text></feedback>
     </answer>
   </question>
 
@@ -359,19 +359,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the symbol that acts as an arrow pointing to the return type.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>-></code>]]></text>
-      <feedback format="html">Correct. e.g., def f() -> int:.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. e.g., def f() -> int:.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>=></code>]]></text>
-      <feedback format="html">Incorrect. This is used in other languages (like JS for arrow functions), but not Python type hints.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is used in other languages (like JS for arrow functions), but not Python type hints.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>:</code>]]></text>
-      <feedback format="html">Incorrect. The colon is used for parameter types.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The colon is used for parameter types.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>=</code>]]></text>
-      <feedback format="html">Incorrect. Equals is used for default values.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Equals is used for default values.]]></text></feedback>
     </answer>
   </question>
 
@@ -387,19 +387,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider whether these names help a reader understand what the variable actually contains.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[They are vague and don't describe the <strong>intent</strong> or content of the variable.]]></text>
-      <feedback format="html">Correct. A good name explains 'why' it exists and 'what' it represents.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. A good name explains 'why' it exists and 'what' it represents.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They take up too much space in memory.]]></text>
-      <feedback format="html">Incorrect. Variable names don't affect memory usage in Python.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Variable names don't affect memory usage in Python.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They cause the program to run slower.]]></text>
-      <feedback format="html">Incorrect. Naming has zero impact on execution speed.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Naming has zero impact on execution speed.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[They are reserved keywords in Python.]]></text>
-      <feedback format="html">Incorrect. They are not keywords; they are just poor choices for clarity.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. They are not keywords; they are just poor choices for clarity.]]></text></feedback>
     </answer>
   </question>
 
@@ -415,20 +415,22 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider how a messy codebase affects the speed of adding new features over time.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Future development becomes slower, more expensive, and riskier.]]></text>
-      <feedback format="html">Correct. You eventually 'pay interest' in the form of slower progress.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. You eventually 'pay interest' in the form of slower progress.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The software becomes free for everyone to use.]]></text>
-      <feedback format="html">Incorrect. (Not related).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. (Not related).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The developers get more holidays.]]></text>
-      <feedback format="html">Incorrect. (Usually the opposite; they spend more time fixing bugs).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. (Usually the opposite; they spend more time fixing bugs).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The code automatically migrates to a newer version of Python.]]></text>
-      <feedback format="html">Incorrect. There is no such magic.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no such magic.]]></text></feedback>
     </answer>
   </question>
 
 </quiz>
+
+

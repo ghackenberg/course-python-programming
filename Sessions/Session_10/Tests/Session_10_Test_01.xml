@@ -22,19 +22,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Recall the standard HTTP verbs used in RESTful APIs.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[GET]]></text>
-      <feedback format="html">Correct. GET requests are used to retrieve information from a server.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. GET requests are used to retrieve information from a server.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[POST]]></text>
-      <feedback format="html">Incorrect. POST is used to create new resources.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. POST is used to create new resources.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[PUT]]></text>
-      <feedback format="html">Incorrect. PUT is used to update or replace existing resources.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. PUT is used to update or replace existing resources.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[DELETE]]></text>
-      <feedback format="html">Incorrect. DELETE is used to remove resources.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. DELETE is used to remove resources.]]></text></feedback>
     </answer>
   </question>
 
@@ -54,19 +54,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Status codes in the 400s are client errors. 404 is specifically about existence.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Not Found (Resource does not exist).]]></text>
-      <feedback format="html">Correct. The server could not find the requested resource.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. The server could not find the requested resource.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[OK (Request successful).]]></text>
-      <feedback format="html">Incorrect. Success is indicated by the 200 range.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Success is indicated by the 200 range.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Internal Server Error.]]></text>
-      <feedback format="html">Incorrect. Server errors are in the 500 range.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Server errors are in the 500 range.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Unauthorized access.]]></text>
-      <feedback format="html">Incorrect. Unauthorized is 401.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Unauthorized is 401.]]></text></feedback>
     </answer>
   </question>
 
@@ -86,19 +86,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for a method built into the requests response object that specifically mentions JSON.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>response.json()</code>]]></text>
-      <feedback format="html">Correct. This automatically parses the JSON string into Python objects.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This automatically parses the JSON string into Python objects.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>response.text()</code>]]></text>
-      <feedback format="html">Incorrect. .text is an attribute (not a method) that returns the raw string, it doesn't parse it.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .text is an attribute (not a method) that returns the raw string, it doesn't parse it.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>json.parse(response)</code>]]></text>
-      <feedback format="html">Incorrect. json.parse is a JavaScript function. In Python, you would use json.loads(response.text).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. json.parse is a JavaScript function. In Python, you would use json.loads(response.text).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>response.to_dict()</code>]]></text>
-      <feedback format="html">Incorrect. There is no .to_dict() method on a requests response object.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no .to_dict() method on a requests response object.]]></text></feedback>
     </answer>
   </question>
 
@@ -118,19 +118,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Remember the specific argument name used by requests for query parameters.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>requests.get(url, params={"q": "python"})</code>]]></text>
-      <feedback format="html">Correct. The 'params' dictionary is automatically encoded into the URL.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. The 'params' dictionary is automatically encoded into the URL.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.get(url, data={"q": "python"})</code>]]></text>
-      <feedback format="html">Incorrect. 'data' is used to send form data in the body of a POST request.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'data' is used to send form data in the body of a POST request.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.get(url, json={"q": "python"})</code>]]></text>
-      <feedback format="html">Incorrect. 'json' is used to send JSON data in the body of a request.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'json' is used to send JSON data in the body of a request.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>requests.get(url + "q=python")</code>]]></text>
-      <feedback format="html">Incorrect. This is missing the '?' separator and requires manual URL building.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is missing the '?' separator and requires manual URL building.]]></text></feedback>
     </answer>
   </question>
 
@@ -150,19 +150,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for a standard Python keyword that triggers an error if a condition is false.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>assert</code>]]></text>
-      <feedback format="html">Correct. Pytest intercepts standard assert statements to provide detailed failure reports.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Pytest intercepts standard assert statements to provide detailed failure reports.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>verify</code>]]></text>
-      <feedback format="html">Incorrect. 'verify' is common in other testing frameworks but not in standard pytest.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'verify' is common in other testing frameworks but not in standard pytest.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>check</code>]]></text>
-      <feedback format="html">Incorrect. 'check' is not a keyword for assertions in Python.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'check' is not a keyword for assertions in Python.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>expect</code>]]></text>
-      <feedback format="html">Incorrect. 'expect' is often used in behavior-driven development (BDD) frameworks, but pytest uses assert.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'expect' is often used in behavior-driven development (BDD) frameworks, but pytest uses assert.]]></text></feedback>
     </answer>
   </question>
 
@@ -182,19 +182,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Recall the definition of a docstring as the first statement in a block.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[As the first statement inside the function body.]]></text>
-      <feedback format="html">Correct. This allows the string to be assigned to the .__doc__ attribute.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This allows the string to be assigned to the .__doc__ attribute.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Directly above the <code>def</code> keyword.]]></text>
-      <feedback format="html">Incorrect. Comments above the definition are just comments; they aren't docstrings.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Comments above the definition are just comments; they aren't docstrings.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[At the very end of the function body.]]></text>
-      <feedback format="html">Incorrect. A string at the end is just an unused expression, not a docstring.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. A string at the end is just an unused expression, not a docstring.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Inside the parentheses of the function definition.]]></text>
-      <feedback format="html">Incorrect. Only parameters go inside the parentheses.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Only parameters go inside the parentheses.]]></text></feedback>
     </answer>
   </question>
 
@@ -214,19 +214,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Review the standard Python syntax for type annotations (PEP 484).</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>def f(s: str) -> int:</code>]]></text>
-      <feedback format="html">Correct. This is the standard syntax introduced in Python 3.5.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the standard syntax introduced in Python 3.5.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>def f(str s) : int</code>]]></text>
-      <feedback format="html">Incorrect. This resembles C-style typing, which is not used in Python.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This resembles C-style typing, which is not used in Python.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>def f(s as str) returns int:</code>]]></text>
-      <feedback format="html">Incorrect. Python doesn't use the 'as' or 'returns' keywords for type hints.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Python doesn't use the 'as' or 'returns' keywords for type hints.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>def f(s: string) -> integer:</code>]]></text>
-      <feedback format="html">Incorrect. While close, 'str' and 'int' are the correct names for the built-in types.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While close, 'str' and 'int' are the correct names for the built-in types.]]></text></feedback>
     </answer>
   </question>
 
@@ -246,19 +246,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Think about the prefix requirement for pytest files.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>test_logic.py</code>]]></text>
-      <feedback format="html">Correct. Pytest looks for files starting with 'test_' or ending with '_test'.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Pytest looks for files starting with 'test_' or ending with '_test'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>logic_test.py</code>]]></text>
-      <feedback format="html">Incorrect. While some configurations might allow this, the standard and most reliable prefix is 'test_'. (Note: Actually _test.py also works by default, but test_ is the most common teaching example).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While some configurations might allow this, the standard and most reliable prefix is 'test_'. (Note: Actually _test.py also works by default, but test_ is the most common teaching example).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>tests.py</code>]]></text>
-      <feedback format="html">Incorrect. A generic name like this is not automatically discovered unless it matches specific patterns.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. A generic name like this is not automatically discovered unless it matches specific patterns.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>run_tests.py</code>]]></text>
-      <feedback format="html">Incorrect. This sounds like a script you would run yourself, not a test file discovered by the framework.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This sounds like a script you would run yourself, not a test file discovered by the framework.]]></text></feedback>
     </answer>
   </question>
 
@@ -278,19 +278,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Aim for names that explain the content without needing a comment.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>user_date_of_birth</code>]]></text>
-      <feedback format="html">Correct. It is descriptive and leaves no room for ambiguity.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It is descriptive and leaves no room for ambiguity.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>dob</code>]]></text>
-      <feedback format="html">Incorrect. While common, abbreviations can be confusing to newcomers or in complex domains.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While common, abbreviations can be confusing to newcomers or in complex domains.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>d</code>]]></text>
-      <feedback format="html">Incorrect. Single-letter names (except in very small loops) are a major clean code violation.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Single-letter names (except in very small loops) are a major clean code violation.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>temp_date</code>]]></text>
-      <feedback format="html">Incorrect. 'temp' doesn't explain what the data actually represents.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'temp' doesn't explain what the data actually represents.]]></text></feedback>
     </answer>
   </question>
 
@@ -310,19 +310,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider what happens if the server you are calling is unresponsive.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[To prevent the program from hanging indefinitely if the server doesn't respond.]]></text>
-      <feedback format="html">Correct. By default, requests will wait forever, which can freeze your application.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. By default, requests will wait forever, which can freeze your application.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To make the request complete faster.]]></text>
-      <feedback format="html">Incorrect. Timeouts don't speed up successful requests; they just cut off failed ones.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Timeouts don't speed up successful requests; they just cut off failed ones.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To save battery life on the server.]]></text>
-      <feedback format="html">Incorrect. Timeouts are a client-side setting and don't affect the server's resource usage significantly.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Timeouts are a client-side setting and don't affect the server's resource usage significantly.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To bypass rate limits.]]></text>
-      <feedback format="html">Incorrect. Rate limits are handled by the server; timing out your request won't help.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Rate limits are handled by the server; timing out your request won't help.]]></text></feedback>
     </answer>
   </question>
 
@@ -342,19 +342,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Remember the CRUD to HTTP mapping.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[POST]]></text>
-      <feedback format="html">Correct. POST is the standard verb for creating resources.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. POST is the standard verb for creating resources.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[GET]]></text>
-      <feedback format="html">Incorrect. GET should only be used to retrieve data, not create it.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. GET should only be used to retrieve data, not create it.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[DELETE]]></text>
-      <feedback format="html">Incorrect. DELETE removes data.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. DELETE removes data.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[HEAD]]></text>
-      <feedback format="html">Incorrect. HEAD just retrieves the headers, not the content, and doesn't create anything.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. HEAD just retrieves the headers, not the content, and doesn't create anything.]]></text></feedback>
     </answer>
   </question>
 
@@ -374,19 +374,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider how 'requests' signals that an error occurred on the server.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[It raises an <code>HTTPError</code> exception.]]></text>
-      <feedback format="html">Correct. This allows you to catch HTTP errors in a try/except block.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This allows you to catch HTTP errors in a try/except block.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It returns <code>False</code>.]]></text>
-      <feedback format="html">Incorrect. The method is designed to raise an exception, not return a boolean.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The method is designed to raise an exception, not return a boolean.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It prints a warning to the console but continues execution.]]></text>
-      <feedback format="html">Incorrect. It stops execution by raising an exception unless it is caught.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. It stops execution by raising an exception unless it is caught.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It automatically retries the request.]]></text>
-      <feedback format="html">Incorrect. Automatic retries must be configured separately; this method just reports the error.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Automatic retries must be configured separately; this method just reports the error.]]></text></feedback>
     </answer>
   </question>
 
@@ -406,19 +406,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Think about where bugs are most likely to hide.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Because code often fails on unusual or boundary inputs that developers might forget to handle.]]></text>
-      <feedback format="html">Correct. Handling edge cases ensures the robustness of your software.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Handling edge cases ensures the robustness of your software.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To make the tests run faster.]]></text>
-      <feedback format="html">Incorrect. Edge cases usually don't affect performance; they affect correctness.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Edge cases usually don't affect performance; they affect correctness.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Because pytest requires at least one edge case per file.]]></text>
-      <feedback format="html">Incorrect. Pytest has no such requirement; it's a matter of good engineering practice.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Pytest has no such requirement; it's a matter of good engineering practice.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[To ensure the code is compatible with older versions of Python.]]></text>
-      <feedback format="html">Incorrect. Compatibility is usually handled by linting or environment testing, not unit test edge cases.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Compatibility is usually handled by linting or environment testing, not unit test edge cases.]]></text></feedback>
     </answer>
   </question>
 
@@ -438,19 +438,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for a built-in Python function that provides information about objects.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>help(calculate_roi)</code>]]></text>
-      <feedback format="html">Correct. help() pulls the string from the .__doc__ attribute and displays it.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. help() pulls the string from the .__doc__ attribute and displays it.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>print(calculate_roi)</code>]]></text>
-      <feedback format="html">Incorrect. This just prints the memory address of the function object.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This just prints the memory address of the function object.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>calculate_roi.info()</code>]]></text>
-      <feedback format="html">Incorrect. .info() is common in Pandas but not a standard method on Python functions.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .info() is common in Pandas but not a standard method on Python functions.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>docs(calculate_roi)</code>]]></text>
-      <feedback format="html">Incorrect. There is no built-in docs() function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. There is no built-in docs() function.]]></text></feedback>
     </answer>
   </question>
 
@@ -470,20 +470,21 @@
     <incorrectfeedback format="html"><text>Incorrect. Consider how complexity affects testing and reading code.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[It makes the code easier to test, debug, and reuse.]]></text>
-      <feedback format="html">Correct. Small, focused functions are the building blocks of maintainable systems.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Small, focused functions are the building blocks of maintainable systems.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It allows the code to run significantly faster.]]></text>
-      <feedback format="html">Incorrect. Performance is usually not the primary reason for this rule; maintainability is.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Performance is usually not the primary reason for this rule; maintainability is.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It reduces the total number of lines in your script.]]></text>
-      <feedback format="html">Incorrect. Often, breaking things down results in *more* lines due to overhead, but better quality.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Often, breaking things down results in *more* lines due to overhead, but better quality.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It allows you to skip writing unit tests.]]></text>
-      <feedback format="html">Incorrect. If anything, it makes writing unit tests more practical and necessary.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. If anything, it makes writing unit tests more practical and necessary.]]></text></feedback>
     </answer>
   </question>
 
 </quiz>
+

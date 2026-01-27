@@ -18,19 +18,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Check the standard flag for version information in most CLI tools.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pip --version</code>]]></text>
-      <feedback format="html">Correct. This also shows the path and the Python version it belongs to.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This also shows the path and the Python version it belongs to.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip -v</code>]]></text>
-      <feedback format="html">Incorrect. -v usually stands for 'verbose', providing more output, not the version.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. -v usually stands for 'verbose', providing more output, not the version.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip show version</code>]]></text>
-      <feedback format="html">Incorrect. 'pip show <package>' shows info about a package, but not for pip itself this way.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 'pip show <package>' shows info about a package, but not for pip itself this way.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>python --pip</code>]]></text>
-      <feedback format="html">Incorrect. This is not a valid Python flag.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is not a valid Python flag.]]></text></feedback>
     </answer>
   </question>
 
@@ -46,19 +46,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Look for the specific class name used by the NumPy library.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>numpy.ndarray</code>]]></text>
-      <feedback format="html">Correct. This is the core data structure of NumPy.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is the core data structure of NumPy.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>numpy.list</code>]]></text>
-      <feedback format="html">Incorrect. NumPy does not have a 'list' type; it uses arrays.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. NumPy does not have a 'list' type; it uses arrays.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>numpy.vector</code>]]></text>
-      <feedback format="html">Incorrect. While it's a vector in math, the Python class is ndarray.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While it's a vector in math, the Python class is ndarray.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>list</code>]]></text>
-      <feedback format="html">Incorrect. A standard Python list is converted INTO a numpy.ndarray by the array() function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. A standard Python list is converted INTO a numpy.ndarray by the array() function.]]></text></feedback>
     </answer>
   </question>
 
@@ -74,19 +74,19 @@
     <incorrectfeedback format="html"><text>Incorrect. Remember that arange behaves like Python's built-in range().</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[0, 1, 2]</code>]]></text>
-      <feedback format="html">Correct. 3 values starting from 0.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. 3 values starting from 0.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[1, 2, 3]</code>]]></text>
-      <feedback format="html">Incorrect. It starts at 0 by default.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. It starts at 0 by default.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[0, 1, 2, 3]</code>]]></text>
-      <feedback format="html">Incorrect. The stop value is exclusive.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The stop value is exclusive.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[3]</code>]]></text>
-      <feedback format="html">Incorrect. Arange returns an array of values, not a single-element array containing the stop value.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Arange returns an array of values, not a single-element array containing the stop value.]]></text></feedback>
     </answer>
   </question>
 
@@ -102,19 +102,19 @@
     <incorrectfeedback format="html"><text>Incorrect. The shape attribute reflects the dimensions of the array.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>(3, 4)</code>]]></text>
-      <feedback format="html">Correct. It is now a 2D array with 3 rows and 4 columns.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. It is now a 2D array with 3 rows and 4 columns.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>(12,)</code>]]></text>
-      <feedback format="html">Incorrect. This was the original shape.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This was the original shape.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>(4, 3)</code>]]></text>
-      <feedback format="html">Incorrect. The assignment was (3, 4).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The assignment was (3, 4).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[An error occurs because shape is read-only.]]></text>
-      <feedback format="html">Incorrect. In NumPy, you can actually modify the shape attribute directly as long as the size matches.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. In NumPy, you can actually modify the shape attribute directly as long as the size matches.]]></text></feedback>
     </answer>
   </question>
 
@@ -131,19 +131,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Apply the square operation to each number in the array.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[1, 4, 9]</code>]]></text>
-      <feedback format="html">Correct. 1^2, 2^2, 3^2.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. 1^2, 2^2, 3^2.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[1, 2, 3, 1, 2, 3]</code>]]></text>
-      <feedback format="html">Incorrect. That's what happens when you multiply a standard Python list by 2: [1,2,3]*2.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That's what happens when you multiply a standard Python list by 2: [1,2,3]*2.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[2, 4, 6]</code>]]></text>
-      <feedback format="html">Incorrect. This is the result of multiplication by 2 (a * 2), not power of 2.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is the result of multiplication by 2 (a * 2), not power of 2.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[An error occurs.]]></text>
-      <feedback format="html">Incorrect. This is valid NumPy syntax.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is valid NumPy syntax.]]></text></feedback>
     </answer>
   </question>
 
@@ -159,19 +159,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Think about how you access data in a Series compared to a list.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[It can have custom labels (an index) for its values.]]></text>
-      <feedback format="html">Correct. This allows for more intuitive data access.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This allows for more intuitive data access.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It can store more elements.]]></text>
-      <feedback format="html">Incorrect. Both are limited only by your computer's memory.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Both are limited only by your computer's memory.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It is automatically sorted.]]></text>
-      <feedback format="html">Incorrect. You have to call sort methods explicitly.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. You have to call sort methods explicitly.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It doesn't use any memory.]]></text>
-      <feedback format="html">Incorrect. All data structures use memory.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. All data structures use memory.]]></text></feedback>
     </answer>
   </question>
 
@@ -187,19 +187,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the parameter name in read_csv that specifies which columns to use.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", usecols=["A", "C"])</code>]]></text>
-      <feedback format="html">Correct. This saves memory by only loading what you need.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This saves memory by only loading what you need.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv", columns=["A", "C"])</code>]]></text>
-      <feedback format="html">Incorrect. The parameter is 'usecols', not 'columns'.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The parameter is 'usecols', not 'columns'.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv")["A", "C"]</code>]]></text>
-      <feedback format="html">Incorrect. While this filters AFTER loading, the question asks how to load only those columns initially. (Also syntax would be [["A", "C"]]).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While this filters AFTER loading, the question asks how to load only those columns initially. (Also syntax would be [["A", "C"]]).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.read_csv("data.csv").select(["A", "C"])</code>]]></text>
-      <feedback format="html">Incorrect. Not the standard way to load specific columns.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not the standard way to load specific columns.]]></text></feedback>
     </answer>
   </question>
 
@@ -215,19 +215,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Remember that iloc uses integer positions and standard Python slicing rules (exclusive end).</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[A 2x2 sub-table from the top-left corner.]]></text>
-      <feedback format="html">Correct. Rows 0 and 1, Columns 0 and 1.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Rows 0 and 1, Columns 0 and 1.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The first 3 rows and 3 columns.]]></text>
-      <feedback format="html">Incorrect. 0:2 only includes 0 and 1.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. 0:2 only includes 0 and 1.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[Only the cell at position (0,0).]]></text>
-      <feedback format="html">Incorrect. This is a slice, not a single point.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is a slice, not a single point.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The entire DataFrame.]]></text>
-      <feedback format="html">Incorrect. This is a specific subset.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is a specific subset.]]></text></feedback>
     </answer>
   </question>
 
@@ -243,19 +243,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Check the axis parameter for the .sum() method.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df.sum(axis=1)</code>]]></text>
-      <feedback format="html">Correct. This sums the columns for each row.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This sums the columns for each row.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.sum(axis=0)</code>]]></text>
-      <feedback format="html">Incorrect. This is the default; it sums the rows for each column (vertical sum).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is the default; it sums the rows for each column (vertical sum).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.sum(direction="horizontal")</code>]]></text>
-      <feedback format="html">Incorrect. Not a valid parameter.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not a valid parameter.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.row_sum()</code>]]></text>
-      <feedback format="html">Incorrect. No such method.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such method.]]></text></feedback>
     </answer>
   </question>
 
@@ -271,19 +271,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the function name that directly matches the chart type.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.bar()</code>]]></text>
-      <feedback format="html">Correct. Standard for categorical data.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Standard for categorical data.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.hist()</code>]]></text>
-      <feedback format="html">Incorrect. This is for histograms (frequency distributions).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This is for histograms (frequency distributions).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.plot(kind="bar")</code>]]></text>
-      <feedback format="html">Incorrect. While Pandas uses this syntax, raw Matplotlib uses plt.bar().</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. While Pandas uses this syntax, raw Matplotlib uses plt.bar().]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.box()</code>]]></text>
-      <feedback format="html">Incorrect. This creates a box plot.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. This creates a box plot.]]></text></feedback>
     </answer>
   </question>
 
@@ -299,19 +299,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the function that shows the key or legend of the plot.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.legend()</code>]]></text>
-      <feedback format="html">Correct. Without this call, labels are defined but not visible.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Without this call, labels are defined but not visible.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.show_labels()</code>]]></text>
-      <feedback format="html">Incorrect. No such function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such function.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.key()</code>]]></text>
-      <feedback format="html">Incorrect. Not the standard name in Matplotlib.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not the standard name in Matplotlib.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.annotate()</code>]]></text>
-      <feedback format="html">Incorrect. Annotate is for adding specific text at a coordinate.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Annotate is for adding specific text at a coordinate.]]></text></feedback>
     </answer>
   </question>
 
@@ -327,19 +327,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the function name for a plot title.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.title("My Title")</code>]]></text>
-      <feedback format="html">Correct. Places text centered at the top.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Places text centered at the top.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.header("My Title")</code>]]></text>
-      <feedback format="html">Incorrect. Header is not a Matplotlib plotting function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Header is not a Matplotlib plotting function.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.label("My Title")</code>]]></text>
-      <feedback format="html">Incorrect. You need to specify which label (x, y, or title).</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. You need to specify which label (x, y, or title).]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.main("My Title")</code>]]></text>
-      <feedback format="html">Incorrect. No such function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such function.]]></text></feedback>
     </answer>
   </question>
 
@@ -355,19 +355,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Consider whether you have to install every sub-library yourself or if the tool helps you.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[It automatically downloads and installs them as well.]]></text>
-      <feedback format="html">Correct. This is a core feature of modern package managers.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. This is a core feature of modern package managers.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It stops and asks you to install them manually first.]]></text>
-      <feedback format="html">Incorrect. That would be very inefficient.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. That would be very inefficient.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It fails with an error and won't install anything.]]></text>
-      <feedback format="html">Incorrect. It only fails if there is a version conflict it can't resolve.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. It only fails if there is a version conflict it can't resolve.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[It only installs the requested package and ignores dependencies.]]></text>
-      <feedback format="html">Incorrect. The package likely wouldn't work without its dependencies.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. The package likely wouldn't work without its dependencies.]]></text></feedback>
     </answer>
   </question>
 
@@ -383,19 +383,19 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the function in the np.random sub-module.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>np.random.rand(5)</code>]]></text>
-      <feedback format="html">Correct. Generates 5 random floats between 0 and 1.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Generates 5 random floats between 0 and 1.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.zeros(5) + random()</code>]]></text>
-      <feedback format="html">Incorrect. Too complicated and doesn't work this way.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Too complicated and doesn't work this way.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.arange(0, 1, random)</code>]]></text>
-      <feedback format="html">Incorrect. Arange requires a numeric step.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Arange requires a numeric step.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>np.any_random(5)</code>]]></text>
-      <feedback format="html">Incorrect. No such function.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such function.]]></text></feedback>
     </answer>
   </question>
 
@@ -411,20 +411,22 @@ print(a ** 2)</code></pre>]]></text></questiontext>
     <incorrectfeedback format="html"><text>Incorrect. Look for the abbreviation of 'correlation'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df.corr()</code>]]></text>
-      <feedback format="html">Correct. Useful for finding patterns in data.</feedback>
+      <feedback format="html"><text><![CDATA[Correct. Useful for finding patterns in data.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.relate()</code>]]></text>
-      <feedback format="html">Incorrect. No such method.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. No such method.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.compare()</code>]]></text>
-      <feedback format="html">Incorrect. .compare() is used to find differences between two DataFrames, not correlations within one.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. .compare() is used to find differences between two DataFrames, not correlations within one.]]></text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.stats(type="correlation")</code>]]></text>
-      <feedback format="html">Incorrect. Not the standard Pandas syntax.</feedback>
+      <feedback format="html"><text><![CDATA[Incorrect. Not the standard Pandas syntax.]]></text></feedback>
     </answer>
   </question>
 
 </quiz>
+
+
