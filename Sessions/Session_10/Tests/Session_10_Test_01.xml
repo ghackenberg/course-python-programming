@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 10 Test 1</text>
+    </category>
+  </question>
+
+  <!-- Question 1: REST Methods -->
+  <question type="multichoice">
+    <name>
+      <text>Q01: HTTP Method for Data Retrieval</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which HTTP method is primarily used to <strong>retrieve</strong> data from a resource?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[GET]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[POST]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[PUT]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[DELETE]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 2: HTTP Status Codes -->
+  <question type="multichoice">
+    <name>
+      <text>Q02: Status Code 404</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does an HTTP status code <strong>404</strong> indicate?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Not Found (Resource does not exist).]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[OK (Request successful).]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Internal Server Error.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Unauthorized access.]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 3: requests library JSON -->
+  <question type="multichoice">
+    <name>
+      <text>Q03: Parsing JSON in 'requests'</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given <code>response = requests.get(url)</code>, how do you convert the JSON body directly into a Python dictionary?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>response.json()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.text()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>json.parse(response)</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.to_dict()</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 4: URL Parameters -->
+  <question type="multichoice">
+    <name>
+      <text>Q04: Sending Query Parameters</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which code snippet correctly sends a query parameter <code>q=python</code> to an API?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>requests.get(url, params={"q": "python"})</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.get(url, data={"q": "python"})</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.get(url, json={"q": "python"})</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.get(url + "q=python")</code> (missing ?) ]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 5: pytest assertions -->
+  <question type="multichoice">
+    <name>
+      <text>Q05: Pytest assertion keyword</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which Python keyword is used within a <code>pytest</code> function to verify a condition?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>assert</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>verify</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>check</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>expect</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 6: docstrings -->
+  <question type="multichoice">
+    <name>
+      <text>Q06: Docstring Location</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Where must a docstring be placed to be correctly recognized as a function's documentation?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[As the first statement inside the function body.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Directly above the <code>def</code> keyword.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[At the very end of the function body.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Inside the parentheses of the function definition.]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 7: type hinting -->
+  <question type="multichoice">
+    <name>
+      <text>Q07: Type Hint Syntax</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which function definition correctly uses type hints for a string input and an integer return?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>def f(s: str) -> int:</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def f(str s) : int</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def f(s as str) returns int:</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def f(s: string) -> integer:</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 8: pytest file naming -->
+  <question type="multichoice">
+    <name>
+      <text>Q08: Pytest File Naming</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>By default, which file name will <code>pytest</code> automatically discover and run?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>test_logic.py</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>logic_test.py</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>tests.py</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>run_tests.py</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 9: clean code naming -->
+  <question type="multichoice">
+    <name>
+      <text>Q09: Meaningful Variable Names</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>According to Clean Code principles, which variable name is best for storing a user's date of birth?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>user_date_of_birth</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>dob</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>d</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>temp_date</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 10: requests timeout -->
+  <question type="multichoice">
+    <name>
+      <text>Q10: Request Timeouts</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Why is it a professional best practice to include a <code>timeout</code> in your <code>requests.get()</code> calls?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To prevent the program from hanging indefinitely if the server doesn't respond.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To make the request complete faster.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To save battery life on the server.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To bypass rate limits.]]></text>
+    </answer>
+  </question>
+
+</quiz>

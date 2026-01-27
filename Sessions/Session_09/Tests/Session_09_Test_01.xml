@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 09 Test 1</text>
+    </category>
+  </question>
+
+  <!-- Question 1: pip install -->
+  <question type="multichoice">
+    <name>
+      <text>Q01: pip install version specifier</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command correctly installs the <code>pandas</code> library with a version that is exactly 1.3.5?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip install pandas==1.3.5</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install pandas=1.3.5</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install pandas --version 1.3.5</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install pandas >= 1.3.5</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 2: numpy array creation -->
+  <question type="multichoice">
+    <name>
+      <text>Q02: NumPy linspace output</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the output of the following code?</p><pre><code>import numpy as np
+arr = np.linspace(0, 10, 5)
+print(arr)</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[ 0.   2.5  5.   7.5 10. ]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[ 0.  2.  4.  6.  8. 10. ]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[ 0. 10. 20. 30. 40. ]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[ 0.  2.5  5.  7.5 ]</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 3: numpy vectorization -->
+  <question type="multichoice">
+    <name>
+      <text>Q03: NumPy element-wise operations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the result of <code>a * b</code> in the following snippet?</p><pre><code>import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([10, 20, 30])</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[10, 40, 90]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[11, 22, 33]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A single value: 140 (dot product)]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A 3x3 matrix]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 4: numpy slicing 2D -->
+  <question type="multichoice">
+    <name>
+      <text>Q04: NumPy 2D Slicing</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given the matrix <code>M</code>, how do you select the second column?</p><pre><code>M = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])</code></pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>M[:, 1]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>M[1, :]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>M[1, 1]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>M[:, 2]</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 5: pandas loading -->
+  <question type="multichoice">
+    <name>
+      <text>Q05: Pandas CSV loading</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which function is used to load data from a CSV file into a Pandas DataFrame?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pd.read_csv("file.csv")</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.load_csv("file.csv")</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.from_csv("file.csv")</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.open_csv("file.csv")</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 6: pandas filtering -->
+  <question type="multichoice">
+    <name>
+      <text>Q06: Pandas Boolean Indexing</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How do you filter a DataFrame <code>df</code> to include only rows where the "Age" column is greater than 30?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df[df["Age"] > 30]</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.filter("Age" > 30)</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.where(df["Age"] > 30)</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["Age"] > 30</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 7: matplotlib basic plot -->
+  <question type="multichoice">
+    <name>
+      <text>Q07: Matplotlib display</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is necessary to actually display the window containing your plot in Matplotlib?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.show()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.plot()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.display()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.render()</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 8: numpy reshape -->
+  <question type="multichoice">
+    <name>
+      <text>Q08: Array Reshaping</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What is the result of <code>arr.reshape(2, 3)</code> if <code>arr</code> is <code>np.arange(6)</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A 2x3 matrix with values 0 to 5.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A 3x2 matrix with values 0 to 5.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A 1D array with values [2, 3].]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A ValueError because the sizes don't match.]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 9: pandas aggregation -->
+  <question type="multichoice">
+    <name>
+      <text>Q09: Pandas Mean calculation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which line correctly calculates the average value of the "Price" column in DataFrame <code>df</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df["Price"].mean()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["Price"].average()</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.mean(df["Price"])</code>]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.mean("Price")</code>]]></text>
+    </answer>
+  </question>
+
+  <!-- Question 10: matplotlib markers -->
+  <question type="multichoice">
+    <name>
+      <text>Q10: Matplotlib Scatter Plot</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the <code>'o'</code> in <code>plt.plot(x, y, 'o')</code> represent?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Circle markers (no line).]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A solid line.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A dashed line.]]></text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The color orange.]]></text>
+    </answer>
+  </question>
+
+</quiz>
