@@ -18,17 +18,23 @@
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! You used the exact version specifier.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that '==' is used for exact version matching in pip.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pip install pandas==1.3.5</code>]]></text>
+      <feedback format="html"><text>Correct. The double equals sign specifies an exact version.</text></feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip install pandas=1.3.5</code>]]></text>
+      <feedback format="html">Incorrect. A single equals sign is not valid syntax for pip install.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip install pandas --version 1.3.5</code>]]></text>
+      <feedback format="html">Incorrect. '--version' is usually used to check the version of pip itself, not to install a specific package version.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pip install pandas >= 1.3.5</code>]]></text>
+      <feedback format="html">Incorrect. This would install version 1.3.5 or any newer version available.</feedback>
     </answer>
   </question>
 
@@ -46,17 +52,23 @@ print(arr)</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Linspace includes both endpoints and divides the range into the specified number of steps.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that linspace(start, stop, num) generates 'num' points between 'start' and 'stop'.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[ 0.   2.5  5.   7.5 10. ]</code>]]></text>
+      <feedback format="html">Correct. (10 - 0) / (5 - 1) = 2.5 step size.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[ 0.  2.  4.  6.  8. 10. ]</code>]]></text>
+      <feedback format="html">Incorrect. This would be the result of 6 points, not 5.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[ 0. 10. 20. 30. 40. ]</code>]]></text>
+      <feedback format="html">Incorrect. Linspace goes up to the 'stop' value (10).</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[ 0.  2.5  5.  7.5 ]</code>]]></text>
+      <feedback format="html">Incorrect. Linspace includes the 'stop' value (10).</feedback>
     </answer>
   </question>
 
@@ -74,17 +86,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! NumPy performs multiplication element by element.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that the '*' operator in NumPy performs element-wise multiplication by default.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>[10, 40, 90]</code>]]></text>
+      <feedback format="html">Correct. 1*10, 2*20, 3*30.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>[11, 22, 33]</code>]]></text>
+      <feedback format="html">Incorrect. This is the result of addition (a + b).</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A single value: 140 (dot product)]]></text>
+      <feedback format="html">Incorrect. For dot product, you would use np.dot(a, b) or the @ operator.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A 3x3 matrix]]></text>
+      <feedback format="html">Incorrect. Element-wise multiplication of two 1D arrays of the same size results in a 1D array.</feedback>
     </answer>
   </question>
 
@@ -104,17 +122,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The syntax [rows, cols] with ':' for 'all' and '1' for the second index is correct.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that NumPy uses zero-based indexing and the format [row_slice, column_slice].</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>M[:, 1]</code>]]></text>
+      <feedback format="html">Correct. ':' means all rows, '1' means index 1 (the second column).</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>M[1, :]</code>]]></text>
+      <feedback format="html">Incorrect. This selects the second row, not the second column.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>M[1, 1]</code>]]></text>
+      <feedback format="html">Incorrect. This selects a single element (the center one).</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>M[:, 2]</code>]]></text>
+      <feedback format="html">Incorrect. This selects the third column (index 2).</feedback>
     </answer>
   </question>
 
@@ -130,17 +154,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! pd.read_csv is the standard function for this task.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the most common 'read' function in the pandas library.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>pd.read_csv("file.csv")</code>]]></text>
+      <feedback format="html">Correct. This is the standard Pandas function for CSV files.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.load_csv("file.csv")</code>]]></text>
+      <feedback format="html">Incorrect. Pandas uses 'read_' prefixes for its file loaders.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.from_csv("file.csv")</code>]]></text>
+      <feedback format="html">Incorrect. 'from_csv' is deprecated and no longer recommended.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.open_csv("file.csv")</code>]]></text>
+      <feedback format="html">Incorrect. 'open' is used for base Python file handles, not Pandas loading.</feedback>
     </answer>
   </question>
 
@@ -156,17 +186,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! This is the standard 'Boolean Indexing' syntax in Pandas.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. In Pandas, we use square brackets with a boolean condition to filter rows.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df[df["Age"] > 30]</code>]]></text>
+      <feedback format="html">Correct. The inner part creates a boolean mask, and the outer brackets apply it to the rows.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.filter("Age" > 30)</code>]]></text>
+      <feedback format="html">Incorrect. The .filter() method in Pandas is used to filter labels (columns or rows by name), not values based on conditions.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.where(df["Age"] > 30)</code>]]></text>
+      <feedback format="html">Incorrect. .where() returns a DataFrame of the same shape, but with NaNs where the condition is False, rather than removing the rows.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df["Age"] > 30</code>]]></text>
+      <feedback format="html">Incorrect. This only returns a Series of True/False values (the mask), not the filtered data itself.</feedback>
     </answer>
   </question>
 
@@ -182,17 +218,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! plt.show() triggers the GUI backend to open a window.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that the plotting commands just prepare the data; a final command is needed to render it to the screen.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>plt.show()</code>]]></text>
+      <feedback format="html">Correct. This command opens the plot window.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.plot()</code>]]></text>
+      <feedback format="html">Incorrect. This command prepares a line plot but doesn't show it.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.display()</code>]]></text>
+      <feedback format="html">Incorrect. There is no 'display' function in the standard pyplot interface.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>plt.render()</code>]]></text>
+      <feedback format="html">Incorrect. 'render' is not a standard Matplotlib command for showing plots.</feedback>
     </answer>
   </question>
 
@@ -208,17 +250,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Reshape changes the dimensions without changing the data.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check the dimensions and the total number of elements.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[A 2x3 matrix with values 0 to 5.]]></text>
+      <feedback format="html">Correct. 2 * 3 = 6, which matches the size of the original array.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A 3x2 matrix with values 0 to 5.]]></text>
+      <feedback format="html">Incorrect. This would be the result of .reshape(3, 2).</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A 1D array with values [2, 3].]]></text>
+      <feedback format="html">Incorrect. Reshape creates a multi-dimensional array in this case.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A ValueError because the sizes don't match.]]></text>
+      <feedback format="html">Incorrect. Sizes do match (2*3 = 6).</feedback>
     </answer>
   </question>
 
@@ -234,17 +282,23 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .mean() is the standard method for calculating the average.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the statistical method name used in Pandas.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[<code>df["Price"].mean()</code>]]></text>
+      <feedback format="html">Correct. This calculates the mean of the specified column.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df["Price"].average()</code>]]></text>
+      <feedback format="html">Incorrect. Pandas uses '.mean()', not '.average()'.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>pd.mean(df["Price"])</code>]]></text>
+      <feedback format="html">Incorrect. Mean is usually called as a method on the Series or DataFrame.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[<code>df.mean("Price")</code>]]></text>
+      <feedback format="html">Incorrect. You typically select the column first, then call .mean().</feedback>
     </answer>
   </question>
 
@@ -260,17 +314,183 @@ b = np.array([10, 20, 30])</code></pre>]]></text>
     <single>true</single>
     <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Shorthand strings in plt.plot define markers and line styles.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Review the shorthand notation for markers and colors in Matplotlib.</text></incorrectfeedback>
     <answer fraction="100" format="html">
       <text><![CDATA[Circle markers (no line).]]></text>
+      <feedback format="html">Correct. 'o' stands for circle marker. Since no line style is specified, it plots only the points.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A solid line.]]></text>
+      <feedback format="html">Incorrect. A solid line would be represented by '-' or omitted if it's the default.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[A dashed line.]]></text>
+      <feedback format="html">Incorrect. A dashed line is represented by '--'.</feedback>
     </answer>
     <answer fraction="0" format="html">
       <text><![CDATA[The color orange.]]></text>
+      <feedback format="html">Incorrect. Color codes are usually single letters like 'r' (red), 'b' (blue), or 'k' (black).</feedback>
+    </answer>
+  </question>
+
+  <!-- Question 11: requirements.txt -->
+  <question type="multichoice">
+    <name>
+      <text>Q11: Creating a requirements file</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which command is used to export all currently installed packages and their versions to a file?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! 'pip freeze' is the standard way to capture environment state.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the pip command that outputs package versions in a format suitable for a requirements file.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip freeze > requirements.txt</code>]]></text>
+      <feedback format="html">Correct. 'freeze' outputs the packages, and '>' redirects that output to a file.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip list > requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. 'pip list' provides a more human-readable table, which is not suitable for 'pip install -r'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip export requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. There is no 'export' command in pip.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip save requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. There is no 'save' command in pip.</feedback>
+    </answer>
+  </question>
+
+  <!-- Question 12: numpy axis -->
+  <question type="multichoice">
+    <name>
+      <text>Q12: NumPy Aggregation Axis</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In a 2D NumPy array, which axis refers to the <strong>columns</strong> (summing down the rows)?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Axis 0 is the vertical axis (rows), so summing across it collapses the rows into column sums.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Review the definition of axis=0 and axis=1 in NumPy.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>axis=0</code>]]></text>
+      <feedback format="html">Correct. Axis 0 is the first dimension (rows). Summing along axis 0 gives column totals.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>axis=1</code>]]></text>
+      <feedback format="html">Incorrect. Axis 1 refers to the second dimension (columns). Summing along axis 1 gives row totals.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>axis=-1</code>]]></text>
+      <feedback format="html">Incorrect. While -1 refers to the last axis (which is 1 in a 2D array), it doesn't refer to columns specifically in the way the question asks.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>axis=None</code>]]></text>
+      <feedback format="html">Incorrect. Axis=None would sum all elements in the array into a single number.</feedback>
+    </answer>
+  </question>
+
+  <!-- Question 13: pandas dtypes -->
+  <question type="multichoice">
+    <name>
+      <text>Q13: Pandas Data Inspection</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which DataFrame method provides the most concise summary of column names, non-null counts, and data types?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .info() is essential for a quick overview of DataFrame structure.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider which method shows metadata rather than data or statistics.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df.info()</code>]]></text>
+      <feedback format="html">Correct. This gives a technical summary of the DataFrame.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.describe()</code>]]></text>
+      <feedback format="html">Incorrect. This gives a statistical summary (mean, std, etc.), not type information.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.head()</code>]]></text>
+      <feedback format="html">Incorrect. This shows the first few rows of actual data.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.columns()</code>]]></text>
+      <feedback format="html">Incorrect. This is an attribute (df.columns) that just returns the column names.</feedback>
+    </answer>
+  </question>
+
+  <!-- Question 14: matplotlib titles -->
+  <question type="multichoice">
+    <name>
+      <text>Q14: Matplotlib Labeling</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How do you add a label to the horizontal axis in Matplotlib?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! plt.xlabel() is the correct function.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the function specifically named for the 'x' axis label.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.xlabel("text")</code>]]></text>
+      <feedback format="html">Correct. xlabel corresponds to the x-axis.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.ylabel("text")</code>]]></text>
+      <feedback format="html">Incorrect. This adds a label to the vertical (y) axis.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.title("text")</code>]]></text>
+      <feedback format="html">Incorrect. This adds a title to the top of the entire plot.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.legend("text")</code>]]></text>
+      <feedback format="html">Incorrect. Legends are used to identify different series within the plot area.</feedback>
+    </answer>
+  </question>
+
+  <!-- Question 15: numpy homogeneity -->
+  <question type="multichoice">
+    <name>
+      <text>Q15: NumPy vs Lists (Data Types)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What happens if you try to create a NumPy array from a list containing different types, like <code>[1, "2", 3.0]</code>?</p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! NumPy arrays must be homogeneous, so they force a single type.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that NumPy is optimized for a single data type across the entire array.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[All elements will be converted to a single compatible type (e.g., all strings).]]></text>
+      <feedback format="html">Correct. This is called type coercion. To maintain performance, NumPy ensures all elements share the same type.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The array will store them as they are, just like a Python list.]]></text>
+      <feedback format="html">Incorrect. NumPy arrays are homogeneous, unlike Python lists.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[NumPy will raise a <code>TypeError</code>.]]></text>
+      <feedback format="html">Incorrect. NumPy will try to find a "common denominator" type rather than failing.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The non-numeric elements will be replaced with <code>NaN</code>.]]></text>
+      <feedback format="html">Incorrect. Conversion happens if possible; replacement with NaN usually only happens during specific parsing operations in Pandas.</feedback>
     </answer>
   </question>
 
