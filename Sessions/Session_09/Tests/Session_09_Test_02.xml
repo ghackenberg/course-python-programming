@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 09 Test 2</text>
+    </category>
+  </question>
+
+  <!-- Q1: pip upgrade -->
+  <question type="multichoice">
+    <name><text>Q01: pip upgrade package</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you upgrade an existing package like <code>numpy</code> to the latest available version using pip?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The --upgrade flag is used for this.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the flag that specifically mentions 'upgrade'.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip install --upgrade numpy</code>]]></text>
+      <feedback format="html">Correct. This ensures the newest version is installed.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip upgrade numpy</code>]]></text>
+      <feedback format="html">Incorrect. 'upgrade' is a flag, not a primary command in pip.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip update numpy</code>]]></text>
+      <feedback format="html">Incorrect. 'update' is used in other package managers but not pip.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install numpy==latest</code>]]></text>
+      <feedback format="html">Incorrect. 'latest' is not a valid version specifier string.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: NumPy arange -->
+  <question type="multichoice">
+    <name><text>Q02: NumPy arange output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of <code>np.arange(1, 10, 3)</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Arange uses [start, stop, step) logic.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that the stop value is exclusive.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[1, 4, 7]</code>]]></text>
+      <feedback format="html">Correct. Starts at 1, adds 3 until it reaches or exceeds 10.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[1, 4, 7, 10]</code>]]></text>
+      <feedback format="html">Incorrect. The stop value (10) is exclusive in arange.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[1, 2, 3]</code>]]></text>
+      <feedback format="html">Incorrect. This would be the result if 3 was the count, not the step.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[0, 3, 6, 9]</code>]]></text>
+      <feedback format="html">Incorrect. The start value is specified as 1.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: NumPy zeros -->
+  <question type="multichoice">
+    <name><text>Q03: NumPy Zeros Shape</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which command creates a 2x4 matrix (2 rows, 4 columns) filled with zeros?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The shape must be passed as a tuple.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that multi-dimensional shapes are usually passed as tuples to NumPy functions.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>np.zeros((2, 4))</code>]]></text>
+      <feedback format="html">Correct. The inner parentheses create the required tuple.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.zeros(2, 4)</code>]]></text>
+      <feedback format="html">Incorrect. Without the tuple, NumPy interprets '4' as the second argument (dtype).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.zeros([2, 4])</code>]]></text>
+      <feedback format="html">Incorrect. While lists can work in some versions, tuples are the standard convention.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.zeros(8).reshape(4, 2)</code>]]></text>
+      <feedback format="html">Incorrect. This would result in 4 rows and 2 columns.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: NumPy attributes -->
+  <question type="multichoice">
+    <name><text>Q04: NumPy Array Size</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Given <code>arr = np.ones((3, 5))</code>, what is the value of <code>arr.size</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Size is the total number of elements.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Size is calculated by multiplying all dimensions together.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[15]]></text>
+      <feedback format="html">Correct. 3 rows * 5 columns = 15 elements.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[8]]></text>
+      <feedback format="html">Incorrect. 8 is the sum of dimensions, not the product.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[2]]></text>
+      <feedback format="html">Incorrect. 2 is the number of dimensions (ndim).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[(3, 5)]]></text>
+      <feedback format="html">Incorrect. (3, 5) is the shape attribute.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: NumPy Scalar Math -->
+  <question type="multichoice">
+    <name><text>Q05: NumPy Scalar Operations</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of the following code?</p><pre><code>arr = np.array([10, 20, 30])
+print(arr / 10 + 1)</code></pre>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Division and addition are applied element-wise.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Apply the operations to each element individually.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[2., 3., 4.]</code>]]></text>
+      <feedback format="html">Correct. (10/10)+1 = 2, (20/10)+1 = 3, etc.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[1, 2, 3]</code>]]></text>
+      <feedback format="html">Incorrect. You forgot to add the 1.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[11, 21, 31]</code>]]></text>
+      <feedback format="html">Incorrect. You added 1 before dividing, or ignored the division.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[2, 2, 2]</code>]]></text>
+      <feedback format="html">Incorrect. Calculation error.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Pandas Series Index -->
+  <question type="multichoice">
+    <name><text>Q06: Pandas Series with Custom Index</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you access the value 50 in this Series?</p><pre><code>s = pd.Series([50, 100], index=["A", "B"])</code></pre>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Labels can be used for indexing.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that Pandas Series support label-based indexing.</feedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>s["A"]</code>]]></text>
+      <feedback format="html">Correct. "A" is the label for the first value.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>s[50]</code>]]></text>
+      <feedback format="html">Incorrect. 50 is the value, not the index.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>s[1]</code>]]></text>
+      <feedback format="html">Incorrect. Index 1 would return 100.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>s.find(50)</code>]]></text>
+      <feedback format="html">Incorrect. 'find' is not a standard Series method for this.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Pandas read_csv delimiter -->
+  <question type="multichoice">
+    <name><text>Q07: Pandas read_csv parameters</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If your data file uses semicolons (;) instead of commas, how do you load it correctly with Pandas?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The sep (separator) parameter handles this.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the argument that specifies the delimiter.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", sep=";")</code>]]></text>
+      <feedback format="html">Correct. 'sep' defines the character that separates values.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", delimiter=";")</code>]]></text>
+      <feedback format="html">Incorrect. While some functions use 'delimiter', Pandas' primary argument is 'sep'. (Note: delimiter is actually an alias, but sep is the standard taught).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", split=";")</code>]]></text>
+      <feedback format="html">Incorrect. 'split' is not a parameter for read_csv.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_semicolon_file("data.csv")</code>]]></text>
+      <feedback format="html">Incorrect. No such function exists.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Pandas iloc vs loc -->
+  <question type="multichoice">
+    <name><text>Q08: Pandas Integer Selection</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which attribute is used to select data by its <strong>integer position</strong> (e.g., the 10th row) rather than its label?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! iloc stands for 'integer location'.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that 'loc' uses labels and 'iloc' uses integers.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.iloc</code>]]></text>
+      <feedback format="html">Correct. i for integer.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.loc</code>]]></text>
+      <feedback format="html">Incorrect. .loc is for label-based selection.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.at</code>]]></text>
+      <feedback format="html">Incorrect. .at is for single label values.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.idx</code>]]></text>
+      <feedback format="html">Incorrect. There is no .idx attribute for selection.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Pandas sorting -->
+  <question type="multichoice">
+    <name><text>Q09: Pandas Sorting Values</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you sort a DataFrame <code>df</code> by the column "Salary" from <strong>highest to lowest</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! ascending=False is needed for descending order.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check the parameter used to control the sort direction.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df.sort_values(by="Salary", ascending=False)</code>]]></text>
+      <feedback format="html">Correct. Setting ascending to False gives descending order.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.sort("Salary")</code>]]></text>
+      <feedback format="html">Incorrect. The method name is 'sort_values'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.sort_values(by="Salary", reverse=True)</code>]]></text>
+      <feedback format="html">Incorrect. The parameter is 'ascending', not 'reverse'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.order_by("Salary", "DESC")</code>]]></text>
+      <feedback format="html">Incorrect. This resembles SQL syntax, not Pandas.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Matplotlib axis titles -->
+  <question type="multichoice">
+    <name><text>Q10: Matplotlib Y-Axis Label</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which function adds a label to the vertical axis of a plot?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! plt.ylabel() targets the y-axis.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the command that corresponds to the 'y' axis.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.ylabel()</code>]]></text>
+      <feedback format="html">Correct. As expected for the y-axis.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.xlabel()</code>]]></text>
+      <feedback format="html">Incorrect. This is for the horizontal (x) axis.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.vlabel()</code>]]></text>
+      <feedback format="html">Incorrect. There is no vlabel function.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.label_y()</code>]]></text>
+      <feedback format="html">Incorrect. The syntax is ylabel.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: Matplotlib line styles -->
+  <question type="multichoice">
+    <name><text>Q11: Matplotlib Dashed Line</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you create a <strong>dashed</strong> line plot using the shorthand string in <code>plt.plot()</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! '--' represents a dashed line.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Review the symbols for solid, dashed, and dotted lines.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.plot(x, y, "--")</code>]]></text>
+      <feedback format="html">Correct. Two dashes make a dashed line.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.plot(x, y, "-")</code>]]></text>
+      <feedback format="html">Incorrect. A single dash is a solid line.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.plot(x, y, ":")</code>]]></text>
+      <feedback format="html">Incorrect. A colon is a dotted line.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.plot(x, y, "-.")</code>]]></text>
+      <feedback format="html">Incorrect. This is a dash-dot line.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Matplotlib subplots grid -->
+  <question type="multichoice">
+    <name><text>Q12: Matplotlib Subplot Grid</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does <code>plt.subplot(3, 2, 5)</code> describe?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! (rows, cols, index) is the order.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember the order: rows, columns, and then the specific plot number (starting from 1).</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A grid with 3 rows and 2 columns, selecting the 5th plot area.]]></text>
+      <feedback format="html">Correct. 3 rows, 2 columns, index 5.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A grid with 3 columns and 2 rows, selecting the 5th plot area.]]></text>
+      <feedback format="html">Incorrect. Rows come first.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A grid with 5 rows and 2 columns, selecting the 3rd plot area.]]></text>
+      <feedback format="html">Incorrect. The first argument is rows.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A single plot with 3 lines, 2 markers, and 5 labels.]]></text>
+      <feedback format="html">Incorrect. Subplots define multiple coordinate systems.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q13: pip list vs freeze -->
+  <question type="multichoice">
+    <name><text>Q13: pip freeze output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a key difference between <code>pip list</code> and <code>pip freeze</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Freeze is for machine consumption, list is for humans.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Think about which one uses '==' and is used for requirements.txt.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip freeze</code> uses the <code>==</code> format suitable for requirements files.]]></text>
+      <feedback format="html">Correct. This is why we use it for dependency management.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip list</code> only shows built-in libraries.]]></text>
+      <feedback format="html">Incorrect. Both show third-party packages.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip freeze</code> uninstalls unused packages.]]></text>
+      <feedback format="html">Incorrect. It only lists packages.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip list</code> is much faster than <code>pip freeze</code>.]]></text>
+      <feedback format="html">Incorrect. Both are similarly fast.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: NumPy shape check -->
+  <question type="multichoice">
+    <name><text>Q14: NumPy Array Comparison</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Can you perform <code>a + b</code> if <code>a.shape</code> is <code>(3, 3)</code> and <code>b.shape</code> is <code>(2, 2)</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Shapes must be compatible for element-wise operations.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember that NumPy requires matching or broadcastable dimensions.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[No, it will raise a <code>ValueError</code> because the shapes are incompatible.]]></text>
+      <feedback format="html">Correct. They cannot be aligned for element-wise math.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Yes, it will pad the smaller array with zeros.]]></text>
+      <feedback format="html">Incorrect. NumPy does not automatically pad arrays this way.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Yes, it will use Broadcasting to stretch the 2x2 into a 3x3.]]></text>
+      <feedback format="html">Incorrect. Broadcasting only works if one dimension is 1 or if the arrays share a dimension.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Yes, it will only add the overlapping 2x2 region.]]></text>
+      <feedback format="html">Incorrect. NumPy operations are strictly defined by shape.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q15: Pandas unique values -->
+  <question type="multichoice">
+    <name><text>Q15: Pandas Unique entries</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which method returns a list of all distinct values in a column?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .unique() is the way to go.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the method that removes duplicates in its output.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df["Column"].unique()</code>]]></text>
+      <feedback format="html">Correct. Returns an array of unique values.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["Column"].distinct()</code>]]></text>
+      <feedback format="html">Incorrect. 'distinct' is SQL; Pandas uses 'unique'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["Column"].set()</code>]]></text>
+      <feedback format="html">Incorrect. 'set' is a built-in Python type, not a Pandas column method.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["Column"].drop_duplicates()</code>]]></text>
+      <feedback format="html">Incorrect. While it works on the Series, unique() is the more direct and commonly used method for getting just the values.</feedback>
+    </answer>
+  </question>
+
+</quiz>

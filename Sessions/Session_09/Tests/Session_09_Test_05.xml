@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 09 Test 5</text>
+    </category>
+  </question>
+
+  <!-- Q1: PyPI -->
+  <question type="multichoice">
+    <name><text>Q01: The Python Package Index</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is <strong>PyPI</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! It is the official third-party repository.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider where 'pip' downloads packages from by default.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The official repository for third-party Python software.]]></text>
+      <feedback format="html">Correct. Almost all open-source libraries are hosted here.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The built-in library that comes with Python.]]></text>
+      <feedback format="html">Incorrect. That is the 'Standard Library'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A compiler for Python code.]]></text>
+      <feedback format="html">Incorrect. PyPI is a repository, not a tool for execution.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A type of Python virtual environment.]]></text>
+      <feedback format="html">Incorrect. 'venv' or 'conda' are types of virtual environments.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: NumPy eye -->
+  <question type="multichoice">
+    <name><text>Q02: NumPy Identity Matrix</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which function creates an <strong>identity matrix</strong> (1s on the main diagonal, 0s elsewhere)?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! np.eye() or np.identity() can be used.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the function name that refers to the 'Identity' matrix.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>np.eye(3)</code>]]></text>
+      <feedback format="html">Correct. Generates a 3x3 identity matrix.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.identity_matrix(3)</code>]]></text>
+      <feedback format="html">Incorrect. Not the standard NumPy function name.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.ones((3, 3))</code>]]></text>
+      <feedback format="html">Incorrect. This would have ones everywhere, not just on the diagonal.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.diag(3)</code>]]></text>
+      <feedback format="html">Incorrect. np.diag() is used to extract a diagonal or create a diagonal array from a list of values.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: NumPy full -->
+  <question type="multichoice">
+    <name><text>Q03: NumPy Constant Array</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you create a 1D array of length 5 where every value is <strong>9.9</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! np.full() creates an array with a specific value.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the function that 'fills' an array with a constant value.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>np.full(5, 9.9)</code>]]></text>
+      <feedback format="html">Correct. First argument is shape/size, second is the value.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.zeros(5) + 9.9</code>]]></text>
+      <feedback format="html">Incorrect. While this works via broadcasting, np.full is the more direct and idiomatic way.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.array([9.9] * 5)</code>]]></text>
+      <feedback format="html">Incorrect. Inefficient for large arrays; np.full is preferred.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>np.ones(5) * 9.9</code>]]></text>
+      <feedback format="html">Incorrect. Similar to zeros+9.9, it works but is less direct than np.full.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: NumPy dtype attribute -->
+  <question type="multichoice">
+    <name><text>Q04: NumPy Data Types</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which attribute tells you the data type of the elements in a NumPy array?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! dtype stands for data type.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the standard attribute name for data types in NumPy.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.dtype</code>]]></text>
+      <feedback format="html">Correct. e.g., int64, float64, etc.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.type</code>]]></text>
+      <feedback format="html">Incorrect. .type is not a standard attribute for this.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.elements</code>]]></text>
+      <feedback format="html">Incorrect. No such attribute exists.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.format</code>]]></text>
+      <feedback format="html">Incorrect. format is used for strings, not array types.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: NumPy Boolean Indexing -->
+  <question type="multichoice">
+    <name><text>Q05: NumPy Data Filtering</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of the following?</p><pre><code>arr = np.array([1, 10, 5, 20])
+mask = arr > 8
+print(arr[mask])</code></pre>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The mask selects only the elements where the condition is True.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Apply the condition to each element and see which ones 'pass'.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[10, 20]</code>]]></text>
+      <feedback format="html">Correct. Only 10 and 20 are greater than 8.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[True, False, True, False]</code>]]></text>
+      <feedback format="html">Incorrect. This would be the 'mask' itself, but the code applies the mask to the array.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[20]</code>]]></text>
+      <feedback format="html">Incorrect. 10 is also greater than 8.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[An error occurs.]]></text>
+      <feedback format="html">Incorrect. This is valid NumPy filtering.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Pandas loading header -->
+  <question type="multichoice">
+    <name><text>Q06: Pandas CSV without Header</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If your CSV file does <strong>not</strong> have a header row, how do you prevent Pandas from treating the first data row as a header?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! header=None is the parameter to use.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the parameter in read_csv that controls header detection.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", header=None)</code>]]></text>
+      <feedback format="html">Correct. This tells Pandas to use integers as column names instead of the first row.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", header=False)</code>]]></text>
+      <feedback format="html">Incorrect. The value should be 'None', not 'False'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", names=False)</code>]]></text>
+      <feedback format="html">Incorrect. 'names' is used to provide custom labels, not to disable headers.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pd.read_csv("data.csv", skip_header=True)</code>]]></text>
+      <feedback format="html">Incorrect. No such parameter exists.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Pandas info() vs describe() -->
+  <question type="multichoice">
+    <name><text>Q07: Identifying Missing Values</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which method is best for checking how many <strong>missing (null)</strong> values exist in each column?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Combining isnull() and sum() gives exactly this info.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider which method detects nulls and how to count them.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df.isnull().sum()</code>]]></text>
+      <feedback format="html">Correct. isnull() returns Booleans, and sum() counts the Trues.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.describe()</code>]]></text>
+      <feedback format="html">Incorrect. Describe only shows counts of non-null values, it doesn't explicitly count nulls.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.info()</code>]]></text>
+      <feedback format="html">Incorrect. Info shows non-null counts, but requires mental subtraction to find the number of missing values.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.check_empty()</code>]]></text>
+      <feedback format="html">Incorrect. No such method.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Pandas loc slicing (inclusive) -->
+  <question type="multichoice">
+    <name><text>Q08: Pandas loc slicing behavior</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a surprising difference between <code>iloc</code> and <code>loc</code> when slicing?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .loc slicing IS inclusive of the end label.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check whether the end value of a slice is included in label-based indexing.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>loc</code> is <strong>inclusive</strong> of the end label, while <code>iloc</code> is <strong>exclusive</strong>.]]></text>
+      <feedback format="html">Correct. df.loc["A":"C"] includes "C", but df.iloc[0:2] does not include index 2.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>iloc</code> is inclusive, while <code>loc</code> is exclusive.]]></text>
+      <feedback format="html">Incorrect. It's the other way around.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Both are always exclusive.]]></text>
+      <feedback format="html">Incorrect. Pandas labels are treated differently than integer offsets.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Both are always inclusive.]]></text>
+      <feedback format="html">Incorrect. Slicing in Python is generally exclusive, and iloc follows this rule.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Pandas axis naming -->
+  <question type="multichoice">
+    <name><text>Q09: Axis Parameter clarity</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In <code>df.drop("ColumnName", axis=1)</code>, what does <code>axis=1</code> specify?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! axis=1 always targets the horizontal dimension (columns).</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Contrast whether you are dropping a row or a column.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[That you are dropping a <strong>column</strong>.]]></text>
+      <feedback format="html">Correct. axis=1 means columns.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[That you are dropping a <strong>row</strong>.]]></text>
+      <feedback format="html">Incorrect. Dropping rows uses axis=0 (the default).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[That you are dropping all duplicates.]]></text>
+      <feedback format="html">Incorrect. Axis doesn't control duplicate logic.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[That you are dropping the index.]]></text>
+      <feedback format="html">Incorrect. Index is a separate object, though related to axis 0.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Matplotlib plot parameter -->
+  <question type="multichoice">
+    <name><text>Q10: Matplotlib Line Width</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which parameter in <code>plt.plot()</code> allows you to make the line thicker?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! linewidth is the parameter name.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the parameter that describes the 'width' of the line.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>linewidth</code>]]></text>
+      <feedback format="html">Correct. e.g., linewidth=3.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>size</code>]]></text>
+      <feedback format="html">Incorrect. size is not a standard line plot parameter.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>weight</code>]]></text>
+      <feedback format="html">Incorrect. No such parameter.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>thickness</code>]]></text>
+      <feedback format="html">Incorrect. While descriptive, the argument is called 'linewidth'.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: Matplotlib Histogram -->
+  <question type="multichoice">
+    <name><text>Q11: Matplotlib Histogram parameter</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In <code>plt.hist(data, bins=20)</code>, what does <code>bins</code> represent?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Bins define the frequency intervals.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider how data is grouped in a histogram.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The number of vertical bars used to group the data.]]></text>
+      <feedback format="html">Correct. More bins result in a more detailed (but noisier) distribution view.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The number of data points to plot.]]></text>
+      <feedback format="html">Incorrect. All data points in 'data' are processed regardless of bins.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The maximum value on the y-axis.]]></text>
+      <feedback format="html">Incorrect. The y-axis scale is determined by the data frequency.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The width of the entire figure.]]></text>
+      <feedback format="html">Incorrect. Figure width is controlled by plt.figure(figsize=...).</feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Matplotlib saving resolution -->
+  <question type="multichoice">
+    <name><text>Q12: Saving High-Quality Plots</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you specify the <strong>resolution</strong> (dots per inch) when saving a figure in Matplotlib?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! dpi is the parameter name.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the acronym representing 'Dots Per Inch'.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.savefig("file.png", dpi=300)</code>]]></text>
+      <feedback format="html">Correct. Higher dpi means better print quality.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.savefig("file.png", quality=100)</code>]]></text>
+      <feedback format="html">Incorrect. 'quality' is sometimes used for JPEGs, but 'dpi' is the standard for resolution.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.savefig("file.png", res=300)</code>]]></text>
+      <feedback format="html">Incorrect. The parameter is 'dpi'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.save_high_res("file.png")</code>]]></text>
+      <feedback format="html">Incorrect. Not a standard function.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q13: pip list outdated -->
+  <question type="multichoice">
+    <name><text>Q13: Checking for updates</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which pip command helps you identify packages that have a newer version available on PyPI?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! --outdated lists only those with pending updates.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for a flag that modifies the 'pip list' output to show only old packages.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip list --outdated</code>]]></text>
+      <feedback format="html">Correct. This is very useful for maintenance.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip check</code>]]></text>
+      <feedback format="html">Incorrect. pip check is used to find broken dependencies, not necessarily newer versions.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip show all</code>]]></text>
+      <feedback format="html">Incorrect. No such command.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip search updates</code>]]></text>
+      <feedback format="html">Incorrect. pip search is for finding new packages, not checking versions of installed ones.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: NumPy Array Memory -->
+  <question type="multichoice">
+    <name><text>Q14: Memory efficiency</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a memory-related reason for using NumPy arrays over Python lists for large datasets?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Compact storage is a major advantage.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider how NumPy's homogeneity (all same type) helps save space.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[They store data in a much more compact, contiguous way, using less RAM.]]></text>
+      <feedback format="html">Correct. Essential for 'Big Data' applications.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They automatically compress data into .zip format in memory.]]></text>
+      <feedback format="html">Incorrect. They don't compress; they just store more efficiently.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They only store every second element to save space.]]></text>
+      <feedback format="html">Incorrect. They store all data, but without the overhead of Python's generic objects.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They store data on the hard drive instead of RAM.]]></text>
+      <feedback format="html">Incorrect. Standard arrays are in RAM. (Memory-mapping exists but is a specialized feature).</feedback>
+    </answer>
+  </question>
+
+  <!-- Q15: Pandas column renaming -->
+  <question type="multichoice">
+    <name><text>Q15: Pandas renaming columns</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you change the name of a column from "OldName" to "NewName"?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .rename() with a mapper dictionary is the way.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the method designed to modify column or index labels.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>df.rename(columns={"OldName": "NewName"})</code>]]></text>
+      <feedback format="html">Correct. This is the safest and most common way.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df["OldName"].name = "NewName"</code>]]></text>
+      <feedback format="html">Incorrect. This changes the name of the Series object but doesn't update the DataFrame's column mapping.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.change_column("OldName", "NewName")</code>]]></text>
+      <feedback format="html">Incorrect. No such method.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>df.update_labels({"OldName": "NewName"})</code>]]></text>
+      <feedback format="html">Incorrect. No such method.</feedback>
+    </answer>
+  </question>
+
+</quiz>

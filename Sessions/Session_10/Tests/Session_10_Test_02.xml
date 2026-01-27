@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 10 Test 2</text>
+    </category>
+  </question>
+
+  <!-- Q1: REST Statelessness -->
+  <question type="multichoice">
+    <name><text>Q01: REST Architecture: Statelessness</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does it mean that a REST API is <strong>stateless</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Every request must be self-contained.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether the server "remembers" previous interactions.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Each request from a client must contain all the information the server needs to understand and process it.]]></text>
+      <feedback format="html">Correct. The server does not store context about the client's session.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The server is not allowed to store any data in its database.]]></text>
+      <feedback format="html">Incorrect. Statelessness refers to the communication protocol, not the server's data storage.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The API only works when the user is logged out.]]></text>
+      <feedback format="html">Incorrect. Authentication data (like tokens) is sent with every request in a stateless system.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The API can only return text, not images or files.]]></text>
+      <feedback format="html">Incorrect. REST can handle any media type.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: HTTP Method POST -->
+  <question type="multichoice">
+    <name><text>Q02: HTTP Verbs: Data Submission</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which HTTP method is typically used to <strong>submit</strong> data to be processed (e.g., submitting a contact form)?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! POST is the standard for data submission.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall the verb used when sending data in the request body.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[POST]]></text>
+      <feedback format="html">Correct. Used for creation and submission of data.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[GET]]></text>
+      <feedback format="html">Incorrect. GET should not be used for submitting sensitive or large amounts of data.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[HEAD]]></text>
+      <feedback format="html">Incorrect. HEAD is only for metadata.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[OPTIONS]]></text>
+      <feedback format="html">Incorrect. OPTIONS is used to check which methods the server supports.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: HTTP Status Code 201 -->
+  <question type="multichoice">
+    <name><text>Q03: Status Code: Created</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the specific success code returned when a <strong>new resource</strong> has been successfully created (e.g., after a POST request)?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! 201 means 'Created'.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. While 200 means OK, there is a more specific code for successful creation.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[201]]></text>
+      <feedback format="html">Correct. This is the standard for successful creation.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[200]]></text>
+      <feedback format="html">Incorrect. 200 is a general success code, but 201 is more precise for creation.</feedback>
+    </answer>
+    <answer fraction="0" fraction="0" format="html">
+      <text><![CDATA[204]]></text>
+      <feedback format="html">Incorrect. 204 means 'No Content' (success, but nothing to return).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[301]]></text>
+      <feedback format="html">Incorrect. 301 is for permanent redirection.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: URL Query Parameters -->
+  <question type="multichoice">
+    <name><text>Q04: Identifying Query Parameters</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the URL <code>https://shop.com/api/items?cat=tools&limit=10</code>, which part represents the <strong>query parameters</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Parameters follow the '?' symbol.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the part of the URL that starts with a question mark.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>cat=tools&limit=10</code>]]></text>
+      <feedback format="html">Correct. These are the key-value pairs used for filtering or configuration.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>/api/items</code>]]></text>
+      <feedback format="html">Incorrect. This is the Path.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>shop.com</code>]]></text>
+      <feedback format="html">Incorrect. This is the Domain/Host.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>https://</code>]]></text>
+      <feedback format="html">Incorrect. This is the Protocol.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: JSON Syntax -->
+  <question type="multichoice">
+    <name><text>Q05: JSON Structure</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which of the following is a valid <strong>JSON</strong> object representing a person's name and age?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! JSON uses double quotes and curly braces.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall that JSON keys must be strings enclosed in double quotes.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>{"name": "Alice", "age": 25}</code>]]></text>
+      <feedback format="html">Correct. This is standard JSON syntax.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>{name: 'Alice', age: 25}</code>]]></text>
+      <feedback format="html">Incorrect. JSON requires double quotes for keys and strings.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[name: "Alice", age: 25]</code>]]></text>
+      <feedback format="html">Incorrect. Objects use curly braces <code>{}</code>; square brackets are for arrays.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>(name="Alice", age=25)</code>]]></text>
+      <feedback format="html">Incorrect. This resembles Python function arguments or tuples, not JSON.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: requests headers -->
+  <question type="multichoice">
+    <name><text>Q06: API Authentication in 'requests'</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When an API requires a secret key for authentication, which argument in <code>requests.get()</code> is most commonly used to send it?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Authorization is typically handled in HTTP headers.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider where metadata like 'Authorization' tokens are usually placed in an HTTP request.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>headers</code>]]></text>
+      <feedback format="html">Correct. You pass a dictionary of headers to the request.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>params</code>]]></text>
+      <feedback format="html">Incorrect. Params are for query strings in the URL, which are less secure for keys.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>keys</code>]]></text>
+      <feedback format="html">Incorrect. There is no 'keys' parameter in the requests functions.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>auth_token</code>]]></text>
+      <feedback format="html">Incorrect. No such direct parameter exists.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: requests Response encoding -->
+  <question type="multichoice">
+    <name><text>Q07: Raw Response Body</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you want to access the <strong>raw string content</strong> of a response (not yet parsed as JSON), which attribute do you use?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .text returns the decoded string content.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the attribute name that suggests 'textual' content.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>response.text</code>]]></text>
+      <feedback format="html">Correct. This is the body of the response as a string.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.content</code>]]></text>
+      <feedback format="html">Incorrect. .content returns binary data (bytes), not a decoded string.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.body</code>]]></text>
+      <feedback format="html">Incorrect. There is no .body attribute; it's called .text or .content.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.raw</code>]]></text>
+      <feedback format="html">Incorrect. .raw returns a file-like stream, not a string.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: requests Exception -->
+  <question type="multichoice">
+    <name><text>Q08: Handling Timeouts</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which exception should you catch if the server takes too long to respond?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! requests.exceptions.Timeout is specifically for this.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the exception name that matches the 'timeout' concept.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>requests.exceptions.Timeout</code>]]></text>
+      <feedback format="html">Correct. This is raised when the time limit specified in the timeout parameter is exceeded.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.exceptions.HTTPError</code>]]></text>
+      <feedback format="html">Incorrect. HTTPError is for 4xx or 5xx status codes, not connection delays.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>ConnectionRefusedError</code>]]></text>
+      <feedback format="html">Incorrect. This happens if the server actively rejects the connection, not if it's slow.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>StopIteration</code>]]></text>
+      <feedback format="html">Incorrect. This is related to Python iterators, not network requests.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Automated Testing Cost -->
+  <question type="multichoice">
+    <name><text>Q09: Value of Automation</text></name>
+    <questiontext format="html"><text><![CDATA[<p>When is the <strong>cost of fixing a bug</strong> typically the highest?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Bugs in production are notoriously expensive.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Think about the impact and difficulty of fixing a bug after the software has been released to users.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[In the Production phase (after release).]]></text>
+      <feedback format="html">Correct. Due to patches, downtime, and loss of user trust.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[During the initial coding phase.]]></text>
+      <feedback format="html">Incorrect. This is the cheapest time to fix a bug.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[During the design phase.]]></text>
+      <feedback format="html">Incorrect. Catching errors here is highly efficient.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[During the unit testing phase.]]></text>
+      <feedback format="html">Incorrect. Fixing bugs caught by tests is much cheaper than fixing them in production.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: pytest function discovery -->
+  <question type="multichoice">
+    <name><text>Q10: Pytest Function naming</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which of the following functions will be automatically executed as a test by <code>pytest</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Test functions must start with 'test_'.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall the naming convention for test functions in pytest.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>def test_calculate_sum():</code>]]></text>
+      <feedback format="html">Correct. The 'test_' prefix is mandatory for auto-discovery.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def check_calculate_sum():</code>]]></text>
+      <feedback format="html">Incorrect. 'check' is not a prefix recognized by default discovery.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def calculate_sum_test():</code>]]></text>
+      <feedback format="html">Incorrect. While clear to humans, the prefix must be 'test_'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def validate_result():</code>]]></text>
+      <feedback format="html">Incorrect. 'validate' is not recognized.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: pytest error report -->
+  <question type="multichoice">
+    <name><text>Q11: Interpreting Pytest Output</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does a <strong>red "F"</strong> in the pytest terminal output represent?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! F stands for Failure.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider the meaning of the shorthand characters in a testing report.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A test case failed (an assertion was False).]]></text>
+      <feedback format="html">Correct. The actual result did not match the expected result.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A test case passed successfully.]]></text>
+      <feedback format="html">Incorrect. Success is represented by a green dot (.).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[There was a syntax error in the test file.]]></text>
+      <feedback format="html">Incorrect. Errors (like crashes in test code) are usually marked with an 'E'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The test file was not found.]]></text>
+      <feedback format="html">Incorrect. If no files are found, pytest reports 'collected 0 items'.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Docstring attribute -->
+  <question type="multichoice">
+    <name><text>Q12: Python Introspection</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which internal attribute stores the docstring of a Python object?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! It's the double-underscore doc attribute.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the attribute that uses Python's 'dunder' (double-underscore) naming convention.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>__doc__</code>]]></text>
+      <feedback format="html">Correct. e.g., print(my_func.__doc__).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__help__</code>]]></text>
+      <feedback format="html">Incorrect. There is no standard __help__ attribute for docstrings.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__string__</code>]]></text>
+      <feedback format="html">Incorrect. Not for documentation.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>__comment__</code>]]></text>
+      <feedback format="html">Incorrect. Comments are stripped during compilation; docstrings are kept.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q13: Type Hinting -->
+  <question type="multichoice">
+    <name><text>Q13: List Type Hints</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In modern Python (3.9+), how do you correctly hint a function parameter that expects a <strong>list of floats</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Square brackets are used for generic types.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall how to specify the type of elements contained within a collection like a list.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>def process(data: list[float]):</code>]]></text>
+      <feedback format="html">Correct. Square brackets define the inner type.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def process(data: float[]):</code>]]></text>
+      <feedback format="html">Incorrect. This is C#/Java syntax, not Python.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def process(data: list(float)):</code>]]></text>
+      <feedback format="html">Incorrect. Parentheses are for function calls, not type hints.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>def process(data: ListOfFloats):</code>]]></text>
+      <feedback format="html">Incorrect. This is not a built-in type.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: Clean Code: Function Length -->
+  <question type="multichoice">
+    <name><text>Q14: Clean Code: Function Size</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If a single function is 100 lines long, what is the most likely recommendation from a "Clean Code" perspective?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Decomposition is the solution to complexity.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether large functions are easy to maintain and test.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Break it down into several smaller, more descriptive functions.]]></text>
+      <feedback format="html">Correct. Smaller functions are easier to test and reason about.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Add more comments to explain what is happening.]]></text>
+      <feedback format="html">Incorrect. Good code should be self-documenting through structure; comments shouldn't be a crutch for bad structure.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Remove all whitespace and empty lines to make it shorter.]]></text>
+      <feedback format="html">Incorrect. This makes it even harder to read.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Combine it with another function to keep the file count low.]]></text>
+      <feedback format="html">Incorrect. This increases complexity even further.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q15: PM Role in APIs -->
+  <question type="multichoice">
+    <name><text>Q15: PM Perspective: Rate Limits</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why should a Product Manager (PM) be concerned about an external API's <strong>rate limits</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Scalability and cost are major PM concerns.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Think about how a restriction on the number of requests per hour could affect your users as the product grows.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Because it limits how much the product can scale and might increase operational costs.]]></text>
+      <feedback format="html">Correct. If your user base grows, you might hit these limits and the product could break.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Because rate limits only affect the speed of the internet.]]></text>
+      <feedback format="html">Incorrect. Rate limits are artificial restrictions by the provider.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Because PMs need to write the code that handles these limits.]]></text>
+      <feedback format="html">Incorrect. PMs need to understand the implications for the business and product strategy.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Rate limits are only a security feature and don't affect users.]]></text>
+      <feedback format="html">Incorrect. They directly impact service availability.</feedback>
+    </answer>
+  </question>
+
+</quiz>

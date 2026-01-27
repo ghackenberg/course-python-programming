@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 09 Test 3</text>
+    </category>
+  </question>
+
+  <!-- Q1: pip uninstall -->
+  <question type="multichoice">
+    <name><text>Q01: pip removing packages</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the correct command to remove a library from your environment?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! pip uninstall is the standard method.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the command that is the opposite of 'install'.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip uninstall <package_name></code>]]></text>
+      <feedback format="html">Correct. This will prompt for confirmation and then remove the package.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip remove <package_name></code>]]></text>
+      <feedback format="html">Incorrect. pip uses 'uninstall', not 'remove'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip delete <package_name></code>]]></text>
+      <feedback format="html">Incorrect. pip uses 'uninstall'.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install --remove <package_name></code>]]></text>
+      <feedback format="html">Incorrect. Uninstalling is not an option for the install command.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: NumPy ones -->
+  <question type="multichoice">
+    <name><text>Q02: NumPy Ones Matrix</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What will be the output of <code>np.ones((2, 2))</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! It creates a 2x2 matrix of floats.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check the dimensions and the default data type for NumPy ones.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[[1., 1.], [1., 1.]]</code>]]></text>
+      <feedback format="html">Correct. A 2x2 matrix of floating-point ones.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[1., 1., 1., 1.]</code>]]></text>
+      <feedback format="html">Incorrect. The shape (2, 2) implies a 2-dimensional array.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[[1, 1], [1, 1]]</code>]]></text>
+      <feedback format="html">Incorrect. By default, NumPy creates arrays of floats (indicated by the dot).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[[0., 0.], [0., 0.]]</code>]]></text>
+      <feedback format="html">Incorrect. This would be the result of np.zeros().</feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: NumPy dimension check -->
+  <question type="multichoice">
+    <name><text>Q03: NumPy ndim attribute</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is returned by <code>arr.ndim</code> if <code>arr</code> is a standard 3x3 matrix?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Matrices have 2 dimensions.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. ndim refers to the number of axes/dimensions, not the size or shape.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[2]]></text>
+      <feedback format="html">Correct. Rows and columns make 2 dimensions.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[9]]></text>
+      <feedback format="html">Incorrect. 9 is the size (total elements).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[3]]></text>
+      <feedback format="html">Incorrect. 3 is the length of each dimension in the shape (3, 3).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[1]]></text>
+      <feedback format="html">Incorrect. 1D arrays are vectors, 2D arrays are matrices.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: NumPy Broadcasting rules -->
+  <question type="multichoice">
+    <name><text>Q04: NumPy Broadcasting Concept</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the result of adding a scalar (e.g., <code>+ 5</code>) to a NumPy array?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The scalar is broadcast to every element.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall how NumPy handles operations between an array and a single number.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The value 5 is added to <strong>every</strong> element in the array.]]></text>
+      <feedback format="html">Correct. This is the simplest form of broadcasting.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The value 5 is only added to the first element.]]></text>
+      <feedback format="html">Incorrect. NumPy operations are element-wise by default.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It causes an error because you can't add a number to an array.]]></text>
+      <feedback format="html">Incorrect. NumPy is specifically designed to allow this.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The value 5 is appended to the end of the array.]]></text>
+      <feedback format="html">Incorrect. The '+' operator performs addition, not concatenation.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: NumPy slicing 1D -->
+  <question type="multichoice">
+    <name><text>Q05: NumPy Step Slicing</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the output of <code>arr[::2]</code> if <code>arr = np.array([1, 2, 3, 4, 5])</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The step of 2 selects every other element.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember the slice syntax [start:stop:step].</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>[1, 3, 5]</code>]]></text>
+      <feedback format="html">Correct. Starts at index 0, then skips to 2, then 4.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[2, 4]</code>]]></text>
+      <feedback format="html">Incorrect. This would happen if you started at index 1: arr[1::2].</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[1, 2]</code>]]></text>
+      <feedback format="html">Incorrect. This is not how the step parameter works.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>[5, 4, 3, 2, 1]</code>]]></text>
+      <feedback format="html">Incorrect. Reversing would require a negative step: [::-1].</feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: Pandas DataFrame construction -->
+  <question type="multichoice">
+    <name><text>Q06: DataFrame from Dictionary</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you create a DataFrame from the dictionary <code>{"A": [1, 2], "B": [3, 4]}</code>, what will be the column names?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Dictionary keys become column names.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Think about how the keys and values of the dictionary map to the table structure.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA["A" and "B"]]></text>
+      <feedback format="html">Correct. Keys map to columns, values map to the data in those columns.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[0 and 1]]></text>
+      <feedback format="html">Incorrect. These would be the row indices if not specified otherwise.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA["row1" and "row2"]]></text>
+      <feedback format="html">Incorrect. Row names are the index, not the columns.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The DataFrame will not have column names.]]></text>
+      <feedback format="html">Incorrect. DataFrames always have column labels, even if they are just integers.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: Pandas head() default -->
+  <question type="multichoice">
+    <name><text>Q07: Pandas head() function</text></name>
+    <questiontext format="html"><text><![CDATA[<p>By default, how many rows does <code>df.head()</code> return?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The default is 5.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. It's a small number used to quickly check the data structure.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[5]]></text>
+      <feedback format="html">Correct. Standard Pandas behavior.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[10]]></text>
+      <feedback format="html">Incorrect. You can get 10 by calling head(10), but the default is 5.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[1]]></text>
+      <feedback format="html">Incorrect. Just one row wouldn't be very helpful for checking structure.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[All rows]]></text>
+      <feedback format="html">Incorrect. Printing all rows could crash your terminal if the file is large.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Pandas loc selection -->
+  <question type="multichoice">
+    <name><text>Q08: Pandas Label-based Selection</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which method is used to select data using <strong>row labels</strong> (like "Alice") and column names?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .loc is for labels.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Contrast label-based vs. integer-based selection attributes.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>.loc</code>]]></text>
+      <feedback format="html">Correct. 'loc' is short for location (by label).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.iloc</code>]]></text>
+      <feedback format="html">Incorrect. .iloc is for integer positions.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.select</code>]]></text>
+      <feedback format="html">Incorrect. There is no .select attribute in standard Pandas for this.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>.get</code>]]></text>
+      <feedback format="html">Incorrect. .get() is a method, but .loc is the standard for multidimensional selection.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: Pandas describe() output -->
+  <question type="multichoice">
+    <name><text>Q09: Pandas Statistics Summary</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does <code>df.describe()</code> return?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! It generates descriptive statistics for numeric columns.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether the output shows data types, the first few rows, or calculated statistics.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A summary of statistics (mean, min, max, etc.) for numerical columns.]]></text>
+      <feedback format="html">Correct. It's the go-to for exploratory data analysis.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A list of data types for each column.]]></text>
+      <feedback format="html">Incorrect. That would be .info() or .dtypes.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The raw data from the first 5 rows.]]></text>
+      <feedback format="html">Incorrect. That would be .head().</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[A list of missing values in the DataFrame.]]></text>
+      <feedback format="html">Incorrect. You would use .isnull().sum() for that.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: Matplotlib plotting style -->
+  <question type="multichoice">
+    <name><text>Q10: Matplotlib Grid lines</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you add grid lines to a Matplotlib plot?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! plt.grid(True) is the way.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the command that specifically mentions 'grid'.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.grid(True)</code>]]></text>
+      <feedback format="html">Correct. This toggles the grid on.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.show_grid()</code>]]></text>
+      <feedback format="html">Incorrect. No such function.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.draw_background()</code>]]></text>
+      <feedback format="html">Incorrect. Not a standard Matplotlib command.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.lines(type="grid")</code>]]></text>
+      <feedback format="html">Incorrect. Too complex; the command is just .grid().</feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: Matplotlib scatter color -->
+  <question type="multichoice">
+    <name><text>Q11: Matplotlib Point Color</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How do you make the points in a scatter plot <strong>red</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The color parameter controls this.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check the parameter name used to specify the color of markers.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>plt.scatter(x, y, color="red")</code>]]></text>
+      <feedback format="html">Correct. 'color' or 'c' can be used.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.scatter(x, y, style="red")</code>]]></text>
+      <feedback format="html">Incorrect. 'style' is not a parameter for color.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.scatter(x, y, paint="red")</code>]]></text>
+      <feedback format="html">Incorrect. No such parameter.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>plt.red_scatter(x, y)</code>]]></text>
+      <feedback format="html">Incorrect. Not a standard function.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Matplotlib figure save format -->
+  <question type="multichoice">
+    <name><text>Q12: Matplotlib Save Formats</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which file formats are supported by <code>plt.savefig()</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Matplotlib is very flexible with formats.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether Matplotlib is limited to just one format or can handle many common ones.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Most common formats like PNG, PDF, and SVG.]]></text>
+      <feedback format="html">Correct. It automatically detects the format from the file extension.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only PNG.]]></text>
+      <feedback format="html">Incorrect. It supports many vector and raster formats.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Only JPEG.]]></text>
+      <feedback format="html">Incorrect. JPEG is supported, but so are many others.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It doesn't save files; it only shows them on screen.]]></text>
+      <feedback format="html">Incorrect. plt.savefig() is a core part of the library.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q13: pip install from file -->
+  <question type="multichoice">
+    <name><text>Q13: Installing Dependencies</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the correct way to install all libraries listed in a <code>requirements.txt</code> file?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The -r flag stands for 'requirements'.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall the command and the flag used to specify a file as the source for installation.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>pip install -r requirements.txt</code>]]></text>
+      <feedback format="html">Correct. This is the standard procedure for setting up a project.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip install requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. Without -r, pip tries to find a package named 'requirements.txt' on PyPI.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip run requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. pip has no 'run' command.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>pip load requirements.txt</code>]]></text>
+      <feedback format="html">Incorrect. There is no 'load' command.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: NumPy performance -->
+  <question type="multichoice">
+    <name><text>Q14: NumPy Speed</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Why are NumPy arrays faster than Python lists for mathematical operations?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! C-implementation and contiguous memory are key.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider how NumPy is implemented and how it stores data in memory compared to standard Python lists.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[They are implemented in C and use contiguous blocks of memory.]]></text>
+      <feedback format="html">Correct. This allows for massive optimization compared to Python's generic lists.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They use the GPU by default.]]></text>
+      <feedback format="html">Incorrect. Standard NumPy runs on the CPU. (Libraries like CuPy use the GPU).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They automatically multi-thread all operations.]]></text>
+      <feedback format="html">Incorrect. While some low-level math is multi-threaded, it's not the primary reason for the speedup.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are actually slower, but have more features.]]></text>
+      <feedback format="html">Incorrect. They are significantly faster for numeric work.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q15: Pandas column renaming -->
+  <question type="multichoice">
+    <name><text>Q15: Pandas Column Selection (dot syntax)</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If <code>df</code> has a column "Sales Data", why might <code>df.Sales Data</code> fail?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Spaces break the dot syntax.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Remember the restrictions on using dot notation to access DataFrame columns.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Because the column name contains a space.]]></text>
+      <feedback format="html">Correct. Dot notation only works for names that are valid Python identifiers (no spaces, doesn't start with a number).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Because "Sales Data" is a string.]]></text>
+      <feedback format="html">Incorrect. All column names are typically strings.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Because dot syntax is only for methods, not data.]]></text>
+      <feedback format="html">Incorrect. Pandas specifically enables dot syntax for column access as a convenience.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[It won't fail; it is the recommended way to access all columns.]]></text>
+      <feedback format="html">Incorrect. Bracket notation <code>df["Sales Data"]</code> is safer and always works.</feedback>
+    </answer>
+  </question>
+
+</quiz>

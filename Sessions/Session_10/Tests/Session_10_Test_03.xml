@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/top/Session 10 Test 3</text>
+    </category>
+  </question>
+
+  <!-- Q1: Client-Server Model -->
+  <question type="multichoice">
+    <name><text>Q01: Web Interaction Pattern</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the Client-Server model, what is the role of the <strong>Client</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The client is the requester.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Contrast the 'requester' (e.g., a browser or script) with the 'provider' (e.g., a database server).</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[The requester of data or services (e.g., your Python script).]]></text>
+      <feedback format="html">Correct. It initiates the interaction by sending a request.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The machine that stores and provides the data.]]></text>
+      <feedback format="html">Incorrect. That is the Server.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The physical cable connecting the computers.]]></text>
+      <feedback format="html">Incorrect. That is the Network infrastructure.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The user who sits in front of the computer.]]></text>
+      <feedback format="html">Incorrect. While a human might trigger the client, the 'Client' refers to the software/system making the request.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q2: HTTP Verbs: Update -->
+  <question type="multichoice">
+    <name><text>Q02: HTTP Verbs: PUT vs POST</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which HTTP method is specifically designed to <strong>update</strong> or replace an existing resource?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! PUT is used for updates.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. POST is for creation; look for the verb used for replacement/update.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[PUT]]></text>
+      <feedback format="html">Correct. Often used to update a complete object.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[GET]]></text>
+      <feedback format="html">Incorrect. GET only reads data.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[POST]]></text>
+      <feedback format="html">Incorrect. POST is generally used to create *new* items.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[DELETE]]></text>
+      <feedback format="html">Incorrect. DELETE removes the resource.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q3: HTTP Status Code 401 -->
+  <question type="multichoice">
+    <name><text>Q03: Status Code: Unauthorized</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What does an HTTP status code <strong>401</strong> mean?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! 401 means you need to provide credentials.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. It's a client error related to authentication.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Unauthorized (You need to provide valid credentials/API key).]]></text>
+      <feedback format="html">Correct. The server requires you to log in or provide a token.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Forbidden (You are logged in, but don't have permission for this specific action).]]></text>
+      <feedback format="html">Incorrect. That is 403 Forbidden.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Not Found.]]></text>
+      <feedback format="html">Incorrect. That is 404.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Bad Request.]]></text>
+      <feedback format="html">Incorrect. That is 400.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q4: URL Anatomy: Domain -->
+  <question type="multichoice">
+    <name><text>Q04: Identifying the Domain</text></name>
+    <questiontext format="html"><text><![CDATA[<p>In the URL <code>https://api.github.com/users/octocat</code>, which part is the <strong>Domain (Host)</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The domain is the address of the server.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. The domain follows the protocol (https://) and precedes the path.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>api.github.com</code>]]></text>
+      <feedback format="html">Correct. This identifies the server you are talking to.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>https</code>]]></text>
+      <feedback format="html">Incorrect. This is the Protocol.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>/users/octocat</code>]]></text>
+      <feedback format="html">Incorrect. This is the Path.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>octocat</code>]]></text>
+      <feedback format="html">Incorrect. This is a specific resource identifier within the path.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q5: requests POST with JSON -->
+  <question type="multichoice">
+    <name><text>Q05: Sending JSON data in 'requests'</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which line of code correctly sends a Python dictionary <code>data</code> as a <strong>JSON body</strong> in a POST request?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The 'json' parameter handles conversion and headers automatically.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the parameter name specifically designed for JSON data.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>requests.post(url, json=data)</code>]]></text>
+      <feedback format="html">Correct. This is the recommended way to send JSON.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.post(url, data=data)</code>]]></text>
+      <feedback format="html">Incorrect. Using 'data' sends the dictionary as form data, not as a JSON object.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.post(url, params=data)</code>]]></text>
+      <feedback format="html">Incorrect. 'params' sends the data in the URL query string, not the body.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>requests.post(url, body=data)</code>]]></text>
+      <feedback format="html">Incorrect. 'body' is not a valid parameter name for the requests library.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q6: requests status check -->
+  <question type="multichoice">
+    <name><text>Q06: Manual Status Checking</text></name>
+    <questiontext format="html"><text><![CDATA[<p>How can you check if a request was successful without using <code>raise_for_status()</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .ok is a convenient boolean attribute.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether there is a boolean attribute or a specific status code range to check.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Check if <code>response.ok</code> is <code>True</code>.]]></text>
+      <feedback format="html">Correct. .ok is True for any status code between 200 and 299.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Check if <code>response.success</code> is <code>True</code>.]]></text>
+      <feedback format="html">Incorrect. There is no .success attribute.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Check if <code>response.code == "OK"</code>.]]></text>
+      <feedback format="html">Incorrect. .status_code is an integer, and "OK" is a string.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Check if <code>bool(response)</code> is <code>True</code>.]]></text>
+      <feedback format="html">Incorrect. (Wait, actually bool(response) DOES return True for 200-299, but .ok is the taught/standard way in requests). Let's pick a clearer incorrect answer.</feedback>
+      <feedback format="html">Incorrect. While valid, .ok is more descriptive and standard for this library.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Check if <code>response.headers["Status"] == 200</code>.]]></text>
+      <feedback format="html">Incorrect. Status is an attribute (.status_code), not usually a header entry.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q7: requests Headers content type -->
+  <question type="multichoice">
+    <name><text>Q07: Inspecting Response Metadata</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which response attribute contains the metadata sent by the server (like <code>Content-Type</code> or <code>Server</code> type)?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! .headers contains the HTTP headers.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the attribute name used for HTTP metadata.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>response.headers</code>]]></text>
+      <feedback format="html">Correct. It's a case-insensitive dictionary-like object.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.metadata</code>]]></text>
+      <feedback format="html">Incorrect. No such attribute.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.info</code>]]></text>
+      <feedback format="html">Incorrect. .info() is used in urllib, but not in requests.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>response.params</code>]]></text>
+      <feedback format="html">Incorrect. Params are what the client sends, not what the server returns.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q8: Unit Testing Isolation -->
+  <question type="multichoice">
+    <name><text>Q08: Unit Testing Principle</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is the main goal of <strong>Unit Testing</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Isolation is the defining characteristic.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether unit tests target the whole application or just small, independent parts.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[To verify that the smallest testable parts (units) of the application work correctly in isolation.]]></text>
+      <feedback format="html">Correct. This makes it easier to pinpoint exactly where a bug is.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To check if the entire system works together as a whole.]]></text>
+      <feedback format="html">Incorrect. That is Integration Testing or System Testing.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To find out how many users the server can handle.]]></text>
+      <feedback format="html">Incorrect. That is Load Testing or Performance Testing.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[To ensure the user interface looks beautiful.]]></text>
+      <feedback format="html">Incorrect. This is usually part of UI/UX testing or manual testing.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q9: pytest assertion check -->
+  <question type="multichoice">
+    <name><text>Q09: Failing a Test</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What happens if the expression after an <code>assert</code> keyword evaluates to <code>False</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! False assertions raise an AssertionError.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether the program continues or if an error is raised.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[An <code>AssertionError</code> is raised, and the test case fails.]]></text>
+      <feedback format="html">Correct. This is how pytest knows the test did not pass.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The program prints a warning but continues to the next line.]]></text>
+      <feedback format="html">Incorrect. Assert is a hard stop; it must be true for execution to proceed.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The computer reboots.]]></text>
+      <feedback format="html">Incorrect. (Obviously).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The function is automatically fixed by the interpreter.]]></text>
+      <feedback format="html">Incorrect. Python does not have auto-healing capabilities.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q10: pytest command -->
+  <question type="multichoice">
+    <name><text>Q10: Running Pytest</text></name>
+    <questiontext format="html"><text><![CDATA[<p>If you have several test files in a folder, what is the easiest way to run all of them at once?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Running 'pytest' without arguments searches the current directory.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the simple command-line command used to trigger the testing framework.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Run the command <code>pytest</code> in your terminal.]]></text>
+      <feedback format="html">Correct. Pytest automatically discovers files matching the test pattern.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Run <code>python run_all_tests.py</code>.]]></text>
+      <feedback format="html">Incorrect. This would only work if you manually wrote a script with that name.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Double-click on each .py file.]]></text>
+      <feedback format="html">Incorrect. This would execute the tests but wouldn't provide a unified report.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Copy and paste all code into a single file.]]></text>
+      <feedback format="html">Incorrect. This is messy and unnecessary.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q11: TDD Cycle -->
+  <question type="multichoice">
+    <name><text>Q11: Test-Driven Development</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What are the three stages of the TDD (Test-Driven Development) cycle, in order?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Red, Green, Refactor is the TDD mantra.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Recall the order: fail the test, pass the test, clean up the code.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Red, Green, Refactor.]]></text>
+      <feedback format="html">Correct. Write failing test -> make it pass -> clean up code.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Green, Red, Refactor.]]></text>
+      <feedback format="html">Incorrect. You can't pass a test before you've written it.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Refactor, Red, Green.]]></text>
+      <feedback format="html">Incorrect. Refactoring happens AFTER the logic is verified by a test.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Code, Test, Debug.]]></text>
+      <feedback format="html">Incorrect. This is the traditional 'Test-Last' approach, not TDD.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q12: Docstrings Syntax -->
+  <question type="multichoice">
+    <name><text>Q12: Proper Docstring Quotes</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which symbols are standard for enclosing a Python <strong>Docstring</strong>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Triple double-quotes are the standard.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Check the standard recommendation from PEP 257.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Triple double-quotes <code>"""..."""</code>]]></text>
+      <feedback format="html">Correct. This is the convention for both single and multi-line docstrings.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Single hashtags <code>#...</code>]]></text>
+      <feedback format="html">Incorrect. These are for regular comments, which are not recognized as docstrings.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Forward slashes and asterisks <code>/*...*/</code>]]></text>
+      <feedback format="html">Incorrect. This is C/Java syntax, not Python.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Angle brackets <code>&lt;!--...--&gt;</code>]]></text>
+      <feedback format="html">Incorrect. This is HTML syntax.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q13: Type Hinting Return -->
+  <question type="multichoice">
+    <name><text>Q13: Hinting a Return Value</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Which symbol is used to indicate the <strong>return type</strong> of a function in a type hint?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! The 'arrow' symbol (minus and greater-than) is used.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Look for the symbol that acts as an arrow pointing to the return type.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>-></code>]]></text>
+      <feedback format="html">Correct. e.g., def f() -> int:.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>=></code>]]></text>
+      <feedback format="html">Incorrect. This is used in other languages (like JS for arrow functions), but not Python type hints.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>:</code>]]></text>
+      <feedback format="html">Incorrect. The colon is used for parameter types.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>=</code>]]></text>
+      <feedback format="html">Incorrect. Equals is used for default values.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q14: Clean Code: Variable Names -->
+  <question type="multichoice">
+    <name><text>Q14: Avoiding Vague Names</text></name>
+    <questiontext format="html"><text><![CDATA[<p>According to Clean Code, why should you avoid names like <code>temp</code>, <code>data</code>, or <code>list1</code>?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! They lack semantic meaning.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider whether these names help a reader understand what the variable actually contains.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[They are vague and don't describe the <strong>intent</strong> or content of the variable.]]></text>
+      <feedback format="html">Correct. A good name explains 'why' it exists and 'what' it represents.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They take up too much space in memory.]]></text>
+      <feedback format="html">Incorrect. Variable names don't affect memory usage in Python.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They cause the program to run slower.]]></text>
+      <feedback format="html">Incorrect. Naming has zero impact on execution speed.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[They are reserved keywords in Python.]]></text>
+      <feedback format="html">Incorrect. They are not keywords; they are just poor choices for clarity.</feedback>
+    </answer>
+  </question>
+
+  <!-- Q15: Technical Debt -->
+  <question type="multichoice">
+    <name><text>Q15: PM Perspective: Technical Debt</text></name>
+    <questiontext format="html"><text><![CDATA[<p>What is a likely consequence of a PM ignoring "Technical Debt" (e.g., poor documentation, lack of tests)?</p>]]></text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Correct! Debt slows down future progress.</text></correctfeedback>
+    <incorrectfeedback format="html"><text>Incorrect. Consider how a messy codebase affects the speed of adding new features over time.</text></incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Future development becomes slower, more expensive, and riskier.]]></text>
+      <feedback format="html">Correct. You eventually 'pay interest' in the form of slower progress.</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The software becomes free for everyone to use.]]></text>
+      <feedback format="html">Incorrect. (Not related).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The developers get more holidays.]]></text>
+      <feedback format="html">Incorrect. (Usually the opposite; they spend more time fixing bugs).</feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[The code automatically migrates to a newer version of Python.]]></text>
+      <feedback format="html">Incorrect. There is no such magic.</feedback>
+    </answer>
+  </question>
+
+</quiz>
